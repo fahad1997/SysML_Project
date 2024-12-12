@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>109.0</version>
+	<lang>C++</lang>
+	<BuildNo>202002261110</BuildNo>
+	<RMMMinimumClientVersion>100.0</RMMMinimumClientVersion>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID 71eb9cf4-1382-44b3-a523-5f6eca86774c</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">FUNCTIONAL</_name>
+			<_modifiedTimeWeak type="a">12.12.2024::13:44:1</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.12.2024::13:45:3</_modifiedTime>
+			<_lastID type="a">9</_lastID>
+			<weakCGTime type="a">12.12.2024::13:44:1</weakCGTime>
+			<strongCGTime type="a">12.12.2024::13:25:11</strongCGTime>
+			<_defaultComposite type="s">GUID 7fcc6064-c0f9-4bf8-8a3d-1e4d2e0b3863</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID a2060bfe-289f-400f-9ac0-e3e19b27af03</value>
+				<value>GUID ca33f6db-0e66-4f6c-a1fc-d964f71c30ae</value>
+				<value>GUID aec32d8f-fdc1-4b6a-8ea1-8add2a0591ef</value>
+				<value>GUID 9cf62e35-7749-420f-a8d1-2f0cfac17077</value>
+				<value>GUID 70a82755-5498-4ee5-bc92-279426acad81</value>
+				<value>GUID c50b83c3-4a3e-4c9a-a36b-e06c6ea772bd</value>
+				<value>GUID 6c78db3e-f228-4fba-ab44-093acc98997b</value>
+				<value>GUID 404cd878-d31c-45ff-a53d-093d97b6b0d0</value>
+				<value>GUID 4d8b9ca7-164d-43d1-b794-09a596aa4e83</value>
+				<value>GUID 7fcc6064-c0f9-4bf8-8a3d-1e4d2e0b3863</value>
+			</AggregatesList>
+		</ISubsystem>
+		<IRequirement type="e">
+			<_id type="a">GUID a2060bfe-289f-400f-9ac0-e3e19b27af03</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">GetStormData</_name>
+			<_modifiedTimeWeak type="a">12.12.2024::13:28:20</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.12.2024::13:28:20</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 Get readings from aircraft-based sensors to determine position (latitude, longitude, diameter, and altitude), wind speed, direction, and type  and amount of precipitation.\par%0D
+}%0D
+</_body>
+			<reqID type="a">11</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID ca33f6db-0e66-4f6c-a1fc-d964f71c30ae</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">GetWeatherData</_name>
+			<_modifiedTimeWeak type="a">12.12.2024::13:29:16</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.12.2024::13:29:16</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 Get atmospheric data and generate weather updates.\par%0D
+}%0D
+</_body>
+			<reqID type="a">12</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID aec32d8f-fdc1-4b6a-8ea1-8add2a0591ef</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">GetSatelliteImage</_name>
+			<_modifiedTimeWeak type="a">12.12.2024::13:29:54</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.12.2024::13:29:54</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 Get atmospheric image from satellite.\par%0D
+}%0D
+</_body>
+			<reqID type="a">13</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 9cf62e35-7749-420f-a8d1-2f0cfac17077</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">GetSeisemicData</_name>
+			<_modifiedTimeWeak type="a">12.12.2024::13:30:40</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.12.2024::13:30:40</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 Get seismic activity from ocean floor sensors.\par%0D
+}%0D
+</_body>
+			<reqID type="a">14</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 70a82755-5498-4ee5-bc92-279426acad81</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">GetWaterPressureData</_name>
+			<_modifiedTimeWeak type="a">12.12.2024::13:31:45</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.12.2024::13:31:45</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 Get water pressure from the pressure sensors.\par%0D
+}%0D
+</_body>
+			<reqID type="a">15</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID c50b83c3-4a3e-4c9a-a36b-e06c6ea772bd</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">GetWaterFlowData</_name>
+			<_modifiedTimeWeak type="a">12.12.2024::13:32:45</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.12.2024::13:32:45</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 Get water flow data from the flow direction detectors.\par%0D
+}%0D
+</_body>
+			<reqID type="a">16</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 6c78db3e-f228-4fba-ab44-093acc98997b</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">ProcessRealTimeWeather</_name>
+			<_modifiedTimeWeak type="a">12.12.2024::13:44:1</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.12.2024::13:44:1</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 Gives real time weather update based on the atmospherics data.\par%0D
+}%0D
+</_body>
+			<reqID type="a">17</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 404cd878-d31c-45ff-a53d-093d97b6b0d0</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">ViewWeatherForecast</_name>
+			<_modifiedTimeWeak type="a">12.12.2024::13:39:35</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.12.2024::13:39:35</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 Views the weather forecast based on the real time weather processing.\par%0D
+}%0D
+</_body>
+			<reqID type="a">18</reqID>
+		</IRequirement>
+		<IRequirement type="e">
+			<_id type="a">GUID 4d8b9ca7-164d-43d1-b794-09a596aa4e83</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">ProcessImpactTrajectory</_name>
+			<_modifiedTimeWeak type="a">12.12.2024::13:43:41</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.12.2024::13:43:41</_modifiedTime>
+			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
+\viewkind4\uc1\pard\fs20 The system should be able to predict the impact zone based on weather data.\par%0D
+}%0D
+</_body>
+			<reqID type="a">19</reqID>
+		</IRequirement>
+		<IClass type="e">
+			<_id type="a">GUID 7fcc6064-c0f9-4bf8-8a3d-1e4d2e0b3863</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+
