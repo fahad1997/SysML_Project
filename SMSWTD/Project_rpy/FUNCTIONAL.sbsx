@@ -12,10 +12,10 @@
 			<_id type="a">GUID 0eb5605d-e329-4540-94e3-4befabff7872</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">FUNCTIONAL</_name>
-			<_modifiedTimeWeak type="a">12.16.2024::10:4:57</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.16.2024::10:3:58</_modifiedTime>
+			<_modifiedTimeWeak type="a">12.16.2024::10:17:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::10:17:0</_modifiedTime>
 			<_lastID type="a">23</_lastID>
-			<weakCGTime type="a">12.16.2024::10:4:57</weakCGTime>
+			<weakCGTime type="a">12.16.2024::10:17:0</weakCGTime>
 			<strongCGTime type="a">12.16.2024::9:32:19</strongCGTime>
 			<_defaultComposite type="s">GUID cb29d38c-18f2-4118-b94a-3b20ec9702c8</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -276,8 +276,12 @@
 			<_id type="a">GUID 8facb1c3-9aad-475e-bfa0-ccb66ee1a764</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">DataProcessor</_name>
-			<_modifiedTimeWeak type="a">12.16.2024::9:7:55</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.16.2024::9:7:55</_modifiedTime>
+			<Annotations type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</Annotations>
+			<_modifiedTimeWeak type="a">12.16.2024::10:17:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::10:17:0</_modifiedTime>
 			<_lastID type="a">9</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 Process the collected data from different sensors.\par%0D
@@ -289,10 +293,6 @@
 				<value>GUID 1f473830-6153-483f-9e56-cbf11cf63e3b</value>
 				<value>GUID cccceabe-5c58-46d7-b0d3-46ead6695562</value>
 				<value>GUID 8df01e2b-2529-49d8-a1d9-30327095b485</value>
-				<value>GUID 9aee74ae-b49e-4a87-b722-8af3648ae7bc</value>
-				<value>GUID 473914f9-4615-4f2c-b553-e09efadee69d</value>
-				<value>GUID 8e46bc3c-643d-499e-8c18-6a73cf617504</value>
-				<value>GUID ea20f9b9-7e96-4a64-9e63-53646d81d237</value>
 			</AggregatesList>
 		</IRequirement>
 		<IDependency type="e">
@@ -371,54 +371,6 @@
 				</INObjectHandle>
 			</_dependent>
 		</IDependency>
-		<IRequirement type="e">
-			<_id type="a">GUID 9aee74ae-b49e-4a87-b722-8af3648ae7bc</_id>
-			<_myState type="a">8192</_myState>
-			<_name type="a">ProcessImpactDirection</_name>
-			<_modifiedTimeWeak type="a">12.13.2024::15:40:20</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.13.2024::15:40:20</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 Get the impact trajectory after processing the data collected from the sensors.\par%0D
-}%0D
-</_body>
-			<reqID type="a">2.1</reqID>
-		</IRequirement>
-		<IRequirement type="e">
-			<_id type="a">GUID 473914f9-4615-4f2c-b553-e09efadee69d</_id>
-			<_myState type="a">8192</_myState>
-			<_name type="a">ProcessSeaWaveActivity</_name>
-			<_modifiedTimeWeak type="a">12.13.2024::15:41:25</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.13.2024::15:41:25</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 Process the sea weather activity based on the seismic, water pressure and water flow sensor data.\par%0D
-}%0D
-</_body>
-			<reqID type="a">2.2</reqID>
-		</IRequirement>
-		<IRequirement type="e">
-			<_id type="a">GUID 8e46bc3c-643d-499e-8c18-6a73cf617504</_id>
-			<_myState type="a">8192</_myState>
-			<_name type="a">ProcessWeatherActivity</_name>
-			<_modifiedTimeWeak type="a">12.13.2024::15:42:10</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.13.2024::15:42:10</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 Process the weather activity based on the storm data, weather data and satellite images.\par%0D
-}%0D
-</_body>
-			<reqID type="a">2.3</reqID>
-		</IRequirement>
-		<IRequirement type="e">
-			<_id type="a">GUID ea20f9b9-7e96-4a64-9e63-53646d81d237</_id>
-			<_myState type="a">8192</_myState>
-			<_name type="a">SetCalculationVariable</_name>
-			<_modifiedTimeWeak type="a">12.13.2024::15:43:1</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.13.2024::15:43:1</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 Predifine the thresholds for the sensor's that will be used for the calculation.\par%0D
-}%0D
-</_body>
-			<reqID type="a">2.4</reqID>
-		</IRequirement>
 		<IRequirement type="e">
 			<_id type="a">GUID 5bd4e50c-4028-49f7-ba75-182a5ac431ce</_id>
 			<_myState type="a">8192</_myState>

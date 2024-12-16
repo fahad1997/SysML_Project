@@ -12,10 +12,10 @@
 			<_id type="a">GUID af8f262a-9c9a-42c5-8ffe-b06182211503</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Default</_name>
-			<_modifiedTimeWeak type="a">12.16.2024::8:56:9</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.16.2024::8:56:25</_modifiedTime>
+			<_modifiedTimeWeak type="a">12.16.2024::10:48:17</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::10:48:49</_modifiedTime>
 			<_lastID type="a">17</_lastID>
-			<weakCGTime type="a">12.16.2024::8:56:9</weakCGTime>
+			<weakCGTime type="a">12.16.2024::10:48:17</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_defaultComposite type="s">GUID 96317464-d5db-4a32-8120-d8d10e95687a</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -626,7 +626,7 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">12.16.2024::8:56:16</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">12.16.2024::10:48:29</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -634,15 +634,77 @@
 					<_hid type="a">GUID 4898eb4b-2565-4b62-99de-9584473e7754</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">12.16.2024::8:56:16</_modifiedTime>
-			<weakCGTime type="a">12.16.2024::8:56:16</weakCGTime>
+			<_modifiedTime type="a">12.16.2024::10:48:29</_modifiedTime>
+			<weakCGTime type="a">12.16.2024::10:48:29</weakCGTime>
 			<strongCGTime type="a">12.16.2024::8:56:16</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID 43a970db-700b-4e1a-90cd-66707548ff8a</value>
+				<value>GUID fa861ce0-544f-442e-86b5-ae9df5993108</value>
+			</AggregatesList>
 		</IClass>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 43a970db-700b-4e1a-90cd-66707548ff8a</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsGet All Sensors Data</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::10:48:17</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IUseCase</_hm2Class>
+					<_hfilename type="a">.\DATA_PROCESSOR.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::TOP_REQUIREMENT::DATA_PROCESSOR</_hsubsystem>
+					<_hname type="a">Get All Sensors Data</_hname>
+					<_hid type="a">GUID ab930959-f2ed-4bf6-8e50-78dbcaedf613</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\DATA_PROCESSOR.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::TOP_REQUIREMENT::DATA_PROCESSOR</_hsubsystem>
+					<_hclass type="a">Get All Sensors Data</_hclass>
+					<_hname type="a">itsCloud</_hname>
+					<_hid type="a">GUID fe7ca9fb-28d2-49f3-9e85-af79f70698c4</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID fa861ce0-544f-442e-86b5-ae9df5993108</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsStore data for prediction</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::10:48:29</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IUseCase</_hm2Class>
+					<_hfilename type="a">.\DATA_PROCESSOR.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::TOP_REQUIREMENT::DATA_PROCESSOR</_hsubsystem>
+					<_hname type="a">Store data for prediction</_hname>
+					<_hid type="a">GUID ce9b21b8-5232-4120-8222-d412e7d8221e</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\DATA_PROCESSOR.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::TOP_REQUIREMENT::DATA_PROCESSOR</_hsubsystem>
+					<_hclass type="a">Store data for prediction</_hclass>
+					<_hname type="a">itsCloud</_hname>
+					<_hid type="a">GUID e73f694e-8cbd-492f-9575-f8e71f52df91</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
 		<IActor type="e">
 			<_id type="a">GUID 6f1461be-3079-4707-abbf-faf7c8ce8c6f</_id>
 			<_myState type="a">8192</_myState>
@@ -693,7 +755,7 @@
 			<_id type="a">GUID e7b3d035-7b38-4865-aebf-624633464a4d</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Operator</_name>
-			<_modifiedTimeWeak type="a">12.13.2024::13:57:1</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">12.16.2024::10:37:6</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -701,8 +763,8 @@
 					<_hid type="a">GUID 4898eb4b-2565-4b62-99de-9584473e7754</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">12.13.2024::13:57:1</_modifiedTime>
-			<weakCGTime type="a">12.13.2024::13:57:1</weakCGTime>
+			<_modifiedTime type="a">12.16.2024::10:37:6</_modifiedTime>
+			<weakCGTime type="a">12.16.2024::10:37:6</weakCGTime>
 			<strongCGTime type="a">12.13.2024::13:56:53</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -711,6 +773,8 @@
 			<_classModifier type="a">Unspecified</_classModifier>
 			<AggregatesList type="e">
 				<value>GUID 68255ae5-a545-46f5-95cb-790cff6bd7fc</value>
+				<value>GUID 1bcc0579-0f47-46a7-a65e-760bef3d0ddf</value>
+				<value>GUID fc06f59a-c112-4337-954f-398bf0d2430e</value>
 			</AggregatesList>
 		</IActor>
 		<IAssociationEnd type="e">
@@ -730,6 +794,64 @@
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hid type="a">GUID 8dade77e-3ebf-442c-a107-4e606129523c</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 1bcc0579-0f47-46a7-a65e-760bef3d0ddf</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsSet Calculation Variable</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::10:37:0</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IUseCase</_hm2Class>
+					<_hfilename type="a">.\DATA_PROCESSOR.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::TOP_REQUIREMENT::DATA_PROCESSOR</_hsubsystem>
+					<_hname type="a">Set Calculation Variable</_hname>
+					<_hid type="a">GUID 6e2e955e-6320-43f3-9496-f8ad488d54a1</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\DATA_PROCESSOR.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::TOP_REQUIREMENT::DATA_PROCESSOR</_hsubsystem>
+					<_hclass type="a">Set Calculation Variable</_hclass>
+					<_hname type="a">itsOperator</_hname>
+					<_hid type="a">GUID 6a7a3669-cb0a-4838-9e3f-09f3dcc0bd95</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID fc06f59a-c112-4337-954f-398bf0d2430e</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsPredefine Geographical Variables</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::10:37:6</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IUseCase</_hm2Class>
+					<_hfilename type="a">.\DATA_PROCESSOR.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::TOP_REQUIREMENT::DATA_PROCESSOR</_hsubsystem>
+					<_hname type="a">Predefine Geographical Variables</_hname>
+					<_hid type="a">GUID 93292aab-ffde-4152-a11b-d40c990286ab</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\DATA_PROCESSOR.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::TOP_REQUIREMENT::DATA_PROCESSOR</_hsubsystem>
+					<_hclass type="a">Predefine Geographical Variables</_hclass>
+					<_hname type="a">itsOperator</_hname>
+					<_hid type="a">GUID 98e17fed-ff86-4df6-a06c-efe2262b1f98</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>
