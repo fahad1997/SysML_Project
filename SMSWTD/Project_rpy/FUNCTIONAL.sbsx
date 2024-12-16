@@ -12,10 +12,10 @@
 			<_id type="a">GUID 0eb5605d-e329-4540-94e3-4befabff7872</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">FUNCTIONAL</_name>
-			<_modifiedTimeWeak type="a">12.16.2024::10:4:57</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.16.2024::10:3:58</_modifiedTime>
+			<_modifiedTimeWeak type="a">12.16.2024::11:12:17</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::11:5:35</_modifiedTime>
 			<_lastID type="a">23</_lastID>
-			<weakCGTime type="a">12.16.2024::10:4:57</weakCGTime>
+			<weakCGTime type="a">12.16.2024::11:12:17</weakCGTime>
 			<strongCGTime type="a">12.16.2024::9:32:19</strongCGTime>
 			<_defaultComposite type="s">GUID cb29d38c-18f2-4118-b94a-3b20ec9702c8</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -95,10 +95,6 @@
 			<_id type="a">GUID fcea8f8f-cb8a-40fb-8301-cbf2e12253c1</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Dashboard</_name>
-			<Annotations type="c">
-				<IRPYRawContainer type="e">
-				</IRPYRawContainer>
-			</Annotations>
 			<_modifiedTimeWeak type="a">12.16.2024::10:3:58</_modifiedTimeWeak>
 			<_modifiedTime type="a">12.16.2024::10:3:58</_modifiedTime>
 			<_lastID type="a">14</_lastID>
@@ -2472,8 +2468,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.16.2024::10:3:58</_modifiedTime>
-			<_lastModifiedTime type="a">12.16.2024::10:3:58</_lastModifiedTime>
+			<_modifiedTime type="a">12.16.2024::10:51:57</_modifiedTime>
+			<_lastModifiedTime type="a">12.16.2024::10:51:57</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -3565,14 +3561,14 @@
 					<_hm2Class type="a">IRequirement</_hm2Class>
 					<_hfilename type="a">.\DASHBOARD.sbsx</_hfilename>
 					<_hsubsystem type="a">SMSWTD_SYSTEM::TOP_REQUIREMENT::DASHBOARD</_hsubsystem>
-					<_hname type="a">OperatorLogin</_hname>
+					<_hname type="a">UserLogin</_hname>
 					<_hid type="a">GUID 5bdd05c8-5a4d-4cf8-8258-0e5b1d33e865</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID fce099ed-04d3-46e9-8e3f-1cedaf9b75ef</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">OperatorLogin</m_str>
+					<m_str type="a">UserLogin</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -3670,14 +3666,14 @@
 					<_hm2Class type="a">IRequirement</_hm2Class>
 					<_hfilename type="a">.\DASHBOARD.sbsx</_hfilename>
 					<_hsubsystem type="a">SMSWTD_SYSTEM::TOP_REQUIREMENT::DASHBOARD</_hsubsystem>
-					<_hname type="a">OperatorAccessManagement</_hname>
+					<_hname type="a">UserAccessManagement</_hname>
 					<_hid type="a">GUID b56c1358-e88a-4e8b-8eff-7a0968e90579</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID fce099ed-04d3-46e9-8e3f-1cedaf9b75ef</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">OperatorAccessManagement</m_str>
+					<m_str type="a">UserAccessManagement</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
