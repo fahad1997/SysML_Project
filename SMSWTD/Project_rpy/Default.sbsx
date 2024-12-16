@@ -12,10 +12,10 @@
 			<_id type="a">GUID af8f262a-9c9a-42c5-8ffe-b06182211503</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Default</_name>
-			<_modifiedTimeWeak type="a">12.16.2024::8:56:9</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.16.2024::8:56:25</_modifiedTime>
-			<_lastID type="a">17</_lastID>
-			<weakCGTime type="a">12.16.2024::8:56:9</weakCGTime>
+			<_modifiedTimeWeak type="a">12.16.2024::15:32:18</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::15:32:18</_modifiedTime>
+			<_lastID type="a">18</_lastID>
+			<weakCGTime type="a">12.16.2024::15:32:18</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_defaultComposite type="s">GUID 96317464-d5db-4a32-8120-d8d10e95687a</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -32,6 +32,7 @@
 				<value>GUID 6f1461be-3079-4707-abbf-faf7c8ce8c6f</value>
 				<value>GUID e7b3d035-7b38-4865-aebf-624633464a4d</value>
 				<value>GUID 5399c6a7-0302-44f2-9fee-1b4e641227eb</value>
+				<value>GUID a0468b6d-8705-44d9-ade6-4f565ace09e7</value>
 			</AggregatesList>
 		</ISubsystem>
 		<IClass type="e">
@@ -65,16 +66,9 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">12.13.2024::13:54:36</_modifiedTimeWeak>
-			<_theMainDiagram type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IDiagram</_hm2Class>
-					<_hname type="a">Model1</_hname>
-					<_hid type="a">GUID 4898eb4b-2565-4b62-99de-9584473e7754</_hid>
-				</IHandle>
-			</_theMainDiagram>
-			<_modifiedTime type="a">12.13.2024::13:54:36</_modifiedTime>
-			<weakCGTime type="a">12.13.2024::13:54:36</weakCGTime>
+			<_modifiedTimeWeak type="a">12.16.2024::15:31:57</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::15:31:57</_modifiedTime>
+			<weakCGTime type="a">12.16.2024::15:31:57</weakCGTime>
 			<strongCGTime type="a">12.13.2024::13:50:33</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -124,16 +118,9 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">12.13.2024::13:55:4</_modifiedTimeWeak>
-			<_theMainDiagram type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IDiagram</_hm2Class>
-					<_hname type="a">Model1</_hname>
-					<_hid type="a">GUID 4898eb4b-2565-4b62-99de-9584473e7754</_hid>
-				</IHandle>
-			</_theMainDiagram>
-			<_modifiedTime type="a">12.13.2024::13:55:4</_modifiedTime>
-			<weakCGTime type="a">12.13.2024::13:55:4</weakCGTime>
+			<_modifiedTimeWeak type="a">12.16.2024::15:31:57</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::15:31:57</_modifiedTime>
+			<weakCGTime type="a">12.16.2024::15:31:57</weakCGTime>
 			<strongCGTime type="a">12.13.2024::13:50:41</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -183,16 +170,9 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">12.13.2024::13:59:28</_modifiedTimeWeak>
-			<_theMainDiagram type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IDiagram</_hm2Class>
-					<_hname type="a">Model1</_hname>
-					<_hid type="a">GUID 4898eb4b-2565-4b62-99de-9584473e7754</_hid>
-				</IHandle>
-			</_theMainDiagram>
-			<_modifiedTime type="a">12.13.2024::13:59:28</_modifiedTime>
-			<weakCGTime type="a">12.13.2024::13:59:28</weakCGTime>
+			<_modifiedTimeWeak type="a">12.16.2024::15:32:32</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::15:32:32</_modifiedTime>
+			<weakCGTime type="a">12.16.2024::15:32:32</weakCGTime>
 			<strongCGTime type="a">12.13.2024::13:50:52</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -206,9 +186,9 @@
 				<value>GUID cade8b69-deda-4609-925b-6026328f55e2</value>
 				<value>GUID 0aaed42a-814f-48ec-8087-961b8907d2d3</value>
 				<value>GUID d0cff52a-634c-49f8-bc3f-9c2f24fded69</value>
-				<value>GUID 8dade77e-3ebf-442c-a107-4e606129523c</value>
-				<value>GUID 4ed7a961-685d-4418-a296-05d059b568a4</value>
 				<value>GUID 300f956f-47eb-447a-9abb-7d09b3d7a9ad</value>
+				<value>GUID 6857fbdb-c0ee-485b-95cd-6a263643da7b</value>
+				<value>GUID c0a4cf59-f59c-490c-9010-5b5a2e74a88c</value>
 			</AggregatesList>
 		</IClass>
 		<IAssociationEnd type="e">
@@ -324,9 +304,9 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID d0cff52a-634c-49f8-bc3f-9c2f24fded69</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsPeople</_name>
-			<_modifiedTimeWeak type="a">12.13.2024::13:56:29</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.13.2024::13:56:29</_modifiedTime>
+			<_name type="a">itsAlerted Group</_name>
+			<_modifiedTimeWeak type="a">12.16.2024::15:27:44</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::15:27:44</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -338,50 +318,6 @@
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hid type="a">GUID d6a14802-450a-4054-83c8-eea0b03f910f</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID 8dade77e-3ebf-442c-a107-4e606129523c</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsOperator</_name>
-			<_modifiedTimeWeak type="a">12.13.2024::13:57:1</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.13.2024::13:57:1</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IActor</_hm2Class>
-					<_hid type="a">GUID e7b3d035-7b38-4865-aebf-624633464a4d</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hid type="a">GUID 68255ae5-a545-46f5-95cb-790cff6bd7fc</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID 4ed7a961-685d-4418-a296-05d059b568a4</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsResearcher</_name>
-			<_modifiedTimeWeak type="a">12.13.2024::13:57:28</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.13.2024::13:57:28</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IActor</_hm2Class>
-					<_hid type="a">GUID 5399c6a7-0302-44f2-9fee-1b4e641227eb</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hid type="a">GUID 4473c340-9399-4136-a83a-1692a3da1b88</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>
@@ -409,6 +345,50 @@
 			<_linkType type="a">Assoc</_linkType>
 			<_navigability type="a">Navigable</_navigability>
 		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 6857fbdb-c0ee-485b-95cd-6a263643da7b</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsCloud</_name>
+			<_modifiedTimeWeak type="a">12.16.2024::15:26:22</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::15:26:22</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID 6ee65560-da79-4ba4-95a1-393f21a61aa5</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hid type="a">GUID 4577d254-e779-4166-a12f-09ff2d8c109e</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID c0a4cf59-f59c-490c-9010-5b5a2e74a88c</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsUser</_name>
+			<_modifiedTimeWeak type="a">12.16.2024::15:32:32</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::15:32:32</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IActor</_hm2Class>
+					<_hid type="a">GUID a0468b6d-8705-44d9-ade6-4f565ace09e7</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hid type="a">GUID 252c0871-9547-42ce-92b9-a7d84968155a</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
 		<IClass type="e">
 			<_id type="a">GUID 138df825-37a1-454f-8c41-dcbf82cdc4fc</_id>
 			<_myState type="a">8192</_myState>
@@ -426,16 +406,9 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">12.13.2024::13:55:12</_modifiedTimeWeak>
-			<_theMainDiagram type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IDiagram</_hm2Class>
-					<_hname type="a">Model1</_hname>
-					<_hid type="a">GUID 4898eb4b-2565-4b62-99de-9584473e7754</_hid>
-				</IHandle>
-			</_theMainDiagram>
-			<_modifiedTime type="a">12.13.2024::13:55:12</_modifiedTime>
-			<weakCGTime type="a">12.13.2024::13:55:12</weakCGTime>
+			<_modifiedTimeWeak type="a">12.16.2024::15:31:57</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::15:31:57</_modifiedTime>
+			<weakCGTime type="a">12.16.2024::15:31:57</weakCGTime>
 			<strongCGTime type="a">12.13.2024::13:53:39</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -508,16 +481,9 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">12.13.2024::13:55:17</_modifiedTimeWeak>
-			<_theMainDiagram type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IDiagram</_hm2Class>
-					<_hname type="a">Model1</_hname>
-					<_hid type="a">GUID 4898eb4b-2565-4b62-99de-9584473e7754</_hid>
-				</IHandle>
-			</_theMainDiagram>
-			<_modifiedTime type="a">12.13.2024::13:55:17</_modifiedTime>
-			<weakCGTime type="a">12.13.2024::13:55:17</weakCGTime>
+			<_modifiedTimeWeak type="a">12.16.2024::15:31:57</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::15:31:57</_modifiedTime>
+			<weakCGTime type="a">12.16.2024::15:31:57</weakCGTime>
 			<strongCGTime type="a">12.13.2024::13:54:0</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -567,16 +533,9 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">12.13.2024::13:59:28</_modifiedTimeWeak>
-			<_theMainDiagram type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IDiagram</_hm2Class>
-					<_hname type="a">Model1</_hname>
-					<_hid type="a">GUID 4898eb4b-2565-4b62-99de-9584473e7754</_hid>
-				</IHandle>
-			</_theMainDiagram>
-			<_modifiedTime type="a">12.13.2024::13:59:28</_modifiedTime>
-			<weakCGTime type="a">12.13.2024::13:59:28</weakCGTime>
+			<_modifiedTimeWeak type="a">12.16.2024::15:31:57</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::15:31:57</_modifiedTime>
+			<weakCGTime type="a">12.16.2024::15:31:57</weakCGTime>
 			<strongCGTime type="a">12.13.2024::13:59:18</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -626,38 +585,49 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">12.16.2024::8:56:16</_modifiedTimeWeak>
-			<_theMainDiagram type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IDiagram</_hm2Class>
-					<_hname type="a">Model1</_hname>
-					<_hid type="a">GUID 4898eb4b-2565-4b62-99de-9584473e7754</_hid>
-				</IHandle>
-			</_theMainDiagram>
-			<_modifiedTime type="a">12.16.2024::8:56:16</_modifiedTime>
-			<weakCGTime type="a">12.16.2024::8:56:16</weakCGTime>
+			<_modifiedTimeWeak type="a">12.16.2024::15:31:57</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::15:31:57</_modifiedTime>
+			<weakCGTime type="a">12.16.2024::15:31:57</weakCGTime>
 			<strongCGTime type="a">12.16.2024::8:56:16</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID 4577d254-e779-4166-a12f-09ff2d8c109e</value>
+			</AggregatesList>
 		</IClass>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 4577d254-e779-4166-a12f-09ff2d8c109e</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsSMSWTD</_name>
+			<_modifiedTimeWeak type="a">12.16.2024::15:26:22</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::15:26:22</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IClass</_hm2Class>
+					<_hid type="a">GUID d2da3485-e31c-4347-99c4-ac54ba374dea</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hid type="a">GUID 6857fbdb-c0ee-485b-95cd-6a263643da7b</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
 		<IActor type="e">
 			<_id type="a">GUID 6f1461be-3079-4707-abbf-faf7c8ce8c6f</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">People</_name>
-			<_modifiedTimeWeak type="a">12.13.2024::13:56:29</_modifiedTimeWeak>
-			<_theMainDiagram type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IDiagram</_hm2Class>
-					<_hname type="a">Model1</_hname>
-					<_hid type="a">GUID 4898eb4b-2565-4b62-99de-9584473e7754</_hid>
-				</IHandle>
-			</_theMainDiagram>
-			<_modifiedTime type="a">12.13.2024::13:56:29</_modifiedTime>
-			<weakCGTime type="a">12.13.2024::13:56:29</weakCGTime>
-			<strongCGTime type="a">12.13.2024::13:56:18</strongCGTime>
+			<_name type="a">Alerted Group</_name>
+			<_modifiedTimeWeak type="a">12.16.2024::15:31:57</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::15:31:57</_modifiedTime>
+			<weakCGTime type="a">12.16.2024::15:31:57</weakCGTime>
+			<strongCGTime type="a">12.16.2024::15:27:44</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -671,8 +641,8 @@
 			<_id type="a">GUID d6a14802-450a-4054-83c8-eea0b03f910f</_id>
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsSMSWTD</_name>
-			<_modifiedTimeWeak type="a">12.13.2024::13:56:29</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.13.2024::13:56:29</_modifiedTime>
+			<_modifiedTimeWeak type="a">12.16.2024::15:27:44</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::15:27:44</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -693,78 +663,106 @@
 			<_id type="a">GUID e7b3d035-7b38-4865-aebf-624633464a4d</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Operator</_name>
-			<_modifiedTimeWeak type="a">12.13.2024::13:57:1</_modifiedTimeWeak>
-			<_theMainDiagram type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IDiagram</_hm2Class>
-					<_hname type="a">Model1</_hname>
-					<_hid type="a">GUID 4898eb4b-2565-4b62-99de-9584473e7754</_hid>
-				</IHandle>
-			</_theMainDiagram>
-			<_modifiedTime type="a">12.13.2024::13:57:1</_modifiedTime>
-			<weakCGTime type="a">12.13.2024::13:57:1</weakCGTime>
+			<_modifiedTimeWeak type="a">12.16.2024::15:33:37</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::15:33:37</_modifiedTime>
+			<weakCGTime type="a">12.16.2024::15:33:37</weakCGTime>
 			<strongCGTime type="a">12.13.2024::13:56:53</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
 			</_itsStateChart>
+			<Associations type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</Associations>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<AggregatesList type="e">
-				<value>GUID 68255ae5-a545-46f5-95cb-790cff6bd7fc</value>
+				<value>GUID 15ea150c-8d0c-40df-82ed-ca74270b806c</value>
 			</AggregatesList>
 		</IActor>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID 68255ae5-a545-46f5-95cb-790cff6bd7fc</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsSMSWTD</_name>
-			<_modifiedTimeWeak type="a">12.13.2024::13:57:1</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.13.2024::13:57:1</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hid type="a">GUID d2da3485-e31c-4347-99c4-ac54ba374dea</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hid type="a">GUID 8dade77e-3ebf-442c-a107-4e606129523c</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
+		<IGeneralization type="e">
+			<_id type="a">GUID 15ea150c-8d0c-40df-82ed-ca74270b806c</_id>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IActor</_hm2Class>
+					<_hid type="a">GUID a0468b6d-8705-44d9-ade6-4f565ace09e7</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_inheritanceType type="a">iPublic</_inheritanceType>
+			<_isVirtual type="a">0</_isVirtual>
+		</IGeneralization>
 		<IActor type="e">
 			<_id type="a">GUID 5399c6a7-0302-44f2-9fee-1b4e641227eb</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Researcher</_name>
-			<_modifiedTimeWeak type="a">12.13.2024::13:57:28</_modifiedTimeWeak>
+			<OwnedDependencies type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</OwnedDependencies>
+			<_modifiedTimeWeak type="a">12.16.2024::15:33:30</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::15:33:30</_modifiedTime>
+			<weakCGTime type="a">12.16.2024::15:33:30</weakCGTime>
+			<strongCGTime type="a">12.13.2024::13:57:18</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<Associations type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</Associations>
+			<_classModifier type="a">Unspecified</_classModifier>
+			<AggregatesList type="e">
+				<value>GUID 7d7d52de-22db-4a1a-b3ae-60dce56f6177</value>
+			</AggregatesList>
+		</IActor>
+		<IGeneralization type="e">
+			<_id type="a">GUID 7d7d52de-22db-4a1a-b3ae-60dce56f6177</_id>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IActor</_hm2Class>
+					<_hid type="a">GUID a0468b6d-8705-44d9-ade6-4f565ace09e7</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_inheritanceType type="a">iPublic</_inheritanceType>
+			<_isVirtual type="a">0</_isVirtual>
+		</IGeneralization>
+		<IActor type="e">
+			<_id type="a">GUID a0468b6d-8705-44d9-ade6-4f565ace09e7</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">User</_name>
+			<_modifiedTimeWeak type="a">12.16.2024::15:32:32</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
-					<_hname type="a">Model1</_hname>
-					<_hid type="a">GUID 4898eb4b-2565-4b62-99de-9584473e7754</_hid>
+					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hname type="a">DOMAIN_CONTEXT</_hname>
+					<_hid type="a">GUID 4118b103-03dc-43cf-821d-0185af648046</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">12.13.2024::13:57:28</_modifiedTime>
-			<weakCGTime type="a">12.13.2024::13:57:28</weakCGTime>
-			<strongCGTime type="a">12.13.2024::13:57:18</strongCGTime>
+			<_modifiedTime type="a">12.16.2024::15:32:32</_modifiedTime>
+			<weakCGTime type="a">12.16.2024::15:32:32</weakCGTime>
+			<strongCGTime type="a">12.16.2024::15:32:21</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
 			<AggregatesList type="e">
-				<value>GUID 4473c340-9399-4136-a83a-1692a3da1b88</value>
+				<value>GUID 252c0871-9547-42ce-92b9-a7d84968155a</value>
 			</AggregatesList>
 		</IActor>
 		<IAssociationEnd type="e">
-			<_id type="a">GUID 4473c340-9399-4136-a83a-1692a3da1b88</_id>
+			<_id type="a">GUID 252c0871-9547-42ce-92b9-a7d84968155a</_id>
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsSMSWTD</_name>
-			<_modifiedTimeWeak type="a">12.13.2024::13:57:28</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.13.2024::13:57:28</_modifiedTime>
+			<_modifiedTimeWeak type="a">12.16.2024::15:32:32</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::15:32:32</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -775,7 +773,7 @@
 			<_inverse type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hid type="a">GUID 4ed7a961-685d-4418-a296-05d059b568a4</_hid>
+					<_hid type="a">GUID c0a4cf59-f59c-490c-9010-5b5a2e74a88c</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>
