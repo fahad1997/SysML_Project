@@ -12,7 +12,7 @@
 			<_id type="a">GUID e4beaf1a-8a40-47c0-9103-c197d3d1882c</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">DATA_PROCESSOR</_name>
-			<_modifiedTimeWeak type="a">12.16.2024::9:55:14</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">12.16.2024::10:10:4</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -22,16 +22,25 @@
 					<_hid type="a">GUID b7c67ab5-95fa-4a2c-bf1b-48d7bdd1ea52</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">12.16.2024::9:55:14</_modifiedTime>
-			<weakCGTime type="a">12.16.2024::9:55:14</weakCGTime>
+			<_modifiedTime type="a">12.16.2024::10:10:4</_modifiedTime>
+			<_lastID type="a">1</_lastID>
+			<weakCGTime type="a">12.16.2024::10:10:4</weakCGTime>
 			<strongCGTime type="a">12.16.2024::9:53:0</strongCGTime>
 			<_defaultComposite type="s">GUID 14e789d4-a10c-4005-98dc-4ddea007a4e2</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
 			<_configurationRelatedTime type="a">12.16.2024::9:53:40</_configurationRelatedTime>
 			<AggregatesList type="e">
+				<value>GUID c15937dd-eed4-4449-ad8e-24dc2077afff</value>
 				<value>GUID 14e789d4-a10c-4005-98dc-4ddea007a4e2</value>
 			</AggregatesList>
 		</ISubsystem>
+		<IRequirement type="e">
+			<_id type="a">GUID c15937dd-eed4-4449-ad8e-24dc2077afff</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">requirement_0</_name>
+			<_modifiedTimeWeak type="a">12.16.2024::10:10:4</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::10:10:4</_modifiedTime>
+		</IRequirement>
 		<IClass type="e">
 			<_id type="a">GUID 14e789d4-a10c-4005-98dc-4ddea007a4e2</_id>
 			<_myState type="a">40960</_myState>
