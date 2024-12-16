@@ -12,10 +12,10 @@
 			<_id type="a">GUID 0eb5605d-e329-4540-94e3-4befabff7872</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">FUNCTIONAL</_name>
-			<_modifiedTimeWeak type="a">12.16.2024::15:17:26</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.16.2024::15:27:26</_modifiedTime>
+			<_modifiedTimeWeak type="a">12.16.2024::20:26:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::20:10:9</_modifiedTime>
 			<_lastID type="a">23</_lastID>
-			<weakCGTime type="a">12.16.2024::15:17:26</weakCGTime>
+			<weakCGTime type="a">12.16.2024::20:26:0</weakCGTime>
 			<strongCGTime type="a">12.16.2024::9:32:19</strongCGTime>
 			<_defaultComposite type="s">GUID cb29d38c-18f2-4118-b94a-3b20ec9702c8</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -27,7 +27,6 @@
 				<value>GUID 10d40e8d-336d-46a6-9584-05c342a382f7</value>
 				<value>GUID 8facb1c3-9aad-475e-bfa0-ccb66ee1a764</value>
 				<value>GUID 5bd4e50c-4028-49f7-ba75-182a5ac431ce</value>
-				<value>GUID 16cf168c-f03b-4c27-a357-1c5536b85f7d</value>
 				<value>GUID 9f8a3a5c-11e0-403d-afd0-cf924226a277</value>
 				<value>GUID 39bc56dd-edaf-44bc-b8c1-04a61db24e1b</value>
 				<value>GUID 944f4712-a55d-489a-bc38-9461d8aaeb5b</value>
@@ -272,8 +271,12 @@
 			<_id type="a">GUID 8facb1c3-9aad-475e-bfa0-ccb66ee1a764</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">DataProcessor</_name>
-			<_modifiedTimeWeak type="a">12.16.2024::9:7:55</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.16.2024::9:7:55</_modifiedTime>
+			<Annotations type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</Annotations>
+			<_modifiedTimeWeak type="a">12.16.2024::20:9:19</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.16.2024::20:9:19</_modifiedTime>
 			<_lastID type="a">9</_lastID>
 			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
 \viewkind4\uc1\pard\fs20 Process the collected data from different sensors.\par%0D
@@ -285,10 +288,6 @@
 				<value>GUID 1f473830-6153-483f-9e56-cbf11cf63e3b</value>
 				<value>GUID cccceabe-5c58-46d7-b0d3-46ead6695562</value>
 				<value>GUID 8df01e2b-2529-49d8-a1d9-30327095b485</value>
-				<value>GUID 9aee74ae-b49e-4a87-b722-8af3648ae7bc</value>
-				<value>GUID 473914f9-4615-4f2c-b553-e09efadee69d</value>
-				<value>GUID 8e46bc3c-643d-499e-8c18-6a73cf617504</value>
-				<value>GUID ea20f9b9-7e96-4a64-9e63-53646d81d237</value>
 			</AggregatesList>
 		</IRequirement>
 		<IDependency type="e">
@@ -357,6 +356,9 @@
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\DATA_PROCESSOR.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::TOP_REQUIREMENT::DATA_PROCESSOR</_hsubsystem>
+					<_hname type="a">GeographicalVariable</_hname>
 					<_hid type="a">GUID 16cf168c-f03b-4c27-a357-1c5536b85f7d</_hid>
 				</INObjectHandle>
 			</_dependsOn>
@@ -367,54 +369,6 @@
 				</INObjectHandle>
 			</_dependent>
 		</IDependency>
-		<IRequirement type="e">
-			<_id type="a">GUID 9aee74ae-b49e-4a87-b722-8af3648ae7bc</_id>
-			<_myState type="a">8192</_myState>
-			<_name type="a">ProcessImpactDirection</_name>
-			<_modifiedTimeWeak type="a">12.13.2024::15:40:20</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.13.2024::15:40:20</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 Get the impact trajectory after processing the data collected from the sensors.\par%0D
-}%0D
-</_body>
-			<reqID type="a">2.1</reqID>
-		</IRequirement>
-		<IRequirement type="e">
-			<_id type="a">GUID 473914f9-4615-4f2c-b553-e09efadee69d</_id>
-			<_myState type="a">8192</_myState>
-			<_name type="a">ProcessSeaWaveActivity</_name>
-			<_modifiedTimeWeak type="a">12.13.2024::15:41:25</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.13.2024::15:41:25</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 Process the sea weather activity based on the seismic, water pressure and water flow sensor data.\par%0D
-}%0D
-</_body>
-			<reqID type="a">2.2</reqID>
-		</IRequirement>
-		<IRequirement type="e">
-			<_id type="a">GUID 8e46bc3c-643d-499e-8c18-6a73cf617504</_id>
-			<_myState type="a">8192</_myState>
-			<_name type="a">ProcessWeatherActivity</_name>
-			<_modifiedTimeWeak type="a">12.13.2024::15:42:10</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.13.2024::15:42:10</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 Process the weather activity based on the storm data, weather data and satellite images.\par%0D
-}%0D
-</_body>
-			<reqID type="a">2.3</reqID>
-		</IRequirement>
-		<IRequirement type="e">
-			<_id type="a">GUID ea20f9b9-7e96-4a64-9e63-53646d81d237</_id>
-			<_myState type="a">8192</_myState>
-			<_name type="a">SetCalculationVariable</_name>
-			<_modifiedTimeWeak type="a">12.13.2024::15:43:1</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.13.2024::15:43:1</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 Predifine the thresholds for the sensor's that will be used for the calculation.\par%0D
-}%0D
-</_body>
-			<reqID type="a">2.4</reqID>
-		</IRequirement>
 		<IRequirement type="e">
 			<_id type="a">GUID 5bd4e50c-4028-49f7-ba75-182a5ac431ce</_id>
 			<_myState type="a">8192</_myState>
@@ -468,34 +422,6 @@
 }%0D
 </_body>
 			<reqID type="a">6.2</reqID>
-		</IRequirement>
-		<IRequirement type="e">
-			<_id type="a">GUID 16cf168c-f03b-4c27-a357-1c5536b85f7d</_id>
-			<_myState type="a">8192</_myState>
-			<_name type="a">GeographicalVariable</_name>
-			<_modifiedTimeWeak type="a">12.16.2024::9:5:23</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.16.2024::9:5:23</_modifiedTime>
-			<_lastID type="a">1</_lastID>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 Define the values for the environment varible.\par%0D
-}%0D
-</_body>
-			<reqID type="a">3</reqID>
-			<AggregatesList type="e">
-				<value>GUID 2aad79e5-7641-49bf-b3f6-eb86c90ca03a</value>
-			</AggregatesList>
-		</IRequirement>
-		<IRequirement type="e">
-			<_id type="a">GUID 2aad79e5-7641-49bf-b3f6-eb86c90ca03a</_id>
-			<_myState type="a">8192</_myState>
-			<_name type="a">PredefineEnvironmentVariable</_name>
-			<_modifiedTimeWeak type="a">12.13.2024::15:49:40</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.13.2024::15:49:40</_modifiedTime>
-			<_body type="a">{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}%0D
-\viewkind4\uc1\pard\fs20 Predefine the environment variable such as the height of the land, normal temperature, height of the waves and etc.\par%0D
-}%0D
-</_body>
-			<reqID type="a">3.1</reqID>
 		</IRequirement>
 		<IRequirement type="e">
 			<_id type="a">GUID 9f8a3a5c-11e0-403d-afd0-cf924226a277</_id>
@@ -702,8 +628,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.16.2024::9:35:11</_modifiedTime>
-			<_lastModifiedTime type="a">12.16.2024::9:35:11</_lastModifiedTime>
+			<_modifiedTime type="a">12.16.2024::20:10:9</_modifiedTime>
+			<_lastModifiedTime type="a">12.16.2024::20:10:9</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -1763,6 +1689,9 @@
 			<m_pModelObject type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IRequirement</_hm2Class>
+					<_hfilename type="a">.\DATA_PROCESSOR.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::TOP_REQUIREMENT::DATA_PROCESSOR</_hsubsystem>
+					<_hname type="a">GeographicalVariable</_hname>
 					<_hid type="a">GUID 16cf168c-f03b-4c27-a357-1c5536b85f7d</_hid>
 				</IHandle>
 			</m_pModelObject>
@@ -2468,8 +2397,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.16.2024::10:51:57</_modifiedTime>
-			<_lastModifiedTime type="a">12.16.2024::10:51:57</_lastModifiedTime>
+			<_modifiedTime type="a">12.16.2024::20:10:9</_modifiedTime>
+			<_lastModifiedTime type="a">12.16.2024::20:10:9</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -3823,8 +3752,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.16.2024::9:35:11</_modifiedTime>
-			<_lastModifiedTime type="a">12.16.2024::9:35:11</_lastModifiedTime>
+			<_modifiedTime type="a">12.16.2024::20:10:9</_modifiedTime>
+			<_lastModifiedTime type="a">12.16.2024::20:10:9</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -4191,8 +4120,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.16.2024::9:47:54</_modifiedTime>
-			<_lastModifiedTime type="a">12.16.2024::9:47:54</_lastModifiedTime>
+			<_modifiedTime type="a">12.16.2024::20:10:9</_modifiedTime>
+			<_lastModifiedTime type="a">12.16.2024::20:10:9</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -5151,8 +5080,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.16.2024::9:51:19</_modifiedTime>
-			<_lastModifiedTime type="a">12.16.2024::9:51:19</_lastModifiedTime>
+			<_modifiedTime type="a">12.16.2024::20:10:9</_modifiedTime>
+			<_lastModifiedTime type="a">12.16.2024::20:10:9</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
