@@ -13,7 +13,7 @@
 			<_myState type="a">8192</_myState>
 			<_name type="a">ANALYSIS</_name>
 			<_modifiedTimeWeak type="a">12.17.2024::15:22:51</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.17.2024::15:22:51</_modifiedTime>
+			<_modifiedTime type="a">12.17.2024::15:29:20</_modifiedTime>
 			<_lastID type="a">47</_lastID>
 			<weakCGTime type="a">12.17.2024::15:22:51</weakCGTime>
 			<strongCGTime type="a">12.17.2024::13:22:28</strongCGTime>
@@ -3908,8 +3908,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.17.2024::15:24:32</_modifiedTime>
-			<_lastModifiedTime type="a">12.17.2024::15:24:32</_lastModifiedTime>
+			<_modifiedTime type="a">12.17.2024::15:39:14</_modifiedTime>
+			<_lastModifiedTime type="a">12.17.2024::15:39:14</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -4353,7 +4353,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">2056</m_drawBehavior>
-			<m_transform type="a">0.147309 0 0 0.144385 310.705 408.497 </m_transform>
+			<m_transform type="a">0.147309 0 0 0.144385 310.705 418.497 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -4440,7 +4440,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">2056</m_drawBehavior>
-			<m_transform type="a">0.186969 0 0 0.144385 39.6261 408.497 </m_transform>
+			<m_transform type="a">0.186969 0 0 0.144385 39.6261 418.497 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -5302,6 +5302,35 @@
 		</CGIAssociationEnd>
 		<CGIClass type="e">
 			<_id type="a">GUID ce689075-1b1d-40a6-afa2-2875ad593262</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">General</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Graphics</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">FitBoxToItsTextuals</_Name>
+													<_Value type="a">False</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
 			<m_type type="a">87</m_type>
 			<m_pModelObject type="r">
 				<IHandle type="e">
@@ -5312,7 +5341,7 @@
 			<m_pParent type="s">GUID 03296f04-b336-4776-a6e0-83023a22c4cd</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">DataPublisher</m_str>
+					<m_str type="a">DashboardPublisher</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -5328,7 +5357,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">2056</m_drawBehavior>
-			<m_transform type="a">0.107649 0 0 0.144385 729.785 418.497 </m_transform>
+			<m_transform type="a">0.154863 0 0 0.144385 762.69 418.497 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -5436,12 +5465,12 @@
 					<m_nOrientationCtrlPt type="a">7</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_rpn>
-			<m_arrow type="a">2 895 415  815 415  </m_arrow>
+			<m_arrow type="a">2 895 415  885 415  </m_arrow>
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">2</m_line_style>
 			<m_SourcePort type="a">796 1451 </m_SourcePort>
-			<m_TargetPort type="a">792 329 </m_TargetPort>
+			<m_TargetPort type="a">790 329 </m_TargetPort>
 			<m_pInverseModelObject type="r">
 				<IAssociationEndHandle type="e">
 				</IAssociationEndHandle>
@@ -5481,6 +5510,7 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
+					<m_str type="a">itsDashboardPublisher</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -5615,12 +5645,12 @@
 					<m_nOrientationCtrlPt type="a">7</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_rpn>
-			<m_arrow type="a">2 360 359  758 359  </m_arrow>
+			<m_arrow type="a">2 360 359  803 359  </m_arrow>
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">2</m_line_style>
 			<m_SourcePort type="a">925 1451 </m_SourcePort>
-			<m_TargetPort type="a">262 329 </m_TargetPort>
+			<m_TargetPort type="a">260 329 </m_TargetPort>
 			<m_pInverseModelObject type="r">
 				<IAssociationEndHandle type="e">
 				</IAssociationEndHandle>
@@ -5660,6 +5690,7 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
+					<m_str type="a">itsDashboardPublisher</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -5757,7 +5788,7 @@
 			<m_pParent type="s">GUID 03296f04-b336-4776-a6e0-83023a22c4cd</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">DataStorage</m_str>
+					<m_str type="a">CloudStorage</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -5926,6 +5957,7 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
+					<m_str type="a">itsCloudStorage</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -6105,6 +6137,7 @@
 			</m_sourceRole>
 			<m_targetRole type="p">
 				<CGIText type="e">
+					<m_str type="a">itsCloudStorage</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -6239,7 +6272,7 @@
 					<m_nOrientationCtrlPt type="a">7</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_rpn>
-			<m_arrow type="a">2 834 396  182 396  </m_arrow>
+			<m_arrow type="a">2 834 385  182 385  </m_arrow>
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">2</m_line_style>
@@ -7501,15 +7534,15 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">12.17.2024::15:23:18</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">12.17.2024::15:30:53</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hid type="a">GUID f9f3d2dd-0edc-4262-90d6-3e1e48ec065c</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">12.17.2024::15:23:18</_modifiedTime>
-			<weakCGTime type="a">12.17.2024::15:23:18</weakCGTime>
+			<_modifiedTime type="a">12.17.2024::15:30:53</_modifiedTime>
+			<weakCGTime type="a">12.17.2024::15:30:53</weakCGTime>
 			<strongCGTime type="a">12.17.2024::13:22:28</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -7566,9 +7599,9 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 9ccbd618-e5ca-4e6f-921c-d8e03de0b890</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsDataPublisher</_name>
-			<_modifiedTimeWeak type="a">12.17.2024::14:47:41</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.17.2024::14:47:41</_modifiedTime>
+			<_name type="a">itsDashboardPublisher</_name>
+			<_modifiedTimeWeak type="a">12.17.2024::15:30:53</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.17.2024::15:30:53</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -7586,9 +7619,9 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 88e8d8ed-0775-492b-8a3d-9d0300d69687</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsDataStorage</_name>
-			<_modifiedTimeWeak type="a">12.17.2024::14:50:47</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.17.2024::14:50:47</_modifiedTime>
+			<_name type="a">itsCloudStorage</_name>
+			<_modifiedTimeWeak type="a">12.17.2024::15:30:25</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.17.2024::15:30:25</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -7620,15 +7653,15 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">12.17.2024::14:58:48</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">12.17.2024::15:30:53</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hid type="a">GUID f9f3d2dd-0edc-4262-90d6-3e1e48ec065c</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">12.17.2024::14:58:48</_modifiedTime>
-			<weakCGTime type="a">12.17.2024::14:58:48</weakCGTime>
+			<_modifiedTime type="a">12.17.2024::15:30:53</_modifiedTime>
+			<weakCGTime type="a">12.17.2024::15:30:53</weakCGTime>
 			<strongCGTime type="a">12.17.2024::13:22:28</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -7644,9 +7677,9 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID f7096d6e-b515-4e4a-9f7a-d2e55d61ebc7</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsDataPublisher</_name>
-			<_modifiedTimeWeak type="a">12.17.2024::14:47:36</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.17.2024::14:47:36</_modifiedTime>
+			<_name type="a">itsDashboardPublisher</_name>
+			<_modifiedTimeWeak type="a">12.17.2024::15:30:53</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.17.2024::15:30:53</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -7664,9 +7697,9 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID e9bad34d-c72f-4a13-8687-8367d079800d</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsDataStorage</_name>
-			<_modifiedTimeWeak type="a">12.17.2024::14:50:29</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.17.2024::14:50:29</_modifiedTime>
+			<_name type="a">itsCloudStorage</_name>
+			<_modifiedTimeWeak type="a">12.17.2024::15:30:25</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.17.2024::15:30:25</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
@@ -8214,7 +8247,7 @@
 		<IClass type="e">
 			<_id type="a">GUID 061ab5c9-1dc3-4194-af13-33cedeffe0e4</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">DataPublisher</_name>
+			<_name type="a">DashboardPublisher</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					
@@ -8228,16 +8261,16 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">12.17.2024::14:46:41</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">12.17.2024::15:30:53</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hid type="a">GUID f9f3d2dd-0edc-4262-90d6-3e1e48ec065c</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">12.17.2024::14:46:41</_modifiedTime>
-			<weakCGTime type="a">12.17.2024::14:46:41</weakCGTime>
-			<strongCGTime type="a">12.17.2024::14:46:41</strongCGTime>
+			<_modifiedTime type="a">12.17.2024::15:30:53</_modifiedTime>
+			<weakCGTime type="a">12.17.2024::15:30:53</weakCGTime>
+			<strongCGTime type="a">12.17.2024::15:30:53</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -8247,7 +8280,7 @@
 		<IClass type="e">
 			<_id type="a">GUID 950f66b6-03db-4162-9f72-0b545b7abcef</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">DataStorage</_name>
+			<_name type="a">CloudStorage</_name>
 			<Stereotypes type="c">
 				<IRPYRawContainer type="e">
 					
@@ -8261,16 +8294,16 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">12.17.2024::14:50:16</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">12.17.2024::15:30:25</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hid type="a">GUID f9f3d2dd-0edc-4262-90d6-3e1e48ec065c</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">12.17.2024::14:50:16</_modifiedTime>
-			<weakCGTime type="a">12.17.2024::14:50:16</weakCGTime>
-			<strongCGTime type="a">12.17.2024::14:50:16</strongCGTime>
+			<_modifiedTime type="a">12.17.2024::15:30:25</_modifiedTime>
+			<weakCGTime type="a">12.17.2024::15:30:25</weakCGTime>
+			<strongCGTime type="a">12.17.2024::15:30:25</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
 				</IHandle>
