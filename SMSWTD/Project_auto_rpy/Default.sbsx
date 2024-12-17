@@ -13,7 +13,7 @@
 			<_myState type="a">8192</_myState>
 			<_name type="a">Default</_name>
 			<_modifiedTimeWeak type="a">12.17.2024::15:11:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.17.2024::15:11:0</_modifiedTime>
+			<_modifiedTime type="a">12.17.2024::15:20:59</_modifiedTime>
 			<_lastID type="a">18</_lastID>
 			<weakCGTime type="a">12.17.2024::15:11:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -619,7 +619,7 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">12.17.2024::15:13:9</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">12.17.2024::15:30:50</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
@@ -629,9 +629,9 @@
 					<_hid type="a">GUID f4cdd290-2f01-484f-805e-bc6fa37758b1</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">12.17.2024::15:13:9</_modifiedTime>
+			<_modifiedTime type="a">12.17.2024::15:30:50</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">12.17.2024::15:13:9</weakCGTime>
+			<weakCGTime type="a">12.17.2024::15:30:50</weakCGTime>
 			<strongCGTime type="a">12.16.2024::8:56:16</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -641,7 +641,6 @@
 			<AggregatesList type="e">
 				<value>GUID a7f3395d-8a7f-42cd-848c-e77086e1dd42</value>
 				<value>GUID 4577d254-e779-4166-a12f-09ff2d8c109e</value>
-				<value>GUID a1c9117b-9212-4fd9-aa69-a6fd7afd72e8</value>
 				<value>GUID a6ec9d72-5fe8-463d-bd31-5322531690f3</value>
 			</AggregatesList>
 		</IClass>
@@ -695,35 +694,6 @@
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hid type="a">GUID 6857fbdb-c0ee-485b-95cd-6a263643da7b</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID a1c9117b-9212-4fd9-aa69-a6fd7afd72e8</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsGetSensorData</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.16.2024::20:25:52</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IUseCase</_hm2Class>
-					<_hfilename type="a">.\..\Project_rpy\DATA_PROCESSOR.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::TOP_REQUIREMENT::DATA_PROCESSOR</_hsubsystem>
-					<_hname type="a">GetSensorData</_hname>
-					<_hid type="a">GUID e0ddd2d1-e7e7-4254-a64d-abf0e64ad8ac</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\..\Project_rpy\DATA_PROCESSOR.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::TOP_REQUIREMENT::DATA_PROCESSOR</_hsubsystem>
-					<_hclass type="a">GetSensorData</_hclass>
-					<_hname type="a">itsCloud</_hname>
-					<_hid type="a">GUID 03a42ccc-bc84-4afa-8ea9-8085cc7fef8f</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>
