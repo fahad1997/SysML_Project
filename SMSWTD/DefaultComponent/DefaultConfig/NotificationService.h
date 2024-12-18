@@ -3,32 +3,32 @@
 	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
-	Model Element	: Operator
+	Model Element	: NotificationService
 //!	Generated Date	: Wed, 18, Dec 2024  
-	File Path	: DefaultComponent\DefaultConfig\Operator.h
+	File Path	: DefaultComponent\DefaultConfig\NotificationService.h
 *********************************************************************/
 
-#ifndef Operator_H
-#define Operator_H
+#ifndef NotificationService_H
+#define NotificationService_H
 
 //## auto_generated
 #include <oxf.h>
-//## package Default
+//## package SMSWTD_SYSTEM::ANALYSIS
 
-//## actor Operator
-class Operator {
+//## class NotificationService
+class NotificationService {
     ////    Constructors and destructors    ////
     
 public :
 
     //## auto_generated
-    Operator(void);
+    NotificationService(void);
     
     //## auto_generated
-    ~Operator(void);
+    ~NotificationService(void);
 };
 
 #endif
 /*********************************************************************
-	File Path	: DefaultComponent\DefaultConfig\Operator.h
+	File Path	: DefaultComponent\DefaultConfig\NotificationService.h
 *********************************************************************/

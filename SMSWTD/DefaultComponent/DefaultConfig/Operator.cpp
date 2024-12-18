@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Operator
-//!	Generated Date	: Tue, 17, Dec 2024  
+//!	Generated Date	: Wed, 18, Dec 2024  
 	File Path	: DefaultComponent\DefaultConfig\Operator.cpp
 *********************************************************************/
 
@@ -13,7 +13,7 @@
 //## package Default
 
 //## actor Operator
-Operator::Operator(void) : User() {
+Operator::Operator(void) {
 }
 
 Operator::~Operator(void) {

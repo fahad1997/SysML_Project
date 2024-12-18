@@ -3,22 +3,22 @@
 	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
-	Model Element	: Researcher
+	Model Element	: NotificationService
 //!	Generated Date	: Wed, 18, Dec 2024  
-	File Path	: DefaultComponent\DefaultConfig\Researcher.cpp
+	File Path	: DefaultComponent\DefaultConfig\NotificationService.cpp
 *********************************************************************/
 
 //## auto_generated
-#include "Researcher.h"
-//## package Default
+#include "NotificationService.h"
+//## package SMSWTD_SYSTEM::ANALYSIS
 
-//## actor Researcher
-Researcher::Researcher(void) {
+//## class NotificationService
+NotificationService::NotificationService(void) {
 }
 
-Researcher::~Researcher(void) {
+NotificationService::~NotificationService(void) {
 }
 
 /*********************************************************************
-	File Path	: DefaultComponent\DefaultConfig\Researcher.cpp
+	File Path	: DefaultComponent\DefaultConfig\NotificationService.cpp
 *********************************************************************/

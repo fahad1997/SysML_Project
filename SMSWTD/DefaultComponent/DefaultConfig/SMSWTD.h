@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SMSWTD
-//!	Generated Date	: Tue, 17, Dec 2024  
+//!	Generated Date	: Wed, 18, Dec 2024  
 	File Path	: DefaultComponent\DefaultConfig\SMSWTD.h
 *********************************************************************/
 
@@ -116,15 +116,11 @@ protected :
 
 private :
 
-    AlertedGroup* itsAlertedGroup;		//## link itsAlertedGroup
-    
     Cloud* itsCloud;		//## link itsCloud
     
     SateliteImage* itsSateliteImage;		//## link itsSateliteImage
     
     StormSensor* itsStormSensor;		//## link itsStormSensor
-    
-    User* itsUser;		//## link itsUser
     
     WaterFlowDetector* itsWaterFlowDetector;		//## link itsWaterFlowDetector
     
@@ -218,6 +214,12 @@ public :
     
     //## auto_generated
     void _clearItsWeatherSensor(void);
+
+private :
+
+    AlertedGroup* itsAlertedGroup;		//## link itsAlertedGroup
+    
+    User* itsUser;		//## link itsUser
 };
 
 #endif

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Researcher
-//!	Generated Date	: Tue, 17, Dec 2024  
+//!	Generated Date	: Wed, 18, Dec 2024  
 	File Path	: DefaultComponent\DefaultConfig\Researcher.h
 *********************************************************************/
 
@@ -13,12 +13,10 @@
 
 //## auto_generated
 #include <oxf.h>
-//## actor Researcher
-#include "User.h"
 //## package Default
 
 //## actor Researcher
-class Researcher : public User {
+class Researcher {
     ////    Constructors and destructors    ////
     
 public :

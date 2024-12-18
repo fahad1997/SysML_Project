@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: User
-//!	Generated Date	: Tue, 17, Dec 2024  
+//!	Generated Date	: Wed, 18, Dec 2024  
 	File Path	: DefaultComponent\DefaultConfig\User.h
 *********************************************************************/
 
@@ -22,6 +22,12 @@ class SMSWTD;
 class User {
     ////    Constructors and destructors    ////
     
+    ////    Additional operations    ////
+    
+    ////    Relations and components    ////
+    
+    ////    Framework operations    ////
+    
 public :
 
     //## auto_generated
@@ -29,8 +35,6 @@ public :
     
     //## auto_generated
     ~User(void);
-    
-    ////    Additional operations    ////
     
     //## auto_generated
     const SMSWTD* getItsSMSWTD(void) const;
@@ -42,14 +46,10 @@ protected :
 
     //## auto_generated
     void cleanUpRelations(void);
-    
-    ////    Relations and components    ////
 
 private :
 
     SMSWTD* itsSMSWTD;		//## link itsSMSWTD
-    
-    ////    Framework operations    ////
 
 public :
 

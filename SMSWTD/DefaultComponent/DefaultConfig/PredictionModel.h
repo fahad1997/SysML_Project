@@ -3,32 +3,32 @@
 	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
-	Model Element	: Operator
+	Model Element	: PredictionModel
 //!	Generated Date	: Wed, 18, Dec 2024  
-	File Path	: DefaultComponent\DefaultConfig\Operator.h
+	File Path	: DefaultComponent\DefaultConfig\PredictionModel.h
 *********************************************************************/
 
-#ifndef Operator_H
-#define Operator_H
+#ifndef PredictionModel_H
+#define PredictionModel_H
 
 //## auto_generated
 #include <oxf.h>
-//## package Default
+//## package SMSWTD_SYSTEM::ANALYSIS
 
-//## actor Operator
-class Operator {
+//## class PredictionModel
+class PredictionModel {
     ////    Constructors and destructors    ////
     
 public :
 
     //## auto_generated
-    Operator(void);
+    PredictionModel(void);
     
     //## auto_generated
-    ~Operator(void);
+    ~PredictionModel(void);
 };
 
 #endif
 /*********************************************************************
-	File Path	: DefaultComponent\DefaultConfig\Operator.h
+	File Path	: DefaultComponent\DefaultConfig\PredictionModel.h
 *********************************************************************/

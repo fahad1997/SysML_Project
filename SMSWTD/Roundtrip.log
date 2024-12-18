@@ -1,0 +1,44 @@
+
+Reverse Engineering Done.
+
+Removing Generalization 'User' from Actor 'Operator'. 
+Removing Generalization 'User' from Actor 'Researcher'. 
+Removing AssociationEnd 'itsDashboardPublisher' from Class 'SensorDataProcessor'. 
+Removing AssociationEnd 'itsCloudStorageInterface' from Class 'SensorDataProcessor'. 
+Removing AssociationEnd 'itsPredictionModelPublisher' from Class 'SensorDataProcessor'. 
+Adding Attribute 'itsDataPublisher' to Class 'SensorDataProcessor'. 
+Adding Attribute 'itsDataStorage' to Class 'SensorDataProcessor'. 
+Removing AssociationEnd 'itsDashboardPublisher' from Class 'ImageProcessor'. 
+Removing AssociationEnd 'itsCloudStorageInterface' from Class 'ImageProcessor'. 
+Removing AssociationEnd 'itsGeographicalConfiguration' from Class 'ImageProcessor'. 
+Removing AssociationEnd 'itsPredictionModelPublisher' from Class 'ImageProcessor'. 
+Adding Attribute 'itsDataPublisher' to Class 'ImageProcessor'. 
+Adding Attribute 'itsDataStorage' to Class 'ImageProcessor'. 
+Source Artifacts have been added to the model to ensure that the generated code reflects details from the original code, such as global comments, preprocessor directives, and the order of elements. See the log file for more details.
+To view the Source Artifacts in the Rhapsody browser, open the View menu and select Browser Display Options > Show Source Artifacts.
+Source Artifacts were added for the following files:
+Adding File 'AlertedGroup:impl' to Actor 'AlertedGroup'.
+Adding File 'AlertedGroup:spec' to Actor 'AlertedGroup'.
+Adding File 'Cloud:impl' to Class 'Cloud'.
+Adding File 'Cloud:spec' to Class 'Cloud'.
+Adding File 'DataProcessor:impl' to Class 'DataProcessor'.
+Adding File 'DataProcessor:spec' to Class 'DataProcessor'.
+Adding File 'ImageProcessor:impl' to Class 'ImageProcessor'.
+Adding File 'ImageProcessor:spec' to Class 'ImageProcessor'.
+Adding File 'SateliteImage:impl' to Class 'SateliteImage'.
+Adding File 'SateliteImage:spec' to Class 'SateliteImage'.
+Adding File 'SensorDataProcessor:impl' to Class 'SensorDataProcessor'.
+Adding File 'SensorDataProcessor:spec' to Class 'SensorDataProcessor'.
+Adding File 'SMSWTD:impl' to Class 'SMSWTD'.
+Adding File 'SMSWTD:spec' to Class 'SMSWTD'.
+Adding File 'StormSensor:impl' to Class 'StormSensor'.
+Adding File 'StormSensor:spec' to Class 'StormSensor'.
+Adding File 'User:impl' to Actor 'User'.
+Adding File 'User:spec' to Actor 'User'.
+Adding File 'WaterFlowDetector:impl' to Class 'WaterFlowDetector'.
+Adding File 'WaterFlowDetector:spec' to Class 'WaterFlowDetector'.
+Adding File 'WaterPressureSensor:impl' to Class 'WaterPressureSensor'.
+Adding File 'WaterPressureSensor:spec' to Class 'WaterPressureSensor'.
+Adding File 'WeatherSensor:impl' to Class 'WeatherSensor'.
+Adding File 'WeatherSensor:spec' to Class 'WeatherSensor'.
+
