@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SensorDataProcessor
-//!	Generated Date	: Tue, 17, Dec 2024  
+//!	Generated Date	: Wed, 18, Dec 2024  
 	File Path	: DefaultComponent\DefaultConfig\SensorDataProcessor.h
 *********************************************************************/
 
@@ -15,14 +15,17 @@
 #include <oxf.h>
 //## auto_generated
 #include "omcollec.h"
-//## link itsDataPublisher
-class DataPublisher;
+//## link itsCloudStorageInterface
+class CloudStorageInterface;
 
-//## link itsDataStorage
-class DataStorage;
+//## link itsDashboardPublisher
+class DashboardPublisher;
 
 //## link itsGeographicalConfiguration
 class GeographicalConfiguration;
+
+//## link itsPredictionModelPublisher
+class PredictionModelPublisher;
 
 //## link itsSensorConfiguration
 class SensorConfiguration;
@@ -44,16 +47,16 @@ public :
     ////    Additional operations    ////
     
     //## auto_generated
-    const DataPublisher* getItsDataPublisher(void) const;
+    const CloudStorageInterface* getItsCloudStorageInterface(void) const;
     
     //## auto_generated
-    void setItsDataPublisher(DataPublisher* const p_DataPublisher);
+    void setItsCloudStorageInterface(CloudStorageInterface* const p_CloudStorageInterface);
     
     //## auto_generated
-    const DataStorage* getItsDataStorage(void) const;
+    const DashboardPublisher* getItsDashboardPublisher(void) const;
     
     //## auto_generated
-    void setItsDataStorage(DataStorage* const p_DataStorage);
+    void setItsDashboardPublisher(DashboardPublisher* const p_DashboardPublisher);
     
     //## auto_generated
     OMIterator<GeographicalConfiguration*> getItsGeographicalConfiguration(void) const;
@@ -66,6 +69,12 @@ public :
     
     //## auto_generated
     void clearItsGeographicalConfiguration(void);
+    
+    //## auto_generated
+    const PredictionModelPublisher* getItsPredictionModelPublisher(void) const;
+    
+    //## auto_generated
+    void setItsPredictionModelPublisher(PredictionModelPublisher* const p_PredictionModelPublisher);
     
     //## auto_generated
     OMIterator<SensorConfiguration*> getItsSensorConfiguration(void) const;
@@ -88,11 +97,13 @@ protected :
 
 private :
 
-    DataPublisher* itsDataPublisher;		//## link itsDataPublisher
+    CloudStorageInterface* itsCloudStorageInterface;		//## link itsCloudStorageInterface
     
-    DataStorage* itsDataStorage;		//## link itsDataStorage
+    DashboardPublisher* itsDashboardPublisher;		//## link itsDashboardPublisher
     
     OMCollection<GeographicalConfiguration*> itsGeographicalConfiguration;		//## link itsGeographicalConfiguration
+    
+    PredictionModelPublisher* itsPredictionModelPublisher;		//## link itsPredictionModelPublisher
     
     OMCollection<SensorConfiguration*> itsSensorConfiguration;		//## link itsSensorConfiguration
 };

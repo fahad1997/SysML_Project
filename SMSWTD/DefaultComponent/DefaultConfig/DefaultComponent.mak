@@ -112,8 +112,11 @@ OBJS= \
   DataProcessor.obj \
   Dashboard.obj \
   NotificationChannel.obj \
-  DataPublisher.obj \
-  DataStorage.obj
+  DashboardPublisher.obj \
+  CloudStorageInterface.obj \
+  DataCollector.obj \
+  ImageCollector.obj \
+  PredictionModelPublisher.obj
 
 
 
@@ -262,13 +265,13 @@ User.obj : User.cpp User.h    SMSWTD.h
 
 
 
-SensorDataProcessor.obj : SensorDataProcessor.cpp SensorDataProcessor.h    SensorConfiguration.h GeographicalConfiguration.h DataPublisher.h DataStorage.h 
+SensorDataProcessor.obj : SensorDataProcessor.cpp SensorDataProcessor.h    SensorConfiguration.h GeographicalConfiguration.h DashboardPublisher.h CloudStorageInterface.h PredictionModelPublisher.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"SensorDataProcessor.obj" "SensorDataProcessor.cpp" 
 
 
 
-ImageProcessor.obj : ImageProcessor.cpp ImageProcessor.h    DataPublisher.h DataStorage.h 
+ImageProcessor.obj : ImageProcessor.cpp ImageProcessor.h    DashboardPublisher.h CloudStorageInterface.h GeographicalConfiguration.h PredictionModelPublisher.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ImageProcessor.obj" "ImageProcessor.cpp" 
 
@@ -358,15 +361,33 @@ NotificationChannel.obj : NotificationChannel.cpp NotificationChannel.h
 
 
 
-DataPublisher.obj : DataPublisher.cpp DataPublisher.h    
+DashboardPublisher.obj : DashboardPublisher.cpp DashboardPublisher.h    
 	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DataPublisher.obj" "DataPublisher.cpp" 
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DashboardPublisher.obj" "DashboardPublisher.cpp" 
 
 
 
-DataStorage.obj : DataStorage.cpp DataStorage.h    
+CloudStorageInterface.obj : CloudStorageInterface.cpp CloudStorageInterface.h    
 	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DataStorage.obj" "DataStorage.cpp" 
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"CloudStorageInterface.obj" "CloudStorageInterface.cpp" 
+
+
+
+DataCollector.obj : DataCollector.cpp DataCollector.h    SensorDataProcessor.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DataCollector.obj" "DataCollector.cpp" 
+
+
+
+ImageCollector.obj : ImageCollector.cpp ImageCollector.h    ImageProcessor.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ImageCollector.obj" "ImageCollector.cpp" 
+
+
+
+PredictionModelPublisher.obj : PredictionModelPublisher.cpp PredictionModelPublisher.h    
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"PredictionModelPublisher.obj" "PredictionModelPublisher.cpp" 
 
 
 
@@ -424,8 +445,11 @@ clean:
 	if exist DataProcessor.obj erase DataProcessor.obj
 	if exist Dashboard.obj erase Dashboard.obj
 	if exist NotificationChannel.obj erase NotificationChannel.obj
-	if exist DataPublisher.obj erase DataPublisher.obj
-	if exist DataStorage.obj erase DataStorage.obj
+	if exist DashboardPublisher.obj erase DashboardPublisher.obj
+	if exist CloudStorageInterface.obj erase CloudStorageInterface.obj
+	if exist DataCollector.obj erase DataCollector.obj
+	if exist ImageCollector.obj erase ImageCollector.obj
+	if exist PredictionModelPublisher.obj erase PredictionModelPublisher.obj
 	if exist $(TARGET_MAIN)$(OBJ_EXT) erase $(TARGET_MAIN)$(OBJ_EXT)
 	if exist *$(OBJ_EXT) erase *$(OBJ_EXT)
 	if exist $(TARGET_NAME).pdb erase $(TARGET_NAME).pdb

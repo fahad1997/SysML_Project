@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: ImageProcessor
-//!	Generated Date	: Tue, 17, Dec 2024  
+//!	Generated Date	: Wed, 18, Dec 2024  
 	File Path	: DefaultComponent\DefaultConfig\ImageProcessor.h
 *********************************************************************/
 
@@ -13,11 +13,19 @@
 
 //## auto_generated
 #include <oxf.h>
-//## link itsDataPublisher
-class DataPublisher;
+//## auto_generated
+#include "omcollec.h"
+//## link itsCloudStorageInterface
+class CloudStorageInterface;
 
-//## link itsDataStorage
-class DataStorage;
+//## link itsDashboardPublisher
+class DashboardPublisher;
+
+//## link itsGeographicalConfiguration
+class GeographicalConfiguration;
+
+//## link itsPredictionModelPublisher
+class PredictionModelPublisher;
 
 //## package SMSWTD_SYSTEM::ANALYSIS
 
@@ -36,16 +44,34 @@ public :
     ////    Additional operations    ////
     
     //## auto_generated
-    const DataPublisher* getItsDataPublisher(void) const;
+    const CloudStorageInterface* getItsCloudStorageInterface(void) const;
     
     //## auto_generated
-    void setItsDataPublisher(DataPublisher* const p_DataPublisher);
+    void setItsCloudStorageInterface(CloudStorageInterface* const p_CloudStorageInterface);
     
     //## auto_generated
-    const DataStorage* getItsDataStorage(void) const;
+    const DashboardPublisher* getItsDashboardPublisher(void) const;
     
     //## auto_generated
-    void setItsDataStorage(DataStorage* const p_DataStorage);
+    void setItsDashboardPublisher(DashboardPublisher* const p_DashboardPublisher);
+    
+    //## auto_generated
+    OMIterator<GeographicalConfiguration*> getItsGeographicalConfiguration(void) const;
+    
+    //## auto_generated
+    void addItsGeographicalConfiguration(GeographicalConfiguration* const p_GeographicalConfiguration);
+    
+    //## auto_generated
+    void removeItsGeographicalConfiguration(GeographicalConfiguration* const p_GeographicalConfiguration);
+    
+    //## auto_generated
+    void clearItsGeographicalConfiguration(void);
+    
+    //## auto_generated
+    const PredictionModelPublisher* getItsPredictionModelPublisher(void) const;
+    
+    //## auto_generated
+    void setItsPredictionModelPublisher(PredictionModelPublisher* const p_PredictionModelPublisher);
 
 protected :
 
@@ -56,9 +82,13 @@ protected :
 
 private :
 
-    DataPublisher* itsDataPublisher;		//## link itsDataPublisher
+    CloudStorageInterface* itsCloudStorageInterface;		//## link itsCloudStorageInterface
     
-    DataStorage* itsDataStorage;		//## link itsDataStorage
+    DashboardPublisher* itsDashboardPublisher;		//## link itsDashboardPublisher
+    
+    OMCollection<GeographicalConfiguration*> itsGeographicalConfiguration;		//## link itsGeographicalConfiguration
+    
+    PredictionModelPublisher* itsPredictionModelPublisher;		//## link itsPredictionModelPublisher
 };
 
 #endif

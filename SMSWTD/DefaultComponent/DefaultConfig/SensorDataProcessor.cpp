@@ -4,44 +4,46 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SensorDataProcessor
-//!	Generated Date	: Tue, 17, Dec 2024  
+//!	Generated Date	: Wed, 18, Dec 2024  
 	File Path	: DefaultComponent\DefaultConfig\SensorDataProcessor.cpp
 *********************************************************************/
 
 //## auto_generated
 #include "SensorDataProcessor.h"
-//## link itsDataPublisher
-#include "DataPublisher.h"
-//## link itsDataStorage
-#include "DataStorage.h"
+//## link itsCloudStorageInterface
+#include "CloudStorageInterface.h"
+//## link itsDashboardPublisher
+#include "DashboardPublisher.h"
 //## link itsGeographicalConfiguration
 #include "GeographicalConfiguration.h"
+//## link itsPredictionModelPublisher
+#include "PredictionModelPublisher.h"
 //## link itsSensorConfiguration
 #include "SensorConfiguration.h"
 //## package SMSWTD_SYSTEM::ANALYSIS
 
 //## class SensorDataProcessor
-SensorDataProcessor::SensorDataProcessor(void) : itsDataPublisher(NULL), itsDataStorage(NULL) {
+SensorDataProcessor::SensorDataProcessor(void) : itsCloudStorageInterface(NULL), itsDashboardPublisher(NULL), itsPredictionModelPublisher(NULL) {
 }
 
 SensorDataProcessor::~SensorDataProcessor(void) {
     cleanUpRelations();
 }
 
-const DataPublisher* SensorDataProcessor::getItsDataPublisher(void) const {
-    return itsDataPublisher;
+const CloudStorageInterface* SensorDataProcessor::getItsCloudStorageInterface(void) const {
+    return itsCloudStorageInterface;
 }
 
-void SensorDataProcessor::setItsDataPublisher(DataPublisher* const p_DataPublisher) {
-    itsDataPublisher = p_DataPublisher;
+void SensorDataProcessor::setItsCloudStorageInterface(CloudStorageInterface* const p_CloudStorageInterface) {
+    itsCloudStorageInterface = p_CloudStorageInterface;
 }
 
-const DataStorage* SensorDataProcessor::getItsDataStorage(void) const {
-    return itsDataStorage;
+const DashboardPublisher* SensorDataProcessor::getItsDashboardPublisher(void) const {
+    return itsDashboardPublisher;
 }
 
-void SensorDataProcessor::setItsDataStorage(DataStorage* const p_DataStorage) {
-    itsDataStorage = p_DataStorage;
+void SensorDataProcessor::setItsDashboardPublisher(DashboardPublisher* const p_DashboardPublisher) {
+    itsDashboardPublisher = p_DashboardPublisher;
 }
 
 OMIterator<GeographicalConfiguration*> SensorDataProcessor::getItsGeographicalConfiguration(void) const {
@@ -59,6 +61,14 @@ void SensorDataProcessor::removeItsGeographicalConfiguration(GeographicalConfigu
 
 void SensorDataProcessor::clearItsGeographicalConfiguration(void) {
     itsGeographicalConfiguration.removeAll();
+}
+
+const PredictionModelPublisher* SensorDataProcessor::getItsPredictionModelPublisher(void) const {
+    return itsPredictionModelPublisher;
+}
+
+void SensorDataProcessor::setItsPredictionModelPublisher(PredictionModelPublisher* const p_PredictionModelPublisher) {
+    itsPredictionModelPublisher = p_PredictionModelPublisher;
 }
 
 OMIterator<SensorConfiguration*> SensorDataProcessor::getItsSensorConfiguration(void) const {
@@ -79,17 +89,21 @@ void SensorDataProcessor::clearItsSensorConfiguration(void) {
 }
 
 void SensorDataProcessor::cleanUpRelations(void) {
-    if(itsDataPublisher != NULL)
+    if(itsCloudStorageInterface != NULL)
         {
-            itsDataPublisher = NULL;
+            itsCloudStorageInterface = NULL;
         }
-    if(itsDataStorage != NULL)
+    if(itsDashboardPublisher != NULL)
         {
-            itsDataStorage = NULL;
+            itsDashboardPublisher = NULL;
         }
     {
         itsGeographicalConfiguration.removeAll();
     }
+    if(itsPredictionModelPublisher != NULL)
+        {
+            itsPredictionModelPublisher = NULL;
+        }
     {
         itsSensorConfiguration.removeAll();
     }
