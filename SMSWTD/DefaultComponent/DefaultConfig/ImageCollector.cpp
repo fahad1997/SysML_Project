@@ -10,31 +10,13 @@
 
 //## auto_generated
 #include "ImageCollector.h"
-//## link itsImageProcessor
-#include "ImageProcessor.h"
 //## package SMSWTD_SYSTEM::ANALYSIS
 
 //## class ImageCollector
-ImageCollector::ImageCollector(void) : itsImageProcessor(NULL) {
+ImageCollector::ImageCollector(void) {
 }
 
 ImageCollector::~ImageCollector(void) {
-    cleanUpRelations();
-}
-
-const ImageProcessor* ImageCollector::getItsImageProcessor(void) const {
-    return itsImageProcessor;
-}
-
-void ImageCollector::setItsImageProcessor(ImageProcessor* const p_ImageProcessor) {
-    itsImageProcessor = p_ImageProcessor;
-}
-
-void ImageCollector::cleanUpRelations(void) {
-    if(itsImageProcessor != NULL)
-        {
-            itsImageProcessor = NULL;
-        }
 }
 
 /*********************************************************************

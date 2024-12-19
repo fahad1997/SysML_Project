@@ -116,7 +116,9 @@ OBJS= \
   CloudStorageInterface.obj \
   DataCollector.obj \
   ImageCollector.obj \
-  PredictionModelPublisher.obj
+  PredictionModelPublisher.obj \
+  PredictionModel.obj \
+  NotificationService.obj
 
 
 
@@ -247,13 +249,13 @@ AlertedGroup.obj : AlertedGroup.cpp AlertedGroup.h    SMSWTD.h
 
 
 
-Operator.obj : Operator.cpp Operator.h    User.h SMSWTD.h 
+Operator.obj : Operator.cpp Operator.h    
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Operator.obj" "Operator.cpp" 
 
 
 
-Researcher.obj : Researcher.cpp Researcher.h    User.h SMSWTD.h 
+Researcher.obj : Researcher.cpp Researcher.h    
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Researcher.obj" "Researcher.cpp" 
 
@@ -265,13 +267,13 @@ User.obj : User.cpp User.h    SMSWTD.h
 
 
 
-SensorDataProcessor.obj : SensorDataProcessor.cpp SensorDataProcessor.h    SensorConfiguration.h GeographicalConfiguration.h DashboardPublisher.h CloudStorageInterface.h PredictionModelPublisher.h 
+SensorDataProcessor.obj : SensorDataProcessor.cpp SensorDataProcessor.h    
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"SensorDataProcessor.obj" "SensorDataProcessor.cpp" 
 
 
 
-ImageProcessor.obj : ImageProcessor.cpp ImageProcessor.h    DashboardPublisher.h CloudStorageInterface.h GeographicalConfiguration.h PredictionModelPublisher.h 
+ImageProcessor.obj : ImageProcessor.cpp ImageProcessor.h    
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ImageProcessor.obj" "ImageProcessor.cpp" 
 
@@ -343,7 +345,7 @@ ImageDataObserver.obj : ImageDataObserver.cpp ImageDataObserver.h
 
 
 
-DataProcessor.obj : DataProcessor.cpp DataProcessor.h    ImageProcessor.h SensorDataProcessor.h 
+DataProcessor.obj : DataProcessor.cpp DataProcessor.h    
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DataProcessor.obj" "DataProcessor.cpp" 
 
@@ -373,13 +375,13 @@ CloudStorageInterface.obj : CloudStorageInterface.cpp CloudStorageInterface.h
 
 
 
-DataCollector.obj : DataCollector.cpp DataCollector.h    SensorDataProcessor.h 
+DataCollector.obj : DataCollector.cpp DataCollector.h    
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DataCollector.obj" "DataCollector.cpp" 
 
 
 
-ImageCollector.obj : ImageCollector.cpp ImageCollector.h    ImageProcessor.h 
+ImageCollector.obj : ImageCollector.cpp ImageCollector.h    
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ImageCollector.obj" "ImageCollector.cpp" 
 
@@ -388,6 +390,18 @@ ImageCollector.obj : ImageCollector.cpp ImageCollector.h    ImageProcessor.h
 PredictionModelPublisher.obj : PredictionModelPublisher.cpp PredictionModelPublisher.h    
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"PredictionModelPublisher.obj" "PredictionModelPublisher.cpp" 
+
+
+
+PredictionModel.obj : PredictionModel.cpp PredictionModel.h    
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"PredictionModel.obj" "PredictionModel.cpp" 
+
+
+
+NotificationService.obj : NotificationService.cpp NotificationService.h    
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"NotificationService.obj" "NotificationService.cpp" 
 
 
 
@@ -450,6 +464,8 @@ clean:
 	if exist DataCollector.obj erase DataCollector.obj
 	if exist ImageCollector.obj erase ImageCollector.obj
 	if exist PredictionModelPublisher.obj erase PredictionModelPublisher.obj
+	if exist PredictionModel.obj erase PredictionModel.obj
+	if exist NotificationService.obj erase NotificationService.obj
 	if exist $(TARGET_MAIN)$(OBJ_EXT) erase $(TARGET_MAIN)$(OBJ_EXT)
 	if exist *$(OBJ_EXT) erase *$(OBJ_EXT)
 	if exist $(TARGET_NAME).pdb erase $(TARGET_NAME).pdb

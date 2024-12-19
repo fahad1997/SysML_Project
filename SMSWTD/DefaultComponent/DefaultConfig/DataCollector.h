@@ -13,9 +13,6 @@
 
 //## auto_generated
 #include <oxf.h>
-//## link itsSensorDataProcessor
-class SensorDataProcessor;
-
 //## package SMSWTD_SYSTEM::ANALYSIS
 
 //## class DataCollector
@@ -29,25 +26,6 @@ public :
     
     //## auto_generated
     ~DataCollector(void);
-    
-    ////    Additional operations    ////
-    
-    //## auto_generated
-    const SensorDataProcessor* getItsSensorDataProcessor(void) const;
-    
-    //## auto_generated
-    void setItsSensorDataProcessor(SensorDataProcessor* const p_SensorDataProcessor);
-
-protected :
-
-    //## auto_generated
-    void cleanUpRelations(void);
-    
-    ////    Relations and components    ////
-
-private :
-
-    SensorDataProcessor* itsSensorDataProcessor;		//## link itsSensorDataProcessor
 };
 
 #endif

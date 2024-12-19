@@ -13,9 +13,6 @@
 
 //## auto_generated
 #include <oxf.h>
-//## link itsImageProcessor
-class ImageProcessor;
-
 //## package SMSWTD_SYSTEM::ANALYSIS
 
 //## class ImageCollector
@@ -29,25 +26,6 @@ public :
     
     //## auto_generated
     ~ImageCollector(void);
-    
-    ////    Additional operations    ////
-    
-    //## auto_generated
-    const ImageProcessor* getItsImageProcessor(void) const;
-    
-    //## auto_generated
-    void setItsImageProcessor(ImageProcessor* const p_ImageProcessor);
-
-protected :
-
-    //## auto_generated
-    void cleanUpRelations(void);
-    
-    ////    Relations and components    ////
-
-private :
-
-    ImageProcessor* itsImageProcessor;		//## link itsImageProcessor
 };
 
 #endif
