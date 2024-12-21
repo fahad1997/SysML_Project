@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245157
+	Login		: 20245163
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SensorDataProcessor
-//!	Generated Date	: Tue, 17, Dec 2024  
+//!	Generated Date	: Sat, 21, Dec 2024  
 	File Path	: DefaultComponent\DefaultConfig\SensorDataProcessor.h
 *********************************************************************/
 
@@ -14,88 +14,199 @@
 //## auto_generated
 #include <oxf.h>
 //## auto_generated
+#include <aom.h>
+//## auto_generated
+#include "ANALYSIS.h"
+//## auto_generated
+#include <omthread.h>
+//## auto_generated
+#include <omreactive.h>
+//## auto_generated
+#include <state.h>
+//## auto_generated
+#include <event.h>
+//## auto_generated
 #include "omcollec.h"
-//## link itsDataPublisher
-class DataPublisher;
-
-//## link itsDataStorage
-class DataStorage;
-
-//## link itsGeographicalConfiguration
-class GeographicalConfiguration;
-
-//## link itsSensorConfiguration
-class SensorConfiguration;
-
 //## package SMSWTD_SYSTEM::ANALYSIS
 
 //## class SensorDataProcessor
-class SensorDataProcessor {
-    ////    Constructors and destructors    ////
+class SensorDataProcessor : public OMReactive {
+    ////    Friends    ////
     
 public :
 
-    //## auto_generated
-    SensorDataProcessor(void);
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedSensorDataProcessor;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
     
     //## auto_generated
-    ~SensorDataProcessor(void);
+    explicit SensorDataProcessor(IOxfActive* const theActiveContext = NULL);
+    
+    //## auto_generated
+    virtual ~SensorDataProcessor(void);
+    
+    ////    Operations    ////
+    
+    //## operation dataFetched()
+    virtual void dataFetched(void);
     
     ////    Additional operations    ////
     
     //## auto_generated
-    const DataPublisher* getItsDataPublisher(void) const;
+    const bool getCheckDataAvailability(void) const;
     
     //## auto_generated
-    void setItsDataPublisher(DataPublisher* const p_DataPublisher);
+    void setCheckDataAvailability(const bool p_checkDataAvailability);
     
     //## auto_generated
-    const DataStorage* getItsDataStorage(void) const;
+    OMIterator<bool> getCollectedDataStatus(void) const;
     
     //## auto_generated
-    void setItsDataStorage(DataStorage* const p_DataStorage);
+    void setCollectedDataStatus(const bool p_collectedDataStatus);
     
     //## auto_generated
-    OMIterator<GeographicalConfiguration*> getItsGeographicalConfiguration(void) const;
-    
-    //## auto_generated
-    void addItsGeographicalConfiguration(GeographicalConfiguration* const p_GeographicalConfiguration);
-    
-    //## auto_generated
-    void removeItsGeographicalConfiguration(GeographicalConfiguration* const p_GeographicalConfiguration);
-    
-    //## auto_generated
-    void clearItsGeographicalConfiguration(void);
-    
-    //## auto_generated
-    OMIterator<SensorConfiguration*> getItsSensorConfiguration(void) const;
-    
-    //## auto_generated
-    void addItsSensorConfiguration(SensorConfiguration* const p_SensorConfiguration);
-    
-    //## auto_generated
-    void removeItsSensorConfiguration(SensorConfiguration* const p_SensorConfiguration);
-    
-    //## auto_generated
-    void clearItsSensorConfiguration(void);
+    virtual bool startBehavior(void);
 
 protected :
 
     //## auto_generated
-    void cleanUpRelations(void);
+    void initStatechart(void);
     
-    ////    Relations and components    ////
+    ////    Attributes    ////
 
 private :
 
-    DataPublisher* itsDataPublisher;		//## link itsDataPublisher
+    bool checkDataAvailability;		//## attribute checkDataAvailability
     
-    DataStorage* itsDataStorage;		//## link itsDataStorage
+    OMCollection<bool> collectedDataStatus;		//## attribute collectedDataStatus
     
-    OMCollection<GeographicalConfiguration*> itsGeographicalConfiguration;		//## link itsGeographicalConfiguration
+    ////    Framework operations    ////
+
+public :
+
+    // rootState:
+    //## statechart_method
+    inline RhpBoolean rootState_IN(void) const;
     
-    OMCollection<SensorConfiguration*> itsSensorConfiguration;		//## link itsSensorConfiguration
+    // StartProcess:
+    //## statechart_method
+    inline RhpBoolean StartProcess_IN(void) const;
+    
+    // ReturnData:
+    //## statechart_method
+    inline RhpBoolean ReturnData_IN(void) const;
+    
+    // ProcessData:
+    //## statechart_method
+    inline RhpBoolean ProcessData_IN(void) const;
+    
+    // FetchedData:
+    //## statechart_method
+    inline RhpBoolean FetchedData_IN(void) const;
+    
+    // FailedDataCollection:
+    //## statechart_method
+    inline RhpBoolean FailedDataCollection_IN(void) const;
+    
+    // CollectData:
+    //## statechart_method
+    inline RhpBoolean CollectData_IN(void) const;
+
+protected :
+
+    //## statechart_method
+    virtual void rootState_entDef(void);
+    
+    //## statechart_method
+    virtual IOxfReactive::TakeEventStatus rootState_processEvent(void);
+    
+    ////    Framework    ////
+    
+//#[ ignore
+    enum SensorDataProcessor_Enum {
+        OMNonState = 0,
+        StartProcess = 1,
+        ReturnData = 2,
+        ProcessData = 3,
+        FetchedData = 4,
+        FailedDataCollection = 5,
+        CollectData = 6
+    };
+//#]
+
+private :
+
+//#[ ignore
+    SensorDataProcessor_Enum rootState_subState;
+    
+    SensorDataProcessor_Enum rootState_active;
+//#]
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedSensorDataProcessor : virtual public AOMInstance {
+    DECLARE_REACTIVE_META(SensorDataProcessor, OMAnimatedSensorDataProcessor)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeAttributes(AOMSAttributes* aomsAttributes) const;
+    
+    //## statechart_method
+    void rootState_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void StartProcess_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void ReturnData_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void ProcessData_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void FetchedData_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void FailedDataCollection_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void CollectData_serializeStates(AOMSState* aomsState) const;
+};
+//#]
+#endif // _OMINSTRUMENT
+
+inline RhpBoolean SensorDataProcessor::rootState_IN(void) const {
+    return true;
+}
+
+inline RhpBoolean SensorDataProcessor::StartProcess_IN(void) const {
+    return rootState_subState == StartProcess;
+}
+
+inline RhpBoolean SensorDataProcessor::ReturnData_IN(void) const {
+    return rootState_subState == ReturnData;
+}
+
+inline RhpBoolean SensorDataProcessor::ProcessData_IN(void) const {
+    return rootState_subState == ProcessData;
+}
+
+inline RhpBoolean SensorDataProcessor::FetchedData_IN(void) const {
+    return rootState_subState == FetchedData;
+}
+
+inline RhpBoolean SensorDataProcessor::FailedDataCollection_IN(void) const {
+    return rootState_subState == FailedDataCollection;
+}
+
+inline RhpBoolean SensorDataProcessor::CollectData_IN(void) const {
+    return rootState_subState == CollectData;
+}
 
 #endif
 /*********************************************************************

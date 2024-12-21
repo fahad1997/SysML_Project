@@ -1,3 +1,8 @@
 [Op Calls]
 [Events]
+SensorDataProcessor[0]->GEN(evReturnData())`SensorDataProcessor
+SensorDataProcessor[0]->GEN(evProcessData())`SensorDataProcessor
+SensorDataProcessor[0]->GEN(evCheckDataAvailability())`SensorDataProcessor
+SensorDataProcessor[0]->GEN(reqDataFromSensors())`SensorDataProcessor
+SensorDataProcessor[0]->GEN(evSensorsReadyToCollectData())`SensorDataProcessor
 [Breakpoints]

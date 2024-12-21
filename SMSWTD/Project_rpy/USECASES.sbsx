@@ -12,10 +12,10 @@
 			<_id type="a">GUID c31a8ff3-703e-4f97-b9aa-e589da6c30ca</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">USECASES</_name>
-			<_modifiedTimeWeak type="a">12.17.2024::14:38:40</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.17.2024::14:51:2</_modifiedTime>
+			<_modifiedTimeWeak type="a">12.21.2024::20:36:38</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.21.2024::20:36:38</_modifiedTime>
 			<_lastID type="a">6</_lastID>
-			<weakCGTime type="a">12.17.2024::14:38:40</weakCGTime>
+			<weakCGTime type="a">12.21.2024::20:36:38</weakCGTime>
 			<strongCGTime type="a">12.13.2024::13:46:37</strongCGTime>
 			<_defaultComposite type="s">GUID d515231e-d958-482b-8df7-bc36bc7d3243</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -166,6 +166,44 @@
 													<_Name type="a">Line.LineStyle</_Name>
 													<_Value type="a">0</_Value>
 													<_Type type="a">Int</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">Line.LineWidth</_Name>
+													<_Value type="a">1</_Value>
+													<_Type type="a">Int</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+									<IPropertyMetaclass type="e">
+										<_Name type="a">DefaultTransition</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">Font.Font</_Name>
+													<_Value type="a">Tahoma</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">Font.FontColor</_Name>
+													<_Value type="a">0,0,0</_Value>
+													<_Type type="a">Color</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">Font.Size</_Name>
+													<_Value type="a">8</_Value>
+													<_Type type="a">Int</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">Line.LineColor</_Name>
+													<_Value type="a">128,128,128</_Value>
+													<_Type type="a">Color</_Type>
 												</IProperty>
 												
 												<IProperty type="e">
@@ -379,6 +417,44 @@
 									</IPropertyMetaclass>
 									
 									<IPropertyMetaclass type="e">
+										<_Name type="a">Transition</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">Font.Font</_Name>
+													<_Value type="a">Tahoma</_Value>
+													<_Type type="a">String</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">Font.FontColor</_Name>
+													<_Value type="a">0,0,0</_Value>
+													<_Type type="a">Color</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">Font.Size</_Name>
+													<_Value type="a">8</_Value>
+													<_Type type="a">Int</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">Line.LineColor</_Name>
+													<_Value type="a">128,128,128</_Value>
+													<_Type type="a">Color</_Type>
+												</IProperty>
+												
+												<IProperty type="e">
+													<_Name type="a">Line.LineWidth</_Name>
+													<_Value type="a">1</_Value>
+													<_Type type="a">Int</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+									<IPropertyMetaclass type="e">
 										<_Name type="a">UseCase</_Name>
 										<Properties type="c">
 											<IRPYRawContainer type="e">
@@ -438,8 +514,8 @@
 			</_properties>
 			<_name type="a">PROCESS_STORM_IMPACT</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.17.2024::14:38:40</_modifiedTime>
-			<_lastModifiedTime type="a">12.17.2024::14:38:40</_lastModifiedTime>
+			<_modifiedTime type="a">12.21.2024::20:36:38</_modifiedTime>
+			<_lastModifiedTime type="a">12.21.2024::20:36:38</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>

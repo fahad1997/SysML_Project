@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245157
+	Login		: 20245163
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SateliteImage
-//!	Generated Date	: Tue, 17, Dec 2024  
+//!	Generated Date	: Thu, 19, Dec 2024  
 	File Path	: DefaultComponent\DefaultConfig\SateliteImage.h
 *********************************************************************/
 
@@ -13,6 +13,10 @@
 
 //## auto_generated
 #include <oxf.h>
+//## auto_generated
+#include <aom.h>
+//## auto_generated
+#include "Default.h"
 //## link itsSMSWTD
 class SMSWTD;
 
@@ -20,10 +24,16 @@ class SMSWTD;
 
 //## class SateliteImage
 class SateliteImage {
-    ////    Constructors and destructors    ////
+    ////    Friends    ////
     
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedSateliteImage;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     SateliteImage(void);
     
@@ -62,6 +72,20 @@ public :
     //## auto_generated
     void _clearItsSMSWTD(void);
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedSateliteImage : virtual public AOMInstance {
+    DECLARE_META(SateliteImage, OMAnimatedSateliteImage)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

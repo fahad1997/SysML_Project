@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245157
+	Login		: 20245163
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SMSWTD
-//!	Generated Date	: Tue, 17, Dec 2024  
+//!	Generated Date	: Thu, 19, Dec 2024  
 	File Path	: DefaultComponent\DefaultConfig\SMSWTD.h
 *********************************************************************/
 
@@ -13,6 +13,10 @@
 
 //## auto_generated
 #include <oxf.h>
+//## auto_generated
+#include <aom.h>
+//## auto_generated
+#include "Default.h"
 //## link itsAlertedGroup
 class AlertedGroup;
 
@@ -41,10 +45,16 @@ class WeatherSensor;
 
 //## class SMSWTD
 class SMSWTD {
-    ////    Constructors and destructors    ////
+    ////    Friends    ////
     
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedSMSWTD;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     SMSWTD(void);
     
@@ -219,6 +229,20 @@ public :
     //## auto_generated
     void _clearItsWeatherSensor(void);
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedSMSWTD : virtual public AOMInstance {
+    DECLARE_META(SMSWTD, OMAnimatedSMSWTD)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************
