@@ -12,17 +12,19 @@
 			<_id type="a">GUID 55a7ff15-41e1-4d12-b856-80e8bd7c97ed</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">SMSWTD_SYSTEM</_name>
-			<_modifiedTimeWeak type="a">12.16.2024::11:12:14</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.16.2024::11:12:14</_modifiedTime>
-			<_lastID type="a">4</_lastID>
-			<weakCGTime type="a">12.16.2024::11:12:14</weakCGTime>
+			<_modifiedTimeWeak type="a">12.23.2024::16:56:4</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.23.2024::16:56:4</_modifiedTime>
+			<_lastID type="a">5</_lastID>
+			<weakCGTime type="a">12.23.2024::16:56:4</weakCGTime>
 			<strongCGTime type="a">12.13.2024::13:5:39</strongCGTime>
 			<_defaultComposite type="s">GUID cce95f9e-342c-4a65-8484-6cee50cf70f9</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">12.16.2024::11:12:14</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">12.23.2024::16:56:4</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID 525429d5-fd24-4621-8efc-ad0b15a24e53</value>
-				<value>GUID d126ec74-a171-416d-af1e-f6ce2beade59</value>
+				<value>GUID e27604b8-27b8-45b1-a911-43c4457e14b4</value>
+				<value>GUID c31a8ff3-703e-4f97-b9aa-e589da6c30ca</value>
+				<value>GUID 56506168-37ed-4ed4-bfeb-d412b4dc2c2f</value>
 				<value>GUID cce95f9e-342c-4a65-8484-6cee50cf70f9</value>
 			</AggregatesList>
 		</ISubsystem>
@@ -31,8 +33,16 @@
 			<_id type="a">GUID 525429d5-fd24-4621-8efc-ad0b15a24e53</_id>
 		</ISubsystem>
 		<ISubsystem type="e">
-			<fileName type="a">TOP_REQUIREMENT</fileName>
-			<_id type="a">GUID d126ec74-a171-416d-af1e-f6ce2beade59</_id>
+			<fileName type="a">DESIGN</fileName>
+			<_id type="a">GUID e27604b8-27b8-45b1-a911-43c4457e14b4</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">USECASES</fileName>
+			<_id type="a">GUID c31a8ff3-703e-4f97-b9aa-e589da6c30ca</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">REQUIREMENTS</fileName>
+			<_id type="a">GUID 56506168-37ed-4ed4-bfeb-d412b4dc2c2f</_id>
 		</ISubsystem>
 		<IClass type="e">
 			<_id type="a">GUID cce95f9e-342c-4a65-8484-6cee50cf70f9</_id>

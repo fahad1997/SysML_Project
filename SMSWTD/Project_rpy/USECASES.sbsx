@@ -12,16 +12,17 @@
 			<_id type="a">GUID c31a8ff3-703e-4f97-b9aa-e589da6c30ca</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">USECASES</_name>
-			<_modifiedTimeWeak type="a">12.21.2024::20:36:38</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.21.2024::20:36:38</_modifiedTime>
+			<_modifiedTimeWeak type="a">12.23.2024::16:56:4</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.23.2024::16:56:4</_modifiedTime>
 			<_lastID type="a">6</_lastID>
-			<weakCGTime type="a">12.21.2024::20:36:38</weakCGTime>
+			<weakCGTime type="a">12.23.2024::16:56:4</weakCGTime>
 			<strongCGTime type="a">12.13.2024::13:46:37</strongCGTime>
 			<_defaultComposite type="s">GUID d515231e-d958-482b-8df7-bc36bc7d3243</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
 			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID 8288ef7d-d9b2-47bf-8340-f40cc2f9fb7f</value>
+				<value>GUID 7bf9b358-483a-4f29-baca-dfde2d9fab24</value>
 				<value>GUID d515231e-d958-482b-8df7-bc36bc7d3243</value>
 				<value>GUID 4ffece60-e7d7-4c80-82ae-9a25ac2f48f7</value>
 				<value>GUID 951afb26-1612-49ab-8325-fc7f74f7cd72</value>
@@ -1162,6 +1163,10 @@
 			<m_nNameFormat type="a">0</m_nNameFormat>
 			<m_nIsNameFormat type="a">0</m_nIsNameFormat>
 		</CGIBasicClass>
+		<ISubsystem type="e">
+			<fileName type="a">UC_DATA_PROCESSOR</fileName>
+			<_id type="a">GUID 7bf9b358-483a-4f29-baca-dfde2d9fab24</_id>
+		</ISubsystem>
 		<IClass type="e">
 			<_id type="a">GUID d515231e-d958-482b-8df7-bc36bc7d3243</_id>
 			<_myState type="a">40960</_myState>
