@@ -12,10 +12,10 @@
 			<_id type="a">GUID e27604b8-27b8-45b1-a911-43c4457e14b4</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">DESIGN</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:44:6</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:44:6</_modifiedTime>
+			<_modifiedTimeWeak type="a">12.23.2024::18:2:45</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.23.2024::18:2:45</_modifiedTime>
 			<_lastID type="a">15</_lastID>
-			<weakCGTime type="a">12.23.2024::17:44:6</weakCGTime>
+			<weakCGTime type="a">12.23.2024::18:2:45</weakCGTime>
 			<strongCGTime type="a">12.23.2024::17:41:48</strongCGTime>
 			<_defaultComposite type="s">GUID a1a5630a-6cc0-4a66-aa30-79657dcdff76</_defaultComposite>
 			<_eventsBaseID type="a">23401</_eventsBaseID>
@@ -393,8 +393,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">12.23.2024::17:41:48</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:41:12</_modifiedTime>
-			<_lastModifiedTime type="a">12.23.2024::17:41:25</_lastModifiedTime>
+			<_modifiedTime type="a">12.23.2024::18:3:6</_modifiedTime>
+			<_lastModifiedTime type="a">12.23.2024::18:3:6</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -1278,6 +1278,35 @@
 		</CGICompartment>
 		<CGIClass type="e">
 			<_id type="a">GUID 6ce432f5-1a6a-4de1-81d9-974b373b1858</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Block</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">Line.LineColor</_Name>
+													<_Value type="a">0,255,0</_Value>
+													<_Type type="a">Color</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
 			<m_type type="a">87</m_type>
 			<m_pModelObject type="r">
 				<IHandle type="e">
@@ -1365,6 +1394,35 @@
 		</CGICompartment>
 		<CGIClass type="e">
 			<_id type="a">GUID 3cb8ca14-fb8c-4012-8050-d35267b45ac3</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Block</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">Line.LineColor</_Name>
+													<_Value type="a">255,128,0</_Value>
+													<_Type type="a">Color</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
 			<m_type type="a">87</m_type>
 			<m_pModelObject type="r">
 				<IHandle type="e">
@@ -3492,8 +3550,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">12.23.2024::17:41:49</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:43:10</_modifiedTime>
-			<_lastModifiedTime type="a">12.23.2024::17:43:10</_lastModifiedTime>
+			<_modifiedTime type="a">12.23.2024::18:2:9</_modifiedTime>
+			<_lastModifiedTime type="a">12.23.2024::18:2:9</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -3675,6 +3733,28 @@
 			<_properties type="p"><IPropertyContainer type="e">
 				<Subjects type="c">
 					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Block</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">Line.LineColor</_Name>
+													<_Value type="a">255,0,0</_Value>
+													<_Type type="a">Color</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
 						<IPropertySubject type="e">
 							<_Name type="a">General</_Name>
 							<Metaclasses type="c">
@@ -4055,6 +4135,35 @@
 		</CGIAssociationEnd>
 		<CGIClass type="e">
 			<_id type="a">GUID ad287d76-1763-4820-8d33-e03a876506e1</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Block</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">Line.LineColor</_Name>
+													<_Value type="a">255,128,0</_Value>
+													<_Type type="a">Color</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
 			<m_type type="a">87</m_type>
 			<m_pModelObject type="r">
 				<IHandle type="e">
@@ -4142,6 +4251,35 @@
 		</CGICompartment>
 		<CGIClass type="e">
 			<_id type="a">GUID 866841e2-2e6a-4719-90a6-dd18d0c8845a</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Block</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">Line.LineColor</_Name>
+													<_Value type="a">0,255,0</_Value>
+													<_Type type="a">Color</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
 			<m_type type="a">87</m_type>
 			<m_pModelObject type="r">
 				<IHandle type="e">
@@ -4229,6 +4367,35 @@
 		</CGICompartment>
 		<CGIClass type="e">
 			<_id type="a">GUID 9c09d4a1-41d5-4ae7-9d17-40df92c1c687</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Block</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">Line.LineColor</_Name>
+													<_Value type="a">128,0,255</_Value>
+													<_Type type="a">Color</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
 			<m_type type="a">87</m_type>
 			<m_pModelObject type="r">
 				<IHandle type="e">
@@ -4316,6 +4483,35 @@
 		</CGICompartment>
 		<CGIClass type="e">
 			<_id type="a">GUID 54d2367d-d834-43ec-b9f8-e87c6a6ba24e</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Block</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">Line.LineColor</_Name>
+													<_Value type="a">255,0,255</_Value>
+													<_Type type="a">Color</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
 			<m_type type="a">87</m_type>
 			<m_pModelObject type="r">
 				<IHandle type="e">
@@ -4403,6 +4599,35 @@
 		</CGICompartment>
 		<CGIClass type="e">
 			<_id type="a">GUID 712d4c03-6068-4d11-b6af-8c7d8ec17c21</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">Format</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Block</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">Line.LineColor</_Name>
+													<_Value type="a">0,0,0</_Value>
+													<_Type type="a">Color</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
 			<m_type type="a">87</m_type>
 			<m_pModelObject type="r">
 				<IHandle type="e">
@@ -4618,7 +4843,7 @@
 			</m_sourceMultiplicity>
 			<m_targetMultiplicity type="p">
 				<CGIText type="e">
-					<m_str type="a">1</m_str>
+					<m_str type="a">1..*</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -4798,7 +5023,7 @@
 			</m_sourceMultiplicity>
 			<m_targetMultiplicity type="p">
 				<CGIText type="e">
-					<m_str type="a">1</m_str>
+					<m_str type="a">1..*</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -15444,16 +15669,16 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">12.23.2024::17:44:6</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">12.23.2024::17:57:57</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hid type="a">GUID dce86247-5ddf-4e13-a6db-82f2b8b680f3</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">12.23.2024::17:44:6</_modifiedTime>
+			<_modifiedTime type="a">12.23.2024::17:57:57</_modifiedTime>
 			<_lastID type="a">1</_lastID>
-			<weakCGTime type="a">12.23.2024::17:44:6</weakCGTime>
+			<weakCGTime type="a">12.23.2024::17:57:57</weakCGTime>
 			<strongCGTime type="a">12.23.2024::17:43:10</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -16198,9 +16423,9 @@
 			<_id type="a">GUID 86888a07-e2e1-4c11-8ffd-6231629b45ce</_id>
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsImageCollector</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:41:49</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:36:6</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
+			<_modifiedTimeWeak type="a">12.23.2024::17:57:47</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.23.2024::17:57:47</_modifiedTime>
+			<_multiplicity type="a">1..*</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
@@ -16216,9 +16441,9 @@
 			<_id type="a">GUID 80f765bb-0d72-406c-9fca-f352bec8ca58</_id>
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsDataCollector</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:41:49</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:36:11</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
+			<_modifiedTimeWeak type="a">12.23.2024::17:57:57</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.23.2024::17:57:57</_modifiedTime>
+			<_multiplicity type="a">1..*</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
