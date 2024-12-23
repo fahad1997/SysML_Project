@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Cloud
-//!	Generated Date	: Thu, 19, Dec 2024  
+//!	Generated Date	: Mon, 23, Dec 2024  
 	File Path	: DefaultComponent\DefaultConfig\Cloud.h
 *********************************************************************/
 
@@ -13,10 +13,6 @@
 
 //## auto_generated
 #include <oxf.h>
-//## auto_generated
-#include <aom.h>
-//## auto_generated
-#include "Default.h"
 //## link itsSMSWTD
 class SMSWTD;
 
@@ -26,14 +22,10 @@ class SMSWTD;
 class Cloud {
     ////    Friends    ////
     
-public :
-
-#ifdef _OMINSTRUMENT
-    friend class OMAnimatedCloud;
-#endif // _OMINSTRUMENT
-
     ////    Constructors and destructors    ////
     
+public :
+
     //## auto_generated
     Cloud(void);
     
@@ -72,20 +64,6 @@ public :
     //## auto_generated
     void _clearItsSMSWTD(void);
 };
-
-#ifdef _OMINSTRUMENT
-//#[ ignore
-class OMAnimatedCloud : virtual public AOMInstance {
-    DECLARE_META(Cloud, OMAnimatedCloud)
-    
-    ////    Framework operations    ////
-    
-public :
-
-    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
-};
-//#]
-#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

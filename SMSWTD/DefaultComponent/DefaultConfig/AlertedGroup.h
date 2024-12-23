@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: AlertedGroup
-//!	Generated Date	: Thu, 19, Dec 2024  
+//!	Generated Date	: Mon, 23, Dec 2024  
 	File Path	: DefaultComponent\DefaultConfig\AlertedGroup.h
 *********************************************************************/
 
@@ -13,10 +13,6 @@
 
 //## auto_generated
 #include <oxf.h>
-//## auto_generated
-#include <aom.h>
-//## auto_generated
-#include "Default.h"
 //## link itsSMSWTD
 class SMSWTD;
 
@@ -26,21 +22,21 @@ class SMSWTD;
 class AlertedGroup {
     ////    Friends    ////
     
-public :
-
-#ifdef _OMINSTRUMENT
-    friend class OMAnimatedAlertedGroup;
-#endif // _OMINSTRUMENT
-
     ////    Constructors and destructors    ////
     
+    ////    Additional operations    ////
+    
+    ////    Relations and components    ////
+    
+    ////    Framework operations    ////
+    
+public :
+
     //## auto_generated
     AlertedGroup(void);
     
     //## auto_generated
     ~AlertedGroup(void);
-    
-    ////    Additional operations    ////
     
     //## auto_generated
     const SMSWTD* getItsSMSWTD(void) const;
@@ -52,14 +48,10 @@ protected :
 
     //## auto_generated
     void cleanUpRelations(void);
-    
-    ////    Relations and components    ////
 
 private :
 
     SMSWTD* itsSMSWTD;		//## link itsSMSWTD
-    
-    ////    Framework operations    ////
 
 public :
 
@@ -72,20 +64,6 @@ public :
     //## auto_generated
     void _clearItsSMSWTD(void);
 };
-
-#ifdef _OMINSTRUMENT
-//#[ ignore
-class OMAnimatedAlertedGroup : virtual public AOMInstance {
-    DECLARE_META(AlertedGroup, OMAnimatedAlertedGroup)
-    
-    ////    Framework operations    ////
-    
-public :
-
-    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
-};
-//#]
-#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DataPublisher
-//!	Generated Date	: Tue, 17, Dec 2024  
+//!	Generated Date	: Mon, 23, Dec 2024  
 	File Path	: DefaultComponent\DefaultConfig\DataPublisher.h
 *********************************************************************/
 
@@ -13,7 +13,9 @@
 
 //## auto_generated
 #include <oxf.h>
-//## package SMSWTD_SYSTEM::ANALYSIS
+//## auto_generated
+#include "DESIGN.h"
+//## package SMSWTD_SYSTEM::DESIGN
 
 //## class DataPublisher
 class DataPublisher {

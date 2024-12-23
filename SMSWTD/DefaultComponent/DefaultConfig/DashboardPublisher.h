@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DashboardPublisher
-//!	Generated Date	: Thu, 19, Dec 2024  
+//!	Generated Date	: Mon, 23, Dec 2024  
 	File Path	: DefaultComponent\DefaultConfig\DashboardPublisher.h
 *********************************************************************/
 
@@ -14,37 +14,23 @@
 //## auto_generated
 #include <oxf.h>
 //## auto_generated
-#include <aom.h>
-//## auto_generated
-#include "ANALYSIS.h"
-//## package SMSWTD_SYSTEM::ANALYSIS
+#include "DESIGN.h"
+//## package SMSWTD_SYSTEM::DESIGN
 
 //## class DashboardPublisher
 class DashboardPublisher {
     ////    Friends    ////
     
-public :
-
-#ifdef _OMINSTRUMENT
-    friend class OMAnimatedDashboardPublisher;
-#endif // _OMINSTRUMENT
-
     ////    Constructors and destructors    ////
     
+public :
+
     //## auto_generated
     DashboardPublisher(void);
     
     //## auto_generated
     ~DashboardPublisher(void);
 };
-
-#ifdef _OMINSTRUMENT
-//#[ ignore
-class OMAnimatedDashboardPublisher : virtual public AOMInstance {
-    DECLARE_META(DashboardPublisher, OMAnimatedDashboardPublisher)
-};
-//#]
-#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

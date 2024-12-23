@@ -3,34 +3,34 @@
 	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
-	Model Element	: Researcher
+	Model Element	: CloudClient
 //!	Generated Date	: Mon, 23, Dec 2024  
-	File Path	: DefaultComponent\DefaultConfig\Researcher.h
+	File Path	: DefaultComponent\DefaultConfig\CloudClient.h
 *********************************************************************/
 
-#ifndef Researcher_H
-#define Researcher_H
+#ifndef CloudClient_H
+#define CloudClient_H
 
 //## auto_generated
 #include <oxf.h>
-//## package Default
+//## auto_generated
+#include "DESIGN.h"
+//## package SMSWTD_SYSTEM::DESIGN
 
-//## actor Researcher
-class Researcher {
-    ////    Friends    ////
-    
+//## class CloudClient
+class CloudClient {
     ////    Constructors and destructors    ////
     
 public :
 
     //## auto_generated
-    Researcher(void);
+    CloudClient(void);
     
     //## auto_generated
-    ~Researcher(void);
+    ~CloudClient(void);
 };
 
 #endif
 /*********************************************************************
-	File Path	: DefaultComponent\DefaultConfig\Researcher.h
+	File Path	: DefaultComponent\DefaultConfig\CloudClient.h
 *********************************************************************/

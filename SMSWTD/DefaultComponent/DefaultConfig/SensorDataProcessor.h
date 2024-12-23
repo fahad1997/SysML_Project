@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SensorDataProcessor
-//!	Generated Date	: Sat, 21, Dec 2024  
+//!	Generated Date	: Mon, 23, Dec 2024  
 	File Path	: DefaultComponent\DefaultConfig\SensorDataProcessor.h
 *********************************************************************/
 
@@ -14,12 +14,6 @@
 //## auto_generated
 #include <oxf.h>
 //## auto_generated
-#include <aom.h>
-//## auto_generated
-#include "ANALYSIS.h"
-//## auto_generated
-#include <omthread.h>
-//## auto_generated
 #include <omreactive.h>
 //## auto_generated
 #include <state.h>
@@ -27,20 +21,18 @@
 #include <event.h>
 //## auto_generated
 #include "omcollec.h"
-//## package SMSWTD_SYSTEM::ANALYSIS
+//## auto_generated
+#include "DESIGN.h"
+//## package SMSWTD_SYSTEM::DESIGN
 
 //## class SensorDataProcessor
 class SensorDataProcessor : public OMReactive {
     ////    Friends    ////
     
-public :
-
-#ifdef _OMINSTRUMENT
-    friend class OMAnimatedSensorDataProcessor;
-#endif // _OMINSTRUMENT
-
     ////    Constructors and destructors    ////
     
+public :
+
     //## auto_generated
     explicit SensorDataProcessor(IOxfActive* const theActiveContext = NULL);
     
@@ -83,6 +75,8 @@ private :
     OMCollection<bool> collectedDataStatus;		//## attribute collectedDataStatus
     
     ////    Framework operations    ////
+    
+    ////    Framework    ////
 
 public :
 
@@ -122,8 +116,6 @@ protected :
     //## statechart_method
     virtual IOxfReactive::TakeEventStatus rootState_processEvent(void);
     
-    ////    Framework    ////
-    
 //#[ ignore
     enum SensorDataProcessor_Enum {
         OMNonState = 0,
@@ -144,41 +136,6 @@ private :
     SensorDataProcessor_Enum rootState_active;
 //#]
 };
-
-#ifdef _OMINSTRUMENT
-//#[ ignore
-class OMAnimatedSensorDataProcessor : virtual public AOMInstance {
-    DECLARE_REACTIVE_META(SensorDataProcessor, OMAnimatedSensorDataProcessor)
-    
-    ////    Framework operations    ////
-    
-public :
-
-    virtual void serializeAttributes(AOMSAttributes* aomsAttributes) const;
-    
-    //## statechart_method
-    void rootState_serializeStates(AOMSState* aomsState) const;
-    
-    //## statechart_method
-    void StartProcess_serializeStates(AOMSState* aomsState) const;
-    
-    //## statechart_method
-    void ReturnData_serializeStates(AOMSState* aomsState) const;
-    
-    //## statechart_method
-    void ProcessData_serializeStates(AOMSState* aomsState) const;
-    
-    //## statechart_method
-    void FetchedData_serializeStates(AOMSState* aomsState) const;
-    
-    //## statechart_method
-    void FailedDataCollection_serializeStates(AOMSState* aomsState) const;
-    
-    //## statechart_method
-    void CollectData_serializeStates(AOMSState* aomsState) const;
-};
-//#]
-#endif // _OMINSTRUMENT
 
 inline RhpBoolean SensorDataProcessor::rootState_IN(void) const {
     return true;

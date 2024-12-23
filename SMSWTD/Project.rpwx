@@ -44,7 +44,7 @@
 						</_theDiagram>
 						<_UpLeft type="a">0 0 </_UpLeft>
 						<_DownRight type="a">1640 578 </_DownRight>
-						<m_nDiagramIndex type="a">5</m_nDiagramIndex>
+						<m_nDiagramIndex type="a">6</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -74,9 +74,9 @@
 								<_hid type="a">GUID f9f3d2dd-0edc-4262-90d6-3e1e48ec065c</_hid>
 							</IHandle>
 						</_theDiagram>
-						<_UpLeft type="a">0 -30 </_UpLeft>
-						<_DownRight type="a">1302 597 </_DownRight>
-						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
+						<_UpLeft type="a">24 160 </_UpLeft>
+						<_DownRight type="a">1326 787 </_DownRight>
+						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
 						<m_bIsActiveView type="a">1</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -107,9 +107,9 @@
 								<_hid type="a">GUID efa799e2-8eb4-48c9-b8a7-ca6408b16a14</_hid>
 							</IHandle>
 						</_theDiagram>
-						<_UpLeft type="a">0 10 </_UpLeft>
-						<_DownRight type="a">874 330 </_DownRight>
-						<m_nDiagramIndex type="a">7</m_nDiagramIndex>
+						<_UpLeft type="a">0 0 </_UpLeft>
+						<_DownRight type="a">874 320 </_DownRight>
+						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -143,7 +143,7 @@
 						<_UpLeft type="a">0 0 </_UpLeft>
 						<_DownRight type="a">940 265 </_DownRight>
 						<_instanceName type="a">SensorDataProcessor[0]</_instanceName>
-						<m_nDiagramIndex type="a">6</m_nDiagramIndex>
+						<m_nDiagramIndex type="a">7</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -175,7 +175,7 @@
 						</_theDiagram>
 						<_UpLeft type="a">0 0 </_UpLeft>
 						<_DownRight type="a">1066 376 </_DownRight>
-						<m_nDiagramIndex type="a">3</m_nDiagramIndex>
+						<m_nDiagramIndex type="a">4</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -207,7 +207,7 @@
 						</_theDiagram>
 						<_UpLeft type="a">-12 0 </_UpLeft>
 						<_DownRight type="a">1054 376 </_DownRight>
-						<m_nDiagramIndex type="a">4</m_nDiagramIndex>
+						<m_nDiagramIndex type="a">5</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -239,7 +239,7 @@
 						</_theDiagram>
 						<_UpLeft type="a">0 0 </_UpLeft>
 						<_DownRight type="a">1066 376 </_DownRight>
-						<m_nDiagramIndex type="a">2</m_nDiagramIndex>
+						<m_nDiagramIndex type="a">3</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					

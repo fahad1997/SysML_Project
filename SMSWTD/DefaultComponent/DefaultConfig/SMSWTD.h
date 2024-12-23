@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SMSWTD
-//!	Generated Date	: Thu, 19, Dec 2024  
+//!	Generated Date	: Mon, 23, Dec 2024  
 	File Path	: DefaultComponent\DefaultConfig\SMSWTD.h
 *********************************************************************/
 
@@ -13,10 +13,6 @@
 
 //## auto_generated
 #include <oxf.h>
-//## auto_generated
-#include <aom.h>
-//## auto_generated
-#include "Default.h"
 //## link itsAlertedGroup
 class AlertedGroup;
 
@@ -47,14 +43,10 @@ class WeatherSensor;
 class SMSWTD {
     ////    Friends    ////
     
-public :
-
-#ifdef _OMINSTRUMENT
-    friend class OMAnimatedSMSWTD;
-#endif // _OMINSTRUMENT
-
     ////    Constructors and destructors    ////
     
+public :
+
     //## auto_generated
     SMSWTD(void);
     
@@ -126,15 +118,11 @@ protected :
 
 private :
 
-    AlertedGroup* itsAlertedGroup;		//## link itsAlertedGroup
-    
     Cloud* itsCloud;		//## link itsCloud
     
     SateliteImage* itsSateliteImage;		//## link itsSateliteImage
     
     StormSensor* itsStormSensor;		//## link itsStormSensor
-    
-    User* itsUser;		//## link itsUser
     
     WaterFlowDetector* itsWaterFlowDetector;		//## link itsWaterFlowDetector
     
@@ -228,21 +216,13 @@ public :
     
     //## auto_generated
     void _clearItsWeatherSensor(void);
-};
 
-#ifdef _OMINSTRUMENT
-//#[ ignore
-class OMAnimatedSMSWTD : virtual public AOMInstance {
-    DECLARE_META(SMSWTD, OMAnimatedSMSWTD)
-    
-    ////    Framework operations    ////
-    
-public :
+private :
 
-    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+    AlertedGroup* itsAlertedGroup;		//## link itsAlertedGroup
+    
+    User* itsUser;		//## link itsUser
 };
-//#]
-#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

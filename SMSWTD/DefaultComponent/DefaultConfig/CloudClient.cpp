@@ -3,22 +3,22 @@
 	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
-	Model Element	: ImageProcessor
+	Model Element	: CloudClient
 //!	Generated Date	: Mon, 23, Dec 2024  
-	File Path	: DefaultComponent\DefaultConfig\ImageProcessor.cpp
+	File Path	: DefaultComponent\DefaultConfig\CloudClient.cpp
 *********************************************************************/
 
 //## auto_generated
-#include "ImageProcessor.h"
+#include "CloudClient.h"
 //## package SMSWTD_SYSTEM::DESIGN
 
-//## class ImageProcessor
-ImageProcessor::ImageProcessor(void) {
+//## class CloudClient
+CloudClient::CloudClient(void) {
 }
 
-ImageProcessor::~ImageProcessor(void) {
+CloudClient::~CloudClient(void) {
 }
 
 /*********************************************************************
-	File Path	: DefaultComponent\DefaultConfig\ImageProcessor.cpp
+	File Path	: DefaultComponent\DefaultConfig\CloudClient.cpp
 *********************************************************************/

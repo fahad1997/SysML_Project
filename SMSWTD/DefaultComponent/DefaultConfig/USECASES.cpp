@@ -1,10 +1,10 @@
 /********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: USECASES
-//!	Generated Date	: Thu, 19, Dec 2024  
+//!	Generated Date	: Mon, 23, Dec 2024  
 	File Path	: DefaultComponent\DefaultConfig\USECASES.cpp
 *********************************************************************/
 
@@ -14,13 +14,13 @@
 
 //## auto_generated
 #include "USECASES.h"
-//## package USECASES
+//## package SMSWTD_SYSTEM::USECASES
 
 
 #ifdef _OMINSTRUMENT
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */);
 
-IMPLEMENT_META_PACKAGE(USECASES, USECASES)
+IMPLEMENT_META_PACKAGE(SMSWTD_SYSTEM_USECASES, SMSWTD_SYSTEM::USECASES)
 
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
 }

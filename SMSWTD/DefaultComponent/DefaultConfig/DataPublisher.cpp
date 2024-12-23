@@ -4,13 +4,13 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DataPublisher
-//!	Generated Date	: Tue, 17, Dec 2024  
+//!	Generated Date	: Mon, 23, Dec 2024  
 	File Path	: DefaultComponent\DefaultConfig\DataPublisher.cpp
 *********************************************************************/
 
 //## auto_generated
 #include "DataPublisher.h"
-//## package SMSWTD_SYSTEM::ANALYSIS
+//## package SMSWTD_SYSTEM::DESIGN
 
 //## class DataPublisher
 DataPublisher::DataPublisher(void) {
