@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245157
+	Login		: 20245163
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Researcher
@@ -13,22 +13,38 @@
 
 //## auto_generated
 #include <oxf.h>
+//## auto_generated
+#include <aom.h>
+//## auto_generated
+#include "Default.h"
 //## package Default
 
 //## actor Researcher
 class Researcher {
     ////    Friends    ////
     
-    ////    Constructors and destructors    ////
-    
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedResearcher;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     Researcher(void);
     
     //## auto_generated
     ~Researcher(void);
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedResearcher : virtual public AOMInstance {
+    DECLARE_META(Researcher, OMAnimatedResearcher)
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

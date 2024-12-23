@@ -12,13 +12,13 @@
 			<_id type="a">GUID f23ebc62-6a5e-4320-8015-5c2320ffdd2b</_id>
 			<_myState type="a">139264</_myState>
 			<_name type="a">DefaultComponent</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:11:41</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:11:41</_modifiedTime>
+			<_modifiedTimeWeak type="a">12.23.2024::20:59:17</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.23.2024::20:59:17</_modifiedTime>
 			<m_buildType type="a">Executable</m_buildType>
 			<m_configActive type="r">
 				<ICodeGenConfigInfoHandle type="e">
 					<_hm2Class type="a">ICodeGenConfigInfo</_hm2Class>
-					<_hid type="a">GUID 88d00cfd-0a7d-45f4-8514-e08a3648fb2a</_hid>
+					<_hid type="a">GUID 46d566a7-3528-416e-a56c-0c327281f1af</_hid>
 				</ICodeGenConfigInfoHandle>
 			</m_configActive>
 			<HandlesInMe type="c">
@@ -78,6 +78,69 @@
 					
 						<IHandle type="e">
 							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\UC_DASHBOARD.sbsx</_hfilename>
+							<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES</_hsubsystem>
+							<_hname type="a">UC_DASHBOARD</_hname>
+							<_hid type="a">GUID a3e01ee6-5866-478c-ab1e-f0d2e81f879c</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\UC_GEO_VARIABLES.sbsx</_hfilename>
+							<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES</_hsubsystem>
+							<_hname type="a">UC_GEO_VARIABLES</_hname>
+							<_hid type="a">GUID b0404b57-7ec3-415f-a9e6-dc7482279c48</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\UC_IMAGE_DATA.sbsx</_hfilename>
+							<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES</_hsubsystem>
+							<_hname type="a">UC_IMAGE_DATA</_hname>
+							<_hid type="a">GUID 8836b09a-f196-4155-b6de-637f6874abef</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\UC_NON_FUNCTIONAL.sbsx</_hfilename>
+							<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES</_hsubsystem>
+							<_hname type="a">UC_NON_FUNCTIONAL</_hname>
+							<_hid type="a">GUID c26f7dbe-5147-41a2-9ab7-85f456c18097</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\UC_NOTIFICATION.sbsx</_hfilename>
+							<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES</_hsubsystem>
+							<_hname type="a">UC_NOTIFICATION</_hname>
+							<_hid type="a">GUID 25146e27-69dd-4eb2-b651-1ae323904aa2</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\UC_PREDICTION.sbsx</_hfilename>
+							<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES</_hsubsystem>
+							<_hname type="a">UC_PREDICTION</_hname>
+							<_hid type="a">GUID 8677a938-6ad7-4fde-b3b4-5e5151af0244</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\UC_SENSOR_DATA.sbsx</_hfilename>
+							<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES</_hsubsystem>
+							<_hname type="a">UC_SENSOR_DATA</_hname>
+							<_hid type="a">GUID e618e8bf-063b-4d36-9f8d-78c991311efb</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
 							<_hfilename type="a">.\REQUIREMENTS.sbsx</_hfilename>
 							<_hsubsystem type="a">SMSWTD_SYSTEM</_hsubsystem>
 							<_hname type="a">REQUIREMENTS</_hname>
@@ -114,9 +177,9 @@
 					
 						<IHandle type="e">
 							<_hm2Class type="a">ISubsystem</_hm2Class>
-							<_hfilename type="a">.\SENSOR_DATA.sbsx</_hfilename>
+							<_hfilename type="a">.\REQ_SENSOR_DATA.sbsx</_hfilename>
 							<_hsubsystem type="a">SMSWTD_SYSTEM::REQUIREMENTS::TOP_REQUIREMENT</_hsubsystem>
-							<_hname type="a">SENSOR_DATA</_hname>
+							<_hname type="a">REQ_SENSOR_DATA</_hname>
 							<_hid type="a">GUID e05f969c-b028-43b1-a90d-3baf2d4932b8</_hid>
 						</IHandle>
 					
@@ -150,9 +213,9 @@
 					
 						<IHandle type="e">
 							<_hm2Class type="a">ISubsystem</_hm2Class>
-							<_hfilename type="a">.\IMAGE_DATA.sbsx</_hfilename>
+							<_hfilename type="a">.\REQ_IMAGE_DATA.sbsx</_hfilename>
 							<_hsubsystem type="a">SMSWTD_SYSTEM::REQUIREMENTS::TOP_REQUIREMENT</_hsubsystem>
-							<_hname type="a">IMAGE_DATA</_hname>
+							<_hname type="a">REQ_IMAGE_DATA</_hname>
 							<_hid type="a">GUID e6979428-8de9-4feb-8c68-1ccb302c408d</_hid>
 						</IHandle>
 					
@@ -191,11 +254,11 @@
 				<IRPYRawContainer type="e">
 				</IRPYRawContainer>
 			</SelectedVariants>
-			<weakCGTime type="a">12.23.2024::17:11:41</weakCGTime>
+			<weakCGTime type="a">12.23.2024::20:59:17</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<AggregatesList type="e">
 				<value>GUID b67fa984-ddf4-4f0c-ac8b-bc3bf1f60ee4</value>
-				<value>GUID 88d00cfd-0a7d-45f4-8514-e08a3648fb2a</value>
+				<value>GUID 46d566a7-3528-416e-a56c-0c327281f1af</value>
 			</AggregatesList>
 		</IComponent>
 		<IFolder type="e">
@@ -214,13 +277,13 @@
 			</Files>
 		</IFolder>
 		<ICodeGenConfigInfo type="e">
-			<_id type="a">GUID 88d00cfd-0a7d-45f4-8514-e08a3648fb2a</_id>
+			<_id type="a">GUID 46d566a7-3528-416e-a56c-0c327281f1af</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">DefaultConfig</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:11:41</_modifiedTime>
+			<_modifiedTimeWeak type="a">12.23.2024::20:59:20</_modifiedTimeWeak>
+			<_modifiedTime type="a">12.23.2024::20:59:20</_modifiedTime>
 			<_scopeType type="a">Explicit</_scopeType>
-			<_instrumentation type="a">None</_instrumentation>
+			<_instrumentation type="a">Animation</_instrumentation>
 			<_timeModel type="a">RealTime</_timeModel>
 			<m_generateActors type="a">1</m_generateActors>
 			<_statechartImplementation type="a">Flat</_statechartImplementation>
@@ -232,10 +295,19 @@
 			</ScopeElements>
 			<InitialInstances type="c">
 				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IClass</_hm2Class>
+							<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+							<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
+							<_hname type="a">DataProcessor</_hname>
+							<_hid type="a">GUID 38085f56-dbef-4ffd-9c2d-f2ca83e8c1b7</_hid>
+						</IHandle>
+					
 				</IRPYRawContainer>
 			</InitialInstances>
-			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
-			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<weakCGTime type="a">12.23.2024::20:59:20</weakCGTime>
+			<strongCGTime type="a">12.23.2024::20:59:20</strongCGTime>
 			<AnimScopeElements type="c">
 				<IRPYRawContainer type="e">
 				</IRPYRawContainer>
@@ -243,15 +315,15 @@
 			<m_allInAnimScope type="a">1</m_allInAnimScope>
 			<m_generateUsecases type="a">0</m_generateUsecases>
 			<AggregatesList type="e">
-				<value>GUID b901f183-2038-472f-a3de-1b741c532010</value>
-				<value>GUID 83a57e48-7086-4a07-8fa8-9346ac2482be</value>
-				<value>GUID 47782c1b-3cd9-4a7b-8693-c9ee53b4fbe4</value>
+				<value>GUID cd296aaf-2ecd-4b7d-8bf4-84e7f4e2d470</value>
+				<value>GUID 880fc47c-3025-4ac8-b385-db904f7b46e2</value>
+				<value>GUID 27e64251-a935-4a4c-a944-f99cf66cddb1</value>
 			</AggregatesList>
 		</ICodeGenConfigInfo>
 		<IMHyperLink type="e">
-			<_id type="a">GUID b901f183-2038-472f-a3de-1b741c532010</_id>
+			<_id type="a">GUID cd296aaf-2ecd-4b7d-8bf4-84e7f4e2d470</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:11:41</_modifiedTime>
+			<_modifiedTime type="a">12.23.2024::20:59:6</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 				</INObjectHandle>
@@ -262,9 +334,9 @@
 			<isConfigurationFileHyperLink type="a">1</isConfigurationFileHyperLink>
 		</IMHyperLink>
 		<IMHyperLink type="e">
-			<_id type="a">GUID 83a57e48-7086-4a07-8fa8-9346ac2482be</_id>
+			<_id type="a">GUID 880fc47c-3025-4ac8-b385-db904f7b46e2</_id>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:11:41</_modifiedTime>
+			<_modifiedTime type="a">12.23.2024::20:59:6</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
 				</INObjectHandle>
@@ -275,11 +347,11 @@
 			<isConfigurationFileHyperLink type="a">1</isConfigurationFileHyperLink>
 		</IMHyperLink>
 		<IFolder type="e">
-			<_id type="a">GUID 47782c1b-3cd9-4a7b-8693-c9ee53b4fbe4</_id>
+			<_id type="a">GUID 27e64251-a935-4a4c-a944-f99cf66cddb1</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">DefaultConfig</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:11:41</_modifiedTime>
+			<_modifiedTime type="a">12.23.2024::20:59:6</_modifiedTime>
 			<Elements type="c">
 				<IRPYRawContainer type="e">
 				</IRPYRawContainer>

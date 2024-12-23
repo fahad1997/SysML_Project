@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245157
+	Login		: 20245163
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: GeographicalConfiguration
@@ -15,22 +15,36 @@
 #include <oxf.h>
 //## auto_generated
 #include "DESIGN.h"
+//## auto_generated
+#include <aom.h>
 //## package SMSWTD_SYSTEM::DESIGN
 
 //## class GeographicalConfiguration
 class GeographicalConfiguration {
     ////    Friends    ////
     
-    ////    Constructors and destructors    ////
-    
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedGeographicalConfiguration;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     GeographicalConfiguration(void);
     
     //## auto_generated
     ~GeographicalConfiguration(void);
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedGeographicalConfiguration : virtual public AOMInstance {
+    DECLARE_META(GeographicalConfiguration, OMAnimatedGeographicalConfiguration)
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245157
+	Login		: 20245163
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: User
@@ -13,6 +13,10 @@
 
 //## auto_generated
 #include <oxf.h>
+//## auto_generated
+#include <aom.h>
+//## auto_generated
+#include "Default.h"
 //## link itsSMSWTD
 class SMSWTD;
 
@@ -22,6 +26,12 @@ class SMSWTD;
 class User {
     ////    Friends    ////
     
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedUser;
+#endif // _OMINSTRUMENT
+
     ////    Constructors and destructors    ////
     
     ////    Additional operations    ////
@@ -30,8 +40,6 @@ class User {
     
     ////    Framework operations    ////
     
-public :
-
     //## auto_generated
     User(void);
     
@@ -64,6 +72,20 @@ public :
     //## auto_generated
     void _clearItsSMSWTD(void);
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedUser : virtual public AOMInstance {
+    DECLARE_META(User, OMAnimatedUser)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

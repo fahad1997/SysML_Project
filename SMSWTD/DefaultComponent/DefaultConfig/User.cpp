@@ -1,6 +1,6 @@
 /********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245157
+	Login		: 20245163
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: User
@@ -8,17 +8,27 @@
 	File Path	: DefaultComponent\DefaultConfig\User.cpp
 *********************************************************************/
 
+//#[ ignore
+#define NAMESPACE_PREFIX
+//#]
+
 //## auto_generated
 #include "User.h"
 //## link itsSMSWTD
 #include "SMSWTD.h"
+//#[ ignore
+#define Default_User_User_SERIALIZE OM_NO_OP
+//#]
+
 //## package Default
 
 //## actor User
 User::User(void) : itsSMSWTD(NULL) {
+    NOTIFY_CONSTRUCTOR(User, User(), 0, Default_User_User_SERIALIZE);
 }
 
 User::~User(void) {
+    NOTIFY_DESTRUCTOR(~User, true);
     cleanUpRelations();
 }
 
@@ -37,6 +47,7 @@ void User::setItsSMSWTD(SMSWTD* const p_SMSWTD) {
 void User::cleanUpRelations(void) {
     if(itsSMSWTD != NULL)
         {
+            NOTIFY_RELATION_CLEARED("itsSMSWTD");
             const User* p_User = itsSMSWTD->getItsUser();
             if(p_User != NULL)
                 {
@@ -48,6 +59,14 @@ void User::cleanUpRelations(void) {
 
 void User::__setItsSMSWTD(SMSWTD* const p_SMSWTD) {
     itsSMSWTD = p_SMSWTD;
+    if(p_SMSWTD != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsSMSWTD", p_SMSWTD, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsSMSWTD");
+        }
 }
 
 void User::_setItsSMSWTD(SMSWTD* const p_SMSWTD) {
@@ -59,8 +78,23 @@ void User::_setItsSMSWTD(SMSWTD* const p_SMSWTD) {
 }
 
 void User::_clearItsSMSWTD(void) {
+    NOTIFY_RELATION_CLEARED("itsSMSWTD");
     itsSMSWTD = NULL;
 }
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+void OMAnimatedUser::serializeRelations(AOMSRelations* aomsRelations) const {
+    aomsRelations->addRelation("itsSMSWTD", false, true);
+    if(myReal->itsSMSWTD)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsSMSWTD);
+        }
+}
+//#]
+
+IMPLEMENT_META_P(User, Default, Default, false, OMAnimatedUser)
+#endif // _OMINSTRUMENT
 
 /*********************************************************************
 	File Path	: DefaultComponent\DefaultConfig\User.cpp

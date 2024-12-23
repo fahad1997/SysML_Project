@@ -1,6 +1,6 @@
 /********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245157
+	Login		: 20245163
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DefaultConfig
@@ -10,11 +10,16 @@
 
 //## auto_generated
 #include "MainDefaultComponent.h"
+//## auto_generated
+#include "DataProcessor.h"
 RhpInteger main( void) {
     RhpInteger status = 0;
     try {
         if(OXF::initialize(0,NULL))
             {
+                DataProcessor p_DataProcessor;
+                p_DataProcessor.setShouldDelete(false);
+                (void) p_DataProcessor.startBehavior();
                 //#[ configuration DefaultComponent::DefaultConfig 
                 //#]
                 OXF::start();

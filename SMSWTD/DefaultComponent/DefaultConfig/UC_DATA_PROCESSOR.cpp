@@ -3,9 +3,9 @@
 	Login		: 20245163
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
-	Model Element	: Default
+	Model Element	: UC_DATA_PROCESSOR
 //!	Generated Date	: Mon, 23, Dec 2024  
-	File Path	: DefaultComponent\DefaultConfig\Default.cpp
+	File Path	: DefaultComponent\DefaultConfig\UC_DATA_PROCESSOR.cpp
 *********************************************************************/
 
 //#[ ignore
@@ -13,35 +13,19 @@
 //#]
 
 //## auto_generated
-#include "Default.h"
-//## auto_generated
-#include "Cloud.h"
-//## auto_generated
-#include "SateliteImage.h"
-//## auto_generated
-#include "Sensors.h"
-//## auto_generated
-#include "SMSWTD.h"
-//## auto_generated
-#include "StormSensor.h"
-//## auto_generated
-#include "WaterFlowDetector.h"
-//## auto_generated
-#include "WaterPressureSensor.h"
-//## auto_generated
-#include "WeatherSensor.h"
-//## package Default
+#include "UC_DATA_PROCESSOR.h"
+//## package SMSWTD_SYSTEM::USECASES::UC_DATA_PROCESSOR
 
 
 #ifdef _OMINSTRUMENT
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */);
 
-IMPLEMENT_META_PACKAGE(Default, Default)
+IMPLEMENT_META_PACKAGE(SMSWTD_SYSTEM_USECASES_UC_DATA_PROCESSOR, SMSWTD_SYSTEM::USECASES::UC_DATA_PROCESSOR)
 
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
 }
 #endif // _OMINSTRUMENT
 
 /*********************************************************************
-	File Path	: DefaultComponent\DefaultConfig\Default.cpp
+	File Path	: DefaultComponent\DefaultConfig\UC_DATA_PROCESSOR.cpp
 *********************************************************************/

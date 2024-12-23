@@ -3,50 +3,57 @@
 	Login		: 20245163
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
-	Model Element	: SateliteImage
+	Model Element	: Dashboard
 //!	Generated Date	: Mon, 23, Dec 2024  
-	File Path	: DefaultComponent\DefaultConfig\SateliteImage.h
+	File Path	: DefaultComponent\DefaultConfig\Dashboard.h
 *********************************************************************/
 
-#ifndef SateliteImage_H
-#define SateliteImage_H
+#ifndef Dashboard_H
+#define Dashboard_H
 
 //## auto_generated
 #include <oxf.h>
 //## auto_generated
-#include <aom.h>
+#include "DESIGN.h"
 //## auto_generated
-#include "Default.h"
-//## link itsSMSWTD
-class SMSWTD;
+#include <aom.h>
+//## link itsNotificationService
+class NotificationService;
 
-//## package Default
+//## link itsSMSWTD_BLK
+class SMSWTD_BLK;
 
-//## class SateliteImage
-class SateliteImage {
-    ////    Friends    ////
-    
+//## package SMSWTD_SYSTEM::DESIGN
+
+//## class Dashboard
+class Dashboard {
 public :
 
 #ifdef _OMINSTRUMENT
-    friend class OMAnimatedSateliteImage;
+    friend class OMAnimatedDashboard;
 #endif // _OMINSTRUMENT
 
     ////    Constructors and destructors    ////
     
     //## auto_generated
-    SateliteImage(void);
+    Dashboard(void);
     
     //## auto_generated
-    ~SateliteImage(void);
+    ~Dashboard(void);
     
     ////    Additional operations    ////
     
     //## auto_generated
-    const SMSWTD* getItsSMSWTD(void) const;
+    const NotificationService* getItsNotificationService(void) const;
     
     //## auto_generated
-    void setItsSMSWTD(SMSWTD* const p_SMSWTD);
+    void setItsNotificationService(NotificationService* const p_NotificationService);
+    
+    //## auto_generated
+    const SMSWTD_BLK* getItsSMSWTD_BLK(void) const;
+    
+    //## auto_generated
+    void setItsSMSWTD_BLK(SMSWTD_BLK* const p_SMSWTD_BLK);
 
 protected :
 
@@ -57,26 +64,28 @@ protected :
 
 private :
 
-    SMSWTD* itsSMSWTD;		//## link itsSMSWTD
+    NotificationService* itsNotificationService;		//## link itsNotificationService
+    
+    SMSWTD_BLK* itsSMSWTD_BLK;		//## link itsSMSWTD_BLK
     
     ////    Framework operations    ////
 
 public :
 
     //## auto_generated
-    void __setItsSMSWTD(SMSWTD* const p_SMSWTD);
+    void __setItsSMSWTD_BLK(SMSWTD_BLK* const p_SMSWTD_BLK);
     
     //## auto_generated
-    void _setItsSMSWTD(SMSWTD* const p_SMSWTD);
+    void _setItsSMSWTD_BLK(SMSWTD_BLK* const p_SMSWTD_BLK);
     
     //## auto_generated
-    void _clearItsSMSWTD(void);
+    void _clearItsSMSWTD_BLK(void);
 };
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
-class OMAnimatedSateliteImage : virtual public AOMInstance {
-    DECLARE_META(SateliteImage, OMAnimatedSateliteImage)
+class OMAnimatedDashboard : virtual public AOMInstance {
+    DECLARE_META(Dashboard, OMAnimatedDashboard)
     
     ////    Framework operations    ////
     
@@ -89,5 +98,5 @@ public :
 
 #endif
 /*********************************************************************
-	File Path	: DefaultComponent\DefaultConfig\SateliteImage.h
+	File Path	: DefaultComponent\DefaultConfig\Dashboard.h
 *********************************************************************/

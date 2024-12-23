@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245157
+	Login		: 20245163
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DESIGN
@@ -16,7 +16,12 @@
 //## auto_generated
 #include <event.h>
 //## auto_generated
+#include <aom.h>
+//## auto_generated
 class CloudClient;
+
+//## auto_generated
+class Dashboard;
 
 //## auto_generated
 class DashboardPublisher;
@@ -40,7 +45,16 @@ class ImageCollector;
 class ImageProcessor;
 
 //## auto_generated
+class NotificationService;
+
+//## auto_generated
+class PredictionModel;
+
+//## auto_generated
 class PredictionModelPublisher;
+
+//## auto_generated
+class SMSWTD_BLK;
 
 //## auto_generated
 class SensorConfiguration;
@@ -52,43 +66,141 @@ class SensorDataProcessor;
 
 
 
-//## event evCheckDataAvailability()
-class evCheckDataAvailability : public OMEvent {
-    ////    Constructors and destructors    ////
+//## event evActivateSMSWTD()
+class evActivateSMSWTD : public OMEvent {
+    ////    Friends    ////
     
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevActivateSMSWTD;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    evActivateSMSWTD(void);
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedevActivateSMSWTD : virtual public AOMEvent {
+    DECLARE_META_EVENT(evActivateSMSWTD)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//#[ ignore
+extern const IOxfEvent::ID evActivateSMSWTD_DESIGN_SMSWTD_SYSTEM_id;
+//#]
+
+//## event reqDataFromSensors()
+class reqDataFromSensors : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedreqDataFromSensors;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
+    //## auto_generated
+    reqDataFromSensors(void);
+};
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedreqDataFromSensors : virtual public AOMEvent {
+    DECLARE_META_EVENT(reqDataFromSensors)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//#[ ignore
+extern const IOxfEvent::ID reqDataFromSensors_DESIGN_SMSWTD_SYSTEM_id;
+//#]
+
+//## event evCheckDataAvailability()
+class evCheckDataAvailability : public OMEvent {
+    ////    Friends    ////
+    
+public :
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevCheckDataAvailability;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     evCheckDataAvailability(void);
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedevCheckDataAvailability : virtual public AOMEvent {
+    DECLARE_META_EVENT(evCheckDataAvailability)
+};
+//#]
+#endif // _OMINSTRUMENT
 
 //#[ ignore
 extern const IOxfEvent::ID evCheckDataAvailability_DESIGN_SMSWTD_SYSTEM_id;
 //#]
 
-//## event evCollectData()
-class evCollectData : public OMEvent {
-    ////    Constructors and destructors    ////
+//## event evSensorsReadyToCollectData()
+class evSensorsReadyToCollectData : public OMEvent {
+    ////    Friends    ////
     
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevSensorsReadyToCollectData;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
-    evCollectData(void);
+    evSensorsReadyToCollectData(void);
 };
 
+#ifdef _OMINSTRUMENT
 //#[ ignore
-extern const IOxfEvent::ID evCollectData_DESIGN_SMSWTD_SYSTEM_id;
+class OMAnimatedevSensorsReadyToCollectData : virtual public AOMEvent {
+    DECLARE_META_EVENT(evSensorsReadyToCollectData)
+};
+//#]
+#endif // _OMINSTRUMENT
+
+//#[ ignore
+extern const IOxfEvent::ID evSensorsReadyToCollectData_DESIGN_SMSWTD_SYSTEM_id;
 //#]
 
 //## event evProcessData()
 class evProcessData : public OMEvent {
-    ////    Constructors and destructors    ////
+    ////    Friends    ////
     
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevProcessData;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     evProcessData(void);
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedevProcessData : virtual public AOMEvent {
+    DECLARE_META_EVENT(evProcessData)
+};
+//#]
+#endif // _OMINSTRUMENT
 
 //#[ ignore
 extern const IOxfEvent::ID evProcessData_DESIGN_SMSWTD_SYSTEM_id;
@@ -96,128 +208,30 @@ extern const IOxfEvent::ID evProcessData_DESIGN_SMSWTD_SYSTEM_id;
 
 //## event evReturnData()
 class evReturnData : public OMEvent {
-    ////    Constructors and destructors    ////
+    ////    Friends    ////
     
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedevReturnData;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     evReturnData(void);
 };
 
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedevReturnData : virtual public AOMEvent {
+    DECLARE_META_EVENT(evReturnData)
+};
+//#]
+#endif // _OMINSTRUMENT
+
 //#[ ignore
 extern const IOxfEvent::ID evReturnData_DESIGN_SMSWTD_SYSTEM_id;
-//#]
-
-//## event evSensorsReadyToCollectData()
-class evSensorsReadyToCollectData : public OMEvent {
-    ////    Constructors and destructors    ////
-    
-public :
-
-    //## auto_generated
-    evSensorsReadyToCollectData(void);
-};
-
-//#[ ignore
-extern const IOxfEvent::ID evSensorsReadyToCollectData_DESIGN_SMSWTD_SYSTEM_id;
-//#]
-
-//## event failedToCollectGeoData()
-class failedToCollectGeoData : public OMEvent {
-    ////    Constructors and destructors    ////
-    
-public :
-
-    //## auto_generated
-    failedToCollectGeoData(void);
-};
-
-//#[ ignore
-extern const IOxfEvent::ID failedToCollectGeoData_DESIGN_SMSWTD_SYSTEM_id;
-//#]
-
-//## event failedToCollectSensorConfiguration()
-class failedToCollectSensorConfiguration : public OMEvent {
-    ////    Constructors and destructors    ////
-    
-public :
-
-    //## auto_generated
-    failedToCollectSensorConfiguration(void);
-};
-
-//#[ ignore
-extern const IOxfEvent::ID failedToCollectSensorConfiguration_DESIGN_SMSWTD_SYSTEM_id;
-//#]
-
-//## event failedToCollectSensorData()
-class failedToCollectSensorData : public OMEvent {
-    ////    Constructors and destructors    ////
-    
-public :
-
-    //## auto_generated
-    failedToCollectSensorData(void);
-};
-
-//#[ ignore
-extern const IOxfEvent::ID failedToCollectSensorData_DESIGN_SMSWTD_SYSTEM_id;
-//#]
-
-//## event reqDataFromSensors()
-class reqDataFromSensors : public OMEvent {
-    ////    Constructors and destructors    ////
-    
-public :
-
-    //## auto_generated
-    reqDataFromSensors(void);
-};
-
-//#[ ignore
-extern const IOxfEvent::ID reqDataFromSensors_DESIGN_SMSWTD_SYSTEM_id;
-//#]
-
-//## event reqGeographicalVariables()
-class reqGeographicalVariables : public OMEvent {
-    ////    Constructors and destructors    ////
-    
-public :
-
-    //## auto_generated
-    reqGeographicalVariables(void);
-};
-
-//#[ ignore
-extern const IOxfEvent::ID reqGeographicalVariables_DESIGN_SMSWTD_SYSTEM_id;
-//#]
-
-//## event reqSensorsData()
-class reqSensorsData : public OMEvent {
-    ////    Constructors and destructors    ////
-    
-public :
-
-    //## auto_generated
-    reqSensorsData(void);
-};
-
-//#[ ignore
-extern const IOxfEvent::ID reqSensorsData_DESIGN_SMSWTD_SYSTEM_id;
-//#]
-
-//## event reqSensorThresholds()
-class reqSensorThresholds : public OMEvent {
-    ////    Constructors and destructors    ////
-    
-public :
-
-    //## auto_generated
-    reqSensorThresholds(void);
-};
-
-//#[ ignore
-extern const IOxfEvent::ID reqSensorThresholds_DESIGN_SMSWTD_SYSTEM_id;
 //#]
 
 #endif

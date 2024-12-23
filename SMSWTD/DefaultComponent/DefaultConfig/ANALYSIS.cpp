@@ -1,6 +1,6 @@
 /********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245157
+	Login		: 20245163
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: ANALYSIS
@@ -20,7 +20,7 @@ reqSensorsData::reqSensorsData(void) : OMEvent() {
 }
 
 //#[ ignore
-const IOxfEvent::ID reqSensorsData_ANALYSIS_SMSWTD_SYSTEM_id(12);
+const IOxfEvent::ID reqSensorsData_ANALYSIS_SMSWTD_SYSTEM_id(26612);
 //#]
 
 //## event reqSensorThresholds()
@@ -29,7 +29,7 @@ reqSensorThresholds::reqSensorThresholds(void) : OMEvent() {
 }
 
 //#[ ignore
-const IOxfEvent::ID reqSensorThresholds_ANALYSIS_SMSWTD_SYSTEM_id(3);
+const IOxfEvent::ID reqSensorThresholds_ANALYSIS_SMSWTD_SYSTEM_id(26603);
 //#]
 
 //## event reqGeographicalVariables()
@@ -38,7 +38,7 @@ reqGeographicalVariables::reqGeographicalVariables(void) : OMEvent() {
 }
 
 //#[ ignore
-const IOxfEvent::ID reqGeographicalVariables_ANALYSIS_SMSWTD_SYSTEM_id(4);
+const IOxfEvent::ID reqGeographicalVariables_ANALYSIS_SMSWTD_SYSTEM_id(26604);
 //#]
 
 //## event failedToCollectSensorData()
@@ -47,7 +47,7 @@ failedToCollectSensorData::failedToCollectSensorData(void) : OMEvent() {
 }
 
 //#[ ignore
-const IOxfEvent::ID failedToCollectSensorData_ANALYSIS_SMSWTD_SYSTEM_id(10);
+const IOxfEvent::ID failedToCollectSensorData_ANALYSIS_SMSWTD_SYSTEM_id(26610);
 //#]
 
 //## event failedToCollectSensorConfiguration()
@@ -56,7 +56,7 @@ failedToCollectSensorConfiguration::failedToCollectSensorConfiguration(void) : O
 }
 
 //#[ ignore
-const IOxfEvent::ID failedToCollectSensorConfiguration_ANALYSIS_SMSWTD_SYSTEM_id(2);
+const IOxfEvent::ID failedToCollectSensorConfiguration_ANALYSIS_SMSWTD_SYSTEM_id(26602);
 //#]
 
 //## event failedToCollectGeoData()
@@ -65,7 +65,7 @@ failedToCollectGeoData::failedToCollectGeoData(void) : OMEvent() {
 }
 
 //#[ ignore
-const IOxfEvent::ID failedToCollectGeoData_ANALYSIS_SMSWTD_SYSTEM_id(5);
+const IOxfEvent::ID failedToCollectGeoData_ANALYSIS_SMSWTD_SYSTEM_id(26605);
 //#]
 
 //## event evCollectData()
@@ -74,7 +74,7 @@ evCollectData::evCollectData(void) : OMEvent() {
 }
 
 //#[ ignore
-const IOxfEvent::ID evCollectData_ANALYSIS_SMSWTD_SYSTEM_id(1);
+const IOxfEvent::ID evCollectData_ANALYSIS_SMSWTD_SYSTEM_id(26601);
 //#]
 
 //## event reqDataFromSensors()
@@ -83,7 +83,7 @@ reqDataFromSensors::reqDataFromSensors(void) : OMEvent() {
 }
 
 //#[ ignore
-const IOxfEvent::ID reqDataFromSensors_ANALYSIS_SMSWTD_SYSTEM_id(8);
+const IOxfEvent::ID reqDataFromSensors_ANALYSIS_SMSWTD_SYSTEM_id(26608);
 //#]
 
 //## event evReturnData()
@@ -92,7 +92,7 @@ evReturnData::evReturnData(void) : OMEvent() {
 }
 
 //#[ ignore
-const IOxfEvent::ID evReturnData_ANALYSIS_SMSWTD_SYSTEM_id(7);
+const IOxfEvent::ID evReturnData_ANALYSIS_SMSWTD_SYSTEM_id(26607);
 //#]
 
 //## event evSensorsReadyToCollectData()
@@ -101,7 +101,7 @@ evSensorsReadyToCollectData::evSensorsReadyToCollectData(void) : OMEvent() {
 }
 
 //#[ ignore
-const IOxfEvent::ID evSensorsReadyToCollectData_ANALYSIS_SMSWTD_SYSTEM_id(9);
+const IOxfEvent::ID evSensorsReadyToCollectData_ANALYSIS_SMSWTD_SYSTEM_id(26609);
 //#]
 
 //## event evCheckDataAvailability()
@@ -110,7 +110,7 @@ evCheckDataAvailability::evCheckDataAvailability(void) : OMEvent() {
 }
 
 //#[ ignore
-const IOxfEvent::ID evCheckDataAvailability_ANALYSIS_SMSWTD_SYSTEM_id(11);
+const IOxfEvent::ID evCheckDataAvailability_ANALYSIS_SMSWTD_SYSTEM_id(26611);
 //#]
 
 //## event evProcessData()
@@ -119,7 +119,7 @@ evProcessData::evProcessData(void) : OMEvent() {
 }
 
 //#[ ignore
-const IOxfEvent::ID evProcessData_ANALYSIS_SMSWTD_SYSTEM_id(6);
+const IOxfEvent::ID evProcessData_ANALYSIS_SMSWTD_SYSTEM_id(26606);
 //#]
 
 /*********************************************************************

@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245157
+	Login		: 20245163
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DataPublisher
@@ -15,20 +15,34 @@
 #include <oxf.h>
 //## auto_generated
 #include "DESIGN.h"
+//## auto_generated
+#include <aom.h>
 //## package SMSWTD_SYSTEM::DESIGN
 
 //## class DataPublisher
 class DataPublisher {
-    ////    Constructors and destructors    ////
-    
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedDataPublisher;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     DataPublisher(void);
     
     //## auto_generated
     ~DataPublisher(void);
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedDataPublisher : virtual public AOMInstance {
+    DECLARE_META(DataPublisher, OMAnimatedDataPublisher)
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************
