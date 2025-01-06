@@ -12,10 +12,10 @@
 			<_id type="a">GUID e27604b8-27b8-45b1-a911-43c4457e14b4</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">DESIGN</_name>
-			<_modifiedTimeWeak type="a">1.6.2025::20:28:41</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.6.2025::20:35:5</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::20:51:53</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::20:51:53</_modifiedTime>
 			<_lastID type="a">16</_lastID>
-			<weakCGTime type="a">1.6.2025::20:28:41</weakCGTime>
+			<weakCGTime type="a">1.6.2025::20:51:53</weakCGTime>
 			<strongCGTime type="a">12.23.2024::17:41:48</strongCGTime>
 			<_defaultComposite type="s">GUID a1a5630a-6cc0-4a66-aa30-79657dcdff76</_defaultComposite>
 			<_eventsBaseID type="a">23401</_eventsBaseID>
@@ -387,9 +387,9 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">12.23.2024::17:41:48</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.6.2025::20:36:13</_modifiedTime>
-			<_lastModifiedTime type="a">1.6.2025::20:36:13</_lastModifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::20:51:15</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::20:51:10</_modifiedTime>
+			<_lastModifiedTime type="a">1.6.2025::20:51:10</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -3545,8 +3545,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">12.23.2024::17:41:49</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::20:43:51</_modifiedTime>
-			<_lastModifiedTime type="a">12.23.2024::20:43:51</_lastModifiedTime>
+			<_modifiedTime type="a">1.6.2025::20:51:53</_modifiedTime>
+			<_lastModifiedTime type="a">1.6.2025::20:51:53</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -4607,7 +4607,7 @@
 											<IRPYRawContainer type="e">
 												<IProperty type="e">
 													<_Name type="a">Line.LineColor</_Name>
-													<_Value type="a">0,0,0</_Value>
+													<_Value type="a">0,128,128</_Value>
 													<_Type type="a">Color</_Type>
 												</IProperty>
 												
@@ -11706,7 +11706,7 @@ std::cout&lt;&lt;&quot;Failed to collect data from the sensors.\n&quot;;</_body>
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">1.6.2025::20:35:52</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">1.6.2025::20:51:15</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
@@ -11715,7 +11715,7 @@ std::cout&lt;&lt;&quot;Failed to collect data from the sensors.\n&quot;;</_body>
 			</_theMainDiagram>
 			<_modifiedTime type="a">1.6.2025::20:35:52</_modifiedTime>
 			<_lastID type="a">3</_lastID>
-			<weakCGTime type="a">1.6.2025::20:35:52</weakCGTime>
+			<weakCGTime type="a">1.6.2025::20:51:15</weakCGTime>
 			<strongCGTime type="a">1.6.2025::20:35:52</strongCGTime>
 			<StateCharts type="c">
 				<IRPYRawContainer type="e">
@@ -11736,7 +11736,7 @@ std::cout&lt;&lt;&quot;Failed to collect data from the sensors.\n&quot;;</_body>
 		</IClass>
 		<IGeneralization type="e">
 			<_id type="a">GUID c28832df-2e02-4e13-8e84-4be3c9de6d9d</_id>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">1.6.2025::20:51:15</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<_dependsOn type="r">
 				<INObjectHandle type="e">
@@ -11751,7 +11751,7 @@ std::cout&lt;&lt;&quot;Failed to collect data from the sensors.\n&quot;;</_body>
 			<_id type="a">GUID 92aca0a6-a890-40c9-aca9-e3881ab5c0fc</_id>
 			<_myState type="a">139264</_myState>
 			<_name type="a">ImageProcessor</_name>
-			<_modifiedTimeWeak type="a">1.6.2025::20:35:52</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">1.6.2025::20:51:15</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.6.2025::20:35:52</_modifiedTime>
 			<m_type type="a">specFile</m_type>
 			<AggregatesList type="e">
@@ -12145,7 +12145,7 @@ std::cout&lt;&lt;&quot;Failed to collect data from the sensors.\n&quot;;</_body>
 			<_id type="a">GUID eacd0674-a436-4a76-8c10-42ff19cb28d1</_id>
 			<_myState type="a">139264</_myState>
 			<_name type="a">ImageProcessor</_name>
-			<_modifiedTimeWeak type="a">1.6.2025::20:35:52</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">1.6.2025::20:51:15</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.6.2025::20:35:52</_modifiedTime>
 			<m_type type="a">implFile</m_type>
 			<AggregatesList type="e">
@@ -12882,7 +12882,7 @@ std::cout&lt;&lt;&quot;Failed to collect data from the sensors.\n&quot;;</_body>
 			<_id type="a">GUID a13d0498-22cf-49b6-b55f-5ecf97588e92</_id>
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsImageCollector</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:41:48</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">1.6.2025::20:51:15</_modifiedTimeWeak>
 			<_modifiedTime type="a">12.23.2024::17:14:6</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
@@ -12902,7 +12902,7 @@ std::cout&lt;&lt;&quot;Failed to collect data from the sensors.\n&quot;;</_body>
 			<_id type="a">GUID 29f6244e-70a3-4ed1-a8ee-fc9ebd905162</_id>
 			<_myState type="a">10240</_myState>
 			<_name type="a">itsDataPublisher</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:41:48</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">1.6.2025::20:51:15</_modifiedTimeWeak>
 			<_modifiedTime type="a">12.23.2024::17:15:3</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">

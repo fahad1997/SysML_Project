@@ -12,14 +12,14 @@
 			<_id type="a">GUID 525429d5-fd24-4621-8efc-ad0b15a24e53</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ANALYSIS</_name>
-			<_modifiedTimeWeak type="a">1.6.2025::20:27:19</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.6.2025::20:27:19</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::21:21:9</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::21:21:9</_modifiedTime>
 			<_lastID type="a">54</_lastID>
-			<weakCGTime type="a">1.6.2025::20:27:19</weakCGTime>
+			<weakCGTime type="a">1.6.2025::21:21:9</weakCGTime>
 			<strongCGTime type="a">12.17.2024::13:22:28</strongCGTime>
 			<_defaultComposite type="s">GUID 8ddd7caa-bcd2-4ef3-a4fc-884e84d37d8a</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">1.6.2025::20:21:4</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.6.2025::20:57:30</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID 4118b103-03dc-43cf-821d-0185af648046</value>
 				<value>GUID c83d82c6-b30c-4be2-855f-4ba84c7d684c</value>
@@ -28,7 +28,6 @@
 				<value>GUID 72d3b1a6-c8ee-4421-a137-171809736462</value>
 				<value>GUID 6ee65560-da79-4ba4-95a1-393f21a61aa5</value>
 				<value>GUID 93fe41df-7c70-4f4b-92e1-756dec59eff6</value>
-				<value>GUID 00938bcb-d112-42f4-be02-39e5e80e1798</value>
 				<value>GUID d2da3485-e31c-4347-99c4-ac54ba374dea</value>
 				<value>GUID 9a169ed7-3c87-47e9-995a-95ecbe0efab1</value>
 				<value>GUID 80d1ee02-35ab-43f4-b514-172dc32fc6d9</value>
@@ -5484,15 +5483,15 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">1.6.2025::20:21:52</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">1.6.2025::21:2:18</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IDiagram</_hm2Class>
 					<_hid type="a">GUID 4118b103-03dc-43cf-821d-0185af648046</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">1.6.2025::20:21:52</_modifiedTime>
-			<weakCGTime type="a">1.6.2025::20:21:52</weakCGTime>
+			<_modifiedTime type="a">1.6.2025::21:2:18</_modifiedTime>
+			<weakCGTime type="a">1.6.2025::21:2:18</weakCGTime>
 			<strongCGTime type="a">1.6.2025::20:21:45</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -5501,6 +5500,7 @@
 			<_classModifier type="a">Unspecified</_classModifier>
 			<AggregatesList type="e">
 				<value>GUID 42e2948d-2c07-413d-8725-edf0bf57bcbf</value>
+				<value>GUID 5cc01870-fd88-4d42-beee-2f9e72a32f89</value>
 			</AggregatesList>
 		</IClass>
 		<IAssociationEnd type="e">
@@ -5520,6 +5520,35 @@
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hid type="a">GUID 9f53e2ba-8325-461d-aeef-411ecc4dfb57</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 5cc01870-fd88-4d42-beee-2f9e72a32f89</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsCollect Image data</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::21:2:18</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IUseCase</_hm2Class>
+					<_hfilename type="a">.\UC_DATA_PROCESSOR.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES::UC_SMSWTD::UC_DATA_PROCESSOR</_hsubsystem>
+					<_hname type="a">Collect Image data</_hname>
+					<_hid type="a">GUID 8bc1a2c1-8d4a-4e92-a30f-ac0a73f83d68</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\UC_DATA_PROCESSOR.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES::UC_SMSWTD::UC_DATA_PROCESSOR</_hsubsystem>
+					<_hclass type="a">Collect Image data</_hclass>
+					<_hname type="a">itsAirborneSensor</_hname>
+					<_hid type="a">GUID cafb22bf-7a67-4d2c-97c0-8a0226a9efcf</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>
@@ -7802,459 +7831,6 @@
 					<_hclass type="a">ImageCollector</_hclass>
 					<_hname type="a">itsSateliteImage</_hname>
 					<_hid type="a">GUID 65b491bf-1cc0-42f2-bd0b-a75f482dfb55</_hid>
-				</IHandle>
-			</_inverse>
-			<_linkType type="a">Assoc</_linkType>
-			<_navigability type="a">Navigable</_navigability>
-		</IAssociationEnd>
-		<IClass type="e">
-			<_id type="a">GUID 00938bcb-d112-42f4-be02-39e5e80e1798</_id>
-			<_myState type="a">8192</_myState>
-			<_name type="a">Sensors</_name>
-			<Stereotypes type="c">
-				<IRPYRawContainer type="e">
-					
-						<IHandle type="e">
-							<_hm2Class type="a">IStereotype</_hm2Class>
-							<_hfilename type="a">$OMROOT\Profiles\SysML\SysMLProfile_rpy\SysML.sbs</_hfilename>
-							<_hsubsystem type="a">SysML::Blocks</_hsubsystem>
-							<_hname type="a">Block</_hname>
-							<_hid type="a">GUID f685432f-691e-4ff1-be70-4d09d19457e1</_hid>
-						</IHandle>
-					
-				</IRPYRawContainer>
-			</Stereotypes>
-			<_modifiedTimeWeak type="a">1.6.2025::20:24:21</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.6.2025::20:24:21</_modifiedTime>
-			<weakCGTime type="a">1.6.2025::20:24:21</weakCGTime>
-			<strongCGTime type="a">1.6.2025::20:24:21</strongCGTime>
-			<_itsStateChart type="r">
-				<IHandle type="e">
-				</IHandle>
-			</_itsStateChart>
-			<_classModifier type="a">Unspecified</_classModifier>
-			<AggregatesList type="e">
-				<value>GUID f7b2c3cb-6bb7-4f9e-a826-a5b08e56861d</value>
-				<value>GUID feafe886-681a-448a-8405-27b829eb6dce</value>
-				<value>GUID 53a156fe-04b6-425b-b2e7-41540e4dca64</value>
-			</AggregatesList>
-		</IClass>
-		<IFile type="e">
-			<_id type="a">GUID f7b2c3cb-6bb7-4f9e-a826-a5b08e56861d</_id>
-			<_myState type="a">139264</_myState>
-			<_name type="a">Sensors</_name>
-			<_modifiedTimeWeak type="a">1.5.2025::14:25:27</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.5.2025::14:25:27</_modifiedTime>
-			<m_type type="a">specFile</m_type>
-			<AggregatesList type="e">
-				<value>GUID 6f1c4ca7-4fe1-4539-bc35-690326b194ac</value>
-				<value>GUID d7861aae-166c-46bb-b57d-4921606e19be</value>
-				<value>GUID a5ffd04d-8e27-4e76-9108-953132e07ab9</value>
-				<value>GUID 5296188e-60bb-4311-8f45-aa2c2c7cb30d</value>
-			</AggregatesList>
-		</IFile>
-		<IFileFragment type="e">
-			<_id type="a">GUID 6f1c4ca7-4fe1-4539-bc35-690326b194ac</_id>
-			<_name type="a">oxf:spec</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:2:34</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:34</_modifiedTime>
-			<m_type type="a">textFragment</m_type>
-			<m_text type="a">//## auto:dependency oxf:spec</m_text>
-			<m_startRow type="a">15</m_startRow>
-			<m_startCol_Short type="a">1</m_startCol_Short>
-			<m_endRow type="a">15</m_endRow>
-			<m_endCol_Short type="a">17</m_endCol_Short>
-			<m_subject type="r">
-				<INObjectHandle type="e">
-				</INObjectHandle>
-			</m_subject>
-		</IFileFragment>
-		<IFileFragment type="e">
-			<_id type="a">GUID d7861aae-166c-46bb-b57d-4921606e19be</_id>
-			<_name type="a">aom:spec</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:2:34</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:34</_modifiedTime>
-			<m_type type="a">textFragment</m_type>
-			<m_text type="a">//## auto:dependency aom:spec</m_text>
-			<m_startRow type="a">17</m_startRow>
-			<m_startCol_Short type="a">1</m_startCol_Short>
-			<m_endRow type="a">17</m_endRow>
-			<m_endCol_Short type="a">17</m_endCol_Short>
-			<m_subject type="r">
-				<INObjectHandle type="e">
-				</INObjectHandle>
-			</m_subject>
-		</IFileFragment>
-		<IFileFragment type="e">
-			<_id type="a">GUID a5ffd04d-8e27-4e76-9108-953132e07ab9</_id>
-			<_name type="a">Default:spec</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:2:34</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:34</_modifiedTime>
-			<m_type type="a">textFragment</m_type>
-			<m_text type="a">//## auto:dependency Default:spec</m_text>
-			<m_startRow type="a">19</m_startRow>
-			<m_startCol_Short type="a">1</m_startCol_Short>
-			<m_endRow type="a">19</m_endRow>
-			<m_endCol_Short type="a">21</m_endCol_Short>
-			<m_subject type="r">
-				<INObjectHandle type="e">
-				</INObjectHandle>
-			</m_subject>
-		</IFileFragment>
-		<IFileFragment type="e">
-			<_id type="a">GUID 5296188e-60bb-4311-8f45-aa2c2c7cb30d</_id>
-			<_name type="a">Sensors</_name>
-			<_modifiedTimeWeak type="a">1.5.2025::14:25:27</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.5.2025::14:25:27</_modifiedTime>
-			<m_type type="a">specFragment</m_type>
-			<m_startRow type="a">23</m_startRow>
-			<m_startCol_Short type="a">1</m_startCol_Short>
-			<m_endRow type="a">39</m_endRow>
-			<m_endCol_Short type="a">1</m_endCol_Short>
-			<m_subject type="r">
-				<INObjectHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hid type="a">GUID 00938bcb-d112-42f4-be02-39e5e80e1798</_hid>
-				</INObjectHandle>
-			</m_subject>
-			<AggregatesList type="e">
-				<value>GUID 63834f85-4f2d-4872-9b8c-9dcdb3f55684</value>
-				<value>GUID 6596953f-4aab-405b-bed7-2627c61c8e3e</value>
-				<value>GUID fca54b2b-1f5f-4816-95a3-200a2688c180</value>
-				<value>GUID a7f4bd51-9b1c-4e7f-bb30-ceb50b274580</value>
-				<value>GUID 9f2cd790-f21a-4cd2-bbd4-f3a04e61d5a6</value>
-				<value>GUID a9c3a1dc-1525-4f94-a98b-db93a62d5f6c</value>
-			</AggregatesList>
-		</IFileFragment>
-		<ITag type="e">
-			<_id type="a">GUID 63834f85-4f2d-4872-9b8c-9dcdb3f55684</_id>
-			<_myState type="a">8192</_myState>
-			<_name type="a">BodyStartLine</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
-			<_typeOf type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IType</_hm2Class>
-					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
-					<_hname type="a">RhpString</_hname>
-					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
-				</IHandle>
-			</_typeOf>
-			<_isOrdered type="a">0</_isOrdered>
-			<AggregatesList type="e">
-				<value>GUID ecb250d9-ba94-4f3d-b65c-a7259ced3a82</value>
-			</AggregatesList>
-		</ITag>
-		<ILiteralSpecification type="e">
-			<_id type="a">GUID ecb250d9-ba94-4f3d-b65c-a7259ced3a82</_id>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
-			<_value type="a">23</_value>
-		</ILiteralSpecification>
-		<ITag type="e">
-			<_id type="a">GUID 6596953f-4aab-405b-bed7-2627c61c8e3e</_id>
-			<_myState type="a">8192</_myState>
-			<_name type="a">BodyStartCol</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
-			<_typeOf type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IType</_hm2Class>
-					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
-					<_hname type="a">RhpString</_hname>
-					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
-				</IHandle>
-			</_typeOf>
-			<_isOrdered type="a">0</_isOrdered>
-			<AggregatesList type="e">
-				<value>GUID 95cf09ea-93eb-43b3-a9e4-556ef24722e0</value>
-			</AggregatesList>
-		</ITag>
-		<ILiteralSpecification type="e">
-			<_id type="a">GUID 95cf09ea-93eb-43b3-a9e4-556ef24722e0</_id>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
-			<_value type="a">15</_value>
-		</ILiteralSpecification>
-		<IFileFragment type="e">
-			<_id type="a">GUID fca54b2b-1f5f-4816-95a3-200a2688c180</_id>
-			<_name type="a">////    Friends    ////</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
-			<m_type type="a">textFragment</m_type>
-			<m_text type="a">////    Friends    ////
-</m_text>
-			<m_startRow type="a">24</m_startRow>
-			<m_startCol_Short type="a">5</m_startCol_Short>
-			<m_endRow type="a">24</m_endRow>
-			<m_endCol_Short type="a">28</m_endCol_Short>
-			<m_subject type="r">
-				<INObjectHandle type="e">
-				</INObjectHandle>
-			</m_subject>
-		</IFileFragment>
-		<IFileFragment type="e">
-			<_id type="a">GUID a7f4bd51-9b1c-4e7f-bb30-ceb50b274580</_id>
-			<_name type="a">////    Constructors and destructors    ////</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
-			<m_type type="a">textFragment</m_type>
-			<m_text type="a">////    Constructors and destructors    ////
-</m_text>
-			<m_startRow type="a">32</m_startRow>
-			<m_startCol_Short type="a">5</m_startCol_Short>
-			<m_endRow type="a">32</m_endRow>
-			<m_endCol_Short type="a">49</m_endCol_Short>
-			<m_subject type="r">
-				<INObjectHandle type="e">
-				</INObjectHandle>
-			</m_subject>
-		</IFileFragment>
-		<IFileFragment type="e">
-			<_id type="a">GUID 9f2cd790-f21a-4cd2-bbd4-f3a04e61d5a6</_id>
-			<_name type="a">Sensors:spec</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:2:34</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:34</_modifiedTime>
-			<m_type type="a">textFragment</m_type>
-			<m_text type="a">//## auto:operation Sensors():spec</m_text>
-			<m_startRow type="a">35</m_startRow>
-			<m_startCol_Short type="a">5</m_startCol_Short>
-			<m_endRow type="a">35</m_endRow>
-			<m_endCol_Short type="a">18</m_endCol_Short>
-			<m_subject type="r">
-				<INObjectHandle type="e">
-				</INObjectHandle>
-			</m_subject>
-		</IFileFragment>
-		<IFileFragment type="e">
-			<_id type="a">GUID a9c3a1dc-1525-4f94-a98b-db93a62d5f6c</_id>
-			<_name type="a">~Sensors:spec</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:2:34</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:34</_modifiedTime>
-			<m_type type="a">textFragment</m_type>
-			<m_text type="a">//## auto:operation ~Sensors():spec</m_text>
-			<m_startRow type="a">38</m_startRow>
-			<m_startCol_Short type="a">6</m_startCol_Short>
-			<m_endRow type="a">38</m_endRow>
-			<m_endCol_Short type="a">19</m_endCol_Short>
-			<m_subject type="r">
-				<INObjectHandle type="e">
-				</INObjectHandle>
-			</m_subject>
-		</IFileFragment>
-		<IFile type="e">
-			<_id type="a">GUID feafe886-681a-448a-8405-27b829eb6dce</_id>
-			<_myState type="a">139264</_myState>
-			<_name type="a">Sensors</_name>
-			<_modifiedTimeWeak type="a">1.5.2025::14:25:27</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.5.2025::14:25:27</_modifiedTime>
-			<m_type type="a">implFile</m_type>
-			<AggregatesList type="e">
-				<value>GUID 8200c09a-8713-427f-a387-7b2b951857f5</value>
-				<value>GUID e7cd47e8-8018-4fb5-a9ce-836fa6b7543c</value>
-			</AggregatesList>
-		</IFile>
-		<IFileFragment type="e">
-			<_id type="a">GUID 8200c09a-8713-427f-a387-7b2b951857f5</_id>
-			<_name type="a">Sensors:spec</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:2:34</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:34</_modifiedTime>
-			<m_type type="a">textFragment</m_type>
-			<m_text type="a">//## auto:dependency Sensors:spec</m_text>
-			<m_startRow type="a">16</m_startRow>
-			<m_startCol_Short type="a">1</m_startCol_Short>
-			<m_endRow type="a">16</m_endRow>
-			<m_endCol_Short type="a">21</m_endCol_Short>
-			<m_subject type="r">
-				<INObjectHandle type="e">
-				</INObjectHandle>
-			</m_subject>
-		</IFileFragment>
-		<IFileFragment type="e">
-			<_id type="a">GUID e7cd47e8-8018-4fb5-a9ce-836fa6b7543c</_id>
-			<_name type="a">Sensors</_name>
-			<_modifiedTimeWeak type="a">1.5.2025::14:25:27</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.5.2025::14:25:27</_modifiedTime>
-			<m_type type="a">implFragment</m_type>
-			<m_startRow type="a">24</m_startRow>
-			<m_startCol_Short type="a">10</m_startCol_Short>
-			<m_endRow type="a">24</m_endRow>
-			<m_endCol_Short type="a">10</m_endCol_Short>
-			<m_subject type="r">
-				<INObjectHandle type="e">
-					<_hm2Class type="a">IClass</_hm2Class>
-					<_hid type="a">GUID 00938bcb-d112-42f4-be02-39e5e80e1798</_hid>
-				</INObjectHandle>
-			</m_subject>
-			<AggregatesList type="e">
-				<value>GUID d3990e2b-0d25-4450-a8a6-8a98ab3ffb9e</value>
-				<value>GUID 84391707-ddb7-45d9-b0d0-7f9dcf2238b9</value>
-			</AggregatesList>
-		</IFileFragment>
-		<IFileFragment type="e">
-			<_id type="a">GUID d3990e2b-0d25-4450-a8a6-8a98ab3ffb9e</_id>
-			<_name type="a">Sensors:impl</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:2:34</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:34</_modifiedTime>
-			<m_type type="a">textFragment</m_type>
-			<m_text type="a">//## auto:operation Sensors():impl</m_text>
-			<m_startRow type="a">24</m_startRow>
-			<m_startCol_Short type="a">10</m_startCol_Short>
-			<m_endRow type="a">26</m_endRow>
-			<m_endCol_Short type="a">1</m_endCol_Short>
-			<m_subject type="r">
-				<INObjectHandle type="e">
-				</INObjectHandle>
-			</m_subject>
-			<AggregatesList type="e">
-				<value>GUID af71ca4b-61db-4684-aec5-ee5340c227ea</value>
-				<value>GUID 8800a627-fe5a-4fa7-9676-12caf9580a26</value>
-			</AggregatesList>
-		</IFileFragment>
-		<ITag type="e">
-			<_id type="a">GUID af71ca4b-61db-4684-aec5-ee5340c227ea</_id>
-			<_myState type="a">8192</_myState>
-			<_name type="a">BodyStartLine</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
-			<_typeOf type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IType</_hm2Class>
-					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
-					<_hname type="a">RhpString</_hname>
-					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
-				</IHandle>
-			</_typeOf>
-			<_isOrdered type="a">0</_isOrdered>
-			<AggregatesList type="e">
-				<value>GUID fefcf9b2-423b-4216-8c27-70ca80405960</value>
-			</AggregatesList>
-		</ITag>
-		<ILiteralSpecification type="e">
-			<_id type="a">GUID fefcf9b2-423b-4216-8c27-70ca80405960</_id>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
-			<_value type="a">24</_value>
-		</ILiteralSpecification>
-		<ITag type="e">
-			<_id type="a">GUID 8800a627-fe5a-4fa7-9676-12caf9580a26</_id>
-			<_myState type="a">8192</_myState>
-			<_name type="a">BodyStartCol</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
-			<_typeOf type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IType</_hm2Class>
-					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
-					<_hname type="a">RhpString</_hname>
-					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
-				</IHandle>
-			</_typeOf>
-			<_isOrdered type="a">0</_isOrdered>
-			<AggregatesList type="e">
-				<value>GUID 0dff4efb-1ba6-481b-bf57-08289edf16d3</value>
-			</AggregatesList>
-		</ITag>
-		<ILiteralSpecification type="e">
-			<_id type="a">GUID 0dff4efb-1ba6-481b-bf57-08289edf16d3</_id>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
-			<_value type="a">24</_value>
-		</ILiteralSpecification>
-		<IFileFragment type="e">
-			<_id type="a">GUID 84391707-ddb7-45d9-b0d0-7f9dcf2238b9</_id>
-			<_name type="a">~Sensors:impl</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:2:34</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:34</_modifiedTime>
-			<m_type type="a">textFragment</m_type>
-			<m_text type="a">//## auto:operation ~Sensors():impl</m_text>
-			<m_startRow type="a">28</m_startRow>
-			<m_startCol_Short type="a">11</m_startCol_Short>
-			<m_endRow type="a">30</m_endRow>
-			<m_endCol_Short type="a">1</m_endCol_Short>
-			<m_subject type="r">
-				<INObjectHandle type="e">
-				</INObjectHandle>
-			</m_subject>
-			<AggregatesList type="e">
-				<value>GUID 5bf91141-6f8f-4dd6-983c-5ce99455a0d6</value>
-				<value>GUID 63732334-8969-41d7-846a-7d044bbfddc6</value>
-			</AggregatesList>
-		</IFileFragment>
-		<ITag type="e">
-			<_id type="a">GUID 5bf91141-6f8f-4dd6-983c-5ce99455a0d6</_id>
-			<_myState type="a">8192</_myState>
-			<_name type="a">BodyStartLine</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
-			<_typeOf type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IType</_hm2Class>
-					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
-					<_hname type="a">RhpString</_hname>
-					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
-				</IHandle>
-			</_typeOf>
-			<_isOrdered type="a">0</_isOrdered>
-			<AggregatesList type="e">
-				<value>GUID bcce1b92-b63b-45b5-8325-d52c66898e35</value>
-			</AggregatesList>
-		</ITag>
-		<ILiteralSpecification type="e">
-			<_id type="a">GUID bcce1b92-b63b-45b5-8325-d52c66898e35</_id>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
-			<_value type="a">28</_value>
-		</ILiteralSpecification>
-		<ITag type="e">
-			<_id type="a">GUID 63732334-8969-41d7-846a-7d044bbfddc6</_id>
-			<_myState type="a">8192</_myState>
-			<_name type="a">BodyStartCol</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
-			<_typeOf type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IType</_hm2Class>
-					<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
-					<_hname type="a">RhpString</_hname>
-					<_hid type="a">GUID ae5e3720-4e3e-40f1-9346-9a8b4e501f35</_hid>
-				</IHandle>
-			</_typeOf>
-			<_isOrdered type="a">0</_isOrdered>
-			<AggregatesList type="e">
-				<value>GUID 2a179104-fa5d-4822-ada0-fe8bff67f368</value>
-			</AggregatesList>
-		</ITag>
-		<ILiteralSpecification type="e">
-			<_id type="a">GUID 2a179104-fa5d-4822-ada0-fe8bff67f368</_id>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
-			<_value type="a">25</_value>
-		</ILiteralSpecification>
-		<IAssociationEnd type="e">
-			<_id type="a">GUID 53a156fe-04b6-425b-b2e7-41540e4dca64</_id>
-			<_myState type="a">10240</_myState>
-			<_name type="a">itsCollect sensor data</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.5.2025::14:25:27</_modifiedTime>
-			<_multiplicity type="a">1</_multiplicity>
-			<_otherClass type="r">
-				<IClassifierHandle type="e">
-					<_hm2Class type="a">IUseCase</_hm2Class>
-					<_hfilename type="a">.\UC_DATA_PROCESSOR.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES::UC_SMSWTD::UC_DATA_PROCESSOR</_hsubsystem>
-					<_hname type="a">Collect sensor data</_hname>
-					<_hid type="a">GUID 84592b92-4fcc-43b4-a12b-763c57badcb8</_hid>
-				</IClassifierHandle>
-			</_otherClass>
-			<_inverse type="r">
-				<IHandle type="e">
-					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\UC_DATA_PROCESSOR.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES::UC_SMSWTD::UC_DATA_PROCESSOR</_hsubsystem>
-					<_hclass type="a">Collect sensor data</_hclass>
-					<_hname type="a">itsSensors</_hname>
-					<_hid type="a">GUID 7f3f5d65-1eeb-4c33-bd6b-c4088050ad62</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>
@@ -13276,9 +12852,18 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">1.6.2025::20:24:26</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.6.2025::20:24:26</_modifiedTime>
-			<weakCGTime type="a">1.6.2025::20:24:26</weakCGTime>
+			<_modifiedTimeWeak type="a">1.6.2025::20:59:45</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IUCDiagram</_hm2Class>
+					<_hfilename type="a">.\UC_DATA_PROCESSOR.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES::UC_SMSWTD::UC_DATA_PROCESSOR</_hsubsystem>
+					<_hname type="a">DATA_PROCESSOR_USE_CASES</_hname>
+					<_hid type="a">GUID d55da1d1-3f77-4608-8339-413a449f1c45</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">1.6.2025::20:59:45</_modifiedTime>
+			<weakCGTime type="a">1.6.2025::20:59:45</weakCGTime>
 			<strongCGTime type="a">1.6.2025::20:24:26</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -13289,14 +12874,15 @@
 				<value>GUID 0eca8395-7d91-4f80-aeee-9b2b5bbff953</value>
 				<value>GUID 8ddbfa85-fb77-454d-9b4c-1e0260c21eb5</value>
 				<value>GUID 3a57cb58-cca8-4938-9521-b47ea2c48a88</value>
+				<value>GUID bccccc55-7efd-4256-9c5f-606d15c1f52f</value>
 			</AggregatesList>
 		</IClass>
 		<IFile type="e">
 			<_id type="a">GUID 0eca8395-7d91-4f80-aeee-9b2b5bbff953</_id>
 			<_myState type="a">139264</_myState>
 			<_name type="a">StormSensor</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:2:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::20:59:45</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::20:59:45</_modifiedTime>
 			<m_type type="a">specFile</m_type>
 			<AggregatesList type="e">
 				<value>GUID 657917ea-3c51-41e6-86ed-a7503624d0c6</value>
@@ -13356,8 +12942,8 @@
 		<IFileFragment type="e">
 			<_id type="a">GUID c9daa2f9-2632-4c0a-aee7-88ce1caa632f</_id>
 			<_name type="a">StormSensor</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:2:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::20:59:45</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::20:59:45</_modifiedTime>
 			<m_type type="a">specFragment</m_type>
 			<m_startRow type="a">26</m_startRow>
 			<m_startCol_Short type="a">1</m_startCol_Short>
@@ -13672,8 +13258,8 @@
 			<_id type="a">GUID 8ddbfa85-fb77-454d-9b4c-1e0260c21eb5</_id>
 			<_myState type="a">139264</_myState>
 			<_name type="a">StormSensor</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:2:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::20:59:45</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::20:59:45</_modifiedTime>
 			<m_type type="a">implFile</m_type>
 			<AggregatesList type="e">
 				<value>GUID b10abcd4-f873-4e68-a5ae-ac7408d33ade</value>
@@ -13716,8 +13302,8 @@
 		<IFileFragment type="e">
 			<_id type="a">GUID 3a19e6aa-ebdb-4cca-9c1d-0cc5516a5eeb</_id>
 			<_name type="a">StormSensor</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:2:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::20:59:45</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::20:59:45</_modifiedTime>
 			<m_type type="a">implFragment</m_type>
 			<m_startRow type="a">26</m_startRow>
 			<m_startCol_Short type="a">14</m_startCol_Short>
@@ -14322,6 +13908,35 @@
 			<_linkType type="a">Assoc</_linkType>
 			<_navigability type="a">Navigable</_navigability>
 		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID bccccc55-7efd-4256-9c5f-606d15c1f52f</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsCollect sensor data</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::20:59:45</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IUseCase</_hm2Class>
+					<_hfilename type="a">.\UC_DATA_PROCESSOR.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES::UC_SMSWTD::UC_DATA_PROCESSOR</_hsubsystem>
+					<_hname type="a">Collect sensor data</_hname>
+					<_hid type="a">GUID 84592b92-4fcc-43b4-a12b-763c57badcb8</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\UC_DATA_PROCESSOR.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES::UC_SMSWTD::UC_DATA_PROCESSOR</_hsubsystem>
+					<_hclass type="a">Collect sensor data</_hclass>
+					<_hname type="a">itsStormSensor</_hname>
+					<_hid type="a">GUID 52b88430-1001-4b91-8de1-d0d9f6db1cb4</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
 		<IClass type="e">
 			<_id type="a">GUID 80d1ee02-35ab-43f4-b514-172dc32fc6d9</_id>
 			<_myState type="a">8192</_myState>
@@ -14339,9 +13954,18 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">1.6.2025::20:24:28</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.6.2025::20:24:28</_modifiedTime>
-			<weakCGTime type="a">1.6.2025::20:24:28</weakCGTime>
+			<_modifiedTimeWeak type="a">1.6.2025::20:59:51</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IUCDiagram</_hm2Class>
+					<_hfilename type="a">.\UC_DATA_PROCESSOR.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES::UC_SMSWTD::UC_DATA_PROCESSOR</_hsubsystem>
+					<_hname type="a">DATA_PROCESSOR_USE_CASES</_hname>
+					<_hid type="a">GUID d55da1d1-3f77-4608-8339-413a449f1c45</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">1.6.2025::20:59:51</_modifiedTime>
+			<weakCGTime type="a">1.6.2025::20:59:51</weakCGTime>
 			<strongCGTime type="a">1.6.2025::20:24:28</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -14352,14 +13976,15 @@
 				<value>GUID ca3c761a-7775-4a77-8783-369ede7e5897</value>
 				<value>GUID e8c165c0-8bc3-4b24-86b5-184c780af794</value>
 				<value>GUID 564d2f98-21b0-48e8-96a1-6398772c215b</value>
+				<value>GUID fe03af63-ad31-42fe-b965-527a33ced0e2</value>
 			</AggregatesList>
 		</IClass>
 		<IFile type="e">
 			<_id type="a">GUID ca3c761a-7775-4a77-8783-369ede7e5897</_id>
 			<_myState type="a">139264</_myState>
 			<_name type="a">WaterFlowDetector</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:2:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::20:59:51</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::20:59:51</_modifiedTime>
 			<m_type type="a">specFile</m_type>
 			<AggregatesList type="e">
 				<value>GUID fd5e6cb6-c9b3-4f75-a131-74e41292b3ce</value>
@@ -14419,8 +14044,8 @@
 		<IFileFragment type="e">
 			<_id type="a">GUID 5e5b39ec-762b-49ff-b9d6-a81e15024534</_id>
 			<_name type="a">WaterFlowDetector</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:2:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::20:59:51</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::20:59:51</_modifiedTime>
 			<m_type type="a">specFragment</m_type>
 			<m_startRow type="a">26</m_startRow>
 			<m_startCol_Short type="a">1</m_startCol_Short>
@@ -14735,8 +14360,8 @@
 			<_id type="a">GUID e8c165c0-8bc3-4b24-86b5-184c780af794</_id>
 			<_myState type="a">139264</_myState>
 			<_name type="a">WaterFlowDetector</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:2:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::20:59:51</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::20:59:51</_modifiedTime>
 			<m_type type="a">implFile</m_type>
 			<AggregatesList type="e">
 				<value>GUID 2bc10231-2e45-4c64-a150-6b3b1321361e</value>
@@ -14779,8 +14404,8 @@
 		<IFileFragment type="e">
 			<_id type="a">GUID 4092c401-494d-41ab-b7be-a0b8abd9df63</_id>
 			<_name type="a">WaterFlowDetector</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:2:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::20:59:51</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::20:59:51</_modifiedTime>
 			<m_type type="a">implFragment</m_type>
 			<m_startRow type="a">26</m_startRow>
 			<m_startCol_Short type="a">20</m_startCol_Short>
@@ -15385,6 +15010,35 @@
 			<_linkType type="a">Assoc</_linkType>
 			<_navigability type="a">Navigable</_navigability>
 		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID fe03af63-ad31-42fe-b965-527a33ced0e2</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsCollect sensor data</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::20:59:51</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IUseCase</_hm2Class>
+					<_hfilename type="a">.\UC_DATA_PROCESSOR.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES::UC_SMSWTD::UC_DATA_PROCESSOR</_hsubsystem>
+					<_hname type="a">Collect sensor data</_hname>
+					<_hid type="a">GUID 84592b92-4fcc-43b4-a12b-763c57badcb8</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\UC_DATA_PROCESSOR.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES::UC_SMSWTD::UC_DATA_PROCESSOR</_hsubsystem>
+					<_hclass type="a">Collect sensor data</_hclass>
+					<_hname type="a">itsWaterFlowDetector</_hname>
+					<_hid type="a">GUID abdf86ec-905a-4d49-a2a5-32a201f523fe</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
 		<IClass type="e">
 			<_id type="a">GUID 138df825-37a1-454f-8c41-dcbf82cdc4fc</_id>
 			<_myState type="a">8192</_myState>
@@ -15402,9 +15056,18 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">1.6.2025::20:24:30</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.6.2025::20:24:30</_modifiedTime>
-			<weakCGTime type="a">1.6.2025::20:24:30</weakCGTime>
+			<_modifiedTimeWeak type="a">1.6.2025::20:59:56</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IUCDiagram</_hm2Class>
+					<_hfilename type="a">.\UC_DATA_PROCESSOR.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES::UC_SMSWTD::UC_DATA_PROCESSOR</_hsubsystem>
+					<_hname type="a">DATA_PROCESSOR_USE_CASES</_hname>
+					<_hid type="a">GUID d55da1d1-3f77-4608-8339-413a449f1c45</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">1.6.2025::20:59:56</_modifiedTime>
+			<weakCGTime type="a">1.6.2025::20:59:56</weakCGTime>
 			<strongCGTime type="a">1.6.2025::20:24:30</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -15416,14 +15079,15 @@
 				<value>GUID 649b6179-b971-430d-b267-5df513d2773f</value>
 				<value>GUID 90c05444-6399-4b90-87b7-e5f05168f59d</value>
 				<value>GUID aae2a1bf-cc54-4d6a-888b-126e3ab766c8</value>
+				<value>GUID dd30abf2-f457-4e00-842c-2d4ee6ac2c70</value>
 			</AggregatesList>
 		</IClass>
 		<IFile type="e">
 			<_id type="a">GUID f15267f5-ecff-4c37-80db-b5f96a3d6b62</_id>
 			<_myState type="a">139264</_myState>
 			<_name type="a">WaterPressureSensor</_name>
-			<_modifiedTimeWeak type="a">1.6.2025::20:19:11</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::20:59:56</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::20:59:56</_modifiedTime>
 			<m_type type="a">specFile</m_type>
 			<AggregatesList type="e">
 				<value>GUID 83fb283b-2bf8-4124-ac00-734faefd58cb</value>
@@ -15495,8 +15159,8 @@
 		<IFileFragment type="e">
 			<_id type="a">GUID b00ee72c-03cd-49ab-b7a7-9586b29a559e</_id>
 			<_name type="a">WaterPressureSensor</_name>
-			<_modifiedTimeWeak type="a">1.6.2025::20:19:11</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::20:59:56</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::20:59:56</_modifiedTime>
 			<m_type type="a">specFragment</m_type>
 			<m_startRow type="a">26</m_startRow>
 			<m_startCol_Short type="a">1</m_startCol_Short>
@@ -15994,8 +15658,8 @@
 			<_id type="a">GUID 649b6179-b971-430d-b267-5df513d2773f</_id>
 			<_myState type="a">139264</_myState>
 			<_name type="a">WaterPressureSensor</_name>
-			<_modifiedTimeWeak type="a">1.6.2025::20:19:11</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::20:59:56</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::20:59:56</_modifiedTime>
 			<m_type type="a">implFile</m_type>
 			<AggregatesList type="e">
 				<value>GUID 30d9bd04-8fd8-4725-bc34-dbd8d085fc0b</value>
@@ -16046,8 +15710,8 @@
 		<IFileFragment type="e">
 			<_id type="a">GUID 364c22b8-259d-4f5e-92e8-a07457219463</_id>
 			<_name type="a">WaterPressureSensor</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:2:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::20:59:56</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::20:59:56</_modifiedTime>
 			<m_type type="a">implFragment</m_type>
 			<m_startRow type="a">26</m_startRow>
 			<m_startCol_Short type="a">22</m_startCol_Short>
@@ -17089,6 +16753,35 @@
 			<_linkType type="a">Assoc</_linkType>
 			<_navigability type="a">Navigable</_navigability>
 		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID dd30abf2-f457-4e00-842c-2d4ee6ac2c70</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsCollect sensor data</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::20:59:56</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IUseCase</_hm2Class>
+					<_hfilename type="a">.\UC_DATA_PROCESSOR.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES::UC_SMSWTD::UC_DATA_PROCESSOR</_hsubsystem>
+					<_hname type="a">Collect sensor data</_hname>
+					<_hid type="a">GUID 84592b92-4fcc-43b4-a12b-763c57badcb8</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\UC_DATA_PROCESSOR.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES::UC_SMSWTD::UC_DATA_PROCESSOR</_hsubsystem>
+					<_hclass type="a">Collect sensor data</_hclass>
+					<_hname type="a">itsWaterPressureSensor</_hname>
+					<_hid type="a">GUID 95752dce-ef43-446f-aba9-33f3857defa1</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
 		<IClass type="e">
 			<_id type="a">GUID be4c14ac-24c5-433c-a81a-2021ab1353ee</_id>
 			<_myState type="a">8192</_myState>
@@ -17106,9 +16799,18 @@
 					
 				</IRPYRawContainer>
 			</Stereotypes>
-			<_modifiedTimeWeak type="a">1.6.2025::20:24:32</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.6.2025::20:24:32</_modifiedTime>
-			<weakCGTime type="a">1.6.2025::20:24:32</weakCGTime>
+			<_modifiedTimeWeak type="a">1.6.2025::21:0:1</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IUCDiagram</_hm2Class>
+					<_hfilename type="a">.\UC_DATA_PROCESSOR.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES::UC_SMSWTD::UC_DATA_PROCESSOR</_hsubsystem>
+					<_hname type="a">DATA_PROCESSOR_USE_CASES</_hname>
+					<_hid type="a">GUID d55da1d1-3f77-4608-8339-413a449f1c45</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">1.6.2025::21:0:1</_modifiedTime>
+			<weakCGTime type="a">1.6.2025::21:0:1</weakCGTime>
 			<strongCGTime type="a">1.6.2025::20:24:32</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -17119,14 +16821,15 @@
 				<value>GUID 317a9858-eb4d-481b-9644-64ea00459d6a</value>
 				<value>GUID 8ea0701e-02c1-46f1-b1d6-e06bcecc5927</value>
 				<value>GUID 2ac535c5-69b7-4772-8259-13b9b67b1962</value>
+				<value>GUID 80584a2d-840a-4972-a770-5964e88e21ad</value>
 			</AggregatesList>
 		</IClass>
 		<IFile type="e">
 			<_id type="a">GUID 317a9858-eb4d-481b-9644-64ea00459d6a</_id>
 			<_myState type="a">139264</_myState>
 			<_name type="a">WeatherSensor</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:2:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::21:0:1</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::21:0:1</_modifiedTime>
 			<m_type type="a">specFile</m_type>
 			<AggregatesList type="e">
 				<value>GUID c8de5b8f-3715-4f00-907c-cf8b00871ecd</value>
@@ -17186,8 +16889,8 @@
 		<IFileFragment type="e">
 			<_id type="a">GUID 00857915-ec7a-43c7-9d09-79ffcd47fd89</_id>
 			<_name type="a">WeatherSensor</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:2:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::21:0:1</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::21:0:1</_modifiedTime>
 			<m_type type="a">specFragment</m_type>
 			<m_startRow type="a">26</m_startRow>
 			<m_startCol_Short type="a">1</m_startCol_Short>
@@ -17502,8 +17205,8 @@
 			<_id type="a">GUID 8ea0701e-02c1-46f1-b1d6-e06bcecc5927</_id>
 			<_myState type="a">139264</_myState>
 			<_name type="a">WeatherSensor</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:2:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::21:0:1</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::21:0:1</_modifiedTime>
 			<m_type type="a">implFile</m_type>
 			<AggregatesList type="e">
 				<value>GUID 71d46907-267b-4f9f-a67c-1703645e456f</value>
@@ -17546,8 +17249,8 @@
 		<IFileFragment type="e">
 			<_id type="a">GUID 73b7d456-24a1-450c-98fe-61f958b0b27a</_id>
 			<_name type="a">WeatherSensor</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:2:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::21:0:1</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::21:0:1</_modifiedTime>
 			<m_type type="a">implFragment</m_type>
 			<m_startRow type="a">26</m_startRow>
 			<m_startCol_Short type="a">16</m_startCol_Short>
@@ -18152,13 +17855,51 @@
 			<_linkType type="a">Assoc</_linkType>
 			<_navigability type="a">Navigable</_navigability>
 		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 80584a2d-840a-4972-a770-5964e88e21ad</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsCollect sensor data</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::21:0:1</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IUseCase</_hm2Class>
+					<_hfilename type="a">.\UC_DATA_PROCESSOR.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES::UC_SMSWTD::UC_DATA_PROCESSOR</_hsubsystem>
+					<_hname type="a">Collect sensor data</_hname>
+					<_hid type="a">GUID 84592b92-4fcc-43b4-a12b-763c57badcb8</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\UC_DATA_PROCESSOR.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES::UC_SMSWTD::UC_DATA_PROCESSOR</_hsubsystem>
+					<_hclass type="a">Collect sensor data</_hclass>
+					<_hname type="a">itsWeatherSensor</_hname>
+					<_hid type="a">GUID f2bcbdc1-5495-4f2c-a5a3-9804dfbc73ad</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
 		<IActor type="e">
 			<_id type="a">GUID 6f1461be-3079-4707-abbf-faf7c8ce8c6f</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">AlertedGroup</_name>
-			<_modifiedTimeWeak type="a">1.6.2025::20:24:38</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.6.2025::20:24:38</_modifiedTime>
-			<weakCGTime type="a">1.6.2025::20:24:38</weakCGTime>
+			<_modifiedTimeWeak type="a">1.6.2025::21:22:2</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IUCDiagram</_hm2Class>
+					<_hfilename type="a">.\UC_SMSWTD.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES::UC_SMSWTD</_hsubsystem>
+					<_hname type="a">TSUNAMI_PREDICTION_USE_CASES</_hname>
+					<_hid type="a">GUID 8aba6393-e1dd-455b-8eb3-8bee7cfcd9a1</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">1.6.2025::21:22:2</_modifiedTime>
+			<weakCGTime type="a">1.6.2025::21:22:2</weakCGTime>
 			<strongCGTime type="a">1.6.2025::20:24:38</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -18169,14 +17910,15 @@
 				<value>GUID 5d747b7e-bbb5-4ec3-afaa-25c6cbd482d1</value>
 				<value>GUID 0ac9bfd3-06ba-4bc5-9f0d-ddd93200fa71</value>
 				<value>GUID d6a14802-450a-4054-83c8-eea0b03f910f</value>
+				<value>GUID 96403d3d-65d4-44a5-9488-215a10755724</value>
 			</AggregatesList>
 		</IActor>
 		<IFile type="e">
 			<_id type="a">GUID 5d747b7e-bbb5-4ec3-afaa-25c6cbd482d1</_id>
 			<_myState type="a">139264</_myState>
 			<_name type="a">AlertedGroup</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:2:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::21:22:2</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::21:22:2</_modifiedTime>
 			<m_type type="a">implFile</m_type>
 			<AggregatesList type="e">
 				<value>GUID 3605a3c0-092d-47f5-a550-85a2bd418e18</value>
@@ -18202,8 +17944,8 @@
 		<IFileFragment type="e">
 			<_id type="a">GUID 806d4374-b32d-4eb1-8b15-27676e31e63e</_id>
 			<_name type="a">AlertedGroup</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:2:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::21:22:2</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::21:22:2</_modifiedTime>
 			<m_type type="a">implFragment</m_type>
 			<m_startRow type="a">26</m_startRow>
 			<m_startCol_Short type="a">15</m_startCol_Short>
@@ -18220,8 +17962,8 @@
 			<_id type="a">GUID 0ac9bfd3-06ba-4bc5-9f0d-ddd93200fa71</_id>
 			<_myState type="a">139264</_myState>
 			<_name type="a">AlertedGroup</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:2:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::21:22:2</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::21:22:2</_modifiedTime>
 			<m_type type="a">specFile</m_type>
 			<AggregatesList type="e">
 				<value>GUID b1d52071-1b98-4a56-9344-ba7bde3ea8e1</value>
@@ -18281,8 +18023,8 @@
 		<IFileFragment type="e">
 			<_id type="a">GUID f52a9683-bda7-4a62-bf9c-63bb98a2fba8</_id>
 			<_name type="a">AlertedGroup</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:2:35</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:2:35</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::21:22:2</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::21:22:2</_modifiedTime>
 			<m_type type="a">specFragment</m_type>
 			<m_startRow type="a">26</m_startRow>
 			<m_startCol_Short type="a">1</m_startCol_Short>
@@ -18461,13 +18203,51 @@
 			<_linkType type="a">Assoc</_linkType>
 			<_navigability type="a">Navigable</_navigability>
 		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 96403d3d-65d4-44a5-9488-215a10755724</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsSend Multichannel Notification</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::21:22:2</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IUseCase</_hm2Class>
+					<_hfilename type="a">.\UC_SMSWTD.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES::UC_SMSWTD</_hsubsystem>
+					<_hname type="a">Send Multichannel Notification</_hname>
+					<_hid type="a">GUID 5b1e6b65-cac6-4c4e-83e2-9b0f2d6feb3f</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\UC_SMSWTD.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES::UC_SMSWTD</_hsubsystem>
+					<_hclass type="a">Send Multichannel Notification</_hclass>
+					<_hname type="a">itsAlertedGroup</_hname>
+					<_hid type="a">GUID 5bed5e98-bf24-4336-986e-a3e91617ec86</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
 		<IActor type="e">
 			<_id type="a">GUID e7b3d035-7b38-4865-aebf-624633464a4d</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Operator</_name>
-			<_modifiedTimeWeak type="a">1.6.2025::20:24:38</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.6.2025::20:24:38</_modifiedTime>
-			<weakCGTime type="a">1.6.2025::20:24:38</weakCGTime>
+			<_modifiedTimeWeak type="a">1.6.2025::21:21:9</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IUCDiagram</_hm2Class>
+					<_hfilename type="a">.\UC_SMSWTD.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES::UC_SMSWTD</_hsubsystem>
+					<_hname type="a">TSUNAMI_PREDICTION_USE_CASES</_hname>
+					<_hid type="a">GUID 8aba6393-e1dd-455b-8eb3-8bee7cfcd9a1</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">1.6.2025::21:21:9</_modifiedTime>
+			<weakCGTime type="a">1.6.2025::21:21:9</weakCGTime>
 			<strongCGTime type="a">1.6.2025::20:24:38</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -18479,6 +18259,7 @@
 				<value>GUID 57bf2a06-2189-474f-ac84-4a66cd24cfc1</value>
 				<value>GUID 1213a701-d64b-466d-b543-66e3ed8ee784</value>
 				<value>GUID 0c8fd675-9a81-43d7-8ac7-0f07574da2af</value>
+				<value>GUID 2b92fcfb-a96c-4e2a-a344-63f91adf434a</value>
 			</AggregatesList>
 		</IActor>
 		<IGeneralization type="e">
@@ -18498,8 +18279,8 @@
 			<_id type="a">GUID 57bf2a06-2189-474f-ac84-4a66cd24cfc1</_id>
 			<_myState type="a">139264</_myState>
 			<_name type="a">Operator</_name>
-			<_modifiedTimeWeak type="a">1.6.2025::20:23:10</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.6.2025::20:23:10</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::21:13:33</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::21:13:33</_modifiedTime>
 			<m_type type="a">specFile</m_type>
 			<AggregatesList type="e">
 				<value>GUID 151db656-5969-4113-9f3b-2b4a16e1c39d</value>
@@ -18559,8 +18340,8 @@
 		<IFileFragment type="e">
 			<_id type="a">GUID 8eaa7c44-9597-442e-b32f-ff343d925e4b</_id>
 			<_name type="a">Operator</_name>
-			<_modifiedTimeWeak type="a">1.6.2025::20:23:10</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.6.2025::20:23:10</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::21:13:33</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::21:13:33</_modifiedTime>
 			<m_type type="a">specFragment</m_type>
 			<m_startRow type="a">25</m_startRow>
 			<m_startCol_Short type="a">1</m_startCol_Short>
@@ -18667,8 +18448,8 @@
 			<_id type="a">GUID 1213a701-d64b-466d-b543-66e3ed8ee784</_id>
 			<_myState type="a">139264</_myState>
 			<_name type="a">Operator</_name>
-			<_modifiedTimeWeak type="a">1.6.2025::20:23:10</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.6.2025::20:23:10</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::21:13:33</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::21:13:33</_modifiedTime>
 			<m_type type="a">implFile</m_type>
 			<AggregatesList type="e">
 				<value>GUID 0078c655-6c0b-4963-978f-f1f88335d787</value>
@@ -18694,8 +18475,8 @@
 		<IFileFragment type="e">
 			<_id type="a">GUID 905ba463-fb18-4945-badf-578e3abbaf39</_id>
 			<_name type="a">Operator</_name>
-			<_modifiedTimeWeak type="a">1.6.2025::20:23:10</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.6.2025::20:23:10</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::21:13:33</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::21:13:33</_modifiedTime>
 			<m_type type="a">implFragment</m_type>
 			<m_startRow type="a">24</m_startRow>
 			<m_startCol_Short type="a">11</m_startCol_Short>
@@ -18732,6 +18513,35 @@
 					<_hclass type="a">Manual data processing</_hclass>
 					<_hname type="a">itsOperator</_hname>
 					<_hid type="a">GUID 215f8479-cddb-4714-afb5-49ddb888f6de</_hid>
+				</IHandle>
+			</_inverse>
+			<_linkType type="a">Assoc</_linkType>
+			<_navigability type="a">Navigable</_navigability>
+		</IAssociationEnd>
+		<IAssociationEnd type="e">
+			<_id type="a">GUID 2b92fcfb-a96c-4e2a-a344-63f91adf434a</_id>
+			<_myState type="a">10240</_myState>
+			<_name type="a">itsTrigger Tsunami Alert Action</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::21:21:9</_modifiedTime>
+			<_multiplicity type="a">1</_multiplicity>
+			<_otherClass type="r">
+				<IClassifierHandle type="e">
+					<_hm2Class type="a">IUseCase</_hm2Class>
+					<_hfilename type="a">.\UC_SMSWTD.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES::UC_SMSWTD</_hsubsystem>
+					<_hname type="a">Trigger Tsunami Alert Action</_hname>
+					<_hid type="a">GUID 7560fad8-0c36-427c-9935-10751b78d1a8</_hid>
+				</IClassifierHandle>
+			</_otherClass>
+			<_inverse type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IAssociationEnd</_hm2Class>
+					<_hfilename type="a">.\UC_SMSWTD.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES::UC_SMSWTD</_hsubsystem>
+					<_hclass type="a">Trigger Tsunami Alert Action</_hclass>
+					<_hname type="a">itsOperator</_hname>
+					<_hid type="a">GUID a0451d4f-b6df-4f0d-90cd-d183938e0944</_hid>
 				</IHandle>
 			</_inverse>
 			<_linkType type="a">Assoc</_linkType>
