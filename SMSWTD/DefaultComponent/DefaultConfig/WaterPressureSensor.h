@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: WaterPressureSensor
-//!	Generated Date	: Mon, 23, Dec 2024  
+//!	Generated Date	: Mon, 6, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\WaterPressureSensor.h
 *********************************************************************/
 
@@ -13,27 +13,19 @@
 
 //## auto_generated
 #include <oxf.h>
-//## auto_generated
-#include <aom.h>
-//## auto_generated
-#include "Default.h"
 //## link itsSMSWTD
 class SMSWTD;
 
-//## package Default
+//## package SMSWTD_SYSTEM::ANALYSIS
 
 //## class WaterPressureSensor
 class WaterPressureSensor {
     ////    Friends    ////
     
-public :
-
-#ifdef _OMINSTRUMENT
-    friend class OMAnimatedWaterPressureSensor;
-#endif // _OMINSTRUMENT
-
     ////    Constructors and destructors    ////
     
+public :
+
     //## auto_generated
     WaterPressureSensor(void);
     
@@ -89,20 +81,6 @@ public :
     //## auto_generated
     void _clearItsSMSWTD_1(void);
 };
-
-#ifdef _OMINSTRUMENT
-//#[ ignore
-class OMAnimatedWaterPressureSensor : virtual public AOMInstance {
-    DECLARE_META(WaterPressureSensor, OMAnimatedWaterPressureSensor)
-    
-    ////    Framework operations    ////
-    
-public :
-
-    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
-};
-//#]
-#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

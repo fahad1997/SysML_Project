@@ -12,63 +12,24 @@
 			<_id type="a">GUID c31a8ff3-703e-4f97-b9aa-e589da6c30ca</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">USECASES</_name>
-			<_modifiedTimeWeak type="a">12.23.2024::17:47:53</_modifiedTimeWeak>
-			<_modifiedTime type="a">12.23.2024::17:47:53</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::20:18:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::20:18:0</_modifiedTime>
 			<_lastID type="a">13</_lastID>
-			<weakCGTime type="a">12.23.2024::17:47:53</weakCGTime>
+			<weakCGTime type="a">1.6.2025::20:18:0</weakCGTime>
 			<strongCGTime type="a">12.13.2024::13:46:37</strongCGTime>
 			<_defaultComposite type="s">GUID d515231e-d958-482b-8df7-bc36bc7d3243</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<UseCases type="c">
-				<IRPYRawContainer type="e">
-				</IRPYRawContainer>
-			</UseCases>
-			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.6.2025::20:18:0</_configurationRelatedTime>
 			<AggregatesList type="e">
-				<value>GUID 7bf9b358-483a-4f29-baca-dfde2d9fab24</value>
-				<value>GUID a3e01ee6-5866-478c-ab1e-f0d2e81f879c</value>
-				<value>GUID b0404b57-7ec3-415f-a9e6-dc7482279c48</value>
-				<value>GUID 8836b09a-f196-4155-b6de-637f6874abef</value>
-				<value>GUID c26f7dbe-5147-41a2-9ab7-85f456c18097</value>
-				<value>GUID 25146e27-69dd-4eb2-b651-1ae323904aa2</value>
-				<value>GUID 8677a938-6ad7-4fde-b3b4-5e5151af0244</value>
-				<value>GUID e618e8bf-063b-4d36-9f8d-78c991311efb</value>
+				<value>GUID 66ee3c0b-b374-4df4-b548-0cb113091ab8</value>
 				<value>GUID 6f6e2ef3-122b-4993-8083-a2207908a904</value>
 				<value>GUID 86c91cb8-c82c-409f-ace6-b319bfcd4260</value>
 				<value>GUID d515231e-d958-482b-8df7-bc36bc7d3243</value>
 			</AggregatesList>
 		</ISubsystem>
 		<ISubsystem type="e">
-			<fileName type="a">UC_DATA_PROCESSOR</fileName>
-			<_id type="a">GUID 7bf9b358-483a-4f29-baca-dfde2d9fab24</_id>
-		</ISubsystem>
-		<ISubsystem type="e">
-			<fileName type="a">UC_DASHBOARD</fileName>
-			<_id type="a">GUID a3e01ee6-5866-478c-ab1e-f0d2e81f879c</_id>
-		</ISubsystem>
-		<ISubsystem type="e">
-			<fileName type="a">UC_GEO_VARIABLES</fileName>
-			<_id type="a">GUID b0404b57-7ec3-415f-a9e6-dc7482279c48</_id>
-		</ISubsystem>
-		<ISubsystem type="e">
-			<fileName type="a">UC_IMAGE_DATA</fileName>
-			<_id type="a">GUID 8836b09a-f196-4155-b6de-637f6874abef</_id>
-		</ISubsystem>
-		<ISubsystem type="e">
-			<fileName type="a">UC_NON_FUNCTIONAL</fileName>
-			<_id type="a">GUID c26f7dbe-5147-41a2-9ab7-85f456c18097</_id>
-		</ISubsystem>
-		<ISubsystem type="e">
-			<fileName type="a">UC_NOTIFICATION</fileName>
-			<_id type="a">GUID 25146e27-69dd-4eb2-b651-1ae323904aa2</_id>
-		</ISubsystem>
-		<ISubsystem type="e">
-			<fileName type="a">UC_PREDICTION</fileName>
-			<_id type="a">GUID 8677a938-6ad7-4fde-b3b4-5e5151af0244</_id>
-		</ISubsystem>
-		<ISubsystem type="e">
-			<fileName type="a">UC_SENSOR_DATA</fileName>
-			<_id type="a">GUID e618e8bf-063b-4d36-9f8d-78c991311efb</_id>
+			<fileName type="a">UC_SMSWTD</fileName>
+			<_id type="a">GUID 66ee3c0b-b374-4df4-b548-0cb113091ab8</_id>
 		</ISubsystem>
 		<IFile type="e">
 			<_id type="a">GUID 6f6e2ef3-122b-4993-8083-a2207908a904</_id>

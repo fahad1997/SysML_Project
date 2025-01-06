@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SMSWTD_BLK
-//!	Generated Date	: Mon, 23, Dec 2024  
+//!	Generated Date	: Mon, 6, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\SMSWTD_BLK.h
 *********************************************************************/
 
@@ -23,10 +23,6 @@
 #include <event.h>
 //## auto_generated
 #include "omlist.h"
-//## auto_generated
-#include <aom.h>
-//## auto_generated
-#include <omthread.h>
 //## link itsDashboard
 class Dashboard;
 
@@ -46,14 +42,10 @@ class PredictionModel;
 
 //## class SMSWTD_BLK
 class SMSWTD_BLK : public OMReactive {
-public :
-
-#ifdef _OMINSTRUMENT
-    friend class OMAnimatedSMSWTD_BLK;
-#endif // _OMINSTRUMENT
-
     ////    Constructors and destructors    ////
     
+public :
+
     //## auto_generated
     explicit SMSWTD_BLK(IOxfActive* const theActiveContext = NULL);
     
@@ -189,29 +181,6 @@ private :
     SMSWTD_BLK_Enum rootState_active;
 //#]
 };
-
-#ifdef _OMINSTRUMENT
-//#[ ignore
-class OMAnimatedSMSWTD_BLK : virtual public AOMInstance {
-    DECLARE_REACTIVE_META(SMSWTD_BLK, OMAnimatedSMSWTD_BLK)
-    
-    ////    Framework operations    ////
-    
-public :
-
-    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
-    
-    //## statechart_method
-    void rootState_serializeStates(AOMSState* aomsState) const;
-    
-    //## statechart_method
-    void Deactivated_serializeStates(AOMSState* aomsState) const;
-    
-    //## statechart_method
-    void Activated_serializeStates(AOMSState* aomsState) const;
-};
-//#]
-#endif // _OMINSTRUMENT
 
 inline RhpBoolean SMSWTD_BLK::rootState_IN(void) const {
     return true;

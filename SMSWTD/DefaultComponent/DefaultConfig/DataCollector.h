@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DataCollector
-//!	Generated Date	: Mon, 23, Dec 2024  
+//!	Generated Date	: Mon, 6, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\DataCollector.h
 *********************************************************************/
 
@@ -15,22 +15,16 @@
 #include <oxf.h>
 //## auto_generated
 #include "DESIGN.h"
-//## auto_generated
-#include <aom.h>
 //## package SMSWTD_SYSTEM::DESIGN
 
 //## class DataCollector
 class DataCollector {
     ////    Friends    ////
     
-public :
-
-#ifdef _OMINSTRUMENT
-    friend class OMAnimatedDataCollector;
-#endif // _OMINSTRUMENT
-
     ////    Constructors and destructors    ////
     
+public :
+
     //## auto_generated
     DataCollector(void);
     
@@ -41,14 +35,6 @@ public :
     
     ////    Relations and components    ////
 };
-
-#ifdef _OMINSTRUMENT
-//#[ ignore
-class OMAnimatedDataCollector : virtual public AOMInstance {
-    DECLARE_META(DataCollector, OMAnimatedDataCollector)
-};
-//#]
-#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

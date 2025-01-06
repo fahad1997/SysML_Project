@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SMSWTD
-//!	Generated Date	: Mon, 23, Dec 2024  
+//!	Generated Date	: Mon, 6, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\SMSWTD.h
 *********************************************************************/
 
@@ -13,10 +13,9 @@
 
 //## auto_generated
 #include <oxf.h>
-//## auto_generated
-#include <aom.h>
-//## auto_generated
-#include "Default.h"
+//## link itsAirborneSensor
+class AirborneSensor;
+
 //## link itsAlertedGroup
 class AlertedGroup;
 
@@ -41,20 +40,16 @@ class WaterPressureSensor;
 //## link itsWeatherSensor
 class WeatherSensor;
 
-//## package Default
+//## package SMSWTD_SYSTEM::ANALYSIS
 
 //## class SMSWTD
 class SMSWTD {
     ////    Friends    ////
     
-public :
-
-#ifdef _OMINSTRUMENT
-    friend class OMAnimatedSMSWTD;
-#endif // _OMINSTRUMENT
-
     ////    Constructors and destructors    ////
     
+public :
+
     //## auto_generated
     SMSWTD(void);
     
@@ -224,27 +219,32 @@ public :
     
     //## auto_generated
     void _clearItsWeatherSensor(void);
+    
+    //## auto_generated
+    const AirborneSensor* getItsAirborneSensor(void) const;
+    
+    //## auto_generated
+    void setItsAirborneSensor(AirborneSensor* const p_AirborneSensor);
 
 private :
 
+    AirborneSensor* itsAirborneSensor;		//## link itsAirborneSensor
+    
     AlertedGroup* itsAlertedGroup;		//## link itsAlertedGroup
     
     User* itsUser;		//## link itsUser
-};
 
-#ifdef _OMINSTRUMENT
-//#[ ignore
-class OMAnimatedSMSWTD : virtual public AOMInstance {
-    DECLARE_META(SMSWTD, OMAnimatedSMSWTD)
-    
-    ////    Framework operations    ////
-    
 public :
 
-    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+    //## auto_generated
+    void __setItsAirborneSensor(AirborneSensor* const p_AirborneSensor);
+    
+    //## auto_generated
+    void _setItsAirborneSensor(AirborneSensor* const p_AirborneSensor);
+    
+    //## auto_generated
+    void _clearItsAirborneSensor(void);
 };
-//#]
-#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

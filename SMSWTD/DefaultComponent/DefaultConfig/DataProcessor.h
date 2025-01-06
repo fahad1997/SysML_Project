@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DataProcessor
-//!	Generated Date	: Mon, 23, Dec 2024  
+//!	Generated Date	: Mon, 6, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\DataProcessor.h
 *********************************************************************/
 
@@ -21,24 +21,16 @@
 #include <event.h>
 //## auto_generated
 #include "DESIGN.h"
-//## auto_generated
-#include <aom.h>
-//## auto_generated
-#include <omthread.h>
 //## package SMSWTD_SYSTEM::DESIGN
 
 //## class DataProcessor
 class DataProcessor : public OMReactive {
     ////    Friends    ////
     
-public :
-
-#ifdef _OMINSTRUMENT
-    friend class OMAnimatedDataProcessor;
-#endif // _OMINSTRUMENT
-
     ////    Constructors and destructors    ////
     
+public :
+
     //## auto_generated
     virtual ~DataProcessor(void);
     
@@ -128,41 +120,6 @@ protected :
     Rhp_int32_t rootState_active;
 //#]
 };
-
-#ifdef _OMINSTRUMENT
-//#[ ignore
-class OMAnimatedDataProcessor : virtual public AOMInstance {
-    DECLARE_REACTIVE_META(DataProcessor, OMAnimatedDataProcessor)
-    
-    ////    Framework operations    ////
-    
-public :
-
-    virtual void serializeAttributes(AOMSAttributes* aomsAttributes) const;
-    
-    //## statechart_method
-    void rootState_serializeStates(AOMSState* aomsState) const;
-    
-    //## statechart_method
-    void StartProcess_serializeStates(AOMSState* aomsState) const;
-    
-    //## statechart_method
-    void ReturnData_serializeStates(AOMSState* aomsState) const;
-    
-    //## statechart_method
-    void ProcessData_serializeStates(AOMSState* aomsState) const;
-    
-    //## statechart_method
-    void FetchData_serializeStates(AOMSState* aomsState) const;
-    
-    //## statechart_method
-    void FailedDataCollection_serializeStates(AOMSState* aomsState) const;
-    
-    //## statechart_method
-    void CollectData_serializeStates(AOMSState* aomsState) const;
-};
-//#]
-#endif // _OMINSTRUMENT
 
 inline RhpBoolean DataProcessor::rootState_IN(void) const {
     return true;

@@ -1,37 +1,66 @@
 /********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: ImageCollector
-//!	Generated Date	: Mon, 23, Dec 2024  
+//!	Generated Date	: Mon, 6, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\ImageCollector.cpp
 *********************************************************************/
 
-//#[ ignore
-#define NAMESPACE_PREFIX
-//#]
-
 //## auto_generated
 #include "ImageCollector.h"
-//#[ ignore
-#define SMSWTD_SYSTEM_DESIGN_ImageCollector_ImageCollector_SERIALIZE OM_NO_OP
-//#]
-
+//## link itsSateliteImage
+#include "SateliteImage.h"
 //## package SMSWTD_SYSTEM::DESIGN
 
 //## class ImageCollector
-ImageCollector::ImageCollector(void) {
-    NOTIFY_CONSTRUCTOR(ImageCollector, ImageCollector(), 0, SMSWTD_SYSTEM_DESIGN_ImageCollector_ImageCollector_SERIALIZE);
+ImageCollector::ImageCollector(void) : itsSateliteImage(NULL) {
 }
 
 ImageCollector::~ImageCollector(void) {
-    NOTIFY_DESTRUCTOR(~ImageCollector, true);
+    cleanUpRelations();
 }
 
-#ifdef _OMINSTRUMENT
-IMPLEMENT_META_P(ImageCollector, SMSWTD_SYSTEM_DESIGN, SMSWTD_SYSTEM::DESIGN, false, OMAnimatedImageCollector)
-#endif // _OMINSTRUMENT
+const SateliteImage* ImageCollector::getItsSateliteImage(void) const {
+    return itsSateliteImage;
+}
+
+void ImageCollector::setItsSateliteImage(SateliteImage* const p_SateliteImage) {
+    if(p_SateliteImage != NULL)
+        {
+            p_SateliteImage->_setItsImageCollector(this);
+        }
+    _setItsSateliteImage(p_SateliteImage);
+}
+
+void ImageCollector::cleanUpRelations(void) {
+    if(itsSateliteImage != NULL)
+        {
+            const ImageCollector* p_ImageCollector = itsSateliteImage->getItsImageCollector();
+            if(p_ImageCollector != NULL)
+                {
+                    itsSateliteImage->__setItsImageCollector(NULL);
+                }
+            itsSateliteImage = NULL;
+        }
+}
+
+void ImageCollector::__setItsSateliteImage(SateliteImage* const p_SateliteImage) {
+    itsSateliteImage = p_SateliteImage;
+}
+
+void ImageCollector::_setItsSateliteImage(SateliteImage* const p_SateliteImage) {
+    if(itsSateliteImage != NULL)
+        {
+            itsSateliteImage->__setItsImageCollector(NULL);
+        }
+    __setItsSateliteImage(p_SateliteImage);
+}
+
+void ImageCollector::_clearItsSateliteImage(void) {
+    itsSateliteImage = NULL;
+}
 
 /*********************************************************************
 	File Path	: DefaultComponent\DefaultConfig\ImageCollector.cpp

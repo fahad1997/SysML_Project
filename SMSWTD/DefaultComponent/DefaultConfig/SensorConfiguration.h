@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SensorConfiguration
-//!	Generated Date	: Mon, 23, Dec 2024  
+//!	Generated Date	: Mon, 6, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\SensorConfiguration.h
 *********************************************************************/
 
@@ -15,36 +15,22 @@
 #include <oxf.h>
 //## auto_generated
 #include "DESIGN.h"
-//## auto_generated
-#include <aom.h>
 //## package SMSWTD_SYSTEM::DESIGN
 
 //## class SensorConfiguration
 class SensorConfiguration {
     ////    Friends    ////
     
-public :
-
-#ifdef _OMINSTRUMENT
-    friend class OMAnimatedSensorConfiguration;
-#endif // _OMINSTRUMENT
-
     ////    Constructors and destructors    ////
     
+public :
+
     //## auto_generated
     SensorConfiguration(void);
     
     //## auto_generated
     ~SensorConfiguration(void);
 };
-
-#ifdef _OMINSTRUMENT
-//#[ ignore
-class OMAnimatedSensorConfiguration : virtual public AOMInstance {
-    DECLARE_META(SensorConfiguration, OMAnimatedSensorConfiguration)
-};
-//#]
-#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

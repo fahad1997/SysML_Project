@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Operator
-//!	Generated Date	: Mon, 23, Dec 2024  
+//!	Generated Date	: Mon, 6, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\Operator.h
 *********************************************************************/
 
@@ -13,44 +13,24 @@
 
 //## auto_generated
 #include <oxf.h>
-//## auto_generated
-#include <aom.h>
-//## auto_generated
-#include "Default.h"
-//## package Default
+//## actor Operator
+#include "User.h"
+//## package SMSWTD_SYSTEM::ANALYSIS
 
 //## actor Operator
-class Operator {
+class Operator : public User {
     ////    Friends    ////
+    
+    ////    Constructors and destructors    ////
     
 public :
 
-#ifdef _OMINSTRUMENT
-    friend class OMAnimatedOperator;
-#endif // _OMINSTRUMENT
-
-    ////    Constructors and destructors    ////
-    
     //## auto_generated
     Operator(void);
     
     //## auto_generated
     ~Operator(void);
 };
-
-#ifdef _OMINSTRUMENT
-//#[ ignore
-class OMAnimatedOperator : virtual public AOMInstance {
-    DECLARE_META(Operator, OMAnimatedOperator)
-    
-    ////    Framework operations    ////
-    
-public :
-
-    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
-};
-//#]
-#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

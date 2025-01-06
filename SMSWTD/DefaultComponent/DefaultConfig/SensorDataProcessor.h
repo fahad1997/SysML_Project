@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SensorDataProcessor
-//!	Generated Date	: Mon, 23, Dec 2024  
+//!	Generated Date	: Mon, 6, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\SensorDataProcessor.h
 *********************************************************************/
 
@@ -17,8 +17,6 @@
 #include "DESIGN.h"
 //## class SensorDataProcessor
 #include "DataProcessor.h"
-//## auto_generated
-#include <aom.h>
 //## link itsCloudClient
 class CloudClient;
 
@@ -40,14 +38,10 @@ class SensorConfiguration;
 class SensorDataProcessor : public DataProcessor {
     ////    Friends    ////
     
-public :
-
-#ifdef _OMINSTRUMENT
-    friend class OMAnimatedSensorDataProcessor;
-#endif // _OMINSTRUMENT
-
     ////    Constructors and destructors    ////
     
+public :
+
     //## auto_generated
     explicit SensorDataProcessor(IOxfActive* const theActiveContext = NULL);
     
@@ -114,22 +108,6 @@ private :
     
     SensorConfiguration* itsSensorConfiguration;		//## link itsSensorConfiguration
 };
-
-#ifdef _OMINSTRUMENT
-//#[ ignore
-class OMAnimatedSensorDataProcessor : public OMAnimatedDataProcessor {
-    DECLARE_META(SensorDataProcessor, OMAnimatedSensorDataProcessor)
-    
-    ////    Framework operations    ////
-    
-public :
-
-    virtual void serializeAttributes(AOMSAttributes* aomsAttributes) const;
-    
-    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
-};
-//#]
-#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

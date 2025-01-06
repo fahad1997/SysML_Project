@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: ImageProcessor
-//!	Generated Date	: Mon, 23, Dec 2024  
+//!	Generated Date	: Mon, 6, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\ImageProcessor.h
 *********************************************************************/
 
@@ -17,8 +17,6 @@
 #include "DESIGN.h"
 //## class ImageProcessor
 #include "DataProcessor.h"
-//## auto_generated
-#include <aom.h>
 //## link itsDataPublisher
 class DataPublisher;
 
@@ -31,14 +29,10 @@ class ImageCollector;
 class ImageProcessor : public DataProcessor {
     ////    Friends    ////
     
-public :
-
-#ifdef _OMINSTRUMENT
-    friend class OMAnimatedImageProcessor;
-#endif // _OMINSTRUMENT
-
     ////    Constructors and destructors    ////
     
+public :
+
     //## auto_generated
     explicit ImageProcessor(IOxfActive* const theActiveContext = NULL);
     
@@ -77,22 +71,6 @@ private :
     
     ImageCollector* itsImageCollector;		//## link itsImageCollector
 };
-
-#ifdef _OMINSTRUMENT
-//#[ ignore
-class OMAnimatedImageProcessor : public OMAnimatedDataProcessor {
-    DECLARE_META(ImageProcessor, OMAnimatedImageProcessor)
-    
-    ////    Framework operations    ////
-    
-public :
-
-    virtual void serializeAttributes(AOMSAttributes* aomsAttributes) const;
-    
-    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
-};
-//#]
-#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************
