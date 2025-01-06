@@ -12,10 +12,10 @@
 			<_id type="a">GUID 525429d5-fd24-4621-8efc-ad0b15a24e53</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ANALYSIS</_name>
-			<_modifiedTimeWeak type="a">1.6.2025::21:21:9</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.6.2025::21:21:9</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.6.2025::21:25:30</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.6.2025::21:25:30</_modifiedTime>
 			<_lastID type="a">54</_lastID>
-			<weakCGTime type="a">1.6.2025::21:21:9</weakCGTime>
+			<weakCGTime type="a">1.6.2025::21:25:30</weakCGTime>
 			<strongCGTime type="a">12.17.2024::13:22:28</strongCGTime>
 			<_defaultComposite type="s">GUID 8ddd7caa-bcd2-4ef3-a4fc-884e84d37d8a</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -18236,7 +18236,7 @@
 			<_id type="a">GUID e7b3d035-7b38-4865-aebf-624633464a4d</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Operator</_name>
-			<_modifiedTimeWeak type="a">1.6.2025::21:21:9</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">1.6.2025::21:25:30</_modifiedTimeWeak>
 			<_theMainDiagram type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUCDiagram</_hm2Class>
@@ -18246,8 +18246,8 @@
 					<_hid type="a">GUID 8aba6393-e1dd-455b-8eb3-8bee7cfcd9a1</_hid>
 				</IHandle>
 			</_theMainDiagram>
-			<_modifiedTime type="a">1.6.2025::21:21:9</_modifiedTime>
-			<weakCGTime type="a">1.6.2025::21:21:9</weakCGTime>
+			<_modifiedTime type="a">1.6.2025::21:25:30</_modifiedTime>
+			<weakCGTime type="a">1.6.2025::21:25:30</weakCGTime>
 			<strongCGTime type="a">1.6.2025::20:24:38</strongCGTime>
 			<_itsStateChart type="r">
 				<IHandle type="e">
@@ -18521,16 +18521,16 @@
 		<IAssociationEnd type="e">
 			<_id type="a">GUID 2b92fcfb-a96c-4e2a-a344-63f91adf434a</_id>
 			<_myState type="a">10240</_myState>
-			<_name type="a">itsTrigger Tsunami Alert Action</_name>
+			<_name type="a">itsTrigger Tsunami Alert Watchdog</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.6.2025::21:21:9</_modifiedTime>
+			<_modifiedTime type="a">1.6.2025::21:25:30</_modifiedTime>
 			<_multiplicity type="a">1</_multiplicity>
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
 					<_hfilename type="a">.\UC_SMSWTD.sbsx</_hfilename>
 					<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES::UC_SMSWTD</_hsubsystem>
-					<_hname type="a">Trigger Tsunami Alert Action</_hname>
+					<_hname type="a">Trigger Tsunami Alert Watchdog</_hname>
 					<_hid type="a">GUID 7560fad8-0c36-427c-9935-10751b78d1a8</_hid>
 				</IClassifierHandle>
 			</_otherClass>
@@ -18539,7 +18539,7 @@
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
 					<_hfilename type="a">.\UC_SMSWTD.sbsx</_hfilename>
 					<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES::UC_SMSWTD</_hsubsystem>
-					<_hclass type="a">Trigger Tsunami Alert Action</_hclass>
+					<_hclass type="a">Trigger Tsunami Alert Watchdog</_hclass>
 					<_hname type="a">itsOperator</_hname>
 					<_hid type="a">GUID a0451d4f-b6df-4f0d-90cd-d183938e0944</_hid>
 				</IHandle>
