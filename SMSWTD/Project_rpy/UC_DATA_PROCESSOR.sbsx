@@ -12,10 +12,10 @@
 			<_id type="a">GUID 7bf9b358-483a-4f29-baca-dfde2d9fab24</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">UC_DATA_PROCESSOR</_name>
-			<_modifiedTimeWeak type="a">1.6.2025::21:19:2</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.6.2025::21:19:2</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.7.2025::13:50:50</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.7.2025::13:50:50</_modifiedTime>
 			<_lastID type="a">4</_lastID>
-			<weakCGTime type="a">1.6.2025::21:19:2</weakCGTime>
+			<weakCGTime type="a">1.7.2025::13:50:50</weakCGTime>
 			<strongCGTime type="a">12.23.2024::16:55:59</strongCGTime>
 			<_defaultComposite type="s">GUID 5845295a-b67b-407b-a0d9-9aff538bf3ab</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -668,9 +668,9 @@
 			</IPropertyContainer>
 			</_properties>
 			<_name type="a">DATA_PROCESSOR_USE_CASES</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.6.2025::21:19:2</_modifiedTime>
-			<_lastModifiedTime type="a">1.6.2025::21:19:2</_lastModifiedTime>
+			<_modifiedTimeWeak type="a">1.7.2025::13:32:38</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.7.2025::13:55:45</_modifiedTime>
+			<_lastModifiedTime type="a">1.7.2025::13:55:45</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -980,8 +980,8 @@
 			<m_pModelObject type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hname type="a">Cloud</_hname>
 					<_hid type="a">GUID 6ee65560-da79-4ba4-95a1-393f21a61aa5</_hid>
 				</IHandle>
@@ -1792,8 +1792,8 @@
 			<m_pModelObject type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hname type="a">SateliteImage</_hname>
 					<_hid type="a">GUID 93fe41df-7c70-4f4b-92e1-756dec59eff6</_hid>
 				</IHandle>
@@ -1855,8 +1855,8 @@
 			<m_pModelObject type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hclass type="a">SateliteImage</_hclass>
 					<_hname type="a">itsCollect Image data</_hname>
 					<_hid type="a">GUID fd28e9ec-49cb-4c6d-805f-938ec8b499bc</_hid>
@@ -2293,8 +2293,8 @@
 			<m_pInverseModelObject type="r">
 				<IAssociationEndHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hclass type="a">Cloud</_hclass>
 					<_hname type="a">itsGet geographical configuration</_hname>
 					<_hid type="a">GUID 1064f159-8eca-4af5-99f3-cdae75378520</_hid>
@@ -2470,8 +2470,8 @@
 			<m_pInverseModelObject type="r">
 				<IAssociationEndHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hclass type="a">Cloud</_hclass>
 					<_hname type="a">itsGet sensor configuration</_hname>
 					<_hid type="a">GUID ca422230-d096-41a1-9279-e8c4d24dbee6</_hid>
@@ -3712,8 +3712,8 @@
 			<m_pInverseModelObject type="r">
 				<IAssociationEndHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hclass type="a">Cloud</_hclass>
 					<_hname type="a">itsStore data to cloud</_hname>
 					<_hid type="a">GUID 423f98f9-4ab0-4063-bf00-a2292a692719</_hid>
@@ -3865,8 +3865,8 @@
 			<m_pModelObject type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hname type="a">AirborneSensor</_hname>
 					<_hid type="a">GUID 72d3b1a6-c8ee-4421-a137-171809736462</_hid>
 				</IHandle>
@@ -3956,8 +3956,8 @@
 			<m_pModelObject type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hname type="a">StormSensor</_hname>
 					<_hid type="a">GUID 9a169ed7-3c87-47e9-995a-95ecbe0efab1</_hid>
 				</IHandle>
@@ -4047,8 +4047,8 @@
 			<m_pModelObject type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hname type="a">WaterFlowDetector</_hname>
 					<_hid type="a">GUID 80d1ee02-35ab-43f4-b514-172dc32fc6d9</_hid>
 				</IHandle>
@@ -4138,8 +4138,8 @@
 			<m_pModelObject type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hname type="a">WaterPressureSensor</_hname>
 					<_hid type="a">GUID 138df825-37a1-454f-8c41-dcbf82cdc4fc</_hid>
 				</IHandle>
@@ -4229,8 +4229,8 @@
 			<m_pModelObject type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hname type="a">WeatherSensor</_hname>
 					<_hid type="a">GUID be4c14ac-24c5-433c-a81a-2021ab1353ee</_hid>
 				</IHandle>
@@ -4342,8 +4342,8 @@
 			<m_pInverseModelObject type="r">
 				<IAssociationEndHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hclass type="a">StormSensor</_hclass>
 					<_hname type="a">itsCollect sensor data</_hname>
 					<_hid type="a">GUID bccccc55-7efd-4256-9c5f-606d15c1f52f</_hid>
@@ -4517,8 +4517,8 @@
 			<m_pInverseModelObject type="r">
 				<IAssociationEndHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hclass type="a">WaterFlowDetector</_hclass>
 					<_hname type="a">itsCollect sensor data</_hname>
 					<_hid type="a">GUID fe03af63-ad31-42fe-b965-527a33ced0e2</_hid>
@@ -4692,8 +4692,8 @@
 			<m_pInverseModelObject type="r">
 				<IAssociationEndHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hclass type="a">WaterPressureSensor</_hclass>
 					<_hname type="a">itsCollect sensor data</_hname>
 					<_hid type="a">GUID dd30abf2-f457-4e00-842c-2d4ee6ac2c70</_hid>
@@ -4867,8 +4867,8 @@
 			<m_pInverseModelObject type="r">
 				<IAssociationEndHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hclass type="a">WeatherSensor</_hclass>
 					<_hname type="a">itsCollect sensor data</_hname>
 					<_hid type="a">GUID 80584a2d-840a-4972-a770-5964e88e21ad</_hid>
@@ -5042,8 +5042,8 @@
 			<m_pInverseModelObject type="r">
 				<IAssociationEndHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hclass type="a">AirborneSensor</_hclass>
 					<_hname type="a">itsCollect Image data</_hname>
 					<_hid type="a">GUID 5cc01870-fd88-4d42-beee-2f9e72a32f89</_hid>
@@ -5206,8 +5206,8 @@
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hname type="a">Cloud</_hname>
 					<_hid type="a">GUID 6ee65560-da79-4ba4-95a1-393f21a61aa5</_hid>
 				</IClassifierHandle>
@@ -5215,8 +5215,8 @@
 			<_inverse type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hclass type="a">Cloud</_hclass>
 					<_hname type="a">itsStore data to cloud</_hname>
 					<_hid type="a">GUID 423f98f9-4ab0-4063-bf00-a2292a692719</_hid>
@@ -5344,8 +5344,8 @@
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hname type="a">Cloud</_hname>
 					<_hid type="a">GUID 6ee65560-da79-4ba4-95a1-393f21a61aa5</_hid>
 				</IClassifierHandle>
@@ -5353,8 +5353,8 @@
 			<_inverse type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hclass type="a">Cloud</_hclass>
 					<_hname type="a">itsGet geographical configuration</_hname>
 					<_hid type="a">GUID 1064f159-8eca-4af5-99f3-cdae75378520</_hid>
@@ -5394,8 +5394,8 @@
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hname type="a">Cloud</_hname>
 					<_hid type="a">GUID 6ee65560-da79-4ba4-95a1-393f21a61aa5</_hid>
 				</IClassifierHandle>
@@ -5403,8 +5403,8 @@
 			<_inverse type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hclass type="a">Cloud</_hclass>
 					<_hname type="a">itsGet sensor configuration</_hname>
 					<_hid type="a">GUID ca422230-d096-41a1-9279-e8c4d24dbee6</_hid>
@@ -5446,8 +5446,8 @@
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hname type="a">SateliteImage</_hname>
 					<_hid type="a">GUID 93fe41df-7c70-4f4b-92e1-756dec59eff6</_hid>
 				</IClassifierHandle>
@@ -5455,8 +5455,8 @@
 			<_inverse type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hclass type="a">SateliteImage</_hclass>
 					<_hname type="a">itsCollect Image data</_hname>
 					<_hid type="a">GUID fd28e9ec-49cb-4c6d-805f-938ec8b499bc</_hid>
@@ -5475,8 +5475,8 @@
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hname type="a">AirborneSensor</_hname>
 					<_hid type="a">GUID 72d3b1a6-c8ee-4421-a137-171809736462</_hid>
 				</IClassifierHandle>
@@ -5484,8 +5484,8 @@
 			<_inverse type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hclass type="a">AirborneSensor</_hclass>
 					<_hname type="a">itsCollect Image data</_hname>
 					<_hid type="a">GUID 5cc01870-fd88-4d42-beee-2f9e72a32f89</_hid>
@@ -5787,8 +5787,8 @@
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hname type="a">StormSensor</_hname>
 					<_hid type="a">GUID 9a169ed7-3c87-47e9-995a-95ecbe0efab1</_hid>
 				</IClassifierHandle>
@@ -5796,8 +5796,8 @@
 			<_inverse type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hclass type="a">StormSensor</_hclass>
 					<_hname type="a">itsCollect sensor data</_hname>
 					<_hid type="a">GUID bccccc55-7efd-4256-9c5f-606d15c1f52f</_hid>
@@ -5816,8 +5816,8 @@
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hname type="a">WaterFlowDetector</_hname>
 					<_hid type="a">GUID 80d1ee02-35ab-43f4-b514-172dc32fc6d9</_hid>
 				</IClassifierHandle>
@@ -5825,8 +5825,8 @@
 			<_inverse type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hclass type="a">WaterFlowDetector</_hclass>
 					<_hname type="a">itsCollect sensor data</_hname>
 					<_hid type="a">GUID fe03af63-ad31-42fe-b965-527a33ced0e2</_hid>
@@ -5845,8 +5845,8 @@
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hname type="a">WaterPressureSensor</_hname>
 					<_hid type="a">GUID 138df825-37a1-454f-8c41-dcbf82cdc4fc</_hid>
 				</IClassifierHandle>
@@ -5854,8 +5854,8 @@
 			<_inverse type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hclass type="a">WaterPressureSensor</_hclass>
 					<_hname type="a">itsCollect sensor data</_hname>
 					<_hid type="a">GUID dd30abf2-f457-4e00-842c-2d4ee6ac2c70</_hid>
@@ -5874,8 +5874,8 @@
 			<_otherClass type="r">
 				<IClassifierHandle type="e">
 					<_hm2Class type="a">IClass</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hname type="a">WeatherSensor</_hname>
 					<_hid type="a">GUID be4c14ac-24c5-433c-a81a-2021ab1353ee</_hid>
 				</IClassifierHandle>
@@ -5883,8 +5883,8 @@
 			<_inverse type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IAssociationEnd</_hm2Class>
-					<_hfilename type="a">.\ANALYSIS.sbsx</_hfilename>
-					<_hsubsystem type="a">SMSWTD_SYSTEM::ANALYSIS</_hsubsystem>
+					<_hfilename type="a">.\DESIGN.sbsx</_hfilename>
+					<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
 					<_hclass type="a">WeatherSensor</_hclass>
 					<_hname type="a">itsCollect sensor data</_hname>
 					<_hid type="a">GUID 80584a2d-840a-4972-a770-5964e88e21ad</_hid>
@@ -5980,7 +5980,7 @@
 			<_id type="a">GUID 0f6d0860-3f1b-4224-88d3-c50721080a1c</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Process Data</_name>
-			<_modifiedTimeWeak type="a">1.5.2025::14:24:55</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">1.6.2025::21:12:33</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.6.2025::21:12:33</_modifiedTime>
 			<_lastID type="a">4</_lastID>
 			<weakCGTime type="a">1.6.2025::21:12:33</weakCGTime>

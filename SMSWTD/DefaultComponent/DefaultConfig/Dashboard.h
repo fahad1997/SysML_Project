@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245157
+	Login		: 20245163
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Dashboard
-//!	Generated Date	: Mon, 6, Jan 2025  
+//!	Generated Date	: Tue, 7, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\Dashboard.h
 *********************************************************************/
 
@@ -15,6 +15,8 @@
 #include <oxf.h>
 //## auto_generated
 #include "DESIGN.h"
+//## auto_generated
+#include <aom.h>
 //## link itsNotificationService
 class NotificationService;
 
@@ -25,10 +27,14 @@ class SMSWTD_BLK;
 
 //## class Dashboard
 class Dashboard {
-    ////    Constructors and destructors    ////
-    
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedDashboard;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     Dashboard(void);
     
@@ -75,6 +81,20 @@ public :
     //## auto_generated
     void _clearItsSMSWTD_BLK(void);
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedDashboard : virtual public AOMInstance {
+    DECLARE_META(Dashboard, OMAnimatedDashboard)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

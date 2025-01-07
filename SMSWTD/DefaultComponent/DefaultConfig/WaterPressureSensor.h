@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245157
+	Login		: 20245163
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: WaterPressureSensor
-//!	Generated Date	: Mon, 6, Jan 2025  
+//!	Generated Date	: Tue, 7, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\WaterPressureSensor.h
 *********************************************************************/
 
@@ -13,19 +13,27 @@
 
 //## auto_generated
 #include <oxf.h>
+//## auto_generated
+#include <aom.h>
+//## auto_generated
+#include "DESIGN.h"
 //## link itsSMSWTD
 class SMSWTD;
 
-//## package SMSWTD_SYSTEM::ANALYSIS
+//## package SMSWTD_SYSTEM::DESIGN
 
 //## class WaterPressureSensor
 class WaterPressureSensor {
     ////    Friends    ////
     
-    ////    Constructors and destructors    ////
-    
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedWaterPressureSensor;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     WaterPressureSensor(void);
     
@@ -39,12 +47,6 @@ public :
     
     //## auto_generated
     void setItsSMSWTD(SMSWTD* const p_SMSWTD);
-    
-    //## auto_generated
-    const SMSWTD* getItsSMSWTD_1(void) const;
-    
-    //## auto_generated
-    void setItsSMSWTD_1(SMSWTD* const p_SMSWTD);
 
 protected :
 
@@ -56,8 +58,6 @@ protected :
 private :
 
     SMSWTD* itsSMSWTD;		//## link itsSMSWTD
-    
-    SMSWTD* itsSMSWTD_1;		//## link itsSMSWTD_1
     
     ////    Framework operations    ////
 
@@ -71,16 +71,21 @@ public :
     
     //## auto_generated
     void _clearItsSMSWTD(void);
-    
-    //## auto_generated
-    void __setItsSMSWTD_1(SMSWTD* const p_SMSWTD);
-    
-    //## auto_generated
-    void _setItsSMSWTD_1(SMSWTD* const p_SMSWTD);
-    
-    //## auto_generated
-    void _clearItsSMSWTD_1(void);
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedWaterPressureSensor : virtual public AOMInstance {
+    DECLARE_META(WaterPressureSensor, OMAnimatedWaterPressureSensor)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

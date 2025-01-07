@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: UC_DATA_PROCESSOR
-//!	Generated Date	: Mon, 23, Dec 2024  
+//!	Generated Date	: Tue, 7, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\UC_DATA_PROCESSOR.cpp
 *********************************************************************/
 
@@ -14,13 +14,13 @@
 
 //## auto_generated
 #include "UC_DATA_PROCESSOR.h"
-//## package SMSWTD_SYSTEM::USECASES::UC_DATA_PROCESSOR
+//## package SMSWTD_SYSTEM::USECASES::UC_SMSWTD::UC_DATA_PROCESSOR
 
 
 #ifdef _OMINSTRUMENT
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */);
 
-IMPLEMENT_META_PACKAGE(SMSWTD_SYSTEM_USECASES_UC_DATA_PROCESSOR, SMSWTD_SYSTEM::USECASES::UC_DATA_PROCESSOR)
+IMPLEMENT_META_PACKAGE(SMSWTD_SYSTEM_USECASES_UC_SMSWTD_UC_DATA_PROCESSOR, SMSWTD_SYSTEM::USECASES::UC_SMSWTD::UC_DATA_PROCESSOR)
 
 static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
 }

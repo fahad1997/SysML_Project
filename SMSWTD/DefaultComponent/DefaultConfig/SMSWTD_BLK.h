@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245157
+	Login		: 20245163
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SMSWTD_BLK
-//!	Generated Date	: Mon, 6, Jan 2025  
+//!	Generated Date	: Tue, 7, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\SMSWTD_BLK.h
 *********************************************************************/
 
@@ -22,17 +22,22 @@
 //## auto_generated
 #include <event.h>
 //## auto_generated
-#include "omlist.h"
+#include <aom.h>
+//## auto_generated
+#include <omthread.h>
+//## classInstance itsDataProcessor
+#include "DataProcessor.h"
+//## class p_SMSWTD_BLK_C
+#include "int_waterPressure_ProxyFlowPropertyInterface.h"
+//## class p_SMSWTD_BLK_1_C
+#include "int_windSpeed_ProxyFlowPropertyInterface.h"
 //## link itsDashboard
 class Dashboard;
 
-//## classInstance itsDataCollector
+//## link itsDataCollector
 class DataCollector;
 
-//## classInstance itsDataProcessor
-class DataProcessor;
-
-//## classInstance itsImageCollector
+//## link itsImageCollector
 class ImageCollector;
 
 //## link itsPredictionModel
@@ -42,10 +47,98 @@ class PredictionModel;
 
 //## class SMSWTD_BLK
 class SMSWTD_BLK : public OMReactive {
-    ////    Constructors and destructors    ////
-    
 public :
 
+//#[ ignore
+    //## package SMSWTD_SYSTEM::DESIGN
+    class p_SMSWTD_BLK_C : public int_waterPressure_ProxyFlowPropertyInterface {
+        ////    Constructors and destructors    ////
+        
+    public :
+    
+        //## auto_generated
+        p_SMSWTD_BLK_C(void);
+        
+        //## auto_generated
+        virtual ~p_SMSWTD_BLK_C(void);
+        
+        ////    Operations    ////
+        
+        //## auto_generated
+        int_waterPressure_ProxyFlowPropertyInterface* getItsInt_waterPressure_ProxyFlowPropertyInterface(void);
+        
+        //## auto_generated
+        virtual void setWaterPressure(int p_waterPressure);
+        
+        ////    Additional operations    ////
+        
+        //## auto_generated
+        void setItsInt_waterPressure_ProxyFlowPropertyInterface(int_waterPressure_ProxyFlowPropertyInterface* const p_int_waterPressure_ProxyFlowPropertyInterface);
+    
+    protected :
+    
+        //## auto_generated
+        void cleanUpRelations(void);
+        
+        ////    Attributes    ////
+    
+    private :
+    
+        RhpInteger _p_;		//## attribute _p_
+        
+        ////    Relations and components    ////
+        
+        int_waterPressure_ProxyFlowPropertyInterface* itsInt_waterPressure_ProxyFlowPropertyInterface;		//## link itsInt_waterPressure_ProxyFlowPropertyInterface
+    };
+    
+    //## package SMSWTD_SYSTEM::DESIGN
+    class p_SMSWTD_BLK_1_C : public int_windSpeed_ProxyFlowPropertyInterface {
+        ////    Constructors and destructors    ////
+        
+    public :
+    
+        //## auto_generated
+        p_SMSWTD_BLK_1_C(void);
+        
+        //## auto_generated
+        virtual ~p_SMSWTD_BLK_1_C(void);
+        
+        ////    Operations    ////
+        
+        //## auto_generated
+        int_windSpeed_ProxyFlowPropertyInterface* getItsInt_windSpeed_ProxyFlowPropertyInterface(void);
+        
+        //## auto_generated
+        virtual void setWindSpeed(int p_windSpeed);
+        
+        ////    Additional operations    ////
+        
+        //## auto_generated
+        void setItsInt_windSpeed_ProxyFlowPropertyInterface(int_windSpeed_ProxyFlowPropertyInterface* const p_int_windSpeed_ProxyFlowPropertyInterface);
+    
+    protected :
+    
+        //## auto_generated
+        void cleanUpRelations(void);
+        
+        ////    Attributes    ////
+    
+    private :
+    
+        RhpInteger _p_;		//## attribute _p_
+        
+        ////    Relations and components    ////
+        
+        int_windSpeed_ProxyFlowPropertyInterface* itsInt_windSpeed_ProxyFlowPropertyInterface;		//## link itsInt_windSpeed_ProxyFlowPropertyInterface
+    };
+//#]
+
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedSMSWTD_BLK;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     explicit SMSWTD_BLK(IOxfActive* const theActiveContext = NULL);
     
@@ -61,31 +154,13 @@ public :
     void setItsDashboard(Dashboard* const p_Dashboard);
     
     //## auto_generated
-    OMIterator<DataCollector*> getItsDataCollector(void) const;
+    const DataCollector* getItsDataCollector(void) const;
     
     //## auto_generated
-    DataCollector* newItsDataCollector(void);
+    const DataProcessor* getItsDataProcessor(void) const;
     
     //## auto_generated
-    void deleteItsDataCollector(DataCollector* const p_DataCollector);
-    
-    //## auto_generated
-    OMIterator<DataProcessor*> getItsDataProcessor(void) const;
-    
-    //## auto_generated
-    DataProcessor* newItsDataProcessor(void);
-    
-    //## auto_generated
-    void deleteItsDataProcessor(DataProcessor* const p_DataProcessor);
-    
-    //## auto_generated
-    OMIterator<ImageCollector*> getItsImageCollector(void) const;
-    
-    //## auto_generated
-    ImageCollector* newItsImageCollector(void);
-    
-    //## auto_generated
-    void deleteItsImageCollector(ImageCollector* const p_ImageCollector);
+    const ImageCollector* getItsImageCollector(void) const;
     
     //## auto_generated
     const PredictionModel* getItsPredictionModel(void) const;
@@ -109,12 +184,6 @@ protected :
 private :
 
     Dashboard* itsDashboard;		//## link itsDashboard
-    
-    OMList<DataCollector*> itsDataCollector;		//## classInstance itsDataCollector
-    
-    OMList<DataProcessor*> itsDataProcessor;		//## classInstance itsDataProcessor
-    
-    OMList<ImageCollector*> itsImageCollector;		//## classInstance itsImageCollector
     
     PredictionModel* itsPredictionModel;		//## link itsPredictionModel
     
@@ -145,6 +214,82 @@ public :
     
     ////    Framework    ////
     
+    //## auto_generated
+    p_SMSWTD_BLK_C* getP_SMSWTD_BLK(void) const;
+    
+    //## auto_generated
+    p_SMSWTD_BLK_C* get_p_SMSWTD_BLK(void) const;
+    
+    //## auto_generated
+    p_SMSWTD_BLK_1_C* getP_SMSWTD_BLK_1(void) const;
+    
+    //## auto_generated
+    p_SMSWTD_BLK_1_C* get_p_SMSWTD_BLK_1(void) const;
+    
+    //## auto_generated
+    const int getWaterPressure(void) const;
+    
+    //## auto_generated
+    void setWaterPressure(const int p_waterPressure);
+    
+    //## auto_generated
+    const int getWindSpeed(void) const;
+    
+    //## auto_generated
+    void setWindSpeed(const int p_windSpeed);
+    
+    //## auto_generated
+    void setItsDataCollector(DataCollector* const p_DataCollector);
+    
+    //## auto_generated
+    void setItsImageCollector(ImageCollector* const p_ImageCollector);
+
+protected :
+
+    //## auto_generated
+    void initRelations(void);
+
+private :
+
+    int waterPressure;		//## attribute waterPressure
+    
+    int windSpeed;		//## attribute windSpeed
+    
+//#[ ignore
+    p_SMSWTD_BLK_C p_SMSWTD_BLK;
+    
+    p_SMSWTD_BLK_1_C p_SMSWTD_BLK_1;
+//#]
+
+    DataCollector* itsDataCollector;		//## link itsDataCollector
+    
+    DataProcessor itsDataProcessor;		//## classInstance itsDataProcessor
+    
+    ImageCollector* itsImageCollector;		//## link itsImageCollector
+
+public :
+
+    //## auto_generated
+    void __setItsDataCollector(DataCollector* const p_DataCollector);
+    
+    //## auto_generated
+    void _setItsDataCollector(DataCollector* const p_DataCollector);
+    
+    //## auto_generated
+    void _clearItsDataCollector(void);
+    
+    //## auto_generated
+    void __setItsImageCollector(ImageCollector* const p_ImageCollector);
+    
+    //## auto_generated
+    void _setItsImageCollector(ImageCollector* const p_ImageCollector);
+    
+    //## auto_generated
+    void _clearItsImageCollector(void);
+    
+    //## auto_generated
+    void setActiveContext(IOxfActive* const theActiveContext, bool activeInstance);
+    
     // rootState:
     //## statechart_method
     inline RhpBoolean rootState_IN(void) const;
@@ -156,6 +301,40 @@ public :
     // Activated:
     //## statechart_method
     inline RhpBoolean Activated_IN(void) const;
+    
+    //## statechart_method
+    void Activated_entDef(void);
+    
+    //## statechart_method
+    void Activated_exit(void);
+    
+    //## statechart_method
+    IOxfReactive::TakeEventStatus Activated_processEvent(void);
+    
+    // state_3:
+    //## statechart_method
+    inline RhpBoolean state_3_IN(void) const;
+    
+    //## statechart_method
+    IOxfReactive::TakeEventStatus state_3_processEvent(void);
+    
+    // state_2:
+    //## statechart_method
+    inline RhpBoolean state_2_IN(void) const;
+    
+    //## statechart_method
+    void state_2_entDef(void);
+    
+    //## statechart_method
+    IOxfReactive::TakeEventStatus state_2_processEvent(void);
+    
+    // DataProcessorStart:
+    //## statechart_method
+    inline RhpBoolean DataProcessorStart_IN(void) const;
+    
+    // DataProcessingDone:
+    //## statechart_method
+    inline RhpBoolean DataProcessingDone_IN(void) const;
 
 protected :
 
@@ -169,7 +348,11 @@ protected :
     enum SMSWTD_BLK_Enum {
         OMNonState = 0,
         Deactivated = 1,
-        Activated = 2
+        Activated = 2,
+        state_3 = 3,
+        state_2 = 4,
+        DataProcessorStart = 5,
+        DataProcessingDone = 6
     };
 //#]
 
@@ -179,8 +362,53 @@ private :
     SMSWTD_BLK_Enum rootState_subState;
     
     SMSWTD_BLK_Enum rootState_active;
+    
+    SMSWTD_BLK_Enum state_3_subState;
+    
+    SMSWTD_BLK_Enum state_3_active;
+    
+    SMSWTD_BLK_Enum state_2_subState;
+    
+    SMSWTD_BLK_Enum state_2_active;
 //#]
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedSMSWTD_BLK : virtual public AOMInstance {
+    DECLARE_REACTIVE_META(SMSWTD_BLK, OMAnimatedSMSWTD_BLK)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeAttributes(AOMSAttributes* aomsAttributes) const;
+    
+    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+    
+    //## statechart_method
+    void rootState_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void Deactivated_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void Activated_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void state_3_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void state_2_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void DataProcessorStart_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void DataProcessingDone_serializeStates(AOMSState* aomsState) const;
+};
+//#]
+#endif // _OMINSTRUMENT
 
 inline RhpBoolean SMSWTD_BLK::rootState_IN(void) const {
     return true;
@@ -192,6 +420,22 @@ inline RhpBoolean SMSWTD_BLK::Deactivated_IN(void) const {
 
 inline RhpBoolean SMSWTD_BLK::Activated_IN(void) const {
     return rootState_subState == Activated;
+}
+
+inline RhpBoolean SMSWTD_BLK::state_3_IN(void) const {
+    return Activated_IN();
+}
+
+inline RhpBoolean SMSWTD_BLK::state_2_IN(void) const {
+    return Activated_IN();
+}
+
+inline RhpBoolean SMSWTD_BLK::DataProcessorStart_IN(void) const {
+    return state_2_subState == DataProcessorStart;
+}
+
+inline RhpBoolean SMSWTD_BLK::DataProcessingDone_IN(void) const {
+    return state_2_subState == DataProcessingDone;
 }
 
 #endif

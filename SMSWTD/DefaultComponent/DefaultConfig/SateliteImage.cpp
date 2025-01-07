@@ -1,12 +1,16 @@
 /********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245157
+	Login		: 20245163
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SateliteImage
-//!	Generated Date	: Mon, 6, Jan 2025  
+//!	Generated Date	: Tue, 7, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\SateliteImage.cpp
 *********************************************************************/
+
+//#[ ignore
+#define NAMESPACE_PREFIX
+//#]
 
 //## auto_generated
 #include "SateliteImage.h"
@@ -14,13 +18,19 @@
 #include "SMSWTD.h"
 //## link itsImageCollector
 #include "ImageCollector.h"
-//## package SMSWTD_SYSTEM::ANALYSIS
+//#[ ignore
+#define SMSWTD_SYSTEM_DESIGN_SateliteImage_SateliteImage_SERIALIZE OM_NO_OP
+//#]
+
+//## package SMSWTD_SYSTEM::DESIGN
 
 //## class SateliteImage
 SateliteImage::SateliteImage(void) : itsSMSWTD(NULL), itsImageCollector(NULL) {
+    NOTIFY_CONSTRUCTOR(SateliteImage, SateliteImage(), 0, SMSWTD_SYSTEM_DESIGN_SateliteImage_SateliteImage_SERIALIZE);
 }
 
 SateliteImage::~SateliteImage(void) {
+    NOTIFY_DESTRUCTOR(~SateliteImage, true);
     cleanUpRelations();
 }
 
@@ -39,6 +49,7 @@ void SateliteImage::setItsSMSWTD(SMSWTD* const p_SMSWTD) {
 void SateliteImage::cleanUpRelations(void) {
     if(itsImageCollector != NULL)
         {
+            NOTIFY_RELATION_CLEARED("itsImageCollector");
             const SateliteImage* p_SateliteImage = itsImageCollector->getItsSateliteImage();
             if(p_SateliteImage != NULL)
                 {
@@ -48,6 +59,7 @@ void SateliteImage::cleanUpRelations(void) {
         }
     if(itsSMSWTD != NULL)
         {
+            NOTIFY_RELATION_CLEARED("itsSMSWTD");
             const SateliteImage* p_SateliteImage = itsSMSWTD->getItsSateliteImage();
             if(p_SateliteImage != NULL)
                 {
@@ -59,6 +71,14 @@ void SateliteImage::cleanUpRelations(void) {
 
 void SateliteImage::__setItsSMSWTD(SMSWTD* const p_SMSWTD) {
     itsSMSWTD = p_SMSWTD;
+    if(p_SMSWTD != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsSMSWTD", p_SMSWTD, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsSMSWTD");
+        }
 }
 
 void SateliteImage::_setItsSMSWTD(SMSWTD* const p_SMSWTD) {
@@ -70,6 +90,7 @@ void SateliteImage::_setItsSMSWTD(SMSWTD* const p_SMSWTD) {
 }
 
 void SateliteImage::_clearItsSMSWTD(void) {
+    NOTIFY_RELATION_CLEARED("itsSMSWTD");
     itsSMSWTD = NULL;
 }
 
@@ -87,6 +108,14 @@ void SateliteImage::setItsImageCollector(ImageCollector* const p_ImageCollector)
 
 void SateliteImage::__setItsImageCollector(ImageCollector* const p_ImageCollector) {
     itsImageCollector = p_ImageCollector;
+    if(p_ImageCollector != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsImageCollector", p_ImageCollector, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsImageCollector");
+        }
 }
 
 void SateliteImage::_setItsImageCollector(ImageCollector* const p_ImageCollector) {
@@ -98,8 +127,28 @@ void SateliteImage::_setItsImageCollector(ImageCollector* const p_ImageCollector
 }
 
 void SateliteImage::_clearItsImageCollector(void) {
+    NOTIFY_RELATION_CLEARED("itsImageCollector");
     itsImageCollector = NULL;
 }
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+void OMAnimatedSateliteImage::serializeRelations(AOMSRelations* aomsRelations) const {
+    aomsRelations->addRelation("itsSMSWTD", false, true);
+    if(myReal->itsSMSWTD)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsSMSWTD);
+        }
+    aomsRelations->addRelation("itsImageCollector", false, true);
+    if(myReal->itsImageCollector)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsImageCollector);
+        }
+}
+//#]
+
+IMPLEMENT_META_P(SateliteImage, SMSWTD_SYSTEM_DESIGN, SMSWTD_SYSTEM::DESIGN, false, OMAnimatedSateliteImage)
+#endif // _OMINSTRUMENT
 
 /*********************************************************************
 	File Path	: DefaultComponent\DefaultConfig\SateliteImage.cpp

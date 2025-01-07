@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245157
+	Login		: 20245163
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: ImageCollector
-//!	Generated Date	: Mon, 6, Jan 2025  
+//!	Generated Date	: Tue, 7, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\ImageCollector.h
 *********************************************************************/
 
@@ -15,6 +15,11 @@
 #include <oxf.h>
 //## auto_generated
 #include "DESIGN.h"
+//## auto_generated
+#include <aom.h>
+//## link itsSMSWTD_BLK
+class SMSWTD_BLK;
+
 //## link itsSateliteImage
 class SateliteImage;
 
@@ -24,10 +29,14 @@ class SateliteImage;
 class ImageCollector {
     ////    Friends    ////
     
-    ////    Constructors and destructors    ////
-    
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedImageCollector;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     ImageCollector(void);
     
@@ -37,6 +46,12 @@ public :
     ////    Additional operations    ////
     
     ////    Relations and components    ////
+    
+    //## auto_generated
+    const SMSWTD_BLK* getItsSMSWTD_BLK(void) const;
+    
+    //## auto_generated
+    void setItsSMSWTD_BLK(SMSWTD_BLK* const p_SMSWTD_BLK);
     
     //## auto_generated
     const SateliteImage* getItsSateliteImage(void) const;
@@ -51,10 +66,21 @@ protected :
 
 private :
 
+    SMSWTD_BLK* itsSMSWTD_BLK;		//## link itsSMSWTD_BLK
+    
     SateliteImage* itsSateliteImage;		//## link itsSateliteImage
 
 public :
 
+    //## auto_generated
+    void __setItsSMSWTD_BLK(SMSWTD_BLK* const p_SMSWTD_BLK);
+    
+    //## auto_generated
+    void _setItsSMSWTD_BLK(SMSWTD_BLK* const p_SMSWTD_BLK);
+    
+    //## auto_generated
+    void _clearItsSMSWTD_BLK(void);
+    
     //## auto_generated
     void __setItsSateliteImage(SateliteImage* const p_SateliteImage);
     
@@ -64,6 +90,20 @@ public :
     //## auto_generated
     void _clearItsSateliteImage(void);
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedImageCollector : virtual public AOMInstance {
+    DECLARE_META(ImageCollector, OMAnimatedImageCollector)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

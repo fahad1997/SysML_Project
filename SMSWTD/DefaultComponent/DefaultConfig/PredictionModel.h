@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245157
+	Login		: 20245163
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: PredictionModel
-//!	Generated Date	: Mon, 6, Jan 2025  
+//!	Generated Date	: Tue, 7, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\PredictionModel.h
 *********************************************************************/
 
@@ -15,6 +15,8 @@
 #include <oxf.h>
 //## auto_generated
 #include "DESIGN.h"
+//## auto_generated
+#include <aom.h>
 //## link itsSMSWTD_BLK
 class SMSWTD_BLK;
 
@@ -22,10 +24,14 @@ class SMSWTD_BLK;
 
 //## class PredictionModel
 class PredictionModel {
-    ////    Constructors and destructors    ////
-    
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedPredictionModel;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     PredictionModel(void);
     
@@ -64,6 +70,20 @@ public :
     //## auto_generated
     void _clearItsSMSWTD_BLK(void);
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedPredictionModel : virtual public AOMInstance {
+    DECLARE_META(PredictionModel, OMAnimatedPredictionModel)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

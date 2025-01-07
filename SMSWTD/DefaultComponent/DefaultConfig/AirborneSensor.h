@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245157
+	Login		: 20245163
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: AirborneSensor
-//!	Generated Date	: Mon, 6, Jan 2025  
+//!	Generated Date	: Tue, 7, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\AirborneSensor.h
 *********************************************************************/
 
@@ -13,17 +13,27 @@
 
 //## auto_generated
 #include <oxf.h>
+//## auto_generated
+#include <aom.h>
+//## auto_generated
+#include "DESIGN.h"
 //## link itsSMSWTD
 class SMSWTD;
 
-//## package SMSWTD_SYSTEM::ANALYSIS
+//## package SMSWTD_SYSTEM::DESIGN
 
 //## class AirborneSensor
 class AirborneSensor {
-    ////    Constructors and destructors    ////
+    ////    Friends    ////
     
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedAirborneSensor;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     AirborneSensor(void);
     
@@ -62,6 +72,20 @@ public :
     //## auto_generated
     void _clearItsSMSWTD(void);
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedAirborneSensor : virtual public AOMInstance {
+    DECLARE_META(AirborneSensor, OMAnimatedAirborneSensor)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************

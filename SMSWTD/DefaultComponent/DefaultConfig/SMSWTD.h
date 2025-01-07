@@ -1,10 +1,10 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245157
+	Login		: 20245163
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SMSWTD
-//!	Generated Date	: Mon, 6, Jan 2025  
+//!	Generated Date	: Tue, 7, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\SMSWTD.h
 *********************************************************************/
 
@@ -13,6 +13,10 @@
 
 //## auto_generated
 #include <oxf.h>
+//## auto_generated
+#include <aom.h>
+//## auto_generated
+#include "DESIGN.h"
 //## link itsAirborneSensor
 class AirborneSensor;
 
@@ -40,16 +44,20 @@ class WaterPressureSensor;
 //## link itsWeatherSensor
 class WeatherSensor;
 
-//## package SMSWTD_SYSTEM::ANALYSIS
+//## package SMSWTD_SYSTEM::DESIGN
 
 //## class SMSWTD
 class SMSWTD {
     ////    Friends    ////
     
-    ////    Constructors and destructors    ////
-    
 public :
 
+#ifdef _OMINSTRUMENT
+    friend class OMAnimatedSMSWTD;
+#endif // _OMINSTRUMENT
+
+    ////    Constructors and destructors    ////
+    
     //## auto_generated
     SMSWTD(void);
     
@@ -101,12 +109,6 @@ public :
     void setItsWaterPressureSensor(WaterPressureSensor* const p_WaterPressureSensor);
     
     //## auto_generated
-    const WaterPressureSensor* getItsWaterPressureSensor_1(void) const;
-    
-    //## auto_generated
-    void setItsWaterPressureSensor_1(WaterPressureSensor* const p_WaterPressureSensor);
-    
-    //## auto_generated
     const WeatherSensor* getItsWeatherSensor(void) const;
     
     //## auto_generated
@@ -130,8 +132,6 @@ private :
     WaterFlowDetector* itsWaterFlowDetector;		//## link itsWaterFlowDetector
     
     WaterPressureSensor* itsWaterPressureSensor;		//## link itsWaterPressureSensor
-    
-    WaterPressureSensor* itsWaterPressureSensor_1;		//## link itsWaterPressureSensor_1
     
     WeatherSensor* itsWeatherSensor;		//## link itsWeatherSensor
     
@@ -203,15 +203,6 @@ public :
     void _clearItsWaterPressureSensor(void);
     
     //## auto_generated
-    void __setItsWaterPressureSensor_1(WaterPressureSensor* const p_WaterPressureSensor);
-    
-    //## auto_generated
-    void _setItsWaterPressureSensor_1(WaterPressureSensor* const p_WaterPressureSensor);
-    
-    //## auto_generated
-    void _clearItsWaterPressureSensor_1(void);
-    
-    //## auto_generated
     void __setItsWeatherSensor(WeatherSensor* const p_WeatherSensor);
     
     //## auto_generated
@@ -245,6 +236,20 @@ public :
     //## auto_generated
     void _clearItsAirborneSensor(void);
 };
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
+class OMAnimatedSMSWTD : virtual public AOMInstance {
+    DECLARE_META(SMSWTD, OMAnimatedSMSWTD)
+    
+    ////    Framework operations    ////
+    
+public :
+
+    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
+};
+//#]
+#endif // _OMINSTRUMENT
 
 #endif
 /*********************************************************************
