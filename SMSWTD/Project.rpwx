@@ -44,7 +44,7 @@
 						</_theDiagram>
 						<_UpLeft type="a">0 20 </_UpLeft>
 						<_DownRight type="a">1540 704 </_DownRight>
-						<m_nDiagramIndex type="a">8</m_nDiagramIndex>
+						<m_nDiagramIndex type="a">9</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -108,7 +108,7 @@
 						</_theDiagram>
 						<_UpLeft type="a">-12 0 </_UpLeft>
 						<_DownRight type="a">1265 406 </_DownRight>
-						<m_nDiagramIndex type="a">3</m_nDiagramIndex>
+						<m_nDiagramIndex type="a">2</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -140,7 +140,7 @@
 						</_theDiagram>
 						<_UpLeft type="a">-85 20 </_UpLeft>
 						<_DownRight type="a">1039 377 </_DownRight>
-						<m_nDiagramIndex type="a">4</m_nDiagramIndex>
+						<m_nDiagramIndex type="a">3</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -207,7 +207,7 @@
 						<_UpLeft type="a">0 0 </_UpLeft>
 						<_DownRight type="a">1079 313 </_DownRight>
 						<_instanceName type="a">DataProcessor[0]</_instanceName>
-						<m_nDiagramIndex type="a">13</m_nDiagramIndex>
+						<m_nDiagramIndex type="a">14</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -241,7 +241,7 @@
 						<_UpLeft type="a">0 236 </_UpLeft>
 						<_DownRight type="a">905 581 </_DownRight>
 						<_instanceName type="a">itsSMSWTD_BLK-&gt;itsDataProcessor</_instanceName>
-						<m_nDiagramIndex type="a">11</m_nDiagramIndex>
+						<m_nDiagramIndex type="a">12</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -249,8 +249,8 @@
 						<_placement type="p">
 							<CCommon_WINDOWPLACEMENT type="e">
 								<m_nLength type="a">44</m_nLength>
-								<m_nFlags type="a">0</m_nFlags>
-								<m_showCmd type="a">1</m_showCmd>
+								<m_nFlags type="a">2</m_nFlags>
+								<m_showCmd type="a">3</m_showCmd>
 								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
 								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
 								<m_ptMaxPositionX type="a">-9</m_ptMaxPositionX>
@@ -272,9 +272,9 @@
 							</IHandle>
 						</_theDiagram>
 						<_UpLeft type="a">0 0 </_UpLeft>
-						<_DownRight type="a">1353 430 </_DownRight>
-						<m_nDiagramIndex type="a">14</m_nDiagramIndex>
-						<m_bIsActiveView type="a">0</m_bIsActiveView>
+						<_DownRight type="a">1273 740 </_DownRight>
+						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
+						<m_bIsActiveView type="a">1</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
 					<CGEMdiDiagramParams type="e">
@@ -305,7 +305,7 @@
 						</_theDiagram>
 						<_UpLeft type="a">-7 0 </_UpLeft>
 						<_DownRight type="a">1059 376 </_DownRight>
-						<m_nDiagramIndex type="a">6</m_nDiagramIndex>
+						<m_nDiagramIndex type="a">4</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -368,9 +368,9 @@
 								<_hid type="a">GUID 890b88f7-bfb9-4800-a27e-367bf022cdf3</_hid>
 							</IHandle>
 						</_theDiagram>
-						<_UpLeft type="a">0 0 </_UpLeft>
-						<_DownRight type="a">920 408 </_DownRight>
-						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
+						<_UpLeft type="a">78 0 </_UpLeft>
+						<_DownRight type="a">998 408 </_DownRight>
+						<m_nDiagramIndex type="a">6</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -378,8 +378,8 @@
 						<_placement type="p">
 							<CCommon_WINDOWPLACEMENT type="e">
 								<m_nLength type="a">44</m_nLength>
-								<m_nFlags type="a">2</m_nFlags>
-								<m_showCmd type="a">3</m_showCmd>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
 								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
 								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
 								<m_ptMaxPositionX type="a">-9</m_ptMaxPositionX>
@@ -400,10 +400,10 @@
 								<_hid type="a">GUID 697c95e7-f785-483d-a337-ca7c6b829791</_hid>
 							</IHandle>
 						</_theDiagram>
-						<_UpLeft type="a">0 345 </_UpLeft>
-						<_DownRight type="a">1321 1114 </_DownRight>
-						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
-						<m_bIsActiveView type="a">1</m_bIsActiveView>
+						<_UpLeft type="a">0 0 </_UpLeft>
+						<_DownRight type="a">1059 470 </_DownRight>
+						<m_nDiagramIndex type="a">5</m_nDiagramIndex>
+						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
 					<CGEMdiDiagramParams type="e">
@@ -434,7 +434,7 @@
 						</_theDiagram>
 						<_UpLeft type="a">0 0 </_UpLeft>
 						<_DownRight type="a">1045 464 </_DownRight>
-						<m_nDiagramIndex type="a">9</m_nDiagramIndex>
+						<m_nDiagramIndex type="a">10</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -466,7 +466,7 @@
 						</_theDiagram>
 						<_UpLeft type="a">0 0 </_UpLeft>
 						<_DownRight type="a">1402 494 </_DownRight>
-						<m_nDiagramIndex type="a">5</m_nDiagramIndex>
+						<m_nDiagramIndex type="a">7</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -498,7 +498,7 @@
 						</_theDiagram>
 						<_UpLeft type="a">23 5 </_UpLeft>
 						<_DownRight type="a">740 323 </_DownRight>
-						<m_nDiagramIndex type="a">7</m_nDiagramIndex>
+						<m_nDiagramIndex type="a">8</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -530,7 +530,7 @@
 						</_theDiagram>
 						<_UpLeft type="a">16 30 </_UpLeft>
 						<_DownRight type="a">1061 494 </_DownRight>
-						<m_nDiagramIndex type="a">2</m_nDiagramIndex>
+						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
