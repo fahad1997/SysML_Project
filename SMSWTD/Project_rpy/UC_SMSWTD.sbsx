@@ -12,14 +12,14 @@
 			<_id type="a">GUID 66ee3c0b-b374-4df4-b548-0cb113091ab8</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">UC_SMSWTD</_name>
-			<_modifiedTimeWeak type="a">1.6.2025::21:25:30</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.6.2025::21:21:23</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.8.2025::16:24:1</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.8.2025::16:24:1</_modifiedTime>
 			<_lastID type="a">4</_lastID>
-			<weakCGTime type="a">1.6.2025::21:25:30</weakCGTime>
+			<weakCGTime type="a">1.8.2025::16:24:1</weakCGTime>
 			<strongCGTime type="a">1.6.2025::20:17:31</strongCGTime>
 			<_defaultComposite type="s">GUID 7675e2ee-30f5-4b39-b1c6-483ce751addf</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
-			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
 			<AggregatesList type="e">
 				<value>GUID a3e01ee6-5866-478c-ab1e-f0d2e81f879c</value>
 				<value>GUID 7bf9b358-483a-4f29-baca-dfde2d9fab24</value>
@@ -446,8 +446,8 @@
 			</_properties>
 			<_name type="a">TSUNAMI_PREDICTION_USE_CASES</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.6.2025::21:26:13</_modifiedTime>
-			<_lastModifiedTime type="a">1.6.2025::21:26:13</_lastModifiedTime>
+			<_modifiedTime type="a">1.8.2025::16:26:35</_modifiedTime>
+			<_lastModifiedTime type="a">1.8.2025::16:26:35</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -797,20 +797,49 @@
 		</CGIBasicClass>
 		<CGIBasicClass type="e">
 			<_id type="a">GUID 9d04c5a3-0d86-4078-b0a1-c6931c709b8c</_id>
+			<_properties type="p"><IPropertyContainer type="e">
+				<Subjects type="c">
+					<IRPYRawContainer type="e">
+						<IPropertySubject type="e">
+							<_Name type="a">General</_Name>
+							<Metaclasses type="c">
+								<IRPYRawContainer type="e">
+									<IPropertyMetaclass type="e">
+										<_Name type="a">Graphics</_Name>
+										<Properties type="c">
+											<IRPYRawContainer type="e">
+												<IProperty type="e">
+													<_Name type="a">FitBoxToItsTextuals</_Name>
+													<_Value type="a">False</_Value>
+													<_Type type="a">Bool</_Type>
+												</IProperty>
+												
+											</IRPYRawContainer>
+										</Properties>
+									</IPropertyMetaclass>
+									
+								</IRPYRawContainer>
+							</Metaclasses>
+						</IPropertySubject>
+						
+					</IRPYRawContainer>
+				</Subjects>
+			</IPropertyContainer>
+			</_properties>
 			<m_type type="a">125</m_type>
 			<m_pModelObject type="r">
 				<IHandle type="e">
 					<_hm2Class type="a">IUseCase</_hm2Class>
 					<_hfilename type="a">.\UC_DATA_PROCESSOR.sbsx</_hfilename>
 					<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES::UC_SMSWTD::UC_DATA_PROCESSOR</_hsubsystem>
-					<_hname type="a">Process Data</_hname>
+					<_hname type="a">Process Input To Generate Tsunami Indicators</_hname>
 					<_hid type="a">GUID 0f6d0860-3f1b-4224-88d3-c50721080a1c</_hid>
 				</IHandle>
 			</m_pModelObject>
 			<m_pParent type="s">GUID f7c86305-8863-401b-a612-11f721ccfb37</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Process Data</m_str>
+					<m_str type="a">Process Input To Generate Tsunami Indicators</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -826,7 +855,7 @@
 				</CGIText>
 			</m_name>
 			<m_drawBehavior type="a">4104</m_drawBehavior>
-			<m_transform type="a">0.350062 0 0 0.156786 570.943 299.824 </m_transform>
+			<m_transform type="a">0.45008 0 0 0.156786 571.143 299.824 </m_transform>
 			<m_bIsPreferencesInitialized type="a">1</m_bIsPreferencesInitialized>
 			<m_AdditionalLabel type="p">
 				<CGIText type="e">
@@ -1173,7 +1202,7 @@
 					<_hfilename type="a">.\UC_DATA_PROCESSOR.sbsx</_hfilename>
 					<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES::UC_SMSWTD::UC_DATA_PROCESSOR</_hsubsystem>
 					<_hclass type="a">Regular data processing</_hclass>
-					<_hname type="a">Process Data</_hname>
+					<_hname type="a">Process Input To Generate Tsunami Indicators</_hname>
 					<_hid type="a">GUID 23c895ad-13fe-4653-9c67-a783e636c70e</_hid>
 				</IHandle>
 			</m_pModelObject>
@@ -1300,7 +1329,7 @@
 			<m_pParent type="s">GUID f7c86305-8863-401b-a612-11f721ccfb37</m_pParent>
 			<m_name type="p">
 				<CGIText type="e">
-					<m_str type="a">Generate Prediction</m_str>
+					<m_str type="a">Generate Tsunami Prediction</m_str>
 					<m_style type="a">Arial; 10 0 0 0 1 </m_style>
 					<m_color type="p">
 						<IColor type="e">
@@ -1346,8 +1375,8 @@
 					<_hm2Class type="a">IDependency</_hm2Class>
 					<_hfilename type="a">.\UC_DATA_PROCESSOR.sbsx</_hfilename>
 					<_hsubsystem type="a">SMSWTD_SYSTEM::USECASES::UC_SMSWTD::UC_DATA_PROCESSOR</_hsubsystem>
-					<_hclass type="a">Process Data</_hclass>
-					<_hname type="a">Generate Prediction</_hname>
+					<_hclass type="a">Process Input To Generate Tsunami Indicators</_hclass>
+					<_hname type="a">Generate Tsunami Prediction</_hname>
 					<_hid type="a">GUID 9748c8b9-f809-4a2e-b528-8055cb9efb04</_hid>
 				</IHandle>
 			</m_pModelObject>
@@ -1396,7 +1425,7 @@
 			<m_anglePoint1 type="a">0 0 </m_anglePoint1>
 			<m_anglePoint2 type="a">0 0 </m_anglePoint2>
 			<m_line_style type="a">0</m_line_style>
-			<m_SourcePort type="a">530 1070 </m_SourcePort>
+			<m_SourcePort type="a">531 1070 </m_SourcePort>
 			<m_TargetPort type="a">442 15 </m_TargetPort>
 			<m_ShowName type="a">0</m_ShowName>
 			<m_ShowStereotype type="a">1</m_ShowStereotype>
@@ -1974,7 +2003,7 @@
 			<_myState type="a">40960</_myState>
 			<_name type="a">TopLevel</_name>
 			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
 			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
 			<_itsStateChart type="r">
@@ -1986,9 +2015,9 @@
 		<IUseCase type="e">
 			<_id type="a">GUID cc367685-3838-484b-99b1-a66d22ba0b11</_id>
 			<_myState type="a">8192</_myState>
-			<_name type="a">Generate Prediction</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.6.2025::21:25:30</_modifiedTime>
+			<_name type="a">Generate Tsunami Prediction</_name>
+			<_modifiedTimeWeak type="a">1.6.2025::21:18:1</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.8.2025::16:24:23</_modifiedTime>
 			<_lastID type="a">1</_lastID>
 			<weakCGTime type="a">1.6.2025::21:18:1</weakCGTime>
 			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
@@ -1997,10 +2026,6 @@
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
-			<UseCaseStereoTypes type="c">
-				<IRPYRawContainer type="e">
-				</IRPYRawContainer>
-			</UseCaseStereoTypes>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
 				</IRPYRawContainer>
@@ -2044,7 +2069,7 @@
 			<_id type="a">GUID 7560fad8-0c36-427c-9935-10751b78d1a8</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">Trigger Tsunami Alert Watchdog</_name>
-			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTimeWeak type="a">1.6.2025::21:26:13</_modifiedTimeWeak>
 			<_modifiedTime type="a">1.6.2025::21:26:13</_modifiedTime>
 			<_lastID type="a">2</_lastID>
 			<weakCGTime type="a">1.6.2025::21:26:13</weakCGTime>
@@ -2054,10 +2079,6 @@
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
-			<UseCaseStereoTypes type="c">
-				<IRPYRawContainer type="e">
-				</IRPYRawContainer>
-			</UseCaseStereoTypes>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
 				</IRPYRawContainer>
@@ -2140,10 +2161,6 @@
 				</IHandle>
 			</_itsStateChart>
 			<_classModifier type="a">Unspecified</_classModifier>
-			<UseCaseStereoTypes type="c">
-				<IRPYRawContainer type="e">
-				</IRPYRawContainer>
-			</UseCaseStereoTypes>
 			<_EntryPoints type="c">
 				<IRPYRawContainer type="e">
 				</IRPYRawContainer>

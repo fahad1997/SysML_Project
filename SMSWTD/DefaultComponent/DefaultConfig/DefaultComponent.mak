@@ -101,7 +101,7 @@ OBJS= \
   DashboardPublisher.obj \
   PredictionModelPublisher.obj \
   DataPublisher.obj \
-  SMSWTD_BLK.obj \
+  SMSWTD_CONTROLLER.obj \
   Dashboard.obj \
   NotificationService.obj \
   PredictionModel.obj \
@@ -230,7 +230,7 @@ Admin.obj : Admin.cpp Admin.h    ANALYSIS.h User.h SMSWTD.h
 
 
 
-DataCollector.obj : DataCollector.cpp DataCollector.h    DESIGN.h SMSWTD_BLK.h WaterFlowDetector.h StormSensor.h int_waterPressure_ProxyFlowPropertyInterface.h int_windSpeed_ProxyFlowPropertyInterface.h 
+DataCollector.obj : DataCollector.cpp DataCollector.h    DESIGN.h SMSWTD_CONTROLLER.h WaterFlowDetector.h StormSensor.h int_waterPressure_ProxyFlowPropertyInterface.h int_windSpeed_ProxyFlowPropertyInterface.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DataCollector.obj" "DataCollector.cpp" 
 
@@ -242,7 +242,7 @@ DataProcessor.obj : DataProcessor.cpp DataProcessor.h    DESIGN.h int_waterPress
 
 
 
-ImageCollector.obj : ImageCollector.cpp ImageCollector.h    DESIGN.h SateliteImage.h SMSWTD_BLK.h 
+ImageCollector.obj : ImageCollector.cpp ImageCollector.h    DESIGN.h SateliteImage.h SMSWTD_CONTROLLER.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ImageCollector.obj" "ImageCollector.cpp" 
 
@@ -296,13 +296,13 @@ DataPublisher.obj : DataPublisher.cpp DataPublisher.h    DESIGN.h
 
 
 
-SMSWTD_BLK.obj : SMSWTD_BLK.cpp SMSWTD_BLK.h    DESIGN.h Dashboard.h PredictionModel.h ImageCollector.h DataProcessor.h DataCollector.h int_waterPressure_ProxyFlowPropertyInterface.h int_windSpeed_ProxyFlowPropertyInterface.h 
+SMSWTD_CONTROLLER.obj : SMSWTD_CONTROLLER.cpp SMSWTD_CONTROLLER.h    DESIGN.h Dashboard.h PredictionModel.h ImageCollector.h DataProcessor.h DataCollector.h int_waterPressure_ProxyFlowPropertyInterface.h int_windSpeed_ProxyFlowPropertyInterface.h 
 	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"SMSWTD_BLK.obj" "SMSWTD_BLK.cpp" 
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"SMSWTD_CONTROLLER.obj" "SMSWTD_CONTROLLER.cpp" 
 
 
 
-Dashboard.obj : Dashboard.cpp Dashboard.h    DESIGN.h NotificationService.h SMSWTD_BLK.h 
+Dashboard.obj : Dashboard.cpp Dashboard.h    DESIGN.h NotificationService.h SMSWTD_CONTROLLER.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Dashboard.obj" "Dashboard.cpp" 
 
@@ -314,7 +314,7 @@ NotificationService.obj : NotificationService.cpp NotificationService.h    DESIG
 
 
 
-PredictionModel.obj : PredictionModel.cpp PredictionModel.h    DESIGN.h SMSWTD_BLK.h 
+PredictionModel.obj : PredictionModel.cpp PredictionModel.h    DESIGN.h SMSWTD_CONTROLLER.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"PredictionModel.obj" "PredictionModel.cpp" 
 
@@ -374,7 +374,7 @@ ANALYSIS.obj : ANALYSIS.cpp ANALYSIS.h
 
 
 
-DESIGN.obj : DESIGN.cpp DESIGN.h    DataCollector.h DataProcessor.h ImageCollector.h SensorDataProcessor.h ImageProcessor.h GeographicalConfiguration.h SensorConfiguration.h CloudClient.h DashboardPublisher.h PredictionModelPublisher.h DataPublisher.h SMSWTD_BLK.h Dashboard.h NotificationService.h PredictionModel.h SateliteImage.h Cloud.h SMSWTD.h StormSensor.h WaterFlowDetector.h WaterPressureSensor.h AirborneSensor.h WeatherSensor.h 
+DESIGN.obj : DESIGN.cpp DESIGN.h    DataCollector.h DataProcessor.h ImageCollector.h SensorDataProcessor.h ImageProcessor.h GeographicalConfiguration.h SensorConfiguration.h CloudClient.h DashboardPublisher.h PredictionModelPublisher.h DataPublisher.h SMSWTD_CONTROLLER.h Dashboard.h NotificationService.h PredictionModel.h SateliteImage.h Cloud.h SMSWTD.h StormSensor.h WaterFlowDetector.h WaterPressureSensor.h AirborneSensor.h WeatherSensor.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DESIGN.obj" "DESIGN.cpp" 
 
@@ -441,7 +441,7 @@ clean:
 	if exist DashboardPublisher.obj erase DashboardPublisher.obj
 	if exist PredictionModelPublisher.obj erase PredictionModelPublisher.obj
 	if exist DataPublisher.obj erase DataPublisher.obj
-	if exist SMSWTD_BLK.obj erase SMSWTD_BLK.obj
+	if exist SMSWTD_CONTROLLER.obj erase SMSWTD_CONTROLLER.obj
 	if exist Dashboard.obj erase Dashboard.obj
 	if exist NotificationService.obj erase NotificationService.obj
 	if exist PredictionModel.obj erase PredictionModel.obj

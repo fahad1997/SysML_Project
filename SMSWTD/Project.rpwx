@@ -42,9 +42,9 @@
 								<_hid type="a">GUID 4118b103-03dc-43cf-821d-0185af648046</_hid>
 							</IHandle>
 						</_theDiagram>
-						<_UpLeft type="a">0 35 </_UpLeft>
-						<_DownRight type="a">1303 613 </_DownRight>
-						<m_nDiagramIndex type="a">10</m_nDiagramIndex>
+						<_UpLeft type="a">0 20 </_UpLeft>
+						<_DownRight type="a">1540 704 </_DownRight>
+						<m_nDiagramIndex type="a">7</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -74,8 +74,8 @@
 								<_hid type="a">GUID f9f3d2dd-0edc-4262-90d6-3e1e48ec065c</_hid>
 							</IHandle>
 						</_theDiagram>
-						<_UpLeft type="a">-57 10 </_UpLeft>
-						<_DownRight type="a">790 386 </_DownRight>
+						<_UpLeft type="a">-57 -14 </_UpLeft>
+						<_DownRight type="a">884 404 </_DownRight>
 						<m_nDiagramIndex type="a">6</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
@@ -106,9 +106,9 @@
 								<_hid type="a">GUID 9bfd5eb9-64f8-427c-a58d-8a8fe73d6bbb</_hid>
 							</IHandle>
 						</_theDiagram>
-						<_UpLeft type="a">-24 0 </_UpLeft>
-						<_DownRight type="a">1253 406 </_DownRight>
-						<m_nDiagramIndex type="a">7</m_nDiagramIndex>
+						<_UpLeft type="a">-33 0 </_UpLeft>
+						<_DownRight type="a">1244 406 </_DownRight>
+						<m_nDiagramIndex type="a">5</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -140,7 +140,7 @@
 						</_theDiagram>
 						<_UpLeft type="a">-60 20 </_UpLeft>
 						<_DownRight type="a">1064 377 </_DownRight>
-						<m_nDiagramIndex type="a">9</m_nDiagramIndex>
+						<m_nDiagramIndex type="a">3</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -171,9 +171,9 @@
 								<_hid type="a">GUID 95411ab8-470b-43d2-bd35-34d87ffed3f6</_hid>
 							</IHandle>
 						</_theDiagram>
-						<_UpLeft type="a">198 106 </_UpLeft>
-						<_DownRight type="a">1803 616 </_DownRight>
-						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
+						<_UpLeft type="a">0 106 </_UpLeft>
+						<_DownRight type="a">1605 616 </_DownRight>
+						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -207,7 +207,7 @@
 						<_UpLeft type="a">0 0 </_UpLeft>
 						<_DownRight type="a">1079 313 </_DownRight>
 						<_instanceName type="a">DataProcessor[0]</_instanceName>
-						<m_nDiagramIndex type="a">11</m_nDiagramIndex>
+						<m_nDiagramIndex type="a">13</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -241,7 +241,7 @@
 						<_UpLeft type="a">128 236 </_UpLeft>
 						<_DownRight type="a">1033 581 </_DownRight>
 						<_instanceName type="a">itsSMSWTD_BLK-&gt;itsDataProcessor</_instanceName>
-						<m_nDiagramIndex type="a">1</m_nDiagramIndex>
+						<m_nDiagramIndex type="a">10</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -272,42 +272,9 @@
 							</IHandle>
 						</_theDiagram>
 						<_UpLeft type="a">0 0 </_UpLeft>
-						<_DownRight type="a">1345 742 </_DownRight>
-						<m_nDiagramIndex type="a">5</m_nDiagramIndex>
+						<_DownRight type="a">1342 740 </_DownRight>
+						<m_nDiagramIndex type="a">0</m_nDiagramIndex>
 						<m_bIsActiveView type="a">1</m_bIsActiveView>
-					</CGEMdiDiagramParams>
-					
-					<CGEMdiDiagramParams type="e">
-						<_placement type="p">
-							<CCommon_WINDOWPLACEMENT type="e">
-								<m_nLength type="a">44</m_nLength>
-								<m_nFlags type="a">0</m_nFlags>
-								<m_showCmd type="a">1</m_showCmd>
-								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
-								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
-								<m_ptMaxPositionX type="a">-9</m_ptMaxPositionX>
-								<m_ptMaxPositionY type="a">-38</m_ptMaxPositionY>
-								<m_nLeft type="a">64</m_nLeft>
-								<m_nTop type="a">64</m_nTop>
-								<m_nRight type="a">1173</m_nRight>
-								<m_nBottom type="a">512</m_nBottom>
-							</CCommon_WINDOWPLACEMENT>
-						</_placement>
-						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
-						<_theDiagram type="r">
-							<IHandle type="e">
-								<_hm2Class type="a">IStateChartDiagram</_hm2Class>
-								<_hfilename type="a">.\Project_rpy\DESIGN.sbsx</_hfilename>
-								<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
-								<_hclass type="a">SMSWTD_BLK</_hclass>
-								<_hname type="a">StatechartDiagram</_hname>
-								<_hid type="a">GUID 279fc976-2b2f-4cb5-bfaa-fe0bfee9ff5b</_hid>
-							</IHandle>
-						</_theDiagram>
-						<_UpLeft type="a">16 0 </_UpLeft>
-						<_DownRight type="a">1082 376 </_DownRight>
-						<m_nDiagramIndex type="a">8</m_nDiagramIndex>
-						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
 					<CGEMdiDiagramParams type="e">
@@ -339,6 +306,39 @@
 						<_UpLeft type="a">-7 0 </_UpLeft>
 						<_DownRight type="a">1059 376 </_DownRight>
 						<m_nDiagramIndex type="a">4</m_nDiagramIndex>
+						<m_bIsActiveView type="a">0</m_bIsActiveView>
+					</CGEMdiDiagramParams>
+					
+					<CGEMdiDiagramParams type="e">
+						<_placement type="p">
+							<CCommon_WINDOWPLACEMENT type="e">
+								<m_nLength type="a">44</m_nLength>
+								<m_nFlags type="a">0</m_nFlags>
+								<m_showCmd type="a">1</m_showCmd>
+								<m_ptMinPositionX type="a">-1</m_ptMinPositionX>
+								<m_ptMinPositionY type="a">-1</m_ptMinPositionY>
+								<m_ptMaxPositionX type="a">-9</m_ptMaxPositionX>
+								<m_ptMaxPositionY type="a">-38</m_ptMaxPositionY>
+								<m_nLeft type="a">64</m_nLeft>
+								<m_nTop type="a">64</m_nTop>
+								<m_nRight type="a">1173</m_nRight>
+								<m_nBottom type="a">512</m_nBottom>
+							</CCommon_WINDOWPLACEMENT>
+						</_placement>
+						<_wasOpenedOnCloseProject type="a">1</_wasOpenedOnCloseProject>
+						<_theDiagram type="r">
+							<IHandle type="e">
+								<_hm2Class type="a">IStateChartDiagram</_hm2Class>
+								<_hfilename type="a">.\Project_rpy\DESIGN.sbsx</_hfilename>
+								<_hsubsystem type="a">SMSWTD_SYSTEM::DESIGN</_hsubsystem>
+								<_hclass type="a">SMSWTD_CONTROLLER</_hclass>
+								<_hname type="a">StatechartDiagram</_hname>
+								<_hid type="a">GUID 279fc976-2b2f-4cb5-bfaa-fe0bfee9ff5b</_hid>
+							</IHandle>
+						</_theDiagram>
+						<_UpLeft type="a">16 10 </_UpLeft>
+						<_DownRight type="a">1082 386 </_DownRight>
+						<m_nDiagramIndex type="a">2</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -402,7 +402,7 @@
 						</_theDiagram>
 						<_UpLeft type="a">0 130 </_UpLeft>
 						<_DownRight type="a">1066 506 </_DownRight>
-						<m_nDiagramIndex type="a">2</m_nDiagramIndex>
+						<m_nDiagramIndex type="a">11</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -432,9 +432,9 @@
 								<_hid type="a">GUID 8aba6393-e1dd-455b-8eb3-8bee7cfcd9a1</_hid>
 							</IHandle>
 						</_theDiagram>
-						<_UpLeft type="a">0 0 </_UpLeft>
-						<_DownRight type="a">1747 776 </_DownRight>
-						<m_nDiagramIndex type="a">12</m_nDiagramIndex>
+						<_UpLeft type="a">0 32 </_UpLeft>
+						<_DownRight type="a">717 350 </_DownRight>
+						<m_nDiagramIndex type="a">9</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					
@@ -464,9 +464,9 @@
 								<_hid type="a">GUID d55da1d1-3f77-4608-8339-413a449f1c45</_hid>
 							</IHandle>
 						</_theDiagram>
-						<_UpLeft type="a">26 0 </_UpLeft>
-						<_DownRight type="a">1071 464 </_DownRight>
-						<m_nDiagramIndex type="a">13</m_nDiagramIndex>
+						<_UpLeft type="a">26 30 </_UpLeft>
+						<_DownRight type="a">1071 494 </_DownRight>
+						<m_nDiagramIndex type="a">8</m_nDiagramIndex>
 						<m_bIsActiveView type="a">0</m_bIsActiveView>
 					</CGEMdiDiagramParams>
 					

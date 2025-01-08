@@ -14,8 +14,8 @@
 
 //## auto_generated
 #include "PredictionModel.h"
-//## link itsSMSWTD_BLK
-#include "SMSWTD_BLK.h"
+//## link itsSMSWTD_CONTROLLER
+#include "SMSWTD_CONTROLLER.h"
 //#[ ignore
 #define SMSWTD_SYSTEM_DESIGN_PredictionModel_PredictionModel_SERIALIZE OM_NO_OP
 //#]
@@ -23,7 +23,7 @@
 //## package SMSWTD_SYSTEM::DESIGN
 
 //## class PredictionModel
-PredictionModel::PredictionModel(void) : itsSMSWTD_BLK(NULL) {
+PredictionModel::PredictionModel(void) : itsSMSWTD_CONTROLLER(NULL) {
     NOTIFY_CONSTRUCTOR(PredictionModel, PredictionModel(), 0, SMSWTD_SYSTEM_DESIGN_PredictionModel_PredictionModel_SERIALIZE);
 }
 
@@ -32,63 +32,63 @@ PredictionModel::~PredictionModel(void) {
     cleanUpRelations();
 }
 
-const SMSWTD_BLK* PredictionModel::getItsSMSWTD_BLK(void) const {
-    return itsSMSWTD_BLK;
-}
-
-void PredictionModel::setItsSMSWTD_BLK(SMSWTD_BLK* const p_SMSWTD_BLK) {
-    if(p_SMSWTD_BLK != NULL)
-        {
-            p_SMSWTD_BLK->_setItsPredictionModel(this);
-        }
-    _setItsSMSWTD_BLK(p_SMSWTD_BLK);
-}
-
 void PredictionModel::cleanUpRelations(void) {
-    if(itsSMSWTD_BLK != NULL)
+    if(itsSMSWTD_CONTROLLER != NULL)
         {
-            NOTIFY_RELATION_CLEARED("itsSMSWTD_BLK");
-            const PredictionModel* p_PredictionModel = itsSMSWTD_BLK->getItsPredictionModel();
+            NOTIFY_RELATION_CLEARED("itsSMSWTD_CONTROLLER");
+            const PredictionModel* p_PredictionModel = itsSMSWTD_CONTROLLER->getItsPredictionModel();
             if(p_PredictionModel != NULL)
                 {
-                    itsSMSWTD_BLK->__setItsPredictionModel(NULL);
+                    itsSMSWTD_CONTROLLER->__setItsPredictionModel(NULL);
                 }
-            itsSMSWTD_BLK = NULL;
+            itsSMSWTD_CONTROLLER = NULL;
         }
 }
 
-void PredictionModel::__setItsSMSWTD_BLK(SMSWTD_BLK* const p_SMSWTD_BLK) {
-    itsSMSWTD_BLK = p_SMSWTD_BLK;
-    if(p_SMSWTD_BLK != NULL)
+const SMSWTD_CONTROLLER* PredictionModel::getItsSMSWTD_CONTROLLER(void) const {
+    return itsSMSWTD_CONTROLLER;
+}
+
+void PredictionModel::setItsSMSWTD_CONTROLLER(SMSWTD_CONTROLLER* const p_SMSWTD_CONTROLLER) {
+    if(p_SMSWTD_CONTROLLER != NULL)
         {
-            NOTIFY_RELATION_ITEM_ADDED("itsSMSWTD_BLK", p_SMSWTD_BLK, false, true);
+            p_SMSWTD_CONTROLLER->_setItsPredictionModel(this);
+        }
+    _setItsSMSWTD_CONTROLLER(p_SMSWTD_CONTROLLER);
+}
+
+void PredictionModel::__setItsSMSWTD_CONTROLLER(SMSWTD_CONTROLLER* const p_SMSWTD_CONTROLLER) {
+    itsSMSWTD_CONTROLLER = p_SMSWTD_CONTROLLER;
+    if(p_SMSWTD_CONTROLLER != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsSMSWTD_CONTROLLER", p_SMSWTD_CONTROLLER, false, true);
         }
     else
         {
-            NOTIFY_RELATION_CLEARED("itsSMSWTD_BLK");
+            NOTIFY_RELATION_CLEARED("itsSMSWTD_CONTROLLER");
         }
 }
 
-void PredictionModel::_setItsSMSWTD_BLK(SMSWTD_BLK* const p_SMSWTD_BLK) {
-    if(itsSMSWTD_BLK != NULL)
+void PredictionModel::_setItsSMSWTD_CONTROLLER(SMSWTD_CONTROLLER* const p_SMSWTD_CONTROLLER) {
+    if(itsSMSWTD_CONTROLLER != NULL)
         {
-            itsSMSWTD_BLK->__setItsPredictionModel(NULL);
+            itsSMSWTD_CONTROLLER->__setItsPredictionModel(NULL);
         }
-    __setItsSMSWTD_BLK(p_SMSWTD_BLK);
+    __setItsSMSWTD_CONTROLLER(p_SMSWTD_CONTROLLER);
 }
 
-void PredictionModel::_clearItsSMSWTD_BLK(void) {
-    NOTIFY_RELATION_CLEARED("itsSMSWTD_BLK");
-    itsSMSWTD_BLK = NULL;
+void PredictionModel::_clearItsSMSWTD_CONTROLLER(void) {
+    NOTIFY_RELATION_CLEARED("itsSMSWTD_CONTROLLER");
+    itsSMSWTD_CONTROLLER = NULL;
 }
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
 void OMAnimatedPredictionModel::serializeRelations(AOMSRelations* aomsRelations) const {
-    aomsRelations->addRelation("itsSMSWTD_BLK", false, true);
-    if(myReal->itsSMSWTD_BLK)
+    aomsRelations->addRelation("itsSMSWTD_CONTROLLER", false, true);
+    if(myReal->itsSMSWTD_CONTROLLER)
         {
-            aomsRelations->ADD_ITEM(myReal->itsSMSWTD_BLK);
+            aomsRelations->ADD_ITEM(myReal->itsSMSWTD_CONTROLLER);
         }
 }
 //#]

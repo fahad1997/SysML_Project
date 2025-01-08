@@ -43,7 +43,7 @@
 //## auto_generated
 #include "SensorDataProcessor.h"
 //## classInstance itsSMSWTD_BLK
-#include "SMSWTD_BLK.h"
+#include "SMSWTD_CONTROLLER.h"
 //## classInstance itsStormSensor
 #include "StormSensor.h"
 //## classInstance itsWaterFlowDetector
@@ -114,7 +114,7 @@ DataCollector itsDataCollector;
 DataProcessor itsDataProcessor;
 
 //## classInstance itsSMSWTD_BLK
-SMSWTD_BLK itsSMSWTD_BLK;
+SMSWTD_CONTROLLER itsSMSWTD_BLK;
 
 //## classInstance itsStormSensor
 StormSensor itsStormSensor;
@@ -184,7 +184,7 @@ static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
 
 static void RenameGlobalInstances(void) {
     OM_SET_INSTANCE_NAME(&itsWaterFlowDetector, WaterFlowDetector, "itsWaterFlowDetector", AOMNoMultiplicity);
-    OM_SET_INSTANCE_NAME(&itsSMSWTD_BLK, SMSWTD_BLK, "itsSMSWTD_BLK", AOMNoMultiplicity);
+    OM_SET_INSTANCE_NAME(&itsSMSWTD_BLK, SMSWTD_CONTROLLER, "itsSMSWTD_BLK", AOMNoMultiplicity);
     OM_SET_INSTANCE_NAME(&itsDataProcessor, DataProcessor, "itsDataProcessor", AOMNoMultiplicity);
     OM_SET_INSTANCE_NAME(&itsDataCollector, DataCollector, "itsDataCollector", AOMNoMultiplicity);
     OM_SET_INSTANCE_NAME(&itsStormSensor, StormSensor, "itsStormSensor", AOMNoMultiplicity);

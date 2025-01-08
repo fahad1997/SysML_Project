@@ -14,8 +14,8 @@
 
 //## auto_generated
 #include "DataCollector.h"
-//## link itsSMSWTD_BLK
-#include "SMSWTD_BLK.h"
+//## link itsSMSWTD_CONTROLLER
+#include "SMSWTD_CONTROLLER.h"
 //## link itsStormSensor
 #include "StormSensor.h"
 //## link itsWaterFlowDetector
@@ -167,7 +167,7 @@ void DataCollector::p_DataCollector_3_C::cleanUpRelations(void) {
 }
 //#]
 
-DataCollector::DataCollector(void) : int_waterPressure_ProxyFlowPropertyInterface(), int_windSpeed_ProxyFlowPropertyInterface(), waterPressure(0), windSpeed(0), itsSMSWTD_BLK(NULL), itsStormSensor(NULL), itsWaterFlowDetector(NULL) {
+DataCollector::DataCollector(void) : int_waterPressure_ProxyFlowPropertyInterface(), int_windSpeed_ProxyFlowPropertyInterface(), waterPressure(0), windSpeed(0), itsSMSWTD_CONTROLLER(NULL), itsStormSensor(NULL), itsWaterFlowDetector(NULL) {
     NOTIFY_CONSTRUCTOR(DataCollector, DataCollector(), 0, SMSWTD_SYSTEM_DESIGN_DataCollector_DataCollector_SERIALIZE);
     initRelations();
 }
@@ -237,16 +237,16 @@ const int DataCollector::getWindSpeed(void) const {
     return windSpeed;
 }
 
-const SMSWTD_BLK* DataCollector::getItsSMSWTD_BLK(void) const {
-    return itsSMSWTD_BLK;
+const SMSWTD_CONTROLLER* DataCollector::getItsSMSWTD_CONTROLLER(void) const {
+    return itsSMSWTD_CONTROLLER;
 }
 
-void DataCollector::setItsSMSWTD_BLK(SMSWTD_BLK* const p_SMSWTD_BLK) {
-    if(p_SMSWTD_BLK != NULL)
+void DataCollector::setItsSMSWTD_CONTROLLER(SMSWTD_CONTROLLER* const p_SMSWTD_CONTROLLER) {
+    if(p_SMSWTD_CONTROLLER != NULL)
         {
-            p_SMSWTD_BLK->_setItsDataCollector(this);
+            p_SMSWTD_CONTROLLER->_setItsDataCollector(this);
         }
-    _setItsSMSWTD_BLK(p_SMSWTD_BLK);
+    _setItsSMSWTD_CONTROLLER(p_SMSWTD_CONTROLLER);
 }
 
 const StormSensor* DataCollector::getItsStormSensor(void) const {
@@ -283,15 +283,15 @@ void DataCollector::initRelations(void) {
 }
 
 void DataCollector::cleanUpRelations(void) {
-    if(itsSMSWTD_BLK != NULL)
+    if(itsSMSWTD_CONTROLLER != NULL)
         {
-            NOTIFY_RELATION_CLEARED("itsSMSWTD_BLK");
-            const DataCollector* p_DataCollector = itsSMSWTD_BLK->getItsDataCollector();
+            NOTIFY_RELATION_CLEARED("itsSMSWTD_CONTROLLER");
+            const DataCollector* p_DataCollector = itsSMSWTD_CONTROLLER->getItsDataCollector();
             if(p_DataCollector != NULL)
                 {
-                    itsSMSWTD_BLK->__setItsDataCollector(NULL);
+                    itsSMSWTD_CONTROLLER->__setItsDataCollector(NULL);
                 }
-            itsSMSWTD_BLK = NULL;
+            itsSMSWTD_CONTROLLER = NULL;
         }
     if(itsStormSensor != NULL)
         {
@@ -315,29 +315,29 @@ void DataCollector::cleanUpRelations(void) {
         }
 }
 
-void DataCollector::__setItsSMSWTD_BLK(SMSWTD_BLK* const p_SMSWTD_BLK) {
-    itsSMSWTD_BLK = p_SMSWTD_BLK;
-    if(p_SMSWTD_BLK != NULL)
+void DataCollector::__setItsSMSWTD_CONTROLLER(SMSWTD_CONTROLLER* const p_SMSWTD_CONTROLLER) {
+    itsSMSWTD_CONTROLLER = p_SMSWTD_CONTROLLER;
+    if(p_SMSWTD_CONTROLLER != NULL)
         {
-            NOTIFY_RELATION_ITEM_ADDED("itsSMSWTD_BLK", p_SMSWTD_BLK, false, true);
+            NOTIFY_RELATION_ITEM_ADDED("itsSMSWTD_CONTROLLER", p_SMSWTD_CONTROLLER, false, true);
         }
     else
         {
-            NOTIFY_RELATION_CLEARED("itsSMSWTD_BLK");
+            NOTIFY_RELATION_CLEARED("itsSMSWTD_CONTROLLER");
         }
 }
 
-void DataCollector::_setItsSMSWTD_BLK(SMSWTD_BLK* const p_SMSWTD_BLK) {
-    if(itsSMSWTD_BLK != NULL)
+void DataCollector::_setItsSMSWTD_CONTROLLER(SMSWTD_CONTROLLER* const p_SMSWTD_CONTROLLER) {
+    if(itsSMSWTD_CONTROLLER != NULL)
         {
-            itsSMSWTD_BLK->__setItsDataCollector(NULL);
+            itsSMSWTD_CONTROLLER->__setItsDataCollector(NULL);
         }
-    __setItsSMSWTD_BLK(p_SMSWTD_BLK);
+    __setItsSMSWTD_CONTROLLER(p_SMSWTD_CONTROLLER);
 }
 
-void DataCollector::_clearItsSMSWTD_BLK(void) {
-    NOTIFY_RELATION_CLEARED("itsSMSWTD_BLK");
-    itsSMSWTD_BLK = NULL;
+void DataCollector::_clearItsSMSWTD_CONTROLLER(void) {
+    NOTIFY_RELATION_CLEARED("itsSMSWTD_CONTROLLER");
+    itsSMSWTD_CONTROLLER = NULL;
 }
 
 void DataCollector::__setItsStormSensor(StormSensor* const p_StormSensor) {
@@ -398,10 +398,10 @@ void OMAnimatedDataCollector::serializeAttributes(AOMSAttributes* aomsAttributes
 }
 
 void OMAnimatedDataCollector::serializeRelations(AOMSRelations* aomsRelations) const {
-    aomsRelations->addRelation("itsSMSWTD_BLK", false, true);
-    if(myReal->itsSMSWTD_BLK)
+    aomsRelations->addRelation("itsSMSWTD_CONTROLLER", false, true);
+    if(myReal->itsSMSWTD_CONTROLLER)
         {
-            aomsRelations->ADD_ITEM(myReal->itsSMSWTD_BLK);
+            aomsRelations->ADD_ITEM(myReal->itsSMSWTD_CONTROLLER);
         }
     aomsRelations->addRelation("itsWaterFlowDetector", false, true);
     if(myReal->itsWaterFlowDetector)

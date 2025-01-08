@@ -17,8 +17,8 @@
 #include "DESIGN.h"
 //## auto_generated
 #include <aom.h>
-//## link itsSMSWTD_BLK
-class SMSWTD_BLK;
+//## link itsSMSWTD_CONTROLLER
+class SMSWTD_CONTROLLER;
 
 //## package SMSWTD_SYSTEM::DESIGN
 
@@ -39,12 +39,6 @@ public :
     ~PredictionModel(void);
     
     ////    Additional operations    ////
-    
-    //## auto_generated
-    const SMSWTD_BLK* getItsSMSWTD_BLK(void) const;
-    
-    //## auto_generated
-    void setItsSMSWTD_BLK(SMSWTD_BLK* const p_SMSWTD_BLK);
 
 protected :
 
@@ -55,20 +49,26 @@ protected :
 
 private :
 
-    SMSWTD_BLK* itsSMSWTD_BLK;		//## link itsSMSWTD_BLK
+    SMSWTD_CONTROLLER* itsSMSWTD_CONTROLLER;		//## link itsSMSWTD_CONTROLLER
     
     ////    Framework operations    ////
 
 public :
 
     //## auto_generated
-    void __setItsSMSWTD_BLK(SMSWTD_BLK* const p_SMSWTD_BLK);
+    const SMSWTD_CONTROLLER* getItsSMSWTD_CONTROLLER(void) const;
     
     //## auto_generated
-    void _setItsSMSWTD_BLK(SMSWTD_BLK* const p_SMSWTD_BLK);
+    void setItsSMSWTD_CONTROLLER(SMSWTD_CONTROLLER* const p_SMSWTD_CONTROLLER);
     
     //## auto_generated
-    void _clearItsSMSWTD_BLK(void);
+    void __setItsSMSWTD_CONTROLLER(SMSWTD_CONTROLLER* const p_SMSWTD_CONTROLLER);
+    
+    //## auto_generated
+    void _setItsSMSWTD_CONTROLLER(SMSWTD_CONTROLLER* const p_SMSWTD_CONTROLLER);
+    
+    //## auto_generated
+    void _clearItsSMSWTD_CONTROLLER(void);
 };
 
 #ifdef _OMINSTRUMENT

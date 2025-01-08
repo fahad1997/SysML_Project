@@ -16,8 +16,8 @@
 #include "ImageCollector.h"
 //## link itsSateliteImage
 #include "SateliteImage.h"
-//## link itsSMSWTD_BLK
-#include "SMSWTD_BLK.h"
+//## link itsSMSWTD_CONTROLLER
+#include "SMSWTD_CONTROLLER.h"
 //#[ ignore
 #define SMSWTD_SYSTEM_DESIGN_ImageCollector_ImageCollector_SERIALIZE OM_NO_OP
 //#]
@@ -25,7 +25,7 @@
 //## package SMSWTD_SYSTEM::DESIGN
 
 //## class ImageCollector
-ImageCollector::ImageCollector(void) : itsSMSWTD_BLK(NULL), itsSateliteImage(NULL) {
+ImageCollector::ImageCollector(void) : itsSMSWTD_CONTROLLER(NULL), itsSateliteImage(NULL) {
     NOTIFY_CONSTRUCTOR(ImageCollector, ImageCollector(), 0, SMSWTD_SYSTEM_DESIGN_ImageCollector_ImageCollector_SERIALIZE);
 }
 
@@ -34,16 +34,16 @@ ImageCollector::~ImageCollector(void) {
     cleanUpRelations();
 }
 
-const SMSWTD_BLK* ImageCollector::getItsSMSWTD_BLK(void) const {
-    return itsSMSWTD_BLK;
+const SMSWTD_CONTROLLER* ImageCollector::getItsSMSWTD_CONTROLLER(void) const {
+    return itsSMSWTD_CONTROLLER;
 }
 
-void ImageCollector::setItsSMSWTD_BLK(SMSWTD_BLK* const p_SMSWTD_BLK) {
-    if(p_SMSWTD_BLK != NULL)
+void ImageCollector::setItsSMSWTD_CONTROLLER(SMSWTD_CONTROLLER* const p_SMSWTD_CONTROLLER) {
+    if(p_SMSWTD_CONTROLLER != NULL)
         {
-            p_SMSWTD_BLK->_setItsImageCollector(this);
+            p_SMSWTD_CONTROLLER->_setItsImageCollector(this);
         }
-    _setItsSMSWTD_BLK(p_SMSWTD_BLK);
+    _setItsSMSWTD_CONTROLLER(p_SMSWTD_CONTROLLER);
 }
 
 const SateliteImage* ImageCollector::getItsSateliteImage(void) const {
@@ -59,15 +59,15 @@ void ImageCollector::setItsSateliteImage(SateliteImage* const p_SateliteImage) {
 }
 
 void ImageCollector::cleanUpRelations(void) {
-    if(itsSMSWTD_BLK != NULL)
+    if(itsSMSWTD_CONTROLLER != NULL)
         {
-            NOTIFY_RELATION_CLEARED("itsSMSWTD_BLK");
-            const ImageCollector* p_ImageCollector = itsSMSWTD_BLK->getItsImageCollector();
+            NOTIFY_RELATION_CLEARED("itsSMSWTD_CONTROLLER");
+            const ImageCollector* p_ImageCollector = itsSMSWTD_CONTROLLER->getItsImageCollector();
             if(p_ImageCollector != NULL)
                 {
-                    itsSMSWTD_BLK->__setItsImageCollector(NULL);
+                    itsSMSWTD_CONTROLLER->__setItsImageCollector(NULL);
                 }
-            itsSMSWTD_BLK = NULL;
+            itsSMSWTD_CONTROLLER = NULL;
         }
     if(itsSateliteImage != NULL)
         {
@@ -81,29 +81,29 @@ void ImageCollector::cleanUpRelations(void) {
         }
 }
 
-void ImageCollector::__setItsSMSWTD_BLK(SMSWTD_BLK* const p_SMSWTD_BLK) {
-    itsSMSWTD_BLK = p_SMSWTD_BLK;
-    if(p_SMSWTD_BLK != NULL)
+void ImageCollector::__setItsSMSWTD_CONTROLLER(SMSWTD_CONTROLLER* const p_SMSWTD_CONTROLLER) {
+    itsSMSWTD_CONTROLLER = p_SMSWTD_CONTROLLER;
+    if(p_SMSWTD_CONTROLLER != NULL)
         {
-            NOTIFY_RELATION_ITEM_ADDED("itsSMSWTD_BLK", p_SMSWTD_BLK, false, true);
+            NOTIFY_RELATION_ITEM_ADDED("itsSMSWTD_CONTROLLER", p_SMSWTD_CONTROLLER, false, true);
         }
     else
         {
-            NOTIFY_RELATION_CLEARED("itsSMSWTD_BLK");
+            NOTIFY_RELATION_CLEARED("itsSMSWTD_CONTROLLER");
         }
 }
 
-void ImageCollector::_setItsSMSWTD_BLK(SMSWTD_BLK* const p_SMSWTD_BLK) {
-    if(itsSMSWTD_BLK != NULL)
+void ImageCollector::_setItsSMSWTD_CONTROLLER(SMSWTD_CONTROLLER* const p_SMSWTD_CONTROLLER) {
+    if(itsSMSWTD_CONTROLLER != NULL)
         {
-            itsSMSWTD_BLK->__setItsImageCollector(NULL);
+            itsSMSWTD_CONTROLLER->__setItsImageCollector(NULL);
         }
-    __setItsSMSWTD_BLK(p_SMSWTD_BLK);
+    __setItsSMSWTD_CONTROLLER(p_SMSWTD_CONTROLLER);
 }
 
-void ImageCollector::_clearItsSMSWTD_BLK(void) {
-    NOTIFY_RELATION_CLEARED("itsSMSWTD_BLK");
-    itsSMSWTD_BLK = NULL;
+void ImageCollector::_clearItsSMSWTD_CONTROLLER(void) {
+    NOTIFY_RELATION_CLEARED("itsSMSWTD_CONTROLLER");
+    itsSMSWTD_CONTROLLER = NULL;
 }
 
 void ImageCollector::__setItsSateliteImage(SateliteImage* const p_SateliteImage) {
@@ -139,10 +139,10 @@ void OMAnimatedImageCollector::serializeRelations(AOMSRelations* aomsRelations) 
         {
             aomsRelations->ADD_ITEM(myReal->itsSateliteImage);
         }
-    aomsRelations->addRelation("itsSMSWTD_BLK", false, true);
-    if(myReal->itsSMSWTD_BLK)
+    aomsRelations->addRelation("itsSMSWTD_CONTROLLER", false, true);
+    if(myReal->itsSMSWTD_CONTROLLER)
         {
-            aomsRelations->ADD_ITEM(myReal->itsSMSWTD_BLK);
+            aomsRelations->ADD_ITEM(myReal->itsSMSWTD_CONTROLLER);
         }
 }
 //#]

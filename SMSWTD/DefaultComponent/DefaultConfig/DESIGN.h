@@ -63,7 +63,7 @@ class PredictionModelPublisher;
 class SMSWTD;
 
 //## classInstance itsSMSWTD_BLK
-class SMSWTD_BLK;
+class SMSWTD_CONTROLLER;
 
 //## auto_generated
 class SateliteImage;
@@ -96,7 +96,7 @@ extern DataCollector itsDataCollector;
 extern DataProcessor itsDataProcessor;
 
 //## classInstance itsSMSWTD_BLK
-extern SMSWTD_BLK itsSMSWTD_BLK;
+extern SMSWTD_CONTROLLER itsSMSWTD_BLK;
 
 //## classInstance itsStormSensor
 extern StormSensor itsStormSensor;

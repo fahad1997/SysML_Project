@@ -21,8 +21,8 @@
 #include "int_waterPressure_ProxyFlowPropertyInterface.h"
 //## class DataCollector
 #include "int_windSpeed_ProxyFlowPropertyInterface.h"
-//## link itsSMSWTD_BLK
-class SMSWTD_BLK;
+//## link itsSMSWTD_CONTROLLER
+class SMSWTD_CONTROLLER;
 
 //## link itsStormSensor
 class StormSensor;
@@ -269,10 +269,10 @@ public :
     const int getWindSpeed(void) const;
     
     //## auto_generated
-    const SMSWTD_BLK* getItsSMSWTD_BLK(void) const;
+    const SMSWTD_CONTROLLER* getItsSMSWTD_CONTROLLER(void) const;
     
     //## auto_generated
-    void setItsSMSWTD_BLK(SMSWTD_BLK* const p_SMSWTD_BLK);
+    void setItsSMSWTD_CONTROLLER(SMSWTD_CONTROLLER* const p_SMSWTD_CONTROLLER);
     
     //## auto_generated
     const StormSensor* getItsStormSensor(void) const;
@@ -310,7 +310,7 @@ private :
     p_DataCollector_3_C p_DataCollector_3;
 //#]
 
-    SMSWTD_BLK* itsSMSWTD_BLK;		//## link itsSMSWTD_BLK
+    SMSWTD_CONTROLLER* itsSMSWTD_CONTROLLER;		//## link itsSMSWTD_CONTROLLER
     
     StormSensor* itsStormSensor;		//## link itsStormSensor
     
@@ -319,13 +319,13 @@ private :
 public :
 
     //## auto_generated
-    void __setItsSMSWTD_BLK(SMSWTD_BLK* const p_SMSWTD_BLK);
+    void __setItsSMSWTD_CONTROLLER(SMSWTD_CONTROLLER* const p_SMSWTD_CONTROLLER);
     
     //## auto_generated
-    void _setItsSMSWTD_BLK(SMSWTD_BLK* const p_SMSWTD_BLK);
+    void _setItsSMSWTD_CONTROLLER(SMSWTD_CONTROLLER* const p_SMSWTD_CONTROLLER);
     
     //## auto_generated
-    void _clearItsSMSWTD_BLK(void);
+    void _clearItsSMSWTD_CONTROLLER(void);
     
     //## auto_generated
     void __setItsStormSensor(StormSensor* const p_StormSensor);
