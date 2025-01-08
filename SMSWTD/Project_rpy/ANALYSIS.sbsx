@@ -12,10 +12,10 @@
 			<_id type="a">GUID 525429d5-fd24-4621-8efc-ad0b15a24e53</_id>
 			<_myState type="a">8192</_myState>
 			<_name type="a">ANALYSIS</_name>
-			<_modifiedTimeWeak type="a">1.7.2025::16:16:7</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.7.2025::16:16:7</_modifiedTime>
+			<_modifiedTimeWeak type="a">1.8.2025::15:56:14</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.8.2025::15:56:14</_modifiedTime>
 			<_lastID type="a">54</_lastID>
-			<weakCGTime type="a">1.7.2025::16:16:7</weakCGTime>
+			<weakCGTime type="a">1.8.2025::15:56:14</weakCGTime>
 			<strongCGTime type="a">12.17.2024::13:22:28</strongCGTime>
 			<_defaultComposite type="s">GUID 8ddd7caa-bcd2-4ef3-a4fc-884e84d37d8a</_defaultComposite>
 			<_eventsBaseID type="a">-1</_eventsBaseID>
@@ -596,8 +596,8 @@
 				</IRPYRawContainer>
 			</Stereotypes>
 			<_modifiedTimeWeak type="a">1.7.2025::13:32:38</_modifiedTimeWeak>
-			<_modifiedTime type="a">1.7.2025::16:17:44</_modifiedTime>
-			<_lastModifiedTime type="a">1.7.2025::16:17:44</_lastModifiedTime>
+			<_modifiedTime type="a">1.8.2025::15:56:21</_modifiedTime>
+			<_lastModifiedTime type="a">1.8.2025::15:56:21</_lastModifiedTime>
 			<m_hReferencedDiagram type="r">
 				<IHandle type="e">
 				</IHandle>
@@ -4288,9 +4288,11 @@
 							<m_bgFlag type="a">0</m_bgFlag>
 						</IColor>
 					</m_color>
-					<m_position type="a">1 0 0  </m_position>
+					<m_position type="a">4 -8 -11  31 -11  31 5  -8 5  </m_position>
 					<m_nIdent type="a">0</m_nIdent>
-					<m_bImplicitSetRectPoints type="a">0</m_bImplicitSetRectPoints>
+					<m_bImplicitSetRectPoints type="a">1</m_bImplicitSetRectPoints>
+					<m_transform type="a">1 0 0 2.9375 357 716.312 </m_transform>
+					<m_nVerticalSpacing type="a">31</m_nVerticalSpacing>
 					<m_nOrientationCtrlPt type="a">5</m_nOrientationCtrlPt>
 				</CGIText>
 			</m_name>
