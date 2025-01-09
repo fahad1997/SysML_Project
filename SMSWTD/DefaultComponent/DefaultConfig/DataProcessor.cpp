@@ -1,6 +1,6 @@
 /********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245157
+	Login		: 20245163
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DataProcessor
@@ -24,6 +24,14 @@
 #define SMSWTD_SYSTEM_DESIGN_DataProcessor_DataProcessor_SERIALIZE OM_NO_OP
 
 #define SMSWTD_SYSTEM_DESIGN_DataProcessor_dataFetched_SERIALIZE OM_NO_OP
+
+#define OMAnim_SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWaterPressure_int_UNSERIALIZE_ARGS OP_UNSER(OMDestructiveString2X,p_thresholdWaterPressure)
+
+#define OMAnim_SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWaterPressure_int_SERIALIZE_RET_VAL
+
+#define OMAnim_SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWindSpeed_int_UNSERIALIZE_ARGS OP_UNSER(OMDestructiveString2X,p_thresholdWindSpeed)
+
+#define OMAnim_SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWindSpeed_int_SERIALIZE_RET_VAL
 //#]
 
 //## package SMSWTD_SYSTEM::DESIGN
@@ -190,7 +198,7 @@ void DataProcessor::cancelTimeouts(void) {
     cancel(rootState_timeout);
 }
 
-DataProcessor::DataProcessor(IOxfActive* const theActiveContext) : OMReactive(), int_waterPressure_ProxyFlowPropertyInterface(), int_windSpeed_ProxyFlowPropertyInterface(), dataAvailability(false), tsunami(false), waterPressure(0), windSpeed(0), itsImageProcessor(NULL), itsSensorDataProcessor(NULL) {
+DataProcessor::DataProcessor(IOxfActive* const theActiveContext) : OMReactive(), int_waterPressure_ProxyFlowPropertyInterface(), int_windSpeed_ProxyFlowPropertyInterface(), dataAvailability(false), tsunami(false), waterPressure(0), windSpeed(0), thresholdWaterPressure(0), thresholdWindSpeed(0), itsImageProcessor(NULL), itsSensorDataProcessor(NULL) {
     NOTIFY_REACTIVE_CONSTRUCTOR(DataProcessor, DataProcessor(), 0, SMSWTD_SYSTEM_DESIGN_DataProcessor_DataProcessor_SERIALIZE);
     setActiveContext(theActiveContext, false);
     initRelations();
@@ -214,6 +222,24 @@ void DataProcessor::setWindSpeed(int p_windSpeed) {
     
 }
 //#]
+
+const int DataProcessor::getThresholdWaterPressure(void) const {
+    return thresholdWaterPressure;
+}
+
+void DataProcessor::setThresholdWaterPressure(const int p_thresholdWaterPressure) {
+    thresholdWaterPressure = p_thresholdWaterPressure;
+    NOTIFY_SET_OPERATION;
+}
+
+const int DataProcessor::getThresholdWindSpeed(void) const {
+    return thresholdWindSpeed;
+}
+
+void DataProcessor::setThresholdWindSpeed(const int p_thresholdWindSpeed) {
+    thresholdWindSpeed = p_thresholdWindSpeed;
+    NOTIFY_SET_OPERATION;
+}
 
 const ImageProcessor* DataProcessor::getItsImageProcessor(void) const {
     return itsImageProcessor;
@@ -388,6 +414,27 @@ IOxfReactive::TakeEventStatus DataProcessor::rootState_processEvent(void) {
             
         }
         break;
+        // State ProcessData
+        case ProcessData:
+        {
+            if(IS_EVENT_TYPE_OF(OMTimeoutEventId) == 1)
+                {
+                    if(getCurrentEvent() == rootState_timeout)
+                        {
+                            NOTIFY_TRANSITION_STARTED("8");
+                            cancel(rootState_timeout);
+                            NOTIFY_STATE_EXITED("ROOT.ProcessData");
+                            NOTIFY_STATE_ENTERED("ROOT.accepttimeevent_8");
+                            pushNullTransition();
+                            rootState_subState = accepttimeevent_8;
+                            rootState_active = accepttimeevent_8;
+                            NOTIFY_TRANSITION_TERMINATED("8");
+                            res = eventConsumed;
+                        }
+                }
+            
+        }
+        break;
         case accepttimeevent_6:
         {
             if(IS_EVENT_TYPE_OF(OMNullEventId) == 1)
@@ -407,13 +454,14 @@ IOxfReactive::TakeEventStatus DataProcessor::rootState_processEvent(void) {
                             rootState_active = ProcessData;
                             //#[ state ProcessData.(Entry) 
                             std::cout<<"Collected data is processed.\n";
-                            if (waterPressure > 50) {
+                            if (waterPressure > thresholdWaterPressure && windSpeed > thresholdWindSpeed) {
                                     tsunami = true;
                                 } else {
                                     tsunami = false;
                                 }
                             std::cout<< tsunami << std::endl;
                             //#]
+                            rootState_timeout = scheduleTimeout(10000, "ROOT.ProcessData");
                             NOTIFY_TRANSITION_TERMINATED("3");
                             NOTIFY_TRANSITION_TERMINATED("4");
                             res = eventConsumed;
@@ -456,6 +504,26 @@ IOxfReactive::TakeEventStatus DataProcessor::rootState_processEvent(void) {
             
         }
         break;
+        case accepttimeevent_8:
+        {
+            if(IS_EVENT_TYPE_OF(OMNullEventId) == 1)
+                {
+                    NOTIFY_TRANSITION_STARTED("9");
+                    popNullTransition();
+                    NOTIFY_STATE_EXITED("ROOT.accepttimeevent_8");
+                    NOTIFY_STATE_ENTERED("ROOT.CollectData");
+                    rootState_subState = CollectData;
+                    rootState_active = CollectData;
+                    //#[ state CollectData.(Entry) 
+                    std::cout<<"Collecting data from the sensors.\n";
+                    //#]
+                    rootState_timeout = scheduleTimeout(5000, "ROOT.CollectData");
+                    NOTIFY_TRANSITION_TERMINATED("9");
+                    res = eventConsumed;
+                }
+            
+        }
+        break;
         default:
             break;
     }
@@ -469,6 +537,8 @@ void OMAnimatedDataProcessor::serializeAttributes(AOMSAttributes* aomsAttributes
     aomsAttributes->addAttribute("windSpeed", x2String(myReal->windSpeed));
     aomsAttributes->addAttribute("waterPressure", x2String(myReal->waterPressure));
     aomsAttributes->addAttribute("tsunami", x2String(myReal->tsunami));
+    aomsAttributes->addAttribute("thresholdWindSpeed", x2String(myReal->thresholdWindSpeed));
+    aomsAttributes->addAttribute("thresholdWaterPressure", x2String(myReal->thresholdWaterPressure));
 }
 
 void OMAnimatedDataProcessor::serializeRelations(AOMSRelations* aomsRelations) const {
@@ -517,6 +587,11 @@ void OMAnimatedDataProcessor::rootState_serializeStates(AOMSState* aomsState) co
             accepttimeevent_7_serializeStates(aomsState);
         }
         break;
+        case DataProcessor::accepttimeevent_8:
+        {
+            accepttimeevent_8_serializeStates(aomsState);
+        }
+        break;
         default:
             break;
     }
@@ -538,6 +613,10 @@ void OMAnimatedDataProcessor::CollectData_serializeStates(AOMSState* aomsState) 
     aomsState->addState("ROOT.CollectData");
 }
 
+void OMAnimatedDataProcessor::accepttimeevent_8_serializeStates(AOMSState* aomsState) const {
+    aomsState->addState("ROOT.accepttimeevent_8");
+}
+
 void OMAnimatedDataProcessor::accepttimeevent_7_serializeStates(AOMSState* aomsState) const {
     aomsState->addState("ROOT.accepttimeevent_7");
 }
@@ -548,6 +627,14 @@ void OMAnimatedDataProcessor::accepttimeevent_6_serializeStates(AOMSState* aomsS
 //#]
 
 IMPLEMENT_REACTIVE_META_P(DataProcessor, SMSWTD_SYSTEM_DESIGN, SMSWTD_SYSTEM::DESIGN, false, OMAnimatedDataProcessor)
+
+IMPLEMENT_META_OP(OMAnimatedDataProcessor, SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWaterPressure_int, "setThresholdWaterPressure", FALSE, "setThresholdWaterPressure(int)", 1)
+
+IMPLEMENT_OP_CALL(SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWaterPressure_int, DataProcessor, setThresholdWaterPressure(p_thresholdWaterPressure), NO_OP())
+
+IMPLEMENT_META_OP(OMAnimatedDataProcessor, SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWindSpeed_int, "setThresholdWindSpeed", FALSE, "setThresholdWindSpeed(int)", 1)
+
+IMPLEMENT_OP_CALL(SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWindSpeed_int, DataProcessor, setThresholdWindSpeed(p_thresholdWindSpeed), NO_OP())
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

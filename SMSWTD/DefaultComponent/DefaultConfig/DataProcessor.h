@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245157
+	Login		: 20245163
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DataProcessor
@@ -34,6 +34,12 @@ class ImageProcessor;
 
 //## link itsSensorDataProcessor
 class SensorDataProcessor;
+
+//#[ ignore
+#define OMAnim_SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWaterPressure_int_ARGS_DECLARATION int p_thresholdWaterPressure;
+
+#define OMAnim_SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWindSpeed_int_ARGS_DECLARATION int p_thresholdWindSpeed;
+//#]
 
 //## package SMSWTD_SYSTEM::DESIGN
 
@@ -224,6 +230,18 @@ public :
 //#]
 
     //## auto_generated
+    const int getThresholdWaterPressure(void) const;
+    
+    //## auto_generated
+    void setThresholdWaterPressure(const int p_thresholdWaterPressure);
+    
+    //## auto_generated
+    const int getThresholdWindSpeed(void) const;
+    
+    //## auto_generated
+    void setThresholdWindSpeed(const int p_thresholdWindSpeed);
+    
+    //## auto_generated
     const ImageProcessor* getItsImageProcessor(void) const;
     
     //## auto_generated
@@ -242,6 +260,10 @@ protected :
 
 private :
 
+    int thresholdWaterPressure;		//## attribute thresholdWaterPressure
+    
+    int thresholdWindSpeed;		//## attribute thresholdWindSpeed
+    
 //#[ ignore
     p_DataProcessor_C p_DataProcessor;
     
@@ -292,6 +314,10 @@ public :
     //## statechart_method
     inline RhpBoolean CollectData_IN(void) const;
     
+    // accepttimeevent_8:
+    //## statechart_method
+    inline RhpBoolean accepttimeevent_8_IN(void) const;
+    
     // accepttimeevent_7:
     //## statechart_method
     inline RhpBoolean accepttimeevent_7_IN(void) const;
@@ -315,8 +341,9 @@ protected :
         ProcessData = 2,
         FailedDataCollection = 3,
         CollectData = 4,
-        accepttimeevent_7 = 5,
-        accepttimeevent_6 = 6
+        accepttimeevent_8 = 5,
+        accepttimeevent_7 = 6,
+        accepttimeevent_6 = 7
     };
 //#]
 
@@ -332,9 +359,17 @@ private :
 };
 
 #ifdef _OMINSTRUMENT
+DECLARE_OPERATION_CLASS(SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWaterPressure_int)
+
+DECLARE_OPERATION_CLASS(SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWindSpeed_int)
+
 //#[ ignore
 class OMAnimatedDataProcessor : virtual public AOMInstance {
     DECLARE_REACTIVE_META(DataProcessor, OMAnimatedDataProcessor)
+    
+    DECLARE_META_OP(SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWaterPressure_int)
+    
+    DECLARE_META_OP(SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWindSpeed_int)
     
     ////    Framework operations    ////
     
@@ -358,6 +393,9 @@ public :
     
     //## statechart_method
     void CollectData_serializeStates(AOMSState* aomsState) const;
+    
+    //## statechart_method
+    void accepttimeevent_8_serializeStates(AOMSState* aomsState) const;
     
     //## statechart_method
     void accepttimeevent_7_serializeStates(AOMSState* aomsState) const;
@@ -386,6 +424,10 @@ inline RhpBoolean DataProcessor::FailedDataCollection_IN(void) const {
 
 inline RhpBoolean DataProcessor::CollectData_IN(void) const {
     return rootState_subState == CollectData;
+}
+
+inline RhpBoolean DataProcessor::accepttimeevent_8_IN(void) const {
+    return rootState_subState == accepttimeevent_8;
 }
 
 inline RhpBoolean DataProcessor::accepttimeevent_7_IN(void) const {
