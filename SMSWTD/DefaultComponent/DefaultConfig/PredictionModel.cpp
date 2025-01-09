@@ -1,6 +1,6 @@
 /********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: PredictionModel
@@ -17,14 +17,14 @@
 //## link itsSMSWTD_CONTROLLER
 #include "SMSWTD_CONTROLLER.h"
 //#[ ignore
-#define SMSWTD_SYSTEM_DESIGN_PredictionModel_PredictionModel_SERIALIZE OM_NO_OP
+#define SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_PREDICTION_MODEL_PredictionModel_PredictionModel_SERIALIZE OM_NO_OP
 //#]
 
-//## package SMSWTD_SYSTEM::DESIGN
+//## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_PREDICTION_MODEL
 
 //## class PredictionModel
 PredictionModel::PredictionModel(void) : itsSMSWTD_CONTROLLER(NULL) {
-    NOTIFY_CONSTRUCTOR(PredictionModel, PredictionModel(), 0, SMSWTD_SYSTEM_DESIGN_PredictionModel_PredictionModel_SERIALIZE);
+    NOTIFY_CONSTRUCTOR(PredictionModel, PredictionModel(), 0, SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_PREDICTION_MODEL_PredictionModel_PredictionModel_SERIALIZE);
 }
 
 PredictionModel::~PredictionModel(void) {
@@ -93,7 +93,7 @@ void OMAnimatedPredictionModel::serializeRelations(AOMSRelations* aomsRelations)
 }
 //#]
 
-IMPLEMENT_META_P(PredictionModel, SMSWTD_SYSTEM_DESIGN, SMSWTD_SYSTEM::DESIGN, false, OMAnimatedPredictionModel)
+IMPLEMENT_META_P(PredictionModel, SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_PREDICTION_MODEL, SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_PREDICTION_MODEL, false, OMAnimatedPredictionModel)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

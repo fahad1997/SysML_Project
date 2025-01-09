@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DataCollector
@@ -14,13 +14,13 @@
 //## auto_generated
 #include <oxf.h>
 //## auto_generated
-#include "DESIGN.h"
-//## auto_generated
 #include <aom.h>
 //## class DataCollector
 #include "int_waterPressure_ProxyFlowPropertyInterface.h"
 //## class DataCollector
 #include "int_windSpeed_ProxyFlowPropertyInterface.h"
+//## auto_generated
+#include "PKG_DATA_COLLECTOR.h"
 //## link itsSMSWTD_CONTROLLER
 class SMSWTD_CONTROLLER;
 
@@ -30,14 +30,14 @@ class StormSensor;
 //## link itsWaterFlowDetector
 class WaterFlowDetector;
 
-//## package SMSWTD_SYSTEM::DESIGN
+//## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_DATA_COLLECTOR
 
 //## class DataCollector
 class DataCollector : public int_waterPressure_ProxyFlowPropertyInterface, public int_windSpeed_ProxyFlowPropertyInterface {
 public :
 
 //#[ ignore
-    //## package SMSWTD_SYSTEM::DESIGN
+    //## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_DATA_COLLECTOR
     class p_DataCollector_1_C : public int_waterPressure_ProxyFlowPropertyInterface {
         ////    Constructors and destructors    ////
         
@@ -81,7 +81,7 @@ public :
         int_waterPressure_ProxyFlowPropertyInterface* itsInt_waterPressure_ProxyFlowPropertyInterface;		//## link itsInt_waterPressure_ProxyFlowPropertyInterface
     };
     
-    //## package SMSWTD_SYSTEM::DESIGN
+    //## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_DATA_COLLECTOR
     class p_DataCollector_C : public int_windSpeed_ProxyFlowPropertyInterface {
         ////    Constructors and destructors    ////
         
@@ -125,7 +125,7 @@ public :
         int_windSpeed_ProxyFlowPropertyInterface* itsInt_windSpeed_ProxyFlowPropertyInterface;		//## link itsInt_windSpeed_ProxyFlowPropertyInterface
     };
     
-    //## package SMSWTD_SYSTEM::DESIGN
+    //## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_DATA_COLLECTOR
     class p_DataCollector_2_C : public int_waterPressure_ProxyFlowPropertyInterface {
         ////    Constructors and destructors    ////
         
@@ -169,7 +169,7 @@ public :
         int_waterPressure_ProxyFlowPropertyInterface* itsInt_waterPressure_ProxyFlowPropertyInterface;		//## link itsInt_waterPressure_ProxyFlowPropertyInterface
     };
     
-    //## package SMSWTD_SYSTEM::DESIGN
+    //## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_DATA_COLLECTOR
     class p_DataCollector_3_C : public int_windSpeed_ProxyFlowPropertyInterface {
         ////    Constructors and destructors    ////
         

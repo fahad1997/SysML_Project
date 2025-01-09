@@ -1,6 +1,6 @@
 /********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SMSWTD_CONTROLLER
@@ -24,11 +24,13 @@
 #include "PredictionModel.h"
 //## auto_generated
 #include "SMSWTD_CONTROLLER.h"
+//## event evActivateSMSWTD()
+#include "DESIGN.h"
 //#[ ignore
-#define SMSWTD_SYSTEM_DESIGN_SMSWTD_CONTROLLER_SMSWTD_CONTROLLER_SERIALIZE OM_NO_OP
+#define SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_SMSWTD_CONTROLLER_SMSWTD_CONTROLLER_SMSWTD_CONTROLLER_SERIALIZE OM_NO_OP
 //#]
 
-//## package SMSWTD_SYSTEM::DESIGN
+//## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_SMSWTD_CONTROLLER
 
 //## class SMSWTD_CONTROLLER
 //#[ ignore
@@ -249,8 +251,8 @@ void SMSWTD_CONTROLLER::destroy(void) {
     OMReactive::destroy();
 }
 
-SMSWTD_CONTROLLER::SMSWTD_CONTROLLER(IOxfActive* const theActiveContext) : OMReactive(), itsDashboard(NULL), itsPredictionModel(NULL), waterPressure(0), windSpeed(0), itsDataCollector(NULL), itsImageCollector(NULL) {
-    NOTIFY_REACTIVE_CONSTRUCTOR(SMSWTD_CONTROLLER, SMSWTD_CONTROLLER(), 0, SMSWTD_SYSTEM_DESIGN_SMSWTD_CONTROLLER_SMSWTD_CONTROLLER_SERIALIZE);
+SMSWTD_CONTROLLER::SMSWTD_CONTROLLER(IOxfActive* const theActiveContext) : OMReactive(), itsDashboard(NULL), itsPredictionModel(NULL), waterPressure(0), windSpeed(0), itsDataCollector(NULL), itsImageCollector(NULL), activate(false) {
+    NOTIFY_REACTIVE_CONSTRUCTOR(SMSWTD_CONTROLLER, SMSWTD_CONTROLLER(), 0, SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_SMSWTD_CONTROLLER_SMSWTD_CONTROLLER_SMSWTD_CONTROLLER_SERIALIZE);
     setActiveContext(theActiveContext, false);
     {
         {
@@ -325,6 +327,16 @@ void SMSWTD_CONTROLLER::initRelations(void) {
         get_p_SMSWTD_BLK_1()->setItsInt_windSpeed_ProxyFlowPropertyInterface(itsDataProcessor.get_p_DataProcessor_1()->getItsInt_windSpeed_ProxyFlowPropertyInterface());
         
     }
+    {
+        
+        itsSensorConfiguration.get_p_SensorConfiguration()->setItsInt_thresholdWaterPressure_ProxyFlowPropertyInterface(itsDataProcessor.get_p_DataProcessor_2()->getItsInt_thresholdWaterPressure_ProxyFlowPropertyInterface());
+        
+    }
+    {
+        
+        itsSensorConfiguration.get_p_SensorConfiguration_1()->setItsInt_thresholdWindSpeed_ProxyFlowPropertyInterface(itsDataProcessor.get_p_DataProcessor_3()->getItsInt_thresholdWindSpeed_ProxyFlowPropertyInterface());
+        
+    }
 }
 
 void SMSWTD_CONTROLLER::__setItsDataCollector(DataCollector* const p_DataCollector) {
@@ -382,6 +394,19 @@ void SMSWTD_CONTROLLER::setActiveContext(IOxfActive* const theActiveContext, boo
     {
         itsDataProcessor.setActiveContext(theActiveContext, false);
     }
+}
+
+const bool SMSWTD_CONTROLLER::getActivate(void) const {
+    return activate;
+}
+
+void SMSWTD_CONTROLLER::setActivate(const bool p_activate) {
+    activate = p_activate;
+    NOTIFY_SET_OPERATION;
+}
+
+const SensorConfiguration* SMSWTD_CONTROLLER::getItsSensorConfiguration(void) const {
+    return &itsSensorConfiguration;
 }
 
 void SMSWTD_CONTROLLER::Activated_entDef(void) {
@@ -496,6 +521,9 @@ IOxfReactive::TakeEventStatus SMSWTD_CONTROLLER::rootState_processEvent(void) {
                 {
                     NOTIFY_TRANSITION_STARTED("1");
                     NOTIFY_STATE_EXITED("ROOT.Deactivated");
+                    //#[ transition 1 
+                    activate=true;
+                    //#]
                     Activated_entDef();
                     NOTIFY_TRANSITION_TERMINATED("1");
                     res = eventConsumed;
@@ -520,6 +548,7 @@ IOxfReactive::TakeEventStatus SMSWTD_CONTROLLER::rootState_processEvent(void) {
 void OMAnimatedSMSWTD_CONTROLLER::serializeAttributes(AOMSAttributes* aomsAttributes) const {
     aomsAttributes->addAttribute("windSpeed", x2String(myReal->windSpeed));
     aomsAttributes->addAttribute("waterPressure", x2String(myReal->waterPressure));
+    aomsAttributes->addAttribute("activate", x2String(myReal->activate));
 }
 
 void OMAnimatedSMSWTD_CONTROLLER::serializeRelations(AOMSRelations* aomsRelations) const {
@@ -545,6 +574,8 @@ void OMAnimatedSMSWTD_CONTROLLER::serializeRelations(AOMSRelations* aomsRelation
         {
             aomsRelations->ADD_ITEM(myReal->itsDataCollector);
         }
+    aomsRelations->addRelation("itsSensorConfiguration", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsSensorConfiguration);
 }
 
 void OMAnimatedSMSWTD_CONTROLLER::rootState_serializeStates(AOMSState* aomsState) const {
@@ -606,7 +637,7 @@ void OMAnimatedSMSWTD_CONTROLLER::DataProcessingDone_serializeStates(AOMSState* 
 }
 //#]
 
-IMPLEMENT_REACTIVE_META_P(SMSWTD_CONTROLLER, SMSWTD_SYSTEM_DESIGN, SMSWTD_SYSTEM::DESIGN, false, OMAnimatedSMSWTD_CONTROLLER)
+IMPLEMENT_REACTIVE_META_P(SMSWTD_CONTROLLER, SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_SMSWTD_CONTROLLER, SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_SMSWTD_CONTROLLER, false, OMAnimatedSMSWTD_CONTROLLER)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

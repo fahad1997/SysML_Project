@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DashboardPublisher
@@ -13,13 +13,13 @@
 
 //## auto_generated
 #include <oxf.h>
-//## auto_generated
-#include "DESIGN.h"
 //## class DashboardPublisher
 #include "DataPublisher.h"
 //## auto_generated
 #include <aom.h>
-//## package SMSWTD_SYSTEM::DESIGN
+//## auto_generated
+#include "PKG_SMSWTD_CONTROLLER.h"
+//## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_SMSWTD_CONTROLLER
 
 //## class DashboardPublisher
 class DashboardPublisher : public DataPublisher {

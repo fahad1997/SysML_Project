@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: PredictionModel
@@ -14,13 +14,13 @@
 //## auto_generated
 #include <oxf.h>
 //## auto_generated
-#include "DESIGN.h"
-//## auto_generated
 #include <aom.h>
+//## auto_generated
+#include "PKG_PREDICTION_MODEL.h"
 //## link itsSMSWTD_CONTROLLER
 class SMSWTD_CONTROLLER;
 
-//## package SMSWTD_SYSTEM::DESIGN
+//## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_PREDICTION_MODEL
 
 //## class PredictionModel
 class PredictionModel {

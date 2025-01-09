@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>109.0</version>
+	<lang>C++</lang>
+	<BuildNo>202002261110</BuildNo>
+	<RMMMinimumClientVersion>100.0</RMMMinimumClientVersion>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID 94f9bc03-3c22-4c2a-bc92-0d4aa170c394</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">SMSWTD_SOLUTION</_name>
+			<_modifiedTimeWeak type="a">1.9.2025::9:41:45</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.9.2025::9:41:45</_modifiedTime>
+			<weakCGTime type="a">1.9.2025::9:41:45</weakCGTime>
+			<strongCGTime type="a">1.9.2025::9:41:27</strongCGTime>
+			<_defaultComposite type="s">GUID e7078001-605e-4734-bc9a-be9923850455</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">1.1.1970::1:0:0</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID fe47c503-7df6-4e5f-9306-62c75e894770</value>
+				<value>GUID b9069c29-feb2-405a-a136-09818ea8d832</value>
+				<value>GUID b9a0c548-3eab-4171-a8dc-bfd0c40e3b78</value>
+				<value>GUID fb902630-a69a-4555-bb8b-733ecc0562e6</value>
+				<value>GUID 96e1aeb2-31f0-4349-a172-124635aaedd7</value>
+				<value>GUID e7078001-605e-4734-bc9a-be9923850455</value>
+			</AggregatesList>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">PKG_DASHBOARD</fileName>
+			<_id type="a">GUID fe47c503-7df6-4e5f-9306-62c75e894770</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">PKG_DATA_COLLECTOR</fileName>
+			<_id type="a">GUID b9069c29-feb2-405a-a136-09818ea8d832</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">PKG_NOTIFICATION_SERVICE</fileName>
+			<_id type="a">GUID b9a0c548-3eab-4171-a8dc-bfd0c40e3b78</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">PKG_SMSWTD_CONTROLLER</fileName>
+			<_id type="a">GUID fb902630-a69a-4555-bb8b-733ecc0562e6</_id>
+		</ISubsystem>
+		<ISubsystem type="e">
+			<fileName type="a">PKG_PREDICTION_MODEL</fileName>
+			<_id type="a">GUID 96e1aeb2-31f0-4349-a172-124635aaedd7</_id>
+		</ISubsystem>
+		<IClass type="e">
+			<_id type="a">GUID e7078001-605e-4734-bc9a-be9923850455</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.1.1970::1:0:0</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

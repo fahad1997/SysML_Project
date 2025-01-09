@@ -1,6 +1,6 @@
 /********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Dashboard
@@ -19,14 +19,14 @@
 //## link itsSMSWTD_CONTROLLER
 #include "SMSWTD_CONTROLLER.h"
 //#[ ignore
-#define SMSWTD_SYSTEM_DESIGN_Dashboard_Dashboard_SERIALIZE OM_NO_OP
+#define SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_DASHBOARD_Dashboard_Dashboard_SERIALIZE OM_NO_OP
 //#]
 
-//## package SMSWTD_SYSTEM::DESIGN
+//## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_DASHBOARD
 
 //## class Dashboard
 Dashboard::Dashboard(void) : itsNotificationService(NULL), itsSMSWTD_CONTROLLER(NULL) {
-    NOTIFY_CONSTRUCTOR(Dashboard, Dashboard(), 0, SMSWTD_SYSTEM_DESIGN_Dashboard_Dashboard_SERIALIZE);
+    NOTIFY_CONSTRUCTOR(Dashboard, Dashboard(), 0, SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_DASHBOARD_Dashboard_Dashboard_SERIALIZE);
 }
 
 Dashboard::~Dashboard(void) {
@@ -121,7 +121,7 @@ void OMAnimatedDashboard::serializeRelations(AOMSRelations* aomsRelations) const
 }
 //#]
 
-IMPLEMENT_META_P(Dashboard, SMSWTD_SYSTEM_DESIGN, SMSWTD_SYSTEM::DESIGN, false, OMAnimatedDashboard)
+IMPLEMENT_META_P(Dashboard, SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_DASHBOARD, SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_DASHBOARD, false, OMAnimatedDashboard)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

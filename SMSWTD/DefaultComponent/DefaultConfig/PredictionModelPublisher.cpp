@@ -1,6 +1,6 @@
 /********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: PredictionModelPublisher
@@ -15,14 +15,14 @@
 //## auto_generated
 #include "PredictionModelPublisher.h"
 //#[ ignore
-#define SMSWTD_SYSTEM_DESIGN_PredictionModelPublisher_PredictionModelPublisher_SERIALIZE OM_NO_OP
+#define SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_SMSWTD_CONTROLLER_PredictionModelPublisher_PredictionModelPublisher_SERIALIZE OM_NO_OP
 //#]
 
-//## package SMSWTD_SYSTEM::DESIGN
+//## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_SMSWTD_CONTROLLER
 
 //## class PredictionModelPublisher
 PredictionModelPublisher::PredictionModelPublisher(void) : DataPublisher() {
-    NOTIFY_CONSTRUCTOR(PredictionModelPublisher, PredictionModelPublisher(), 0, SMSWTD_SYSTEM_DESIGN_PredictionModelPublisher_PredictionModelPublisher_SERIALIZE);
+    NOTIFY_CONSTRUCTOR(PredictionModelPublisher, PredictionModelPublisher(), 0, SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_SMSWTD_CONTROLLER_PredictionModelPublisher_PredictionModelPublisher_SERIALIZE);
 }
 
 PredictionModelPublisher::~PredictionModelPublisher(void) {
@@ -40,7 +40,7 @@ void OMAnimatedPredictionModelPublisher::serializeRelations(AOMSRelations* aomsR
 }
 //#]
 
-IMPLEMENT_META_S_P(PredictionModelPublisher, SMSWTD_SYSTEM::DESIGN, false, DataPublisher, OMAnimatedDataPublisher, OMAnimatedPredictionModelPublisher)
+IMPLEMENT_META_S_P(PredictionModelPublisher, SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_SMSWTD_CONTROLLER, false, DataPublisher, OMAnimatedDataPublisher, OMAnimatedPredictionModelPublisher)
 
 OMINIT_SUPERCLASS(DataPublisher, OMAnimatedDataPublisher)
 

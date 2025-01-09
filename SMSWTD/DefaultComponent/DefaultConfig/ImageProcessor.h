@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: ImageProcessor
@@ -13,13 +13,13 @@
 
 //## auto_generated
 #include <oxf.h>
-//## auto_generated
-#include "DESIGN.h"
 //## link itsDataProcessor
 class DataProcessor;
 
 //## auto_generated
 #include <aom.h>
+//## auto_generated
+#include "PKG_SMSWTD_CONTROLLER.h"
 //## auto_generated
 #include <omthread.h>
 //## auto_generated
@@ -28,13 +28,10 @@ class DataProcessor;
 #include <state.h>
 //## auto_generated
 #include <event.h>
-//## link itsDataPublisher
-class DataPublisher;
-
 //## link itsImageCollector
 class ImageCollector;
 
-//## package SMSWTD_SYSTEM::DESIGN
+//## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_SMSWTD_CONTROLLER
 
 //## class ImageProcessor
 class ImageProcessor : public OMReactive {
@@ -66,12 +63,6 @@ protected :
 public :
 
     //## auto_generated
-    const DataPublisher* getItsDataPublisher(void) const;
-    
-    //## auto_generated
-    void setItsDataPublisher(DataPublisher* const p_DataPublisher);
-    
-    //## auto_generated
     const ImageCollector* getItsImageCollector(void) const;
     
     //## auto_generated
@@ -82,8 +73,6 @@ public :
 
 private :
 
-    DataPublisher* itsDataPublisher;		//## link itsDataPublisher
-    
     ImageCollector* itsImageCollector;		//## link itsImageCollector
 
 public :

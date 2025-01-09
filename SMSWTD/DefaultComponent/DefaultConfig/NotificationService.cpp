@@ -1,6 +1,6 @@
 /********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: NotificationService
@@ -15,14 +15,14 @@
 //## auto_generated
 #include "NotificationService.h"
 //#[ ignore
-#define SMSWTD_SYSTEM_DESIGN_NotificationService_NotificationService_SERIALIZE OM_NO_OP
+#define SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_NOTIFICATION_SERVICE_NotificationService_NotificationService_SERIALIZE OM_NO_OP
 //#]
 
-//## package SMSWTD_SYSTEM::DESIGN
+//## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_NOTIFICATION_SERVICE
 
 //## class NotificationService
 NotificationService::NotificationService(void) {
-    NOTIFY_CONSTRUCTOR(NotificationService, NotificationService(), 0, SMSWTD_SYSTEM_DESIGN_NotificationService_NotificationService_SERIALIZE);
+    NOTIFY_CONSTRUCTOR(NotificationService, NotificationService(), 0, SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_NOTIFICATION_SERVICE_NotificationService_NotificationService_SERIALIZE);
 }
 
 NotificationService::~NotificationService(void) {
@@ -30,7 +30,7 @@ NotificationService::~NotificationService(void) {
 }
 
 #ifdef _OMINSTRUMENT
-IMPLEMENT_META_P(NotificationService, SMSWTD_SYSTEM_DESIGN, SMSWTD_SYSTEM::DESIGN, false, OMAnimatedNotificationService)
+IMPLEMENT_META_P(NotificationService, SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_NOTIFICATION_SERVICE, SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_NOTIFICATION_SERVICE, false, OMAnimatedNotificationService)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

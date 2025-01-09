@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: NotificationService
@@ -14,10 +14,10 @@
 //## auto_generated
 #include <oxf.h>
 //## auto_generated
-#include "DESIGN.h"
-//## auto_generated
 #include <aom.h>
-//## package SMSWTD_SYSTEM::DESIGN
+//## auto_generated
+#include "PKG_NOTIFICATION_SERVICE.h"
+//## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_NOTIFICATION_SERVICE
 
 //## class NotificationService
 class NotificationService {

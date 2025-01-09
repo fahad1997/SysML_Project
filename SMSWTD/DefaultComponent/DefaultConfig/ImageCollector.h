@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: ImageCollector
@@ -14,16 +14,16 @@
 //## auto_generated
 #include <oxf.h>
 //## auto_generated
-#include "DESIGN.h"
-//## auto_generated
 #include <aom.h>
+//## auto_generated
+#include "PKG_DATA_COLLECTOR.h"
 //## link itsSMSWTD_CONTROLLER
 class SMSWTD_CONTROLLER;
 
 //## link itsSateliteImage
 class SateliteImage;
 
-//## package SMSWTD_SYSTEM::DESIGN
+//## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_DATA_COLLECTOR
 
 //## class ImageCollector
 class ImageCollector {

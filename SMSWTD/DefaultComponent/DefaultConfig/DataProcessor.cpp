@@ -1,6 +1,6 @@
 /********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DataProcessor
@@ -16,25 +16,27 @@
 
 //## auto_generated
 #include "DataProcessor.h"
+//## link itsCloudClient
+#include "CloudClient.h"
+//## link itsDataPublisher
+#include "DataPublisher.h"
+//## event reqDataFromSensors()
+#include "DESIGN.h"
+//## link itsGeographicalConfiguration
+#include "GeographicalConfiguration.h"
 //## link itsImageProcessor
 #include "ImageProcessor.h"
+//## link itsSensorConfiguration
+#include "SensorConfiguration.h"
 //## link itsSensorDataProcessor
 #include "SensorDataProcessor.h"
 //#[ ignore
-#define SMSWTD_SYSTEM_DESIGN_DataProcessor_DataProcessor_SERIALIZE OM_NO_OP
+#define SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_SMSWTD_CONTROLLER_DataProcessor_DataProcessor_SERIALIZE OM_NO_OP
 
-#define SMSWTD_SYSTEM_DESIGN_DataProcessor_dataFetched_SERIALIZE OM_NO_OP
-
-#define OMAnim_SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWaterPressure_int_UNSERIALIZE_ARGS OP_UNSER(OMDestructiveString2X,p_thresholdWaterPressure)
-
-#define OMAnim_SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWaterPressure_int_SERIALIZE_RET_VAL
-
-#define OMAnim_SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWindSpeed_int_UNSERIALIZE_ARGS OP_UNSER(OMDestructiveString2X,p_thresholdWindSpeed)
-
-#define OMAnim_SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWindSpeed_int_SERIALIZE_RET_VAL
+#define SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_SMSWTD_CONTROLLER_DataProcessor_dataFetched_SERIALIZE OM_NO_OP
 //#]
 
-//## package SMSWTD_SYSTEM::DESIGN
+//## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_SMSWTD_CONTROLLER
 
 //## class DataProcessor
 //#[ ignore
@@ -107,6 +109,76 @@ void DataProcessor::p_DataProcessor_1_C::cleanUpRelations(void) {
             itsInt_windSpeed_ProxyFlowPropertyInterface = NULL;
         }
 }
+
+DataProcessor::p_DataProcessor_2_C::p_DataProcessor_2_C(void) : int_thresholdWaterPressure_ProxyFlowPropertyInterface(), _p_(0), itsInt_thresholdWaterPressure_ProxyFlowPropertyInterface(NULL) {
+}
+
+DataProcessor::p_DataProcessor_2_C::~p_DataProcessor_2_C(void) {
+    cleanUpRelations();
+}
+
+void DataProcessor::p_DataProcessor_2_C::connectDataProcessor(DataProcessor* part) {
+    setItsInt_thresholdWaterPressure_ProxyFlowPropertyInterface(part);
+    
+}
+
+int_thresholdWaterPressure_ProxyFlowPropertyInterface* DataProcessor::p_DataProcessor_2_C::getItsInt_thresholdWaterPressure_ProxyFlowPropertyInterface(void) {
+    return this;
+}
+
+void DataProcessor::p_DataProcessor_2_C::setThresholdWaterPressure(int p_thresholdWaterPressure) {
+    
+    if (itsInt_thresholdWaterPressure_ProxyFlowPropertyInterface != NULL) {
+        itsInt_thresholdWaterPressure_ProxyFlowPropertyInterface->setThresholdWaterPressure(p_thresholdWaterPressure);
+    }
+    
+}
+
+void DataProcessor::p_DataProcessor_2_C::setItsInt_thresholdWaterPressure_ProxyFlowPropertyInterface(int_thresholdWaterPressure_ProxyFlowPropertyInterface* const p_int_thresholdWaterPressure_ProxyFlowPropertyInterface) {
+    itsInt_thresholdWaterPressure_ProxyFlowPropertyInterface = p_int_thresholdWaterPressure_ProxyFlowPropertyInterface;
+}
+
+void DataProcessor::p_DataProcessor_2_C::cleanUpRelations(void) {
+    if(itsInt_thresholdWaterPressure_ProxyFlowPropertyInterface != NULL)
+        {
+            itsInt_thresholdWaterPressure_ProxyFlowPropertyInterface = NULL;
+        }
+}
+
+DataProcessor::p_DataProcessor_3_C::p_DataProcessor_3_C(void) : int_thresholdWindSpeed_ProxyFlowPropertyInterface(), _p_(0), itsInt_thresholdWindSpeed_ProxyFlowPropertyInterface(NULL) {
+}
+
+DataProcessor::p_DataProcessor_3_C::~p_DataProcessor_3_C(void) {
+    cleanUpRelations();
+}
+
+void DataProcessor::p_DataProcessor_3_C::connectDataProcessor(DataProcessor* part) {
+    setItsInt_thresholdWindSpeed_ProxyFlowPropertyInterface(part);
+    
+}
+
+int_thresholdWindSpeed_ProxyFlowPropertyInterface* DataProcessor::p_DataProcessor_3_C::getItsInt_thresholdWindSpeed_ProxyFlowPropertyInterface(void) {
+    return this;
+}
+
+void DataProcessor::p_DataProcessor_3_C::setThresholdWindSpeed(int p_thresholdWindSpeed) {
+    
+    if (itsInt_thresholdWindSpeed_ProxyFlowPropertyInterface != NULL) {
+        itsInt_thresholdWindSpeed_ProxyFlowPropertyInterface->setThresholdWindSpeed(p_thresholdWindSpeed);
+    }
+    
+}
+
+void DataProcessor::p_DataProcessor_3_C::setItsInt_thresholdWindSpeed_ProxyFlowPropertyInterface(int_thresholdWindSpeed_ProxyFlowPropertyInterface* const p_int_thresholdWindSpeed_ProxyFlowPropertyInterface) {
+    itsInt_thresholdWindSpeed_ProxyFlowPropertyInterface = p_int_thresholdWindSpeed_ProxyFlowPropertyInterface;
+}
+
+void DataProcessor::p_DataProcessor_3_C::cleanUpRelations(void) {
+    if(itsInt_thresholdWindSpeed_ProxyFlowPropertyInterface != NULL)
+        {
+            itsInt_thresholdWindSpeed_ProxyFlowPropertyInterface = NULL;
+        }
+}
 //#]
 
 DataProcessor::~DataProcessor(void) {
@@ -128,7 +200,7 @@ void DataProcessor::initStatechart(void) {
 }
 
 void DataProcessor::dataFetched(void) {
-    NOTIFY_OPERATION(dataFetched, dataFetched(), 0, SMSWTD_SYSTEM_DESIGN_DataProcessor_dataFetched_SERIALIZE);
+    NOTIFY_OPERATION(dataFetched, dataFetched(), 0, SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_SMSWTD_CONTROLLER_DataProcessor_dataFetched_SERIALIZE);
     //#[ operation dataFetched()
     std::cout<<"Successfully fetched data from the sensors.\n";
     //#]
@@ -192,20 +264,42 @@ void DataProcessor::initRelations(void) {
     if (get_p_DataProcessor_1() != NULL) {
         get_p_DataProcessor_1()->connectDataProcessor(this);
     }
+    if (get_p_DataProcessor_2() != NULL) {
+        get_p_DataProcessor_2()->connectDataProcessor(this);
+    }
+    if (get_p_DataProcessor_3() != NULL) {
+        get_p_DataProcessor_3()->connectDataProcessor(this);
+    }
 }
 
 void DataProcessor::cancelTimeouts(void) {
     cancel(rootState_timeout);
 }
 
-DataProcessor::DataProcessor(IOxfActive* const theActiveContext) : OMReactive(), int_waterPressure_ProxyFlowPropertyInterface(), int_windSpeed_ProxyFlowPropertyInterface(), dataAvailability(false), tsunami(false), waterPressure(0), windSpeed(0), thresholdWaterPressure(0), thresholdWindSpeed(0), itsImageProcessor(NULL), itsSensorDataProcessor(NULL) {
-    NOTIFY_REACTIVE_CONSTRUCTOR(DataProcessor, DataProcessor(), 0, SMSWTD_SYSTEM_DESIGN_DataProcessor_DataProcessor_SERIALIZE);
+DataProcessor::DataProcessor(IOxfActive* const theActiveContext) : OMReactive(), int_waterPressure_ProxyFlowPropertyInterface(), int_windSpeed_ProxyFlowPropertyInterface(), int_thresholdWaterPressure_ProxyFlowPropertyInterface(), int_thresholdWindSpeed_ProxyFlowPropertyInterface(), dataAvailability(false), tsunami(false), waterPressure(0), windSpeed(0), process(false), thresholdWaterPressure(0), thresholdWindSpeed(0), itsCloudClient(NULL), itsDataPublisher(NULL), itsGeographicalConfiguration(NULL), itsImageProcessor(NULL), itsSensorConfiguration(NULL), itsSensorDataProcessor(NULL) {
+    NOTIFY_REACTIVE_CONSTRUCTOR(DataProcessor, DataProcessor(), 0, SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_SMSWTD_CONTROLLER_DataProcessor_DataProcessor_SERIALIZE);
     setActiveContext(theActiveContext, false);
     initRelations();
     initStatechart();
 }
 
 //#[ ignore
+void DataProcessor::setThresholdWaterPressure(int p_thresholdWaterPressure) {
+    if (thresholdWaterPressure != p_thresholdWaterPressure) {
+        thresholdWaterPressure = p_thresholdWaterPressure;
+        FLOW_DATA_RECEIVE("thresholdWaterPressure", thresholdWaterPressure, x2String);
+    }
+    
+}
+
+void DataProcessor::setThresholdWindSpeed(int p_thresholdWindSpeed) {
+    if (thresholdWindSpeed != p_thresholdWindSpeed) {
+        thresholdWindSpeed = p_thresholdWindSpeed;
+        FLOW_DATA_RECEIVE("thresholdWindSpeed", thresholdWindSpeed, x2String);
+    }
+    
+}
+
 void DataProcessor::setWaterPressure(int p_waterPressure) {
     if (waterPressure != p_waterPressure) {
         waterPressure = p_waterPressure;
@@ -223,22 +317,73 @@ void DataProcessor::setWindSpeed(int p_windSpeed) {
 }
 //#]
 
-const int DataProcessor::getThresholdWaterPressure(void) const {
-    return thresholdWaterPressure;
+DataProcessor::p_DataProcessor_2_C* DataProcessor::getP_DataProcessor_2(void) const {
+    return (DataProcessor::p_DataProcessor_2_C*) &p_DataProcessor_2;
 }
 
-void DataProcessor::setThresholdWaterPressure(const int p_thresholdWaterPressure) {
-    thresholdWaterPressure = p_thresholdWaterPressure;
+DataProcessor::p_DataProcessor_2_C* DataProcessor::get_p_DataProcessor_2(void) const {
+    return (DataProcessor::p_DataProcessor_2_C*) &p_DataProcessor_2;
+}
+
+DataProcessor::p_DataProcessor_3_C* DataProcessor::getP_DataProcessor_3(void) const {
+    return (DataProcessor::p_DataProcessor_3_C*) &p_DataProcessor_3;
+}
+
+DataProcessor::p_DataProcessor_3_C* DataProcessor::get_p_DataProcessor_3(void) const {
+    return (DataProcessor::p_DataProcessor_3_C*) &p_DataProcessor_3;
+}
+
+const bool DataProcessor::getProcess(void) const {
+    return process;
+}
+
+void DataProcessor::setProcess(const bool p_process) {
+    process = p_process;
     NOTIFY_SET_OPERATION;
+}
+
+const int DataProcessor::getThresholdWaterPressure(void) const {
+    return thresholdWaterPressure;
 }
 
 const int DataProcessor::getThresholdWindSpeed(void) const {
     return thresholdWindSpeed;
 }
 
-void DataProcessor::setThresholdWindSpeed(const int p_thresholdWindSpeed) {
-    thresholdWindSpeed = p_thresholdWindSpeed;
-    NOTIFY_SET_OPERATION;
+const CloudClient* DataProcessor::getItsCloudClient(void) const {
+    return itsCloudClient;
+}
+
+void DataProcessor::setItsCloudClient(CloudClient* const p_CloudClient) {
+    if(p_CloudClient != NULL)
+        {
+            p_CloudClient->_setItsDataProcessor(this);
+        }
+    _setItsCloudClient(p_CloudClient);
+}
+
+const DataPublisher* DataProcessor::getItsDataPublisher(void) const {
+    return itsDataPublisher;
+}
+
+void DataProcessor::setItsDataPublisher(DataPublisher* const p_DataPublisher) {
+    if(p_DataPublisher != NULL)
+        {
+            p_DataPublisher->_setItsDataProcessor(this);
+        }
+    _setItsDataPublisher(p_DataPublisher);
+}
+
+const GeographicalConfiguration* DataProcessor::getItsGeographicalConfiguration(void) const {
+    return itsGeographicalConfiguration;
+}
+
+void DataProcessor::setItsGeographicalConfiguration(GeographicalConfiguration* const p_GeographicalConfiguration) {
+    if(p_GeographicalConfiguration != NULL)
+        {
+            p_GeographicalConfiguration->_setItsDataProcessor(this);
+        }
+    _setItsGeographicalConfiguration(p_GeographicalConfiguration);
 }
 
 const ImageProcessor* DataProcessor::getItsImageProcessor(void) const {
@@ -251,6 +396,18 @@ void DataProcessor::setItsImageProcessor(ImageProcessor* const p_ImageProcessor)
             p_ImageProcessor->_setItsDataProcessor(this);
         }
     _setItsImageProcessor(p_ImageProcessor);
+}
+
+const SensorConfiguration* DataProcessor::getItsSensorConfiguration(void) const {
+    return itsSensorConfiguration;
+}
+
+void DataProcessor::setItsSensorConfiguration(SensorConfiguration* const p_SensorConfiguration) {
+    if(p_SensorConfiguration != NULL)
+        {
+            p_SensorConfiguration->_setItsDataProcessor(this);
+        }
+    _setItsSensorConfiguration(p_SensorConfiguration);
 }
 
 const SensorDataProcessor* DataProcessor::getItsSensorDataProcessor(void) const {
@@ -266,6 +423,36 @@ void DataProcessor::setItsSensorDataProcessor(SensorDataProcessor* const p_Senso
 }
 
 void DataProcessor::cleanUpRelations(void) {
+    if(itsCloudClient != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsCloudClient");
+            const DataProcessor* p_DataProcessor = itsCloudClient->getItsDataProcessor();
+            if(p_DataProcessor != NULL)
+                {
+                    itsCloudClient->__setItsDataProcessor(NULL);
+                }
+            itsCloudClient = NULL;
+        }
+    if(itsDataPublisher != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsDataPublisher");
+            const DataProcessor* p_DataProcessor = itsDataPublisher->getItsDataProcessor();
+            if(p_DataProcessor != NULL)
+                {
+                    itsDataPublisher->__setItsDataProcessor(NULL);
+                }
+            itsDataPublisher = NULL;
+        }
+    if(itsGeographicalConfiguration != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsGeographicalConfiguration");
+            const DataProcessor* p_DataProcessor = itsGeographicalConfiguration->getItsDataProcessor();
+            if(p_DataProcessor != NULL)
+                {
+                    itsGeographicalConfiguration->__setItsDataProcessor(NULL);
+                }
+            itsGeographicalConfiguration = NULL;
+        }
     if(itsImageProcessor != NULL)
         {
             NOTIFY_RELATION_CLEARED("itsImageProcessor");
@@ -275,6 +462,16 @@ void DataProcessor::cleanUpRelations(void) {
                     itsImageProcessor->__setItsDataProcessor(NULL);
                 }
             itsImageProcessor = NULL;
+        }
+    if(itsSensorConfiguration != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsSensorConfiguration");
+            const DataProcessor* p_DataProcessor = itsSensorConfiguration->getItsDataProcessor();
+            if(p_DataProcessor != NULL)
+                {
+                    itsSensorConfiguration->__setItsDataProcessor(NULL);
+                }
+            itsSensorConfiguration = NULL;
         }
     if(itsSensorDataProcessor != NULL)
         {
@@ -286,6 +483,81 @@ void DataProcessor::cleanUpRelations(void) {
                 }
             itsSensorDataProcessor = NULL;
         }
+}
+
+void DataProcessor::__setItsCloudClient(CloudClient* const p_CloudClient) {
+    itsCloudClient = p_CloudClient;
+    if(p_CloudClient != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsCloudClient", p_CloudClient, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsCloudClient");
+        }
+}
+
+void DataProcessor::_setItsCloudClient(CloudClient* const p_CloudClient) {
+    if(itsCloudClient != NULL)
+        {
+            itsCloudClient->__setItsDataProcessor(NULL);
+        }
+    __setItsCloudClient(p_CloudClient);
+}
+
+void DataProcessor::_clearItsCloudClient(void) {
+    NOTIFY_RELATION_CLEARED("itsCloudClient");
+    itsCloudClient = NULL;
+}
+
+void DataProcessor::__setItsDataPublisher(DataPublisher* const p_DataPublisher) {
+    itsDataPublisher = p_DataPublisher;
+    if(p_DataPublisher != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsDataPublisher", p_DataPublisher, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsDataPublisher");
+        }
+}
+
+void DataProcessor::_setItsDataPublisher(DataPublisher* const p_DataPublisher) {
+    if(itsDataPublisher != NULL)
+        {
+            itsDataPublisher->__setItsDataProcessor(NULL);
+        }
+    __setItsDataPublisher(p_DataPublisher);
+}
+
+void DataProcessor::_clearItsDataPublisher(void) {
+    NOTIFY_RELATION_CLEARED("itsDataPublisher");
+    itsDataPublisher = NULL;
+}
+
+void DataProcessor::__setItsGeographicalConfiguration(GeographicalConfiguration* const p_GeographicalConfiguration) {
+    itsGeographicalConfiguration = p_GeographicalConfiguration;
+    if(p_GeographicalConfiguration != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsGeographicalConfiguration", p_GeographicalConfiguration, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsGeographicalConfiguration");
+        }
+}
+
+void DataProcessor::_setItsGeographicalConfiguration(GeographicalConfiguration* const p_GeographicalConfiguration) {
+    if(itsGeographicalConfiguration != NULL)
+        {
+            itsGeographicalConfiguration->__setItsDataProcessor(NULL);
+        }
+    __setItsGeographicalConfiguration(p_GeographicalConfiguration);
+}
+
+void DataProcessor::_clearItsGeographicalConfiguration(void) {
+    NOTIFY_RELATION_CLEARED("itsGeographicalConfiguration");
+    itsGeographicalConfiguration = NULL;
 }
 
 void DataProcessor::__setItsImageProcessor(ImageProcessor* const p_ImageProcessor) {
@@ -311,6 +583,31 @@ void DataProcessor::_setItsImageProcessor(ImageProcessor* const p_ImageProcessor
 void DataProcessor::_clearItsImageProcessor(void) {
     NOTIFY_RELATION_CLEARED("itsImageProcessor");
     itsImageProcessor = NULL;
+}
+
+void DataProcessor::__setItsSensorConfiguration(SensorConfiguration* const p_SensorConfiguration) {
+    itsSensorConfiguration = p_SensorConfiguration;
+    if(p_SensorConfiguration != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsSensorConfiguration", p_SensorConfiguration, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsSensorConfiguration");
+        }
+}
+
+void DataProcessor::_setItsSensorConfiguration(SensorConfiguration* const p_SensorConfiguration) {
+    if(itsSensorConfiguration != NULL)
+        {
+            itsSensorConfiguration->__setItsDataProcessor(NULL);
+        }
+    __setItsSensorConfiguration(p_SensorConfiguration);
+}
+
+void DataProcessor::_clearItsSensorConfiguration(void) {
+    NOTIFY_RELATION_CLEARED("itsSensorConfiguration");
+    itsSensorConfiguration = NULL;
 }
 
 void DataProcessor::__setItsSensorDataProcessor(SensorDataProcessor* const p_SensorDataProcessor) {
@@ -364,6 +661,7 @@ IOxfReactive::TakeEventStatus DataProcessor::rootState_processEvent(void) {
                     rootState_active = CollectData;
                     //#[ state CollectData.(Entry) 
                     std::cout<<"Collecting data from the sensors.\n";
+                    process=true;
                     //#]
                     rootState_timeout = scheduleTimeout(5000, "ROOT.CollectData");
                     NOTIFY_TRANSITION_TERMINATED("1");
@@ -495,9 +793,14 @@ IOxfReactive::TakeEventStatus DataProcessor::rootState_processEvent(void) {
                     NOTIFY_TRANSITION_STARTED("7");
                     popNullTransition();
                     NOTIFY_STATE_EXITED("ROOT.accepttimeevent_7");
-                    NOTIFY_STATE_ENTERED("ROOT.StartProcess");
-                    rootState_subState = StartProcess;
-                    rootState_active = StartProcess;
+                    NOTIFY_STATE_ENTERED("ROOT.CollectData");
+                    rootState_subState = CollectData;
+                    rootState_active = CollectData;
+                    //#[ state CollectData.(Entry) 
+                    std::cout<<"Collecting data from the sensors.\n";
+                    process=true;
+                    //#]
+                    rootState_timeout = scheduleTimeout(5000, "ROOT.CollectData");
                     NOTIFY_TRANSITION_TERMINATED("7");
                     res = eventConsumed;
                 }
@@ -516,6 +819,7 @@ IOxfReactive::TakeEventStatus DataProcessor::rootState_processEvent(void) {
                     rootState_active = CollectData;
                     //#[ state CollectData.(Entry) 
                     std::cout<<"Collecting data from the sensors.\n";
+                    process=true;
                     //#]
                     rootState_timeout = scheduleTimeout(5000, "ROOT.CollectData");
                     NOTIFY_TRANSITION_TERMINATED("9");
@@ -539,6 +843,7 @@ void OMAnimatedDataProcessor::serializeAttributes(AOMSAttributes* aomsAttributes
     aomsAttributes->addAttribute("tsunami", x2String(myReal->tsunami));
     aomsAttributes->addAttribute("thresholdWindSpeed", x2String(myReal->thresholdWindSpeed));
     aomsAttributes->addAttribute("thresholdWaterPressure", x2String(myReal->thresholdWaterPressure));
+    aomsAttributes->addAttribute("process", x2String(myReal->process));
 }
 
 void OMAnimatedDataProcessor::serializeRelations(AOMSRelations* aomsRelations) const {
@@ -551,6 +856,26 @@ void OMAnimatedDataProcessor::serializeRelations(AOMSRelations* aomsRelations) c
     if(myReal->itsImageProcessor)
         {
             aomsRelations->ADD_ITEM(myReal->itsImageProcessor);
+        }
+    aomsRelations->addRelation("itsDataPublisher", false, true);
+    if(myReal->itsDataPublisher)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsDataPublisher);
+        }
+    aomsRelations->addRelation("itsCloudClient", false, true);
+    if(myReal->itsCloudClient)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsCloudClient);
+        }
+    aomsRelations->addRelation("itsSensorConfiguration", false, true);
+    if(myReal->itsSensorConfiguration)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsSensorConfiguration);
+        }
+    aomsRelations->addRelation("itsGeographicalConfiguration", false, true);
+    if(myReal->itsGeographicalConfiguration)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsGeographicalConfiguration);
         }
 }
 
@@ -626,15 +951,7 @@ void OMAnimatedDataProcessor::accepttimeevent_6_serializeStates(AOMSState* aomsS
 }
 //#]
 
-IMPLEMENT_REACTIVE_META_P(DataProcessor, SMSWTD_SYSTEM_DESIGN, SMSWTD_SYSTEM::DESIGN, false, OMAnimatedDataProcessor)
-
-IMPLEMENT_META_OP(OMAnimatedDataProcessor, SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWaterPressure_int, "setThresholdWaterPressure", FALSE, "setThresholdWaterPressure(int)", 1)
-
-IMPLEMENT_OP_CALL(SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWaterPressure_int, DataProcessor, setThresholdWaterPressure(p_thresholdWaterPressure), NO_OP())
-
-IMPLEMENT_META_OP(OMAnimatedDataProcessor, SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWindSpeed_int, "setThresholdWindSpeed", FALSE, "setThresholdWindSpeed(int)", 1)
-
-IMPLEMENT_OP_CALL(SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWindSpeed_int, DataProcessor, setThresholdWindSpeed(p_thresholdWindSpeed), NO_OP())
+IMPLEMENT_REACTIVE_META_P(DataProcessor, SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_SMSWTD_CONTROLLER, SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_SMSWTD_CONTROLLER, false, OMAnimatedDataProcessor)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

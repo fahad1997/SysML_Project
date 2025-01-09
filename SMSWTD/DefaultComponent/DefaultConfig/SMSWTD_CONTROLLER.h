@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SMSWTD_CONTROLLER
@@ -13,8 +13,6 @@
 
 //## auto_generated
 #include <oxf.h>
-//## auto_generated
-#include "DESIGN.h"
 //## auto_generated
 #include <omreactive.h>
 //## auto_generated
@@ -31,6 +29,10 @@
 #include "int_waterPressure_ProxyFlowPropertyInterface.h"
 //## class p_SMSWTD_BLK_1_C
 #include "int_windSpeed_ProxyFlowPropertyInterface.h"
+//## auto_generated
+#include "PKG_SMSWTD_CONTROLLER.h"
+//## classInstance itsSensorConfiguration
+#include "SensorConfiguration.h"
 //## link itsDashboard
 class Dashboard;
 
@@ -43,14 +45,14 @@ class ImageCollector;
 //## link itsPredictionModel
 class PredictionModel;
 
-//## package SMSWTD_SYSTEM::DESIGN
+//## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_SMSWTD_CONTROLLER
 
 //## class SMSWTD_CONTROLLER
 class SMSWTD_CONTROLLER : public OMReactive {
 public :
 
 //#[ ignore
-    //## package SMSWTD_SYSTEM::DESIGN
+    //## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_SMSWTD_CONTROLLER
     class p_SMSWTD_BLK_C : public int_waterPressure_ProxyFlowPropertyInterface {
         ////    Constructors and destructors    ////
         
@@ -91,7 +93,7 @@ public :
         int_waterPressure_ProxyFlowPropertyInterface* itsInt_waterPressure_ProxyFlowPropertyInterface;		//## link itsInt_waterPressure_ProxyFlowPropertyInterface
     };
     
-    //## package SMSWTD_SYSTEM::DESIGN
+    //## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_SMSWTD_CONTROLLER
     class p_SMSWTD_BLK_1_C : public int_windSpeed_ProxyFlowPropertyInterface {
         ////    Constructors and destructors    ////
         
@@ -283,14 +285,27 @@ public :
     
     //## auto_generated
     void setActiveContext(IOxfActive* const theActiveContext, bool activeInstance);
+    
+    //## auto_generated
+    const bool getActivate(void) const;
+    
+    //## auto_generated
+    void setActivate(const bool p_activate);
+    
+    //## auto_generated
+    const SensorConfiguration* getItsSensorConfiguration(void) const;
 
 private :
 
+    bool activate;		//## attribute activate
+    
 //#[ ignore
     p_SMSWTD_BLK_C p_SMSWTD_BLK;
     
     p_SMSWTD_BLK_1_C p_SMSWTD_BLK_1;
 //#]
+
+    SensorConfiguration itsSensorConfiguration;		//## classInstance itsSensorConfiguration
 
 public :
 

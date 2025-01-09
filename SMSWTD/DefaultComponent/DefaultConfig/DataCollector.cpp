@@ -1,6 +1,6 @@
 /********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DataCollector
@@ -21,10 +21,10 @@
 //## link itsWaterFlowDetector
 #include "WaterFlowDetector.h"
 //#[ ignore
-#define SMSWTD_SYSTEM_DESIGN_DataCollector_DataCollector_SERIALIZE OM_NO_OP
+#define SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_DATA_COLLECTOR_DataCollector_DataCollector_SERIALIZE OM_NO_OP
 //#]
 
-//## package SMSWTD_SYSTEM::DESIGN
+//## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_DATA_COLLECTOR
 
 //## class DataCollector
 //#[ ignore
@@ -168,7 +168,7 @@ void DataCollector::p_DataCollector_3_C::cleanUpRelations(void) {
 //#]
 
 DataCollector::DataCollector(void) : int_waterPressure_ProxyFlowPropertyInterface(), int_windSpeed_ProxyFlowPropertyInterface(), waterPressure(0), windSpeed(0), itsSMSWTD_CONTROLLER(NULL), itsStormSensor(NULL), itsWaterFlowDetector(NULL) {
-    NOTIFY_CONSTRUCTOR(DataCollector, DataCollector(), 0, SMSWTD_SYSTEM_DESIGN_DataCollector_DataCollector_SERIALIZE);
+    NOTIFY_CONSTRUCTOR(DataCollector, DataCollector(), 0, SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_DATA_COLLECTOR_DataCollector_DataCollector_SERIALIZE);
     initRelations();
 }
 
@@ -416,7 +416,7 @@ void OMAnimatedDataCollector::serializeRelations(AOMSRelations* aomsRelations) c
 }
 //#]
 
-IMPLEMENT_META_P(DataCollector, SMSWTD_SYSTEM_DESIGN, SMSWTD_SYSTEM::DESIGN, false, OMAnimatedDataCollector)
+IMPLEMENT_META_P(DataCollector, SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_DATA_COLLECTOR, SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_DATA_COLLECTOR, false, OMAnimatedDataCollector)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

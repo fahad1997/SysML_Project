@@ -1,6 +1,6 @@
 /********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DESIGN
@@ -14,34 +14,10 @@
 
 //## auto_generated
 #include "DESIGN.h"
-//## auto_generated
-#include "CloudClient.h"
-//## auto_generated
-#include "Dashboard.h"
-//## auto_generated
-#include "DashboardPublisher.h"
 //## classInstance itsDataCollector
 #include "DataCollector.h"
 //## classInstance itsDataProcessor
 #include "DataProcessor.h"
-//## auto_generated
-#include "DataPublisher.h"
-//## auto_generated
-#include "GeographicalConfiguration.h"
-//## auto_generated
-#include "ImageCollector.h"
-//## auto_generated
-#include "ImageProcessor.h"
-//## auto_generated
-#include "NotificationService.h"
-//## auto_generated
-#include "PredictionModel.h"
-//## auto_generated
-#include "PredictionModelPublisher.h"
-//## auto_generated
-#include "SensorConfiguration.h"
-//## auto_generated
-#include "SensorDataProcessor.h"
 //## classInstance itsSMSWTD_BLK
 #include "SMSWTD_CONTROLLER.h"
 //## classInstance itsStormSensor
@@ -152,12 +128,7 @@ void DESIGN_initRelations(void) {
     }
     {
         
-        itsDataCollector.get_p_DataCollector_2()->setItsInt_waterPressure_ProxyFlowPropertyInterface(itsSMSWTD_BLK.get_p_SMSWTD_BLK()->getItsInt_waterPressure_ProxyFlowPropertyInterface());
-        
-    }
-    {
-        
-        itsDataCollector.get_p_DataCollector_3()->setItsInt_windSpeed_ProxyFlowPropertyInterface(itsSMSWTD_BLK.get_p_SMSWTD_BLK_1()->getItsInt_windSpeed_ProxyFlowPropertyInterface());
+        itsWaterFlowDetector.get_p_WaterFlowDetector()->setItsInt_waterPressure_ProxyFlowPropertyInterface(itsDataCollector.get_p_DataCollector_1()->getItsInt_waterPressure_ProxyFlowPropertyInterface());
         
     }
     {
@@ -167,7 +138,12 @@ void DESIGN_initRelations(void) {
     }
     {
         
-        itsWaterFlowDetector.get_p_WaterFlowDetector()->setItsInt_waterPressure_ProxyFlowPropertyInterface(itsDataCollector.get_p_DataCollector_1()->getItsInt_waterPressure_ProxyFlowPropertyInterface());
+        itsDataCollector.get_p_DataCollector_2()->setItsInt_waterPressure_ProxyFlowPropertyInterface(itsSMSWTD_BLK.get_p_SMSWTD_BLK()->getItsInt_waterPressure_ProxyFlowPropertyInterface());
+        
+    }
+    {
+        
+        itsDataCollector.get_p_DataCollector_3()->setItsInt_windSpeed_ProxyFlowPropertyInterface(itsSMSWTD_BLK.get_p_SMSWTD_BLK_1()->getItsInt_windSpeed_ProxyFlowPropertyInterface());
         
     }
     

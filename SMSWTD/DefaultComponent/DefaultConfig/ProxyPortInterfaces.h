@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: ProxyPortInterfaces
@@ -15,6 +15,12 @@
 #include <oxf.h>
 //## auto_generated
 #include <aom.h>
+//## auto_generated
+class int_thresholdWaterPressure_ProxyFlowPropertyInterface;
+
+//## auto_generated
+class int_thresholdWindSpeed_ProxyFlowPropertyInterface;
+
 //## auto_generated
 class int_waterPressure_ProxyFlowPropertyInterface;
 

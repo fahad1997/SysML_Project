@@ -90,21 +90,6 @@ OBJS= \
   Researcher.obj \
   User.obj \
   Admin.obj \
-  DataCollector.obj \
-  DataProcessor.obj \
-  ImageCollector.obj \
-  SensorDataProcessor.obj \
-  ImageProcessor.obj \
-  GeographicalConfiguration.obj \
-  SensorConfiguration.obj \
-  CloudClient.obj \
-  DashboardPublisher.obj \
-  PredictionModelPublisher.obj \
-  DataPublisher.obj \
-  SMSWTD_CONTROLLER.obj \
-  Dashboard.obj \
-  NotificationService.obj \
-  PredictionModel.obj \
   SateliteImage.obj \
   Cloud.obj \
   SMSWTD.obj \
@@ -113,8 +98,28 @@ OBJS= \
   WaterPressureSensor.obj \
   AirborneSensor.obj \
   WeatherSensor.obj \
+  Dashboard.obj \
+  ImageCollector.obj \
+  DataCollector.obj \
+  NotificationService.obj \
+  SMSWTD_CONTROLLER.obj \
+  DataProcessor.obj \
+  ImageProcessor.obj \
+  SensorDataProcessor.obj \
+  GeographicalConfiguration.obj \
+  SensorConfiguration.obj \
+  CloudClient.obj \
+  DataPublisher.obj \
+  DashboardPublisher.obj \
+  PredictionModelPublisher.obj \
+  PredictionModel.obj \
   ANALYSIS.obj \
   DESIGN.obj \
+  PKG_DASHBOARD.obj \
+  PKG_DATA_COLLECTOR.obj \
+  PKG_NOTIFICATION_SERVICE.obj \
+  PKG_SMSWTD_CONTROLLER.obj \
+  PKG_PREDICTION_MODEL.obj \
   UC_SMSWTD.obj \
   UC_DATA_PROCESSOR.obj \
   ProxyPortInterfaces.obj
@@ -230,96 +235,6 @@ Admin.obj : Admin.cpp Admin.h    ANALYSIS.h
 
 
 
-DataCollector.obj : DataCollector.cpp DataCollector.h    DESIGN.h SMSWTD_CONTROLLER.h WaterFlowDetector.h StormSensor.h int_waterPressure_ProxyFlowPropertyInterface.h int_windSpeed_ProxyFlowPropertyInterface.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DataCollector.obj" "DataCollector.cpp" 
-
-
-
-DataProcessor.obj : DataProcessor.cpp DataProcessor.h    DESIGN.h SensorDataProcessor.h ImageProcessor.h int_waterPressure_ProxyFlowPropertyInterface.h int_windSpeed_ProxyFlowPropertyInterface.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DataProcessor.obj" "DataProcessor.cpp" 
-
-
-
-ImageCollector.obj : ImageCollector.cpp ImageCollector.h    DESIGN.h SateliteImage.h SMSWTD_CONTROLLER.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ImageCollector.obj" "ImageCollector.cpp" 
-
-
-
-SensorDataProcessor.obj : SensorDataProcessor.cpp SensorDataProcessor.h    DESIGN.h DataCollector.h GeographicalConfiguration.h SensorConfiguration.h CloudClient.h DataPublisher.h DataProcessor.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"SensorDataProcessor.obj" "SensorDataProcessor.cpp" 
-
-
-
-ImageProcessor.obj : ImageProcessor.cpp ImageProcessor.h    DESIGN.h ImageCollector.h DataPublisher.h DataProcessor.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ImageProcessor.obj" "ImageProcessor.cpp" 
-
-
-
-GeographicalConfiguration.obj : GeographicalConfiguration.cpp GeographicalConfiguration.h    DESIGN.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"GeographicalConfiguration.obj" "GeographicalConfiguration.cpp" 
-
-
-
-SensorConfiguration.obj : SensorConfiguration.cpp SensorConfiguration.h    DESIGN.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"SensorConfiguration.obj" "SensorConfiguration.cpp" 
-
-
-
-CloudClient.obj : CloudClient.cpp CloudClient.h    DESIGN.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"CloudClient.obj" "CloudClient.cpp" 
-
-
-
-DashboardPublisher.obj : DashboardPublisher.cpp DashboardPublisher.h    DESIGN.h DataPublisher.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DashboardPublisher.obj" "DashboardPublisher.cpp" 
-
-
-
-PredictionModelPublisher.obj : PredictionModelPublisher.cpp PredictionModelPublisher.h    DESIGN.h DataPublisher.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"PredictionModelPublisher.obj" "PredictionModelPublisher.cpp" 
-
-
-
-DataPublisher.obj : DataPublisher.cpp DataPublisher.h    DESIGN.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DataPublisher.obj" "DataPublisher.cpp" 
-
-
-
-SMSWTD_CONTROLLER.obj : SMSWTD_CONTROLLER.cpp SMSWTD_CONTROLLER.h    DESIGN.h DataProcessor.h Dashboard.h PredictionModel.h ImageCollector.h DataCollector.h int_waterPressure_ProxyFlowPropertyInterface.h int_windSpeed_ProxyFlowPropertyInterface.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"SMSWTD_CONTROLLER.obj" "SMSWTD_CONTROLLER.cpp" 
-
-
-
-Dashboard.obj : Dashboard.cpp Dashboard.h    DESIGN.h NotificationService.h SMSWTD_CONTROLLER.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Dashboard.obj" "Dashboard.cpp" 
-
-
-
-NotificationService.obj : NotificationService.cpp NotificationService.h    DESIGN.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"NotificationService.obj" "NotificationService.cpp" 
-
-
-
-PredictionModel.obj : PredictionModel.cpp PredictionModel.h    DESIGN.h SMSWTD_CONTROLLER.h 
-	$(CREATE_OBJ_DIR)
-	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"PredictionModel.obj" "PredictionModel.cpp" 
-
-
-
 SateliteImage.obj : SateliteImage.cpp SateliteImage.h    DESIGN.h SMSWTD.h ImageCollector.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"SateliteImage.obj" "SateliteImage.cpp" 
@@ -368,15 +283,135 @@ WeatherSensor.obj : WeatherSensor.cpp WeatherSensor.h    DESIGN.h SMSWTD.h
 
 
 
+Dashboard.obj : Dashboard.cpp Dashboard.h    PKG_DASHBOARD.h NotificationService.h SMSWTD_CONTROLLER.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Dashboard.obj" "Dashboard.cpp" 
+
+
+
+ImageCollector.obj : ImageCollector.cpp ImageCollector.h    PKG_DATA_COLLECTOR.h SateliteImage.h SMSWTD_CONTROLLER.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ImageCollector.obj" "ImageCollector.cpp" 
+
+
+
+DataCollector.obj : DataCollector.cpp DataCollector.h    PKG_DATA_COLLECTOR.h SMSWTD_CONTROLLER.h WaterFlowDetector.h StormSensor.h int_waterPressure_ProxyFlowPropertyInterface.h int_windSpeed_ProxyFlowPropertyInterface.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DataCollector.obj" "DataCollector.cpp" 
+
+
+
+NotificationService.obj : NotificationService.cpp NotificationService.h    PKG_NOTIFICATION_SERVICE.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"NotificationService.obj" "NotificationService.cpp" 
+
+
+
+SMSWTD_CONTROLLER.obj : SMSWTD_CONTROLLER.cpp SMSWTD_CONTROLLER.h    PKG_SMSWTD_CONTROLLER.h DataProcessor.h Dashboard.h PredictionModel.h ImageCollector.h DataCollector.h SensorConfiguration.h DESIGN.h int_waterPressure_ProxyFlowPropertyInterface.h int_windSpeed_ProxyFlowPropertyInterface.h int_thresholdWaterPressure_ProxyFlowPropertyInterface.h int_thresholdWindSpeed_ProxyFlowPropertyInterface.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"SMSWTD_CONTROLLER.obj" "SMSWTD_CONTROLLER.cpp" 
+
+
+
+DataProcessor.obj : DataProcessor.cpp DataProcessor.h    PKG_SMSWTD_CONTROLLER.h SensorDataProcessor.h ImageProcessor.h DataPublisher.h CloudClient.h SensorConfiguration.h GeographicalConfiguration.h DESIGN.h int_waterPressure_ProxyFlowPropertyInterface.h int_windSpeed_ProxyFlowPropertyInterface.h int_thresholdWaterPressure_ProxyFlowPropertyInterface.h int_thresholdWindSpeed_ProxyFlowPropertyInterface.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DataProcessor.obj" "DataProcessor.cpp" 
+
+
+
+ImageProcessor.obj : ImageProcessor.cpp ImageProcessor.h    PKG_SMSWTD_CONTROLLER.h ImageCollector.h DataProcessor.h DESIGN.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ImageProcessor.obj" "ImageProcessor.cpp" 
+
+
+
+SensorDataProcessor.obj : SensorDataProcessor.cpp SensorDataProcessor.h    PKG_SMSWTD_CONTROLLER.h DataCollector.h DataProcessor.h DESIGN.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"SensorDataProcessor.obj" "SensorDataProcessor.cpp" 
+
+
+
+GeographicalConfiguration.obj : GeographicalConfiguration.cpp GeographicalConfiguration.h    PKG_SMSWTD_CONTROLLER.h DataProcessor.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"GeographicalConfiguration.obj" "GeographicalConfiguration.cpp" 
+
+
+
+SensorConfiguration.obj : SensorConfiguration.cpp SensorConfiguration.h    PKG_SMSWTD_CONTROLLER.h DataProcessor.h int_thresholdWaterPressure_ProxyFlowPropertyInterface.h int_thresholdWindSpeed_ProxyFlowPropertyInterface.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"SensorConfiguration.obj" "SensorConfiguration.cpp" 
+
+
+
+CloudClient.obj : CloudClient.cpp CloudClient.h    PKG_SMSWTD_CONTROLLER.h DataProcessor.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"CloudClient.obj" "CloudClient.cpp" 
+
+
+
+DataPublisher.obj : DataPublisher.cpp DataPublisher.h    PKG_SMSWTD_CONTROLLER.h DataProcessor.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DataPublisher.obj" "DataPublisher.cpp" 
+
+
+
+DashboardPublisher.obj : DashboardPublisher.cpp DashboardPublisher.h    PKG_SMSWTD_CONTROLLER.h DataPublisher.h DataProcessor.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DashboardPublisher.obj" "DashboardPublisher.cpp" 
+
+
+
+PredictionModelPublisher.obj : PredictionModelPublisher.cpp PredictionModelPublisher.h    PKG_SMSWTD_CONTROLLER.h DataPublisher.h DataProcessor.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"PredictionModelPublisher.obj" "PredictionModelPublisher.cpp" 
+
+
+
+PredictionModel.obj : PredictionModel.cpp PredictionModel.h    PKG_PREDICTION_MODEL.h SMSWTD_CONTROLLER.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"PredictionModel.obj" "PredictionModel.cpp" 
+
+
+
 ANALYSIS.obj : ANALYSIS.cpp ANALYSIS.h    
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ANALYSIS.obj" "ANALYSIS.cpp" 
 
 
 
-DESIGN.obj : DESIGN.cpp DESIGN.h    DataCollector.h DataProcessor.h ImageCollector.h SensorDataProcessor.h ImageProcessor.h GeographicalConfiguration.h SensorConfiguration.h CloudClient.h DashboardPublisher.h PredictionModelPublisher.h DataPublisher.h SMSWTD_CONTROLLER.h Dashboard.h NotificationService.h PredictionModel.h SateliteImage.h Cloud.h SMSWTD.h StormSensor.h WaterFlowDetector.h WaterPressureSensor.h AirborneSensor.h WeatherSensor.h 
+DESIGN.obj : DESIGN.cpp DESIGN.h    SateliteImage.h Cloud.h SMSWTD.h StormSensor.h WaterFlowDetector.h WaterPressureSensor.h AirborneSensor.h WeatherSensor.h SMSWTD_CONTROLLER.h DataProcessor.h DataCollector.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DESIGN.obj" "DESIGN.cpp" 
+
+
+
+PKG_DASHBOARD.obj : PKG_DASHBOARD.cpp PKG_DASHBOARD.h    Dashboard.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"PKG_DASHBOARD.obj" "PKG_DASHBOARD.cpp" 
+
+
+
+PKG_DATA_COLLECTOR.obj : PKG_DATA_COLLECTOR.cpp PKG_DATA_COLLECTOR.h    ImageCollector.h DataCollector.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"PKG_DATA_COLLECTOR.obj" "PKG_DATA_COLLECTOR.cpp" 
+
+
+
+PKG_NOTIFICATION_SERVICE.obj : PKG_NOTIFICATION_SERVICE.cpp PKG_NOTIFICATION_SERVICE.h    NotificationService.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"PKG_NOTIFICATION_SERVICE.obj" "PKG_NOTIFICATION_SERVICE.cpp" 
+
+
+
+PKG_SMSWTD_CONTROLLER.obj : PKG_SMSWTD_CONTROLLER.cpp PKG_SMSWTD_CONTROLLER.h    SMSWTD_CONTROLLER.h DataProcessor.h ImageProcessor.h SensorDataProcessor.h GeographicalConfiguration.h SensorConfiguration.h CloudClient.h DataPublisher.h DashboardPublisher.h PredictionModelPublisher.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"PKG_SMSWTD_CONTROLLER.obj" "PKG_SMSWTD_CONTROLLER.cpp" 
+
+
+
+PKG_PREDICTION_MODEL.obj : PKG_PREDICTION_MODEL.cpp PKG_PREDICTION_MODEL.h    PredictionModel.h 
+	$(CREATE_OBJ_DIR)
+	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"PKG_PREDICTION_MODEL.obj" "PKG_PREDICTION_MODEL.cpp" 
 
 
 
@@ -392,7 +427,7 @@ UC_DATA_PROCESSOR.obj : UC_DATA_PROCESSOR.cpp UC_DATA_PROCESSOR.h    UC_SMSWTD.h
 
 
 
-ProxyPortInterfaces.obj : ProxyPortInterfaces.cpp ProxyPortInterfaces.h    int_waterPressure_ProxyFlowPropertyInterface.h int_windSpeed_ProxyFlowPropertyInterface.h 
+ProxyPortInterfaces.obj : ProxyPortInterfaces.cpp ProxyPortInterfaces.h    int_windSpeed_ProxyFlowPropertyInterface.h int_waterPressure_ProxyFlowPropertyInterface.h int_thresholdWaterPressure_ProxyFlowPropertyInterface.h int_thresholdWindSpeed_ProxyFlowPropertyInterface.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ProxyPortInterfaces.obj" "ProxyPortInterfaces.cpp" 
 
@@ -430,21 +465,6 @@ clean:
 	if exist Researcher.obj erase Researcher.obj
 	if exist User.obj erase User.obj
 	if exist Admin.obj erase Admin.obj
-	if exist DataCollector.obj erase DataCollector.obj
-	if exist DataProcessor.obj erase DataProcessor.obj
-	if exist ImageCollector.obj erase ImageCollector.obj
-	if exist SensorDataProcessor.obj erase SensorDataProcessor.obj
-	if exist ImageProcessor.obj erase ImageProcessor.obj
-	if exist GeographicalConfiguration.obj erase GeographicalConfiguration.obj
-	if exist SensorConfiguration.obj erase SensorConfiguration.obj
-	if exist CloudClient.obj erase CloudClient.obj
-	if exist DashboardPublisher.obj erase DashboardPublisher.obj
-	if exist PredictionModelPublisher.obj erase PredictionModelPublisher.obj
-	if exist DataPublisher.obj erase DataPublisher.obj
-	if exist SMSWTD_CONTROLLER.obj erase SMSWTD_CONTROLLER.obj
-	if exist Dashboard.obj erase Dashboard.obj
-	if exist NotificationService.obj erase NotificationService.obj
-	if exist PredictionModel.obj erase PredictionModel.obj
 	if exist SateliteImage.obj erase SateliteImage.obj
 	if exist Cloud.obj erase Cloud.obj
 	if exist SMSWTD.obj erase SMSWTD.obj
@@ -453,8 +473,28 @@ clean:
 	if exist WaterPressureSensor.obj erase WaterPressureSensor.obj
 	if exist AirborneSensor.obj erase AirborneSensor.obj
 	if exist WeatherSensor.obj erase WeatherSensor.obj
+	if exist Dashboard.obj erase Dashboard.obj
+	if exist ImageCollector.obj erase ImageCollector.obj
+	if exist DataCollector.obj erase DataCollector.obj
+	if exist NotificationService.obj erase NotificationService.obj
+	if exist SMSWTD_CONTROLLER.obj erase SMSWTD_CONTROLLER.obj
+	if exist DataProcessor.obj erase DataProcessor.obj
+	if exist ImageProcessor.obj erase ImageProcessor.obj
+	if exist SensorDataProcessor.obj erase SensorDataProcessor.obj
+	if exist GeographicalConfiguration.obj erase GeographicalConfiguration.obj
+	if exist SensorConfiguration.obj erase SensorConfiguration.obj
+	if exist CloudClient.obj erase CloudClient.obj
+	if exist DataPublisher.obj erase DataPublisher.obj
+	if exist DashboardPublisher.obj erase DashboardPublisher.obj
+	if exist PredictionModelPublisher.obj erase PredictionModelPublisher.obj
+	if exist PredictionModel.obj erase PredictionModel.obj
 	if exist ANALYSIS.obj erase ANALYSIS.obj
 	if exist DESIGN.obj erase DESIGN.obj
+	if exist PKG_DASHBOARD.obj erase PKG_DASHBOARD.obj
+	if exist PKG_DATA_COLLECTOR.obj erase PKG_DATA_COLLECTOR.obj
+	if exist PKG_NOTIFICATION_SERVICE.obj erase PKG_NOTIFICATION_SERVICE.obj
+	if exist PKG_SMSWTD_CONTROLLER.obj erase PKG_SMSWTD_CONTROLLER.obj
+	if exist PKG_PREDICTION_MODEL.obj erase PKG_PREDICTION_MODEL.obj
 	if exist UC_SMSWTD.obj erase UC_SMSWTD.obj
 	if exist UC_DATA_PROCESSOR.obj erase UC_DATA_PROCESSOR.obj
 	if exist ProxyPortInterfaces.obj erase ProxyPortInterfaces.obj

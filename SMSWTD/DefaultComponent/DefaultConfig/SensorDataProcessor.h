@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SensorDataProcessor
@@ -13,13 +13,13 @@
 
 //## auto_generated
 #include <oxf.h>
-//## auto_generated
-#include "DESIGN.h"
 //## link itsDataProcessor
 class DataProcessor;
 
 //## auto_generated
 #include <aom.h>
+//## auto_generated
+#include "PKG_SMSWTD_CONTROLLER.h"
 //## auto_generated
 #include <omthread.h>
 //## auto_generated
@@ -28,22 +28,10 @@ class DataProcessor;
 #include <state.h>
 //## auto_generated
 #include <event.h>
-//## link itsCloudClient
-class CloudClient;
-
 //## link itsDataCollector
 class DataCollector;
 
-//## link itsDataPublisher
-class DataPublisher;
-
-//## link itsGeographicalConfiguration
-class GeographicalConfiguration;
-
-//## link itsSensorConfiguration
-class SensorConfiguration;
-
-//## package SMSWTD_SYSTEM::DESIGN
+//## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_SMSWTD_CONTROLLER
 
 //## class SensorDataProcessor
 class SensorDataProcessor : public OMReactive {
@@ -77,34 +65,10 @@ public :
     ////    Framework    ////
     
     //## auto_generated
-    const CloudClient* getItsCloudClient(void) const;
-    
-    //## auto_generated
-    void setItsCloudClient(CloudClient* const p_CloudClient);
-    
-    //## auto_generated
     const DataCollector* getItsDataCollector(void) const;
     
     //## auto_generated
     void setItsDataCollector(DataCollector* const p_DataCollector);
-    
-    //## auto_generated
-    const DataPublisher* getItsDataPublisher(void) const;
-    
-    //## auto_generated
-    void setItsDataPublisher(DataPublisher* const p_DataPublisher);
-    
-    //## auto_generated
-    const GeographicalConfiguration* getItsGeographicalConfiguration(void) const;
-    
-    //## auto_generated
-    void setItsGeographicalConfiguration(GeographicalConfiguration* const p_GeographicalConfiguration);
-    
-    //## auto_generated
-    const SensorConfiguration* getItsSensorConfiguration(void) const;
-    
-    //## auto_generated
-    void setItsSensorConfiguration(SensorConfiguration* const p_SensorConfiguration);
 
 protected :
 
@@ -113,15 +77,7 @@ protected :
 
 private :
 
-    CloudClient* itsCloudClient;		//## link itsCloudClient
-    
     DataCollector* itsDataCollector;		//## link itsDataCollector
-    
-    DataPublisher* itsDataPublisher;		//## link itsDataPublisher
-    
-    GeographicalConfiguration* itsGeographicalConfiguration;		//## link itsGeographicalConfiguration
-    
-    SensorConfiguration* itsSensorConfiguration;		//## link itsSensorConfiguration
 
 public :
 

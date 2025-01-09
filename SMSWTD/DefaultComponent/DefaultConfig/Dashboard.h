@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Dashboard
@@ -14,16 +14,16 @@
 //## auto_generated
 #include <oxf.h>
 //## auto_generated
-#include "DESIGN.h"
-//## auto_generated
 #include <aom.h>
+//## auto_generated
+#include "PKG_DASHBOARD.h"
 //## link itsNotificationService
 class NotificationService;
 
 //## link itsSMSWTD_CONTROLLER
 class SMSWTD_CONTROLLER;
 
-//## package SMSWTD_SYSTEM::DESIGN
+//## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_DASHBOARD
 
 //## class Dashboard
 class Dashboard {

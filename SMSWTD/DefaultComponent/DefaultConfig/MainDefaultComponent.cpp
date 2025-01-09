@@ -1,6 +1,6 @@
 /********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DefaultConfig
@@ -14,6 +14,16 @@
 #include "ANALYSIS.h"
 //## auto_generated
 #include "DESIGN.h"
+//## auto_generated
+#include "PKG_DASHBOARD.h"
+//## auto_generated
+#include "PKG_DATA_COLLECTOR.h"
+//## auto_generated
+#include "PKG_NOTIFICATION_SERVICE.h"
+//## auto_generated
+#include "PKG_PREDICTION_MODEL.h"
+//## auto_generated
+#include "PKG_SMSWTD_CONTROLLER.h"
 //## auto_generated
 #include "UC_DATA_PROCESSOR.h"
 //## auto_generated

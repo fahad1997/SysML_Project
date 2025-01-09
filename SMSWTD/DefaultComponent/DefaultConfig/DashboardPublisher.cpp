@@ -1,6 +1,6 @@
 /********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DashboardPublisher
@@ -15,14 +15,14 @@
 //## auto_generated
 #include "DashboardPublisher.h"
 //#[ ignore
-#define SMSWTD_SYSTEM_DESIGN_DashboardPublisher_DashboardPublisher_SERIALIZE OM_NO_OP
+#define SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_SMSWTD_CONTROLLER_DashboardPublisher_DashboardPublisher_SERIALIZE OM_NO_OP
 //#]
 
-//## package SMSWTD_SYSTEM::DESIGN
+//## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_SMSWTD_CONTROLLER
 
 //## class DashboardPublisher
 DashboardPublisher::DashboardPublisher(void) : DataPublisher() {
-    NOTIFY_CONSTRUCTOR(DashboardPublisher, DashboardPublisher(), 0, SMSWTD_SYSTEM_DESIGN_DashboardPublisher_DashboardPublisher_SERIALIZE);
+    NOTIFY_CONSTRUCTOR(DashboardPublisher, DashboardPublisher(), 0, SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_SMSWTD_CONTROLLER_DashboardPublisher_DashboardPublisher_SERIALIZE);
 }
 
 DashboardPublisher::~DashboardPublisher(void) {
@@ -40,7 +40,7 @@ void OMAnimatedDashboardPublisher::serializeRelations(AOMSRelations* aomsRelatio
 }
 //#]
 
-IMPLEMENT_META_S_P(DashboardPublisher, SMSWTD_SYSTEM::DESIGN, false, DataPublisher, OMAnimatedDataPublisher, OMAnimatedDashboardPublisher)
+IMPLEMENT_META_S_P(DashboardPublisher, SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_SMSWTD_CONTROLLER, false, DataPublisher, OMAnimatedDataPublisher, OMAnimatedDashboardPublisher)
 
 OMINIT_SUPERCLASS(DataPublisher, OMAnimatedDataPublisher)
 

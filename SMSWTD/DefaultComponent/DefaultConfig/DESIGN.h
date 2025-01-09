@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DESIGN
@@ -23,41 +23,11 @@ class AirborneSensor;
 //## auto_generated
 class Cloud;
 
-//## auto_generated
-class CloudClient;
-
-//## auto_generated
-class Dashboard;
-
-//## auto_generated
-class DashboardPublisher;
-
 //## classInstance itsDataCollector
 class DataCollector;
 
 //## classInstance itsDataProcessor
 class DataProcessor;
-
-//## auto_generated
-class DataPublisher;
-
-//## auto_generated
-class GeographicalConfiguration;
-
-//## auto_generated
-class ImageCollector;
-
-//## auto_generated
-class ImageProcessor;
-
-//## auto_generated
-class NotificationService;
-
-//## auto_generated
-class PredictionModel;
-
-//## auto_generated
-class PredictionModelPublisher;
 
 //## auto_generated
 class SMSWTD;
@@ -67,12 +37,6 @@ class SMSWTD_CONTROLLER;
 
 //## auto_generated
 class SateliteImage;
-
-//## auto_generated
-class SensorConfiguration;
-
-//## auto_generated
-class SensorDataProcessor;
 
 //## classInstance itsStormSensor
 class StormSensor;

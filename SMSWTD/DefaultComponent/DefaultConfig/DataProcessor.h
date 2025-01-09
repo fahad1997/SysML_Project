@@ -1,6 +1,6 @@
 /*********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DataProcessor
@@ -20,8 +20,6 @@
 //## auto_generated
 #include <event.h>
 //## auto_generated
-#include "DESIGN.h"
-//## auto_generated
 #include <aom.h>
 //## auto_generated
 #include <omthread.h>
@@ -29,26 +27,38 @@
 #include "int_waterPressure_ProxyFlowPropertyInterface.h"
 //## class DataProcessor
 #include "int_windSpeed_ProxyFlowPropertyInterface.h"
+//## auto_generated
+#include "PKG_SMSWTD_CONTROLLER.h"
+//## class DataProcessor
+#include "int_thresholdWaterPressure_ProxyFlowPropertyInterface.h"
+//## class DataProcessor
+#include "int_thresholdWindSpeed_ProxyFlowPropertyInterface.h"
+//## link itsCloudClient
+class CloudClient;
+
+//## link itsDataPublisher
+class DataPublisher;
+
+//## link itsGeographicalConfiguration
+class GeographicalConfiguration;
+
 //## link itsImageProcessor
 class ImageProcessor;
+
+//## link itsSensorConfiguration
+class SensorConfiguration;
 
 //## link itsSensorDataProcessor
 class SensorDataProcessor;
 
-//#[ ignore
-#define OMAnim_SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWaterPressure_int_ARGS_DECLARATION int p_thresholdWaterPressure;
-
-#define OMAnim_SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWindSpeed_int_ARGS_DECLARATION int p_thresholdWindSpeed;
-//#]
-
-//## package SMSWTD_SYSTEM::DESIGN
+//## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_SMSWTD_CONTROLLER
 
 //## class DataProcessor
-class DataProcessor : public OMReactive, public int_waterPressure_ProxyFlowPropertyInterface, public int_windSpeed_ProxyFlowPropertyInterface {
+class DataProcessor : public OMReactive, public int_waterPressure_ProxyFlowPropertyInterface, public int_windSpeed_ProxyFlowPropertyInterface, public int_thresholdWaterPressure_ProxyFlowPropertyInterface, public int_thresholdWindSpeed_ProxyFlowPropertyInterface {
 public :
 
 //#[ ignore
-    //## package SMSWTD_SYSTEM::DESIGN
+    //## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_SMSWTD_CONTROLLER
     class p_DataProcessor_C : public int_waterPressure_ProxyFlowPropertyInterface {
         ////    Constructors and destructors    ////
         
@@ -92,7 +102,7 @@ public :
         int_waterPressure_ProxyFlowPropertyInterface* itsInt_waterPressure_ProxyFlowPropertyInterface;		//## link itsInt_waterPressure_ProxyFlowPropertyInterface
     };
     
-    //## package SMSWTD_SYSTEM::DESIGN
+    //## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_SMSWTD_CONTROLLER
     class p_DataProcessor_1_C : public int_windSpeed_ProxyFlowPropertyInterface {
         ////    Constructors and destructors    ////
         
@@ -134,6 +144,94 @@ public :
         ////    Relations and components    ////
         
         int_windSpeed_ProxyFlowPropertyInterface* itsInt_windSpeed_ProxyFlowPropertyInterface;		//## link itsInt_windSpeed_ProxyFlowPropertyInterface
+    };
+    
+    //## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_SMSWTD_CONTROLLER
+    class p_DataProcessor_2_C : public int_thresholdWaterPressure_ProxyFlowPropertyInterface {
+        ////    Constructors and destructors    ////
+        
+    public :
+    
+        //## auto_generated
+        p_DataProcessor_2_C(void);
+        
+        //## auto_generated
+        virtual ~p_DataProcessor_2_C(void);
+        
+        ////    Operations    ////
+        
+        //## auto_generated
+        void connectDataProcessor(DataProcessor* part);
+        
+        //## auto_generated
+        int_thresholdWaterPressure_ProxyFlowPropertyInterface* getItsInt_thresholdWaterPressure_ProxyFlowPropertyInterface(void);
+        
+        //## auto_generated
+        virtual void setThresholdWaterPressure(int p_thresholdWaterPressure);
+        
+        ////    Additional operations    ////
+        
+        //## auto_generated
+        void setItsInt_thresholdWaterPressure_ProxyFlowPropertyInterface(int_thresholdWaterPressure_ProxyFlowPropertyInterface* const p_int_thresholdWaterPressure_ProxyFlowPropertyInterface);
+    
+    protected :
+    
+        //## auto_generated
+        void cleanUpRelations(void);
+        
+        ////    Attributes    ////
+    
+    private :
+    
+        RhpInteger _p_;		//## attribute _p_
+        
+        ////    Relations and components    ////
+        
+        int_thresholdWaterPressure_ProxyFlowPropertyInterface* itsInt_thresholdWaterPressure_ProxyFlowPropertyInterface;		//## link itsInt_thresholdWaterPressure_ProxyFlowPropertyInterface
+    };
+    
+    //## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_SMSWTD_CONTROLLER
+    class p_DataProcessor_3_C : public int_thresholdWindSpeed_ProxyFlowPropertyInterface {
+        ////    Constructors and destructors    ////
+        
+    public :
+    
+        //## auto_generated
+        p_DataProcessor_3_C(void);
+        
+        //## auto_generated
+        virtual ~p_DataProcessor_3_C(void);
+        
+        ////    Operations    ////
+        
+        //## auto_generated
+        void connectDataProcessor(DataProcessor* part);
+        
+        //## auto_generated
+        int_thresholdWindSpeed_ProxyFlowPropertyInterface* getItsInt_thresholdWindSpeed_ProxyFlowPropertyInterface(void);
+        
+        //## auto_generated
+        virtual void setThresholdWindSpeed(int p_thresholdWindSpeed);
+        
+        ////    Additional operations    ////
+        
+        //## auto_generated
+        void setItsInt_thresholdWindSpeed_ProxyFlowPropertyInterface(int_thresholdWindSpeed_ProxyFlowPropertyInterface* const p_int_thresholdWindSpeed_ProxyFlowPropertyInterface);
+    
+    protected :
+    
+        //## auto_generated
+        void cleanUpRelations(void);
+        
+        ////    Attributes    ////
+    
+    private :
+    
+        RhpInteger _p_;		//## attribute _p_
+        
+        ////    Relations and components    ////
+        
+        int_thresholdWindSpeed_ProxyFlowPropertyInterface* itsInt_thresholdWindSpeed_ProxyFlowPropertyInterface;		//## link itsInt_thresholdWindSpeed_ProxyFlowPropertyInterface
     };
 //#]
 
@@ -224,28 +322,68 @@ public :
     explicit DataProcessor(IOxfActive* const theActiveContext = NULL);
     
 //#[ ignore
+    void setThresholdWaterPressure(int p_thresholdWaterPressure);
+    
+    void setThresholdWindSpeed(int p_thresholdWindSpeed);
+    
     void setWaterPressure(int p_waterPressure);
     
     void setWindSpeed(int p_windSpeed);
 //#]
 
     //## auto_generated
-    const int getThresholdWaterPressure(void) const;
+    p_DataProcessor_2_C* getP_DataProcessor_2(void) const;
     
     //## auto_generated
-    void setThresholdWaterPressure(const int p_thresholdWaterPressure);
+    p_DataProcessor_2_C* get_p_DataProcessor_2(void) const;
+    
+    //## auto_generated
+    p_DataProcessor_3_C* getP_DataProcessor_3(void) const;
+    
+    //## auto_generated
+    p_DataProcessor_3_C* get_p_DataProcessor_3(void) const;
+    
+    //## auto_generated
+    const bool getProcess(void) const;
+    
+    //## auto_generated
+    void setProcess(const bool p_process);
+    
+    //## auto_generated
+    const int getThresholdWaterPressure(void) const;
     
     //## auto_generated
     const int getThresholdWindSpeed(void) const;
     
     //## auto_generated
-    void setThresholdWindSpeed(const int p_thresholdWindSpeed);
+    const CloudClient* getItsCloudClient(void) const;
+    
+    //## auto_generated
+    void setItsCloudClient(CloudClient* const p_CloudClient);
+    
+    //## auto_generated
+    const DataPublisher* getItsDataPublisher(void) const;
+    
+    //## auto_generated
+    void setItsDataPublisher(DataPublisher* const p_DataPublisher);
+    
+    //## auto_generated
+    const GeographicalConfiguration* getItsGeographicalConfiguration(void) const;
+    
+    //## auto_generated
+    void setItsGeographicalConfiguration(GeographicalConfiguration* const p_GeographicalConfiguration);
     
     //## auto_generated
     const ImageProcessor* getItsImageProcessor(void) const;
     
     //## auto_generated
     void setItsImageProcessor(ImageProcessor* const p_ImageProcessor);
+    
+    //## auto_generated
+    const SensorConfiguration* getItsSensorConfiguration(void) const;
+    
+    //## auto_generated
+    void setItsSensorConfiguration(SensorConfiguration* const p_SensorConfiguration);
     
     //## auto_generated
     const SensorDataProcessor* getItsSensorDataProcessor(void) const;
@@ -260,6 +398,8 @@ protected :
 
 private :
 
+    bool process;		//## attribute process
+    
     int thresholdWaterPressure;		//## attribute thresholdWaterPressure
     
     int thresholdWindSpeed;		//## attribute thresholdWindSpeed
@@ -268,14 +408,53 @@ private :
     p_DataProcessor_C p_DataProcessor;
     
     p_DataProcessor_1_C p_DataProcessor_1;
+    
+    p_DataProcessor_2_C p_DataProcessor_2;
+    
+    p_DataProcessor_3_C p_DataProcessor_3;
 //#]
 
+    CloudClient* itsCloudClient;		//## link itsCloudClient
+    
+    DataPublisher* itsDataPublisher;		//## link itsDataPublisher
+    
+    GeographicalConfiguration* itsGeographicalConfiguration;		//## link itsGeographicalConfiguration
+    
     ImageProcessor* itsImageProcessor;		//## link itsImageProcessor
+    
+    SensorConfiguration* itsSensorConfiguration;		//## link itsSensorConfiguration
     
     SensorDataProcessor* itsSensorDataProcessor;		//## link itsSensorDataProcessor
 
 public :
 
+    //## auto_generated
+    void __setItsCloudClient(CloudClient* const p_CloudClient);
+    
+    //## auto_generated
+    void _setItsCloudClient(CloudClient* const p_CloudClient);
+    
+    //## auto_generated
+    void _clearItsCloudClient(void);
+    
+    //## auto_generated
+    void __setItsDataPublisher(DataPublisher* const p_DataPublisher);
+    
+    //## auto_generated
+    void _setItsDataPublisher(DataPublisher* const p_DataPublisher);
+    
+    //## auto_generated
+    void _clearItsDataPublisher(void);
+    
+    //## auto_generated
+    void __setItsGeographicalConfiguration(GeographicalConfiguration* const p_GeographicalConfiguration);
+    
+    //## auto_generated
+    void _setItsGeographicalConfiguration(GeographicalConfiguration* const p_GeographicalConfiguration);
+    
+    //## auto_generated
+    void _clearItsGeographicalConfiguration(void);
+    
     //## auto_generated
     void __setItsImageProcessor(ImageProcessor* const p_ImageProcessor);
     
@@ -284,6 +463,15 @@ public :
     
     //## auto_generated
     void _clearItsImageProcessor(void);
+    
+    //## auto_generated
+    void __setItsSensorConfiguration(SensorConfiguration* const p_SensorConfiguration);
+    
+    //## auto_generated
+    void _setItsSensorConfiguration(SensorConfiguration* const p_SensorConfiguration);
+    
+    //## auto_generated
+    void _clearItsSensorConfiguration(void);
     
     //## auto_generated
     void __setItsSensorDataProcessor(SensorDataProcessor* const p_SensorDataProcessor);
@@ -359,17 +547,9 @@ private :
 };
 
 #ifdef _OMINSTRUMENT
-DECLARE_OPERATION_CLASS(SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWaterPressure_int)
-
-DECLARE_OPERATION_CLASS(SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWindSpeed_int)
-
 //#[ ignore
 class OMAnimatedDataProcessor : virtual public AOMInstance {
     DECLARE_REACTIVE_META(DataProcessor, OMAnimatedDataProcessor)
-    
-    DECLARE_META_OP(SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWaterPressure_int)
-    
-    DECLARE_META_OP(SMSWTD_SYSTEM_DESIGN_DataProcessor_setThresholdWindSpeed_int)
     
     ////    Framework operations    ////
     

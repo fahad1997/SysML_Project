@@ -1,6 +1,6 @@
 /********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: ImageProcessor
@@ -14,21 +14,21 @@
 
 //## auto_generated
 #include "ImageProcessor.h"
-//## link itsDataPublisher
-#include "DataPublisher.h"
 //## link itsImageCollector
 #include "ImageCollector.h"
 //## link itsDataProcessor
 #include "DataProcessor.h"
+//## event reqDataFromSensors()
+#include "DESIGN.h"
 //#[ ignore
-#define SMSWTD_SYSTEM_DESIGN_ImageProcessor_ImageProcessor_SERIALIZE OM_NO_OP
+#define SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_SMSWTD_CONTROLLER_ImageProcessor_ImageProcessor_SERIALIZE OM_NO_OP
 //#]
 
-//## package SMSWTD_SYSTEM::DESIGN
+//## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_SMSWTD_CONTROLLER
 
 //## class ImageProcessor
-ImageProcessor::ImageProcessor(IOxfActive* const theActiveContext) : OMReactive(), itsDataPublisher(NULL), itsImageCollector(NULL), itsDataProcessor(NULL) {
-    NOTIFY_REACTIVE_CONSTRUCTOR(ImageProcessor, ImageProcessor(), 0, SMSWTD_SYSTEM_DESIGN_ImageProcessor_ImageProcessor_SERIALIZE);
+ImageProcessor::ImageProcessor(IOxfActive* const theActiveContext) : OMReactive(), itsImageCollector(NULL), itsDataProcessor(NULL) {
+    NOTIFY_REACTIVE_CONSTRUCTOR(ImageProcessor, ImageProcessor(), 0, SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_SMSWTD_CONTROLLER_ImageProcessor_ImageProcessor_SERIALIZE);
     setActiveContext(theActiveContext, false);
 }
 
@@ -48,31 +48,10 @@ void ImageProcessor::cleanUpRelations(void) {
                 }
             itsDataProcessor = NULL;
         }
-    if(itsDataPublisher != NULL)
-        {
-            NOTIFY_RELATION_CLEARED("itsDataPublisher");
-            itsDataPublisher = NULL;
-        }
     if(itsImageCollector != NULL)
         {
             NOTIFY_RELATION_CLEARED("itsImageCollector");
             itsImageCollector = NULL;
-        }
-}
-
-const DataPublisher* ImageProcessor::getItsDataPublisher(void) const {
-    return itsDataPublisher;
-}
-
-void ImageProcessor::setItsDataPublisher(DataPublisher* const p_DataPublisher) {
-    itsDataPublisher = p_DataPublisher;
-    if(p_DataPublisher != NULL)
-        {
-            NOTIFY_RELATION_ITEM_ADDED("itsDataPublisher", p_DataPublisher, false, true);
-        }
-    else
-        {
-            NOTIFY_RELATION_CLEARED("itsDataPublisher");
         }
 }
 
@@ -143,11 +122,6 @@ void OMAnimatedImageProcessor::serializeRelations(AOMSRelations* aomsRelations) 
         {
             aomsRelations->ADD_ITEM(myReal->itsImageCollector);
         }
-    aomsRelations->addRelation("itsDataPublisher", false, true);
-    if(myReal->itsDataPublisher)
-        {
-            aomsRelations->ADD_ITEM(myReal->itsDataPublisher);
-        }
     aomsRelations->addRelation("itsDataProcessor", false, true);
     if(myReal->itsDataProcessor)
         {
@@ -156,7 +130,7 @@ void OMAnimatedImageProcessor::serializeRelations(AOMSRelations* aomsRelations) 
 }
 //#]
 
-IMPLEMENT_REACTIVE_META_SIMPLE_P(ImageProcessor, SMSWTD_SYSTEM_DESIGN, SMSWTD_SYSTEM::DESIGN, false, OMAnimatedImageProcessor)
+IMPLEMENT_REACTIVE_META_SIMPLE_P(ImageProcessor, SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_SMSWTD_CONTROLLER, SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_SMSWTD_CONTROLLER, false, OMAnimatedImageProcessor)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

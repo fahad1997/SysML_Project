@@ -1,6 +1,6 @@
 /********************************************************************
 	Rhapsody	: 9.0 
-	Login		: 20245163
+	Login		: 20245157
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: ImageCollector
@@ -19,14 +19,14 @@
 //## link itsSMSWTD_CONTROLLER
 #include "SMSWTD_CONTROLLER.h"
 //#[ ignore
-#define SMSWTD_SYSTEM_DESIGN_ImageCollector_ImageCollector_SERIALIZE OM_NO_OP
+#define SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_DATA_COLLECTOR_ImageCollector_ImageCollector_SERIALIZE OM_NO_OP
 //#]
 
-//## package SMSWTD_SYSTEM::DESIGN
+//## package SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_DATA_COLLECTOR
 
 //## class ImageCollector
 ImageCollector::ImageCollector(void) : itsSMSWTD_CONTROLLER(NULL), itsSateliteImage(NULL) {
-    NOTIFY_CONSTRUCTOR(ImageCollector, ImageCollector(), 0, SMSWTD_SYSTEM_DESIGN_ImageCollector_ImageCollector_SERIALIZE);
+    NOTIFY_CONSTRUCTOR(ImageCollector, ImageCollector(), 0, SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_DATA_COLLECTOR_ImageCollector_ImageCollector_SERIALIZE);
 }
 
 ImageCollector::~ImageCollector(void) {
@@ -147,7 +147,7 @@ void OMAnimatedImageCollector::serializeRelations(AOMSRelations* aomsRelations) 
 }
 //#]
 
-IMPLEMENT_META_P(ImageCollector, SMSWTD_SYSTEM_DESIGN, SMSWTD_SYSTEM::DESIGN, false, OMAnimatedImageCollector)
+IMPLEMENT_META_P(ImageCollector, SMSWTD_SYSTEM_DESIGN_PKG_SMSWTD_PKG_DATA_COLLECTOR, SMSWTD_SYSTEM::DESIGN::PKG_SMSWTD::PKG_DATA_COLLECTOR, false, OMAnimatedImageCollector)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************
