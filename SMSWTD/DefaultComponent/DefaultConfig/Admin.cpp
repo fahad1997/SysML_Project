@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Admin
-//!	Generated Date	: Wed, 8, Jan 2025  
+//!	Generated Date	: Thu, 9, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\Admin.cpp
 *********************************************************************/
 
@@ -21,30 +21,16 @@
 //## package SMSWTD_SYSTEM::ANALYSIS
 
 //## actor Admin
-Admin::Admin(void) : User() {
+Admin::Admin(void) {
     NOTIFY_CONSTRUCTOR(Admin, Admin(), 0, SMSWTD_SYSTEM_ANALYSIS_Admin_Admin_SERIALIZE);
 }
 
 Admin::~Admin(void) {
-    NOTIFY_DESTRUCTOR(~Admin, false);
+    NOTIFY_DESTRUCTOR(~Admin, true);
 }
 
 #ifdef _OMINSTRUMENT
-//#[ ignore
-void OMAnimatedAdmin::serializeAttributes(AOMSAttributes* aomsAttributes) const {
-    OMAnimatedUser::serializeAttributes(aomsAttributes);
-}
-
-void OMAnimatedAdmin::serializeRelations(AOMSRelations* aomsRelations) const {
-    OMAnimatedUser::serializeRelations(aomsRelations);
-}
-//#]
-
-IMPLEMENT_META_S_P(Admin, SMSWTD_SYSTEM::ANALYSIS, false, User, OMAnimatedUser, OMAnimatedAdmin)
-
-OMINIT_SUPERCLASS(User, OMAnimatedUser)
-
-OMREGISTER_CLASS
+IMPLEMENT_META_P(Admin, SMSWTD_SYSTEM_ANALYSIS, SMSWTD_SYSTEM::ANALYSIS, false, OMAnimatedAdmin)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

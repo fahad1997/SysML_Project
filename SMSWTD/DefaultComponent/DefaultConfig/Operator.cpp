@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Operator
-//!	Generated Date	: Wed, 8, Jan 2025  
+//!	Generated Date	: Thu, 9, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\Operator.cpp
 *********************************************************************/
 
@@ -21,30 +21,21 @@
 //## package SMSWTD_SYSTEM::ANALYSIS
 
 //## actor Operator
-Operator::Operator(void) : User() {
+Operator::Operator(void) {
     NOTIFY_CONSTRUCTOR(Operator, Operator(), 0, SMSWTD_SYSTEM_ANALYSIS_Operator_Operator_SERIALIZE);
 }
 
 Operator::~Operator(void) {
-    NOTIFY_DESTRUCTOR(~Operator, false);
+    NOTIFY_DESTRUCTOR(~Operator, true);
 }
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
-void OMAnimatedOperator::serializeAttributes(AOMSAttributes* aomsAttributes) const {
-    OMAnimatedUser::serializeAttributes(aomsAttributes);
-}
-
 void OMAnimatedOperator::serializeRelations(AOMSRelations* aomsRelations) const {
-    OMAnimatedUser::serializeRelations(aomsRelations);
 }
 //#]
 
-IMPLEMENT_META_S_P(Operator, SMSWTD_SYSTEM::ANALYSIS, false, User, OMAnimatedUser, OMAnimatedOperator)
-
-OMINIT_SUPERCLASS(User, OMAnimatedUser)
-
-OMREGISTER_CLASS
+IMPLEMENT_META_P(Operator, SMSWTD_SYSTEM_ANALYSIS, SMSWTD_SYSTEM::ANALYSIS, false, OMAnimatedOperator)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

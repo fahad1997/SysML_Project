@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Researcher
-//!	Generated Date	: Wed, 8, Jan 2025  
+//!	Generated Date	: Thu, 9, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\Researcher.cpp
 *********************************************************************/
 
@@ -21,30 +21,16 @@
 //## package SMSWTD_SYSTEM::ANALYSIS
 
 //## actor Researcher
-Researcher::Researcher(void) : User() {
+Researcher::Researcher(void) {
     NOTIFY_CONSTRUCTOR(Researcher, Researcher(), 0, SMSWTD_SYSTEM_ANALYSIS_Researcher_Researcher_SERIALIZE);
 }
 
 Researcher::~Researcher(void) {
-    NOTIFY_DESTRUCTOR(~Researcher, false);
+    NOTIFY_DESTRUCTOR(~Researcher, true);
 }
 
 #ifdef _OMINSTRUMENT
-//#[ ignore
-void OMAnimatedResearcher::serializeAttributes(AOMSAttributes* aomsAttributes) const {
-    OMAnimatedUser::serializeAttributes(aomsAttributes);
-}
-
-void OMAnimatedResearcher::serializeRelations(AOMSRelations* aomsRelations) const {
-    OMAnimatedUser::serializeRelations(aomsRelations);
-}
-//#]
-
-IMPLEMENT_META_S_P(Researcher, SMSWTD_SYSTEM::ANALYSIS, false, User, OMAnimatedUser, OMAnimatedResearcher)
-
-OMINIT_SUPERCLASS(User, OMAnimatedUser)
-
-OMREGISTER_CLASS
+IMPLEMENT_META_P(Researcher, SMSWTD_SYSTEM_ANALYSIS, SMSWTD_SYSTEM::ANALYSIS, false, OMAnimatedResearcher)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

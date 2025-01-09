@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SensorDataProcessor
-//!	Generated Date	: Wed, 8, Jan 2025  
+//!	Generated Date	: Thu, 9, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\SensorDataProcessor.h
 *********************************************************************/
 
@@ -15,10 +15,19 @@
 #include <oxf.h>
 //## auto_generated
 #include "DESIGN.h"
-//## class SensorDataProcessor
-#include "DataProcessor.h"
+//## link itsDataProcessor
+class DataProcessor;
+
 //## auto_generated
 #include <aom.h>
+//## auto_generated
+#include <omthread.h>
+//## auto_generated
+#include <omreactive.h>
+//## auto_generated
+#include <state.h>
+//## auto_generated
+#include <event.h>
 //## link itsCloudClient
 class CloudClient;
 
@@ -37,7 +46,7 @@ class SensorConfiguration;
 //## package SMSWTD_SYSTEM::DESIGN
 
 //## class SensorDataProcessor
-class SensorDataProcessor : public DataProcessor {
+class SensorDataProcessor : public OMReactive {
     ////    Friends    ////
     
 public :
@@ -113,19 +122,40 @@ private :
     GeographicalConfiguration* itsGeographicalConfiguration;		//## link itsGeographicalConfiguration
     
     SensorConfiguration* itsSensorConfiguration;		//## link itsSensorConfiguration
+
+public :
+
+    //## auto_generated
+    const DataProcessor* getItsDataProcessor(void) const;
+    
+    //## auto_generated
+    void setItsDataProcessor(DataProcessor* const p_DataProcessor);
+
+private :
+
+    DataProcessor* itsDataProcessor;		//## link itsDataProcessor
+
+public :
+
+    //## auto_generated
+    void __setItsDataProcessor(DataProcessor* const p_DataProcessor);
+    
+    //## auto_generated
+    void _setItsDataProcessor(DataProcessor* const p_DataProcessor);
+    
+    //## auto_generated
+    void _clearItsDataProcessor(void);
 };
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
-class OMAnimatedSensorDataProcessor : public OMAnimatedDataProcessor {
+class OMAnimatedSensorDataProcessor : virtual public AOMInstance {
     DECLARE_META(SensorDataProcessor, OMAnimatedSensorDataProcessor)
     
     ////    Framework operations    ////
     
 public :
 
-    virtual void serializeAttributes(AOMSAttributes* aomsAttributes) const;
-    
     virtual void serializeRelations(AOMSRelations* aomsRelations) const;
 };
 //#]

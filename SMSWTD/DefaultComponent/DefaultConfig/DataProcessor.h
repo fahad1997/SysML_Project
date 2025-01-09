@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DataProcessor
-//!	Generated Date	: Wed, 8, Jan 2025  
+//!	Generated Date	: Thu, 9, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\DataProcessor.h
 *********************************************************************/
 
@@ -29,6 +29,12 @@
 #include "int_waterPressure_ProxyFlowPropertyInterface.h"
 //## class DataProcessor
 #include "int_windSpeed_ProxyFlowPropertyInterface.h"
+//## link itsImageProcessor
+class ImageProcessor;
+
+//## link itsSensorDataProcessor
+class SensorDataProcessor;
+
 //## package SMSWTD_SYSTEM::DESIGN
 
 //## class DataProcessor
@@ -152,18 +158,9 @@ protected :
 
 public :
 
-    //## auto_generated
-    explicit DataProcessor(IOxfActive* const theActiveContext = NULL);
-    
     //## operation dataFetched()
     virtual void dataFetched(void);
     
-//#[ ignore
-    void setWaterPressure(int p_waterPressure);
-    
-    void setWindSpeed(int p_windSpeed);
-//#]
-
     //## auto_generated
     p_DataProcessor_C* getP_DataProcessor(void) const;
     
@@ -214,15 +211,67 @@ private :
     int waterPressure;		//## attribute waterPressure
     
     int windSpeed;		//## attribute windSpeed
+
+public :
+
+    //## auto_generated
+    explicit DataProcessor(IOxfActive* const theActiveContext = NULL);
     
+//#[ ignore
+    void setWaterPressure(int p_waterPressure);
+    
+    void setWindSpeed(int p_windSpeed);
+//#]
+
+    //## auto_generated
+    const ImageProcessor* getItsImageProcessor(void) const;
+    
+    //## auto_generated
+    void setItsImageProcessor(ImageProcessor* const p_ImageProcessor);
+    
+    //## auto_generated
+    const SensorDataProcessor* getItsSensorDataProcessor(void) const;
+    
+    //## auto_generated
+    void setItsSensorDataProcessor(SensorDataProcessor* const p_SensorDataProcessor);
+
+protected :
+
+    //## auto_generated
+    void cleanUpRelations(void);
+
+private :
+
 //#[ ignore
     p_DataProcessor_C p_DataProcessor;
     
     p_DataProcessor_1_C p_DataProcessor_1;
 //#]
 
+    ImageProcessor* itsImageProcessor;		//## link itsImageProcessor
+    
+    SensorDataProcessor* itsSensorDataProcessor;		//## link itsSensorDataProcessor
+
 public :
 
+    //## auto_generated
+    void __setItsImageProcessor(ImageProcessor* const p_ImageProcessor);
+    
+    //## auto_generated
+    void _setItsImageProcessor(ImageProcessor* const p_ImageProcessor);
+    
+    //## auto_generated
+    void _clearItsImageProcessor(void);
+    
+    //## auto_generated
+    void __setItsSensorDataProcessor(SensorDataProcessor* const p_SensorDataProcessor);
+    
+    //## auto_generated
+    void _setItsSensorDataProcessor(SensorDataProcessor* const p_SensorDataProcessor);
+    
+    //## auto_generated
+    void _clearItsSensorDataProcessor(void);
+    
     // rootState:
     //## statechart_method
     inline RhpBoolean rootState_IN(void) const;
@@ -269,10 +318,14 @@ protected :
         accepttimeevent_7 = 5,
         accepttimeevent_6 = 6
     };
+//#]
+
+private :
+
+//#[ ignore
+    DataProcessor_Enum rootState_subState;
     
-    Rhp_int32_t rootState_subState;
-    
-    Rhp_int32_t rootState_active;
+    DataProcessor_Enum rootState_active;
     
     IOxfTimeout* rootState_timeout;
 //#]

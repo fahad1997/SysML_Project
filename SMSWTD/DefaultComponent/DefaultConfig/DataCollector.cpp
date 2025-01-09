@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DataCollector
-//!	Generated Date	: Wed, 8, Jan 2025  
+//!	Generated Date	: Thu, 9, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\DataCollector.cpp
 *********************************************************************/
 
@@ -176,26 +176,6 @@ DataCollector::~DataCollector(void) {
     NOTIFY_DESTRUCTOR(~DataCollector, true);
     cleanUpRelations();
 }
-
-//#[ ignore
-void DataCollector::setWaterPressure(int p_waterPressure) {
-    if (waterPressure != p_waterPressure) {
-        waterPressure = p_waterPressure;
-        FLOW_DATA_RECEIVE("waterPressure", waterPressure, x2String);
-        FLOW_DATA_SEND(waterPressure, p_DataCollector_2, setWaterPressure, x2String);
-    }
-    
-}
-
-void DataCollector::setWindSpeed(int p_windSpeed) {
-    if (windSpeed != p_windSpeed) {
-        windSpeed = p_windSpeed;
-        FLOW_DATA_RECEIVE("windSpeed", windSpeed, x2String);
-        FLOW_DATA_SEND(windSpeed, p_DataCollector_3, setWindSpeed, x2String);
-    }
-    
-}
-//#]
 
 DataCollector::p_DataCollector_1_C* DataCollector::getP_DataCollector_1(void) const {
     return (DataCollector::p_DataCollector_1_C*) &p_DataCollector_1;
@@ -389,6 +369,26 @@ void DataCollector::_clearItsWaterFlowDetector(void) {
     NOTIFY_RELATION_CLEARED("itsWaterFlowDetector");
     itsWaterFlowDetector = NULL;
 }
+
+//#[ ignore
+void DataCollector::setWaterPressure(int p_waterPressure) {
+    if (waterPressure != p_waterPressure) {
+        waterPressure = p_waterPressure;
+        FLOW_DATA_RECEIVE("waterPressure", waterPressure, x2String);
+        FLOW_DATA_SEND(waterPressure, p_DataCollector_2, setWaterPressure, x2String);
+    }
+    
+}
+
+void DataCollector::setWindSpeed(int p_windSpeed) {
+    if (windSpeed != p_windSpeed) {
+        windSpeed = p_windSpeed;
+        FLOW_DATA_RECEIVE("windSpeed", windSpeed, x2String);
+        FLOW_DATA_SEND(windSpeed, p_DataCollector_3, setWindSpeed, x2String);
+    }
+    
+}
+//#]
 
 #ifdef _OMINSTRUMENT
 //#[ ignore

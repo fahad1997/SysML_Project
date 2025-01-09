@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Researcher
-//!	Generated Date	: Wed, 8, Jan 2025  
+//!	Generated Date	: Thu, 9, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\Researcher.h
 *********************************************************************/
 
@@ -17,12 +17,10 @@
 #include <aom.h>
 //## auto_generated
 #include "ANALYSIS.h"
-//## actor Researcher
-#include "User.h"
 //## package SMSWTD_SYSTEM::ANALYSIS
 
 //## actor Researcher
-class Researcher : public User {
+class Researcher {
     ////    Friends    ////
     
 public :
@@ -42,16 +40,8 @@ public :
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
-class OMAnimatedResearcher : public OMAnimatedUser {
+class OMAnimatedResearcher : virtual public AOMInstance {
     DECLARE_META(Researcher, OMAnimatedResearcher)
-    
-    ////    Framework operations    ////
-    
-public :
-
-    virtual void serializeAttributes(AOMSAttributes* aomsAttributes) const;
-    
-    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
 };
 //#]
 #endif // _OMINSTRUMENT

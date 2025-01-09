@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: ImageProcessor
-//!	Generated Date	: Wed, 8, Jan 2025  
+//!	Generated Date	: Thu, 9, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\ImageProcessor.cpp
 *********************************************************************/
 
@@ -18,6 +18,8 @@
 #include "DataPublisher.h"
 //## link itsImageCollector
 #include "ImageCollector.h"
+//## link itsDataProcessor
+#include "DataProcessor.h"
 //#[ ignore
 #define SMSWTD_SYSTEM_DESIGN_ImageProcessor_ImageProcessor_SERIALIZE OM_NO_OP
 //#]
@@ -25,17 +27,27 @@
 //## package SMSWTD_SYSTEM::DESIGN
 
 //## class ImageProcessor
-ImageProcessor::ImageProcessor(IOxfActive* const theActiveContext) : DataProcessor(), itsDataPublisher(NULL), itsImageCollector(NULL) {
+ImageProcessor::ImageProcessor(IOxfActive* const theActiveContext) : OMReactive(), itsDataPublisher(NULL), itsImageCollector(NULL), itsDataProcessor(NULL) {
     NOTIFY_REACTIVE_CONSTRUCTOR(ImageProcessor, ImageProcessor(), 0, SMSWTD_SYSTEM_DESIGN_ImageProcessor_ImageProcessor_SERIALIZE);
     setActiveContext(theActiveContext, false);
 }
 
 ImageProcessor::~ImageProcessor(void) {
-    NOTIFY_DESTRUCTOR(~ImageProcessor, false);
+    NOTIFY_DESTRUCTOR(~ImageProcessor, true);
     cleanUpRelations();
 }
 
 void ImageProcessor::cleanUpRelations(void) {
+    if(itsDataProcessor != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsDataProcessor");
+            const ImageProcessor* p_ImageProcessor = itsDataProcessor->getItsImageProcessor();
+            if(p_ImageProcessor != NULL)
+                {
+                    itsDataProcessor->__setItsImageProcessor(NULL);
+                }
+            itsDataProcessor = NULL;
+        }
     if(itsDataPublisher != NULL)
         {
             NOTIFY_RELATION_CLEARED("itsDataPublisher");
@@ -82,16 +94,49 @@ void ImageProcessor::setItsImageCollector(ImageCollector* const p_ImageCollector
 
 bool ImageProcessor::startBehavior(void) {
     bool done = false;
-    done = DataProcessor::startBehavior();
+    done = OMReactive::startBehavior();
     return done;
+}
+
+const DataProcessor* ImageProcessor::getItsDataProcessor(void) const {
+    return itsDataProcessor;
+}
+
+void ImageProcessor::setItsDataProcessor(DataProcessor* const p_DataProcessor) {
+    if(p_DataProcessor != NULL)
+        {
+            p_DataProcessor->_setItsImageProcessor(this);
+        }
+    _setItsDataProcessor(p_DataProcessor);
+}
+
+void ImageProcessor::__setItsDataProcessor(DataProcessor* const p_DataProcessor) {
+    itsDataProcessor = p_DataProcessor;
+    if(p_DataProcessor != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsDataProcessor", p_DataProcessor, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsDataProcessor");
+        }
+}
+
+void ImageProcessor::_setItsDataProcessor(DataProcessor* const p_DataProcessor) {
+    if(itsDataProcessor != NULL)
+        {
+            itsDataProcessor->__setItsImageProcessor(NULL);
+        }
+    __setItsDataProcessor(p_DataProcessor);
+}
+
+void ImageProcessor::_clearItsDataProcessor(void) {
+    NOTIFY_RELATION_CLEARED("itsDataProcessor");
+    itsDataProcessor = NULL;
 }
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
-void OMAnimatedImageProcessor::serializeAttributes(AOMSAttributes* aomsAttributes) const {
-    OMAnimatedDataProcessor::serializeAttributes(aomsAttributes);
-}
-
 void OMAnimatedImageProcessor::serializeRelations(AOMSRelations* aomsRelations) const {
     aomsRelations->addRelation("itsImageCollector", false, true);
     if(myReal->itsImageCollector)
@@ -103,15 +148,15 @@ void OMAnimatedImageProcessor::serializeRelations(AOMSRelations* aomsRelations) 
         {
             aomsRelations->ADD_ITEM(myReal->itsDataPublisher);
         }
-    OMAnimatedDataProcessor::serializeRelations(aomsRelations);
+    aomsRelations->addRelation("itsDataProcessor", false, true);
+    if(myReal->itsDataProcessor)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsDataProcessor);
+        }
 }
 //#]
 
-IMPLEMENT_REACTIVE_META_S_SIMPLE_P(ImageProcessor, SMSWTD_SYSTEM::DESIGN, false, DataProcessor, OMAnimatedDataProcessor, OMAnimatedImageProcessor)
-
-OMINIT_SUPERCLASS(DataProcessor, OMAnimatedDataProcessor)
-
-OMREGISTER_REACTIVE_CLASS
+IMPLEMENT_REACTIVE_META_SIMPLE_P(ImageProcessor, SMSWTD_SYSTEM_DESIGN, SMSWTD_SYSTEM::DESIGN, false, OMAnimatedImageProcessor)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SMSWTD_CONTROLLER
-//!	Generated Date	: Wed, 8, Jan 2025  
+//!	Generated Date	: Thu, 9, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\SMSWTD_CONTROLLER.h
 *********************************************************************/
 
@@ -255,12 +255,6 @@ private :
     
     int windSpeed;		//## attribute windSpeed
     
-//#[ ignore
-    p_SMSWTD_BLK_C p_SMSWTD_BLK;
-    
-    p_SMSWTD_BLK_1_C p_SMSWTD_BLK_1;
-//#]
-
     DataCollector* itsDataCollector;		//## link itsDataCollector
     
     DataProcessor itsDataProcessor;		//## classInstance itsDataProcessor
@@ -289,7 +283,17 @@ public :
     
     //## auto_generated
     void setActiveContext(IOxfActive* const theActiveContext, bool activeInstance);
+
+private :
+
+//#[ ignore
+    p_SMSWTD_BLK_C p_SMSWTD_BLK;
     
+    p_SMSWTD_BLK_1_C p_SMSWTD_BLK_1;
+//#]
+
+public :
+
     // rootState:
     //## statechart_method
     inline RhpBoolean rootState_IN(void) const;

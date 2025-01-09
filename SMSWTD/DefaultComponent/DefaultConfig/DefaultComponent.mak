@@ -206,13 +206,13 @@ AlertedGroup.obj : AlertedGroup.cpp AlertedGroup.h    ANALYSIS.h SMSWTD.h
 
 
 
-Operator.obj : Operator.cpp Operator.h    ANALYSIS.h User.h SMSWTD.h 
+Operator.obj : Operator.cpp Operator.h    ANALYSIS.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Operator.obj" "Operator.cpp" 
 
 
 
-Researcher.obj : Researcher.cpp Researcher.h    ANALYSIS.h User.h SMSWTD.h 
+Researcher.obj : Researcher.cpp Researcher.h    ANALYSIS.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Researcher.obj" "Researcher.cpp" 
 
@@ -224,7 +224,7 @@ User.obj : User.cpp User.h    ANALYSIS.h SMSWTD.h
 
 
 
-Admin.obj : Admin.cpp Admin.h    ANALYSIS.h User.h SMSWTD.h 
+Admin.obj : Admin.cpp Admin.h    ANALYSIS.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"Admin.obj" "Admin.cpp" 
 
@@ -236,7 +236,7 @@ DataCollector.obj : DataCollector.cpp DataCollector.h    DESIGN.h SMSWTD_CONTROL
 
 
 
-DataProcessor.obj : DataProcessor.cpp DataProcessor.h    DESIGN.h int_waterPressure_ProxyFlowPropertyInterface.h int_windSpeed_ProxyFlowPropertyInterface.h 
+DataProcessor.obj : DataProcessor.cpp DataProcessor.h    DESIGN.h SensorDataProcessor.h ImageProcessor.h int_waterPressure_ProxyFlowPropertyInterface.h int_windSpeed_ProxyFlowPropertyInterface.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"DataProcessor.obj" "DataProcessor.cpp" 
 
@@ -248,13 +248,13 @@ ImageCollector.obj : ImageCollector.cpp ImageCollector.h    DESIGN.h SateliteIma
 
 
 
-SensorDataProcessor.obj : SensorDataProcessor.cpp SensorDataProcessor.h    DESIGN.h DataCollector.h GeographicalConfiguration.h SensorConfiguration.h CloudClient.h DataPublisher.h DataProcessor.h int_waterPressure_ProxyFlowPropertyInterface.h int_windSpeed_ProxyFlowPropertyInterface.h 
+SensorDataProcessor.obj : SensorDataProcessor.cpp SensorDataProcessor.h    DESIGN.h DataCollector.h GeographicalConfiguration.h SensorConfiguration.h CloudClient.h DataPublisher.h DataProcessor.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"SensorDataProcessor.obj" "SensorDataProcessor.cpp" 
 
 
 
-ImageProcessor.obj : ImageProcessor.cpp ImageProcessor.h    DESIGN.h ImageCollector.h DataPublisher.h DataProcessor.h int_waterPressure_ProxyFlowPropertyInterface.h int_windSpeed_ProxyFlowPropertyInterface.h 
+ImageProcessor.obj : ImageProcessor.cpp ImageProcessor.h    DESIGN.h ImageCollector.h DataPublisher.h DataProcessor.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"ImageProcessor.obj" "ImageProcessor.cpp" 
 
@@ -296,7 +296,7 @@ DataPublisher.obj : DataPublisher.cpp DataPublisher.h    DESIGN.h
 
 
 
-SMSWTD_CONTROLLER.obj : SMSWTD_CONTROLLER.cpp SMSWTD_CONTROLLER.h    DESIGN.h Dashboard.h PredictionModel.h ImageCollector.h DataProcessor.h DataCollector.h int_waterPressure_ProxyFlowPropertyInterface.h int_windSpeed_ProxyFlowPropertyInterface.h 
+SMSWTD_CONTROLLER.obj : SMSWTD_CONTROLLER.cpp SMSWTD_CONTROLLER.h    DESIGN.h DataProcessor.h Dashboard.h PredictionModel.h ImageCollector.h DataCollector.h int_waterPressure_ProxyFlowPropertyInterface.h int_windSpeed_ProxyFlowPropertyInterface.h 
 	$(CREATE_OBJ_DIR)
 	$(CPP) $(ConfigurationCPPCompileSwitches)  /Fo"SMSWTD_CONTROLLER.obj" "SMSWTD_CONTROLLER.cpp" 
 

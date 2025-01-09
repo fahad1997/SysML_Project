@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: WaterFlowDetector
-//!	Generated Date	: Wed, 8, Jan 2025  
+//!	Generated Date	: Thu, 9, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\WaterFlowDetector.cpp
 *********************************************************************/
 
@@ -134,15 +134,6 @@ void WaterFlowDetector::_clearItsSMSWTD(void) {
     itsSMSWTD = NULL;
 }
 
-//#[ ignore
-void WaterFlowDetector::setWaterPressure(int p_waterPressure) {
-    if (waterPressure != p_waterPressure)  {
-        waterPressure = p_waterPressure;
-        FLOW_DATA_SEND(waterPressure, p_WaterFlowDetector, setWaterPressure, x2String);
-    }
-}
-//#]
-
 WaterFlowDetector::p_WaterFlowDetector_C* WaterFlowDetector::getP_WaterFlowDetector(void) const {
     return (WaterFlowDetector::p_WaterFlowDetector_C*) &p_WaterFlowDetector;
 }
@@ -191,6 +182,15 @@ void WaterFlowDetector::_clearItsDataCollector(void) {
     NOTIFY_RELATION_CLEARED("itsDataCollector");
     itsDataCollector = NULL;
 }
+
+//#[ ignore
+void WaterFlowDetector::setWaterPressure(int p_waterPressure) {
+    if (waterPressure != p_waterPressure)  {
+        waterPressure = p_waterPressure;
+        FLOW_DATA_SEND(waterPressure, p_WaterFlowDetector, setWaterPressure, x2String);
+    }
+}
+//#]
 
 #ifdef _OMINSTRUMENT
 //#[ ignore

@@ -4,10 +4,15 @@ Reverse Engineering Done.
 Removing Generalization 'User' from Actor 'Operator'. 
 Removing Generalization 'User' from Actor 'Researcher'. 
 Removing Generalization 'User' from Actor 'Admin'. 
-Adding AssociationEnd 'itsSateliteImage' to Class 'ImageCollector'. 
 Source Artifacts have been added to the model to ensure that the generated code reflects details from the original code, such as global comments, preprocessor directives, and the order of elements. See the log file for more details.
 To view the Source Artifacts in the Rhapsody browser, open the View menu and select Browser Display Options > Show Source Artifacts.
 Source Artifacts were added for the following files:
+Adding File 'Admin:impl' to Actor 'Admin'.
+Adding File 'Admin:spec' to Actor 'Admin'.
 Adding File 'AirborneSensor:impl' to Class 'AirborneSensor'.
 Adding File 'AirborneSensor:spec' to Class 'AirborneSensor'.
+Adding File 'UC_DATA_PROCESSOR:impl' to Package 'UC_DATA_PROCESSOR'.
+Adding File 'UC_DATA_PROCESSOR:spec' to Package 'UC_DATA_PROCESSOR'.
+Adding File 'UC_SMSWTD:impl' to Package 'UC_SMSWTD'.
+Adding File 'UC_SMSWTD:spec' to Package 'UC_SMSWTD'.
 

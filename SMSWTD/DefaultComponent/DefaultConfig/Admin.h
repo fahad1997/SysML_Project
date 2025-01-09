@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: Admin
-//!	Generated Date	: Wed, 8, Jan 2025  
+//!	Generated Date	: Thu, 9, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\Admin.h
 *********************************************************************/
 
@@ -17,12 +17,10 @@
 #include <aom.h>
 //## auto_generated
 #include "ANALYSIS.h"
-//## actor Admin
-#include "User.h"
 //## package SMSWTD_SYSTEM::ANALYSIS
 
 //## actor Admin
-class Admin : public User {
+class Admin {
     ////    Friends    ////
     
 public :
@@ -42,16 +40,8 @@ public :
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
-class OMAnimatedAdmin : public OMAnimatedUser {
+class OMAnimatedAdmin : virtual public AOMInstance {
     DECLARE_META(Admin, OMAnimatedAdmin)
-    
-    ////    Framework operations    ////
-    
-public :
-
-    virtual void serializeAttributes(AOMSAttributes* aomsAttributes) const;
-    
-    virtual void serializeRelations(AOMSRelations* aomsRelations) const;
 };
 //#]
 #endif // _OMINSTRUMENT

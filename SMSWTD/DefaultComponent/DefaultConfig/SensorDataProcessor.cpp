@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SensorDataProcessor
-//!	Generated Date	: Wed, 8, Jan 2025  
+//!	Generated Date	: Thu, 9, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\SensorDataProcessor.cpp
 *********************************************************************/
 
@@ -24,6 +24,8 @@
 #include "GeographicalConfiguration.h"
 //## link itsSensorConfiguration
 #include "SensorConfiguration.h"
+//## link itsDataProcessor
+#include "DataProcessor.h"
 //#[ ignore
 #define SMSWTD_SYSTEM_DESIGN_SensorDataProcessor_SensorDataProcessor_SERIALIZE OM_NO_OP
 //#]
@@ -31,19 +33,19 @@
 //## package SMSWTD_SYSTEM::DESIGN
 
 //## class SensorDataProcessor
-SensorDataProcessor::SensorDataProcessor(IOxfActive* const theActiveContext) : DataProcessor(), itsCloudClient(NULL), itsDataCollector(NULL), itsDataPublisher(NULL), itsGeographicalConfiguration(NULL), itsSensorConfiguration(NULL) {
+SensorDataProcessor::SensorDataProcessor(IOxfActive* const theActiveContext) : OMReactive(), itsCloudClient(NULL), itsDataCollector(NULL), itsDataPublisher(NULL), itsGeographicalConfiguration(NULL), itsSensorConfiguration(NULL), itsDataProcessor(NULL) {
     NOTIFY_REACTIVE_CONSTRUCTOR(SensorDataProcessor, SensorDataProcessor(), 0, SMSWTD_SYSTEM_DESIGN_SensorDataProcessor_SensorDataProcessor_SERIALIZE);
     setActiveContext(theActiveContext, false);
 }
 
 SensorDataProcessor::~SensorDataProcessor(void) {
-    NOTIFY_DESTRUCTOR(~SensorDataProcessor, false);
+    NOTIFY_DESTRUCTOR(~SensorDataProcessor, true);
     cleanUpRelations();
 }
 
 bool SensorDataProcessor::startBehavior(void) {
     bool done = false;
-    done = DataProcessor::startBehavior();
+    done = OMReactive::startBehavior();
     return done;
 }
 
@@ -138,6 +140,16 @@ void SensorDataProcessor::cleanUpRelations(void) {
             NOTIFY_RELATION_CLEARED("itsDataCollector");
             itsDataCollector = NULL;
         }
+    if(itsDataProcessor != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsDataProcessor");
+            const SensorDataProcessor* p_SensorDataProcessor = itsDataProcessor->getItsSensorDataProcessor();
+            if(p_SensorDataProcessor != NULL)
+                {
+                    itsDataProcessor->__setItsSensorDataProcessor(NULL);
+                }
+            itsDataProcessor = NULL;
+        }
     if(itsDataPublisher != NULL)
         {
             NOTIFY_RELATION_CLEARED("itsDataPublisher");
@@ -155,12 +167,45 @@ void SensorDataProcessor::cleanUpRelations(void) {
         }
 }
 
-#ifdef _OMINSTRUMENT
-//#[ ignore
-void OMAnimatedSensorDataProcessor::serializeAttributes(AOMSAttributes* aomsAttributes) const {
-    OMAnimatedDataProcessor::serializeAttributes(aomsAttributes);
+const DataProcessor* SensorDataProcessor::getItsDataProcessor(void) const {
+    return itsDataProcessor;
 }
 
+void SensorDataProcessor::setItsDataProcessor(DataProcessor* const p_DataProcessor) {
+    if(p_DataProcessor != NULL)
+        {
+            p_DataProcessor->_setItsSensorDataProcessor(this);
+        }
+    _setItsDataProcessor(p_DataProcessor);
+}
+
+void SensorDataProcessor::__setItsDataProcessor(DataProcessor* const p_DataProcessor) {
+    itsDataProcessor = p_DataProcessor;
+    if(p_DataProcessor != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsDataProcessor", p_DataProcessor, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsDataProcessor");
+        }
+}
+
+void SensorDataProcessor::_setItsDataProcessor(DataProcessor* const p_DataProcessor) {
+    if(itsDataProcessor != NULL)
+        {
+            itsDataProcessor->__setItsSensorDataProcessor(NULL);
+        }
+    __setItsDataProcessor(p_DataProcessor);
+}
+
+void SensorDataProcessor::_clearItsDataProcessor(void) {
+    NOTIFY_RELATION_CLEARED("itsDataProcessor");
+    itsDataProcessor = NULL;
+}
+
+#ifdef _OMINSTRUMENT
+//#[ ignore
 void OMAnimatedSensorDataProcessor::serializeRelations(AOMSRelations* aomsRelations) const {
     aomsRelations->addRelation("itsDataCollector", false, true);
     if(myReal->itsDataCollector)
@@ -187,15 +232,15 @@ void OMAnimatedSensorDataProcessor::serializeRelations(AOMSRelations* aomsRelati
         {
             aomsRelations->ADD_ITEM(myReal->itsDataPublisher);
         }
-    OMAnimatedDataProcessor::serializeRelations(aomsRelations);
+    aomsRelations->addRelation("itsDataProcessor", false, true);
+    if(myReal->itsDataProcessor)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsDataProcessor);
+        }
 }
 //#]
 
-IMPLEMENT_REACTIVE_META_S_SIMPLE_P(SensorDataProcessor, SMSWTD_SYSTEM::DESIGN, false, DataProcessor, OMAnimatedDataProcessor, OMAnimatedSensorDataProcessor)
-
-OMINIT_SUPERCLASS(DataProcessor, OMAnimatedDataProcessor)
-
-OMREGISTER_REACTIVE_CLASS
+IMPLEMENT_REACTIVE_META_SIMPLE_P(SensorDataProcessor, SMSWTD_SYSTEM_DESIGN, SMSWTD_SYSTEM::DESIGN, false, OMAnimatedSensorDataProcessor)
 #endif // _OMINSTRUMENT
 
 /*********************************************************************

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DESIGN
-//!	Generated Date	: Wed, 8, Jan 2025  
+//!	Generated Date	: Thu, 9, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\DESIGN.cpp
 *********************************************************************/
 
@@ -107,6 +107,25 @@
 //## package SMSWTD_SYSTEM::DESIGN
 
 
+#ifdef _OMINSTRUMENT
+static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */);
+
+static void RenameGlobalInstances(void);
+
+IMPLEMENT_META_PACKAGE(SMSWTD_SYSTEM_DESIGN, SMSWTD_SYSTEM::DESIGN)
+
+static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
+}
+
+static void RenameGlobalInstances(void) {
+    OM_SET_INSTANCE_NAME(&itsWaterFlowDetector, WaterFlowDetector, "itsWaterFlowDetector", AOMNoMultiplicity);
+    OM_SET_INSTANCE_NAME(&itsSMSWTD_BLK, SMSWTD_CONTROLLER, "itsSMSWTD_BLK", AOMNoMultiplicity);
+    OM_SET_INSTANCE_NAME(&itsDataProcessor, DataProcessor, "itsDataProcessor", AOMNoMultiplicity);
+    OM_SET_INSTANCE_NAME(&itsDataCollector, DataCollector, "itsDataCollector", AOMNoMultiplicity);
+    OM_SET_INSTANCE_NAME(&itsStormSensor, StormSensor, "itsStormSensor", AOMNoMultiplicity);
+}
+#endif // _OMINSTRUMENT
+
 //## classInstance itsDataCollector
 DataCollector itsDataCollector;
 
@@ -121,14 +140,6 @@ StormSensor itsStormSensor;
 
 //## classInstance itsWaterFlowDetector
 WaterFlowDetector itsWaterFlowDetector;
-
-#ifdef _OMINSTRUMENT
-static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */);
-
-static void RenameGlobalInstances(void);
-
-IMPLEMENT_META_PACKAGE(SMSWTD_SYSTEM_DESIGN, SMSWTD_SYSTEM::DESIGN)
-#endif // _OMINSTRUMENT
 
 void DESIGN_initRelations(void) {
     {
@@ -177,19 +188,6 @@ bool DESIGN_startBehavior(void) {
         }
     return done;
 }
-
-#ifdef _OMINSTRUMENT
-static void serializeGlobalVars(AOMSAttributes* /* aomsAttributes */) {
-}
-
-static void RenameGlobalInstances(void) {
-    OM_SET_INSTANCE_NAME(&itsWaterFlowDetector, WaterFlowDetector, "itsWaterFlowDetector", AOMNoMultiplicity);
-    OM_SET_INSTANCE_NAME(&itsSMSWTD_BLK, SMSWTD_CONTROLLER, "itsSMSWTD_BLK", AOMNoMultiplicity);
-    OM_SET_INSTANCE_NAME(&itsDataProcessor, DataProcessor, "itsDataProcessor", AOMNoMultiplicity);
-    OM_SET_INSTANCE_NAME(&itsDataCollector, DataCollector, "itsDataCollector", AOMNoMultiplicity);
-    OM_SET_INSTANCE_NAME(&itsStormSensor, StormSensor, "itsStormSensor", AOMNoMultiplicity);
-}
-#endif // _OMINSTRUMENT
 
 //#[ ignore
 DESIGN_OMInitializer::DESIGN_OMInitializer(void) {

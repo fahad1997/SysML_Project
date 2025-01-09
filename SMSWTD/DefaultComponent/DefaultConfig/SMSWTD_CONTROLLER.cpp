@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SMSWTD_CONTROLLER
-//!	Generated Date	: Wed, 8, Jan 2025  
+//!	Generated Date	: Thu, 9, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\SMSWTD_CONTROLLER.cpp
 *********************************************************************/
 
@@ -523,6 +523,8 @@ void OMAnimatedSMSWTD_CONTROLLER::serializeAttributes(AOMSAttributes* aomsAttrib
 }
 
 void OMAnimatedSMSWTD_CONTROLLER::serializeRelations(AOMSRelations* aomsRelations) const {
+    aomsRelations->addRelation("itsDataProcessor", true, true);
+    aomsRelations->ADD_ITEM(&myReal->itsDataProcessor);
     aomsRelations->addRelation("itsDashboard", false, true);
     if(myReal->itsDashboard)
         {
@@ -538,8 +540,6 @@ void OMAnimatedSMSWTD_CONTROLLER::serializeRelations(AOMSRelations* aomsRelation
         {
             aomsRelations->ADD_ITEM(myReal->itsImageCollector);
         }
-    aomsRelations->addRelation("itsDataProcessor", true, true);
-    aomsRelations->ADD_ITEM(&myReal->itsDataProcessor);
     aomsRelations->addRelation("itsDataCollector", false, true);
     if(myReal->itsDataCollector)
         {

@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: ImageProcessor
-//!	Generated Date	: Wed, 8, Jan 2025  
+//!	Generated Date	: Thu, 9, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\ImageProcessor.h
 *********************************************************************/
 
@@ -15,10 +15,19 @@
 #include <oxf.h>
 //## auto_generated
 #include "DESIGN.h"
-//## class ImageProcessor
-#include "DataProcessor.h"
+//## link itsDataProcessor
+class DataProcessor;
+
 //## auto_generated
 #include <aom.h>
+//## auto_generated
+#include <omthread.h>
+//## auto_generated
+#include <omreactive.h>
+//## auto_generated
+#include <state.h>
+//## auto_generated
+#include <event.h>
 //## link itsDataPublisher
 class DataPublisher;
 
@@ -28,7 +37,7 @@ class ImageCollector;
 //## package SMSWTD_SYSTEM::DESIGN
 
 //## class ImageProcessor
-class ImageProcessor : public DataProcessor {
+class ImageProcessor : public OMReactive {
     ////    Friends    ////
     
 public :
@@ -76,19 +85,40 @@ private :
     DataPublisher* itsDataPublisher;		//## link itsDataPublisher
     
     ImageCollector* itsImageCollector;		//## link itsImageCollector
+
+public :
+
+    //## auto_generated
+    const DataProcessor* getItsDataProcessor(void) const;
+    
+    //## auto_generated
+    void setItsDataProcessor(DataProcessor* const p_DataProcessor);
+
+private :
+
+    DataProcessor* itsDataProcessor;		//## link itsDataProcessor
+
+public :
+
+    //## auto_generated
+    void __setItsDataProcessor(DataProcessor* const p_DataProcessor);
+    
+    //## auto_generated
+    void _setItsDataProcessor(DataProcessor* const p_DataProcessor);
+    
+    //## auto_generated
+    void _clearItsDataProcessor(void);
 };
 
 #ifdef _OMINSTRUMENT
 //#[ ignore
-class OMAnimatedImageProcessor : public OMAnimatedDataProcessor {
+class OMAnimatedImageProcessor : virtual public AOMInstance {
     DECLARE_META(ImageProcessor, OMAnimatedImageProcessor)
     
     ////    Framework operations    ////
     
 public :
 
-    virtual void serializeAttributes(AOMSAttributes* aomsAttributes) const;
-    
     virtual void serializeRelations(AOMSRelations* aomsRelations) const;
 };
 //#]

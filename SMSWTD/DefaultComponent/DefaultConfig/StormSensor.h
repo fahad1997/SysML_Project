@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: StormSensor
-//!	Generated Date	: Wed, 8, Jan 2025  
+//!	Generated Date	: Thu, 9, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\StormSensor.h
 *********************************************************************/
 
@@ -127,10 +127,6 @@ public :
     //## auto_generated
     void _clearItsSMSWTD(void);
     
-//#[ ignore
-    void setWindSpeed(int p_windSpeed);
-//#]
-
     //## auto_generated
     p_StormSensor_C* getP_StormSensor(void) const;
     
@@ -150,10 +146,6 @@ private :
 
     int windSpeed;		//## attribute windSpeed
     
-//#[ ignore
-    p_StormSensor_C p_StormSensor;
-//#]
-
     DataCollector* itsDataCollector;		//## link itsDataCollector
 
 public :
@@ -166,6 +158,16 @@ public :
     
     //## auto_generated
     void _clearItsDataCollector(void);
+    
+//#[ ignore
+    void setWindSpeed(int p_windSpeed);
+//#]
+
+private :
+
+//#[ ignore
+    p_StormSensor_C p_StormSensor;
+//#]
 };
 
 #ifdef _OMINSTRUMENT

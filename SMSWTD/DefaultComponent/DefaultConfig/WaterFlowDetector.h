@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: WaterFlowDetector
-//!	Generated Date	: Wed, 8, Jan 2025  
+//!	Generated Date	: Thu, 9, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\WaterFlowDetector.h
 *********************************************************************/
 
@@ -127,10 +127,6 @@ public :
     //## auto_generated
     void _clearItsSMSWTD(void);
     
-//#[ ignore
-    void setWaterPressure(int p_waterPressure);
-//#]
-
     //## auto_generated
     p_WaterFlowDetector_C* getP_WaterFlowDetector(void) const;
     
@@ -150,10 +146,6 @@ private :
 
     int waterPressure;		//## attribute waterPressure
     
-//#[ ignore
-    p_WaterFlowDetector_C p_WaterFlowDetector;
-//#]
-
     DataCollector* itsDataCollector;		//## link itsDataCollector
 
 public :
@@ -166,6 +158,16 @@ public :
     
     //## auto_generated
     void _clearItsDataCollector(void);
+    
+//#[ ignore
+    void setWaterPressure(int p_waterPressure);
+//#]
+
+private :
+
+//#[ ignore
+    p_WaterFlowDetector_C p_WaterFlowDetector;
+//#]
 };
 
 #ifdef _OMINSTRUMENT

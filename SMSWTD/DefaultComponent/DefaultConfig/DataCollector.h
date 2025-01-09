@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DataCollector
-//!	Generated Date	: Wed, 8, Jan 2025  
+//!	Generated Date	: Thu, 9, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\DataCollector.h
 *********************************************************************/
 
@@ -232,12 +232,6 @@ public :
     
     ////    Relations and components    ////
     
-//#[ ignore
-    void setWaterPressure(int p_waterPressure);
-    
-    void setWindSpeed(int p_windSpeed);
-//#]
-
     //## auto_generated
     p_DataCollector_1_C* getP_DataCollector_1(void) const;
     
@@ -300,16 +294,6 @@ private :
     
     int windSpeed;		//## attribute windSpeed
     
-//#[ ignore
-    p_DataCollector_1_C p_DataCollector_1;
-    
-    p_DataCollector_C p_DataCollector;
-    
-    p_DataCollector_2_C p_DataCollector_2;
-    
-    p_DataCollector_3_C p_DataCollector_3;
-//#]
-
     SMSWTD_CONTROLLER* itsSMSWTD_CONTROLLER;		//## link itsSMSWTD_CONTROLLER
     
     StormSensor* itsStormSensor;		//## link itsStormSensor
@@ -344,6 +328,24 @@ public :
     
     //## auto_generated
     void _clearItsWaterFlowDetector(void);
+    
+//#[ ignore
+    void setWaterPressure(int p_waterPressure);
+    
+    void setWindSpeed(int p_windSpeed);
+//#]
+
+private :
+
+//#[ ignore
+    p_DataCollector_1_C p_DataCollector_1;
+    
+    p_DataCollector_C p_DataCollector;
+    
+    p_DataCollector_2_C p_DataCollector_2;
+    
+    p_DataCollector_3_C p_DataCollector_3;
+//#]
 };
 
 #ifdef _OMINSTRUMENT

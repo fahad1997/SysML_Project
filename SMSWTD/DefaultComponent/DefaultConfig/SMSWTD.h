@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: SMSWTD
-//!	Generated Date	: Wed, 8, Jan 2025  
+//!	Generated Date	: Thu, 9, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\SMSWTD.h
 *********************************************************************/
 
@@ -20,9 +20,6 @@
 //## link itsAirborneSensor
 class AirborneSensor;
 
-//## link itsAlertedGroup
-class AlertedGroup;
-
 //## link itsCloud
 class Cloud;
 
@@ -32,9 +29,6 @@ class SateliteImage;
 //## link itsStormSensor
 class StormSensor;
 
-//## link itsUser
-class User;
-
 //## link itsWaterFlowDetector
 class WaterFlowDetector;
 
@@ -43,6 +37,12 @@ class WaterPressureSensor;
 
 //## link itsWeatherSensor
 class WeatherSensor;
+
+//## link itsAlertedGroup
+class AlertedGroup;
+
+//## link itsUser
+class User;
 
 //## package SMSWTD_SYSTEM::DESIGN
 
@@ -220,10 +220,6 @@ public :
 private :
 
     AirborneSensor* itsAirborneSensor;		//## link itsAirborneSensor
-    
-    AlertedGroup* itsAlertedGroup;		//## link itsAlertedGroup
-    
-    User* itsUser;		//## link itsUser
 
 public :
 
@@ -235,6 +231,12 @@ public :
     
     //## auto_generated
     void _clearItsAirborneSensor(void);
+
+private :
+
+    AlertedGroup* itsAlertedGroup;		//## link itsAlertedGroup
+    
+    User* itsUser;		//## link itsUser
 };
 
 #ifdef _OMINSTRUMENT

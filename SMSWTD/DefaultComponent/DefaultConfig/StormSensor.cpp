@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: StormSensor
-//!	Generated Date	: Wed, 8, Jan 2025  
+//!	Generated Date	: Thu, 9, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\StormSensor.cpp
 *********************************************************************/
 
@@ -134,15 +134,6 @@ void StormSensor::_clearItsSMSWTD(void) {
     itsSMSWTD = NULL;
 }
 
-//#[ ignore
-void StormSensor::setWindSpeed(int p_windSpeed) {
-    if (windSpeed != p_windSpeed)  {
-        windSpeed = p_windSpeed;
-        FLOW_DATA_SEND(windSpeed, p_StormSensor, setWindSpeed, x2String);
-    }
-}
-//#]
-
 StormSensor::p_StormSensor_C* StormSensor::getP_StormSensor(void) const {
     return (StormSensor::p_StormSensor_C*) &p_StormSensor;
 }
@@ -191,6 +182,15 @@ void StormSensor::_clearItsDataCollector(void) {
     NOTIFY_RELATION_CLEARED("itsDataCollector");
     itsDataCollector = NULL;
 }
+
+//#[ ignore
+void StormSensor::setWindSpeed(int p_windSpeed) {
+    if (windSpeed != p_windSpeed)  {
+        windSpeed = p_windSpeed;
+        FLOW_DATA_SEND(windSpeed, p_StormSensor, setWindSpeed, x2String);
+    }
+}
+//#]
 
 #ifdef _OMINSTRUMENT
 //#[ ignore

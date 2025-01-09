@@ -4,7 +4,7 @@
 	Component	: DefaultComponent 
 	Configuration 	: DefaultConfig
 	Model Element	: DataProcessor
-//!	Generated Date	: Wed, 8, Jan 2025  
+//!	Generated Date	: Thu, 9, Jan 2025  
 	File Path	: DefaultComponent\DefaultConfig\DataProcessor.cpp
 *********************************************************************/
 
@@ -16,6 +16,10 @@
 
 //## auto_generated
 #include "DataProcessor.h"
+//## link itsImageProcessor
+#include "ImageProcessor.h"
+//## link itsSensorDataProcessor
+#include "SensorDataProcessor.h"
 //#[ ignore
 #define SMSWTD_SYSTEM_DESIGN_DataProcessor_DataProcessor_SERIALIZE OM_NO_OP
 
@@ -99,6 +103,7 @@ void DataProcessor::p_DataProcessor_1_C::cleanUpRelations(void) {
 
 DataProcessor::~DataProcessor(void) {
     NOTIFY_DESTRUCTOR(~DataProcessor, true);
+    cleanUpRelations();
     cancelTimeouts();
 }
 
@@ -114,37 +119,12 @@ void DataProcessor::initStatechart(void) {
     rootState_timeout = NULL;
 }
 
-DataProcessor::DataProcessor(IOxfActive* const theActiveContext) : OMReactive(), int_waterPressure_ProxyFlowPropertyInterface(), int_windSpeed_ProxyFlowPropertyInterface(), dataAvailability(false), tsunami(false), waterPressure(0), windSpeed(0) {
-    NOTIFY_REACTIVE_CONSTRUCTOR(DataProcessor, DataProcessor(), 0, SMSWTD_SYSTEM_DESIGN_DataProcessor_DataProcessor_SERIALIZE);
-    setActiveContext(theActiveContext, false);
-    initRelations();
-    initStatechart();
-}
-
 void DataProcessor::dataFetched(void) {
     NOTIFY_OPERATION(dataFetched, dataFetched(), 0, SMSWTD_SYSTEM_DESIGN_DataProcessor_dataFetched_SERIALIZE);
     //#[ operation dataFetched()
     std::cout<<"Successfully fetched data from the sensors.\n";
     //#]
 }
-
-//#[ ignore
-void DataProcessor::setWaterPressure(int p_waterPressure) {
-    if (waterPressure != p_waterPressure) {
-        waterPressure = p_waterPressure;
-        FLOW_DATA_RECEIVE("waterPressure", waterPressure, x2String);
-    }
-    
-}
-
-void DataProcessor::setWindSpeed(int p_windSpeed) {
-    if (windSpeed != p_windSpeed) {
-        windSpeed = p_windSpeed;
-        FLOW_DATA_RECEIVE("windSpeed", windSpeed, x2String);
-    }
-    
-}
-//#]
 
 DataProcessor::p_DataProcessor_C* DataProcessor::getP_DataProcessor(void) const {
     return (DataProcessor::p_DataProcessor_C*) &p_DataProcessor;
@@ -208,6 +188,128 @@ void DataProcessor::initRelations(void) {
 
 void DataProcessor::cancelTimeouts(void) {
     cancel(rootState_timeout);
+}
+
+DataProcessor::DataProcessor(IOxfActive* const theActiveContext) : OMReactive(), int_waterPressure_ProxyFlowPropertyInterface(), int_windSpeed_ProxyFlowPropertyInterface(), dataAvailability(false), tsunami(false), waterPressure(0), windSpeed(0), itsImageProcessor(NULL), itsSensorDataProcessor(NULL) {
+    NOTIFY_REACTIVE_CONSTRUCTOR(DataProcessor, DataProcessor(), 0, SMSWTD_SYSTEM_DESIGN_DataProcessor_DataProcessor_SERIALIZE);
+    setActiveContext(theActiveContext, false);
+    initRelations();
+    initStatechart();
+}
+
+//#[ ignore
+void DataProcessor::setWaterPressure(int p_waterPressure) {
+    if (waterPressure != p_waterPressure) {
+        waterPressure = p_waterPressure;
+        FLOW_DATA_RECEIVE("waterPressure", waterPressure, x2String);
+    }
+    
+}
+
+void DataProcessor::setWindSpeed(int p_windSpeed) {
+    if (windSpeed != p_windSpeed) {
+        windSpeed = p_windSpeed;
+        FLOW_DATA_RECEIVE("windSpeed", windSpeed, x2String);
+    }
+    
+}
+//#]
+
+const ImageProcessor* DataProcessor::getItsImageProcessor(void) const {
+    return itsImageProcessor;
+}
+
+void DataProcessor::setItsImageProcessor(ImageProcessor* const p_ImageProcessor) {
+    if(p_ImageProcessor != NULL)
+        {
+            p_ImageProcessor->_setItsDataProcessor(this);
+        }
+    _setItsImageProcessor(p_ImageProcessor);
+}
+
+const SensorDataProcessor* DataProcessor::getItsSensorDataProcessor(void) const {
+    return itsSensorDataProcessor;
+}
+
+void DataProcessor::setItsSensorDataProcessor(SensorDataProcessor* const p_SensorDataProcessor) {
+    if(p_SensorDataProcessor != NULL)
+        {
+            p_SensorDataProcessor->_setItsDataProcessor(this);
+        }
+    _setItsSensorDataProcessor(p_SensorDataProcessor);
+}
+
+void DataProcessor::cleanUpRelations(void) {
+    if(itsImageProcessor != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsImageProcessor");
+            const DataProcessor* p_DataProcessor = itsImageProcessor->getItsDataProcessor();
+            if(p_DataProcessor != NULL)
+                {
+                    itsImageProcessor->__setItsDataProcessor(NULL);
+                }
+            itsImageProcessor = NULL;
+        }
+    if(itsSensorDataProcessor != NULL)
+        {
+            NOTIFY_RELATION_CLEARED("itsSensorDataProcessor");
+            const DataProcessor* p_DataProcessor = itsSensorDataProcessor->getItsDataProcessor();
+            if(p_DataProcessor != NULL)
+                {
+                    itsSensorDataProcessor->__setItsDataProcessor(NULL);
+                }
+            itsSensorDataProcessor = NULL;
+        }
+}
+
+void DataProcessor::__setItsImageProcessor(ImageProcessor* const p_ImageProcessor) {
+    itsImageProcessor = p_ImageProcessor;
+    if(p_ImageProcessor != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsImageProcessor", p_ImageProcessor, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsImageProcessor");
+        }
+}
+
+void DataProcessor::_setItsImageProcessor(ImageProcessor* const p_ImageProcessor) {
+    if(itsImageProcessor != NULL)
+        {
+            itsImageProcessor->__setItsDataProcessor(NULL);
+        }
+    __setItsImageProcessor(p_ImageProcessor);
+}
+
+void DataProcessor::_clearItsImageProcessor(void) {
+    NOTIFY_RELATION_CLEARED("itsImageProcessor");
+    itsImageProcessor = NULL;
+}
+
+void DataProcessor::__setItsSensorDataProcessor(SensorDataProcessor* const p_SensorDataProcessor) {
+    itsSensorDataProcessor = p_SensorDataProcessor;
+    if(p_SensorDataProcessor != NULL)
+        {
+            NOTIFY_RELATION_ITEM_ADDED("itsSensorDataProcessor", p_SensorDataProcessor, false, true);
+        }
+    else
+        {
+            NOTIFY_RELATION_CLEARED("itsSensorDataProcessor");
+        }
+}
+
+void DataProcessor::_setItsSensorDataProcessor(SensorDataProcessor* const p_SensorDataProcessor) {
+    if(itsSensorDataProcessor != NULL)
+        {
+            itsSensorDataProcessor->__setItsDataProcessor(NULL);
+        }
+    __setItsSensorDataProcessor(p_SensorDataProcessor);
+}
+
+void DataProcessor::_clearItsSensorDataProcessor(void) {
+    NOTIFY_RELATION_CLEARED("itsSensorDataProcessor");
+    itsSensorDataProcessor = NULL;
 }
 
 void DataProcessor::rootState_entDef(void) {
@@ -370,6 +472,16 @@ void OMAnimatedDataProcessor::serializeAttributes(AOMSAttributes* aomsAttributes
 }
 
 void OMAnimatedDataProcessor::serializeRelations(AOMSRelations* aomsRelations) const {
+    aomsRelations->addRelation("itsSensorDataProcessor", false, true);
+    if(myReal->itsSensorDataProcessor)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsSensorDataProcessor);
+        }
+    aomsRelations->addRelation("itsImageProcessor", false, true);
+    if(myReal->itsImageProcessor)
+        {
+            aomsRelations->ADD_ITEM(myReal->itsImageProcessor);
+        }
 }
 
 void OMAnimatedDataProcessor::rootState_serializeStates(AOMSState* aomsState) const {
